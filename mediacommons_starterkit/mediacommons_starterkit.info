@@ -1,12 +1,12 @@
-name = MediaaCommons Profile
-description = MediaCommons Profile.
+name = MediaaCommons Starter Kit
+description = Sub-theme example to help you start a MediaCommon project.
 base theme = mediacommons_base
 core = 7.x
 engine = phptemplate
 version = 1.x
 screenshot = screenshot.png
 
-stylesheets[all][] = css/mediacommons_profile.css
+stylesheets[all][] = css/mediacommons_starterkit.css
 
 regions[header] = Header
 regions[search] = Search
@@ -19,4 +19,3 @@ features[] = logo
 features[] = name
 features[] = search
 features[] = favicon
-
