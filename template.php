@@ -103,7 +103,7 @@ function mediacommons_base_process_node(&$vars) {
 
   /** content array */
   $content = $vars['content'];
-
+  
   $vars['classes_array'][] = 'yui3-cssbase';
 
   switch ($vars['type']) {
@@ -132,11 +132,17 @@ function mediacommons_base_process_node(&$vars) {
           /** Display description. */
           $vars['description'] = render($content['field_description']);
           
+          if ($vars['field_type'][0]['value'] == 0) {
+            $vars['safe_tease'] = render($content['field_video_embed_link']);            
+          }
+          else {
+            $vars['safe_tease'] = render($content['field_representative_image']);            
+          }
+          
           /** Display tags. */
           $vars['safe_tags'] = render($content['field_cluster_tags']);
 
-          /** Display tags. */
-          $vars['safe_tease'] = render($content['field_video_embed_link']);
+
 
           break;
       }
@@ -151,9 +157,6 @@ function mediacommons_base_process_node(&$vars) {
       
         case 'teaser' :
           
-          //dpm($vars);
-          //dpm($vars['content']['field_additional_authors']);
-        
           $vars['theme_hook_suggestions'][] = 'node__spoke__teaser';
           
           $vars['title_safe'] = render($vars['title_prefix']) . '<h3 ' . $vars['title_attributes'] . '><a href="' . $vars['node_url'] . '">' . $vars['title'] .'</a></h3>' . render($vars['title_suffix']);

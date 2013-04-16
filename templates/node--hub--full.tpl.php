@@ -3,7 +3,7 @@
   <div class="yui3-g">
     <div class="yui3-u tease">
       <?php print $safe_tease; ?>
-      <?php print $safe_tags; ?>
+      <?php print $safe_tags; ?>      
     </div>
     <div class="yui3-u description">
       <?php print $description; ?>
