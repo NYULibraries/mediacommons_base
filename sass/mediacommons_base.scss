@@ -1,9 +1,38 @@
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+
+@import "compass/typography";
 @import "compass/css3";
+@import "breakpoint";
 
-@import "libraries/yui3/cssreset";
-@import "libraries/yui3/cssfonts";
-@import "libraries/yui3/cssgrids";
-@import "libraries/yui3/cssbase";
-@import "libraries/yui3/cssbase-context";
+//@import "libraries/yui3/_cssfonts";
+//@import "libraries/yui3/_cssgrids";
+//@import "libraries/yui3/_cssbase";
+//@import "libraries/yui3/_cssbase-context";
 
-@import "partials/pages/_base";
+@import "partials/_colors";
+@import "partials/_extendables";
+@import "partials/_functions";
+@import "partials/_mixins";
+@import "partials/variables/_variables"; 
+
+@import "pattern-primer/reset"; 
+@import "pattern-primer/base";
+@import "pattern-primer/modules";
+@import "partials/variables/theme/_overrides";
+
+@import "base/_page";
+
+@import "modules/_icons";
+@import "modules/_header"; 
+@import "modules/_usernav";
+@import "modules/_mainnav";
+@import "modules/_content";
+@import "modules/_subnavigation";
+@import "modules/_footer";
+
+@import "layout/_breakpoints";
+@import "layout/_page";
+
+@import "theme/_header"
+

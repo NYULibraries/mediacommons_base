@@ -1,0 +1,76 @@
+//////////////////////////////
+// VARIABLES: For Theme — Overides for Pattern-Primer  
+//////////////////////////////
+
+$body-font-family: Calibri, 'Helvetica Neue', Arial, sans-serif;
+$secondary-font: $body-font-family;
+$header-font-family: $body-font-family;
+
+/// body
+$body-background-color: lighten(nth($black , 6), 0%);
+$body-background-rgba: rgba($body-background-color, 1);
+$body-border-width: 0;
+$body-border-pos: none;
+$body-border-pos2: none;
+
+$body-margin: 0;
+$body-padding: 0;
+
+$html-border-pos: none;
+$html-background-color: lighten($body-background-color, 10%);
+
+$link-color: #57068c;
+$link-text-decoration: none;
+$link-border-pos: none;
+
+/// Visited
+$link-visited-link-color: $link-color;
+$link-visited-border-pos: $link-border-pos;
+/// Hover
+$link-hover-link-color: $link-color;
+$link-text-decoration: none; 
+$link-hover-border-pos: $link-border-pos;
+/// Active
+$link-active-link-color: $link-color;
+
+$h1-margin-pos: none;
+$h1-border-width: 0; 
+$h2-border-pos: none; 
+$h2-border-width: 0;
+$h3-border-pos: none; 
+$h3-border-width: 0; 
+
+$button-padding: 0.33em .66em;
+$button-border-color: #bbb;
+$button-border-radius: .5em;
+$button-color: #333;
+$button-text-shadow: 0 -1px 0 rgba(#fff, 0.25);
+$button-gradient-stop-1: #fff;
+$button-gradient-stop-2: #e6e6e6;
+
+$button-hover-color: $button-color;
+$button-hover-gradient-stop-1: #ccc;
+$button-hover-gradient-stop-2: #e6e6e6;
+
+$button-active-gradient-stop-1: #a6a6a6;
+$button-active-gradient-stop-2: #d9d9d9;
+
+$search-border-radius: 0.25em;
+$search-padding: 0 0.75em;
+$search-border-pos: false; 
+$search-border-width: 1px; 
+$search-border-style: solid;
+$search-border-color: #ccc;
+
+//// Search Input
+$search-input-border-pos: none; 
+$search-input-border-width: 0; 
+$search-input-border-style: solid;
+$search-input-border-color: #ccc;
+$search-input-border-radius: .5em; 
+
+//// Search Input Image
+$search-image-width: 0.9375em;
+$search-image-top: 0.2em;
+$search-image-right: 0.6em;
+$search-image-padding: 0.2em 0.2em;

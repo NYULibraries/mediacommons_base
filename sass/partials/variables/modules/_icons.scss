@@ -1,0 +1,17 @@
+//////////////////////////////
+// VARIABLES: For Modules  
+//////////////////////////////
+
+// Icon fonts
+$icon-font-name: 'ICON_FONT_FAMILY_NAME';
+$icon-font-ttf: 'ICON_FONT_FAMILY_NAME.ttf';
+$icon-font-woff: 'ICON_FONT_FAMILY_NAME.woff';
+$icon-font-eot: 'ICON_FONT_FAMILY_NAME.eot';
+$icon-font-svg: false; // 
+$inline-fonts: false;
+$font-weight: normal;
+$font-style: normal;
+
+//  See: Icon fonts, HAML and Sass http://gist.io/4731881 
+// example $icons array
+$icons: (help '\e003') (iframe-site '\e005') (schedule '\e028') (announcements '\e006');    
