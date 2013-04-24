@@ -1,6 +1,3 @@
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
-
 @import "compass/typography";
 @import "compass/css3";
 @import "breakpoint";
@@ -8,8 +5,9 @@ $legacy-support-for-ie7: false;
 //@import "libraries/yui3/_cssfonts";
 //@import "libraries/yui3/_cssgrids";
 //@import "libraries/yui3/_cssbase";
-//@import "libraries/yui3/_cssbase-context";
+//@import "libraries/yui3/_cssbase-context"; 
 
+@import "partials/_browsers"; 
 @import "partials/_colors";
 @import "partials/_extendables";
 @import "partials/_functions";
@@ -33,6 +31,4 @@ $legacy-support-for-ie7: false;
 
 @import "layout/_breakpoints";
 @import "layout/_page";
-
-@import "theme/_header"
 
