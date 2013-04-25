@@ -93,4 +93,37 @@
   width: $size;
   height: $size;
   @include radius($size/2);
+ 
+
+// IE Fixin Mixins
+// Based on: http://jakearchibald.github.io/sass-ie/
+// For IE only CSS hacks
+$old-ie: false !default;
+
+@mixin old-ie {
+    // Only use this content if we're dealing with old IE
+    @if $old-ie {
+        @content;
+    }
+}
+
+// For adding desktop ('full naviagtion') media queries to IE stylesheet without using Media Queries. 
+
+$fixed-media-query: false !default;
+
+@mixin respond-to-ie($mediaquery) {
+    // If we're outputting for a fixed media query set...
+    @if $fixed-media-query {
+        // ...and if we should apply these rules...
+        @if $fixed-media-query == $mediaquery {
+            // ...output the content the user gave us.
+            @content;
+        }
+    }
+    @else {
+        // Otherwise, output it using a regular media query
+        @include respond-to(quote($mediaquery)) {
+            @content;
+        }
+    }
 }

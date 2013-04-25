@@ -4,11 +4,11 @@
 
 
 .NAVCLASS {
-  @include respond-to('full navigation') {
+  @include respond-to-ie('full navigation') {
     // add full navigation specific style
     
   }
-  @include respond-to('narrow navigation') {
+  @include respond-to-ie('narrow navigation') {
    // add 'mobile' navigation specific style
   }
 }
