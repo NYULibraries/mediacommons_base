@@ -901,6 +901,139 @@ table {
 }
 
 /* @end Reset */
+button,
+input[type="button"],
+input[type="submit"] {
+  width: auto;
+  text-align: center;
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  border: 1px solid #bbbbbb;
+  cursor: pointer;
+  padding: 0.33em 0.66em;
+  line-height: 1;
+  color: #333333;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover, button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus {
+  outline: none;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  color: #333333;
+  background-color: #d9d9d9;
+  background-image: -webkit-linear-gradient(top, #cccccc, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #cccccc, #e6e6e6);
+  background-image: linear-gradient(top, #cccccc, #e6e6e6);
+}
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  text-shadow: -1px 0 0 rgba(255, 255, 255, 0.25);
+  color: #333333;
+  background-color: #bfbfbf;
+  background-image: -webkit-linear-gradient(top, #a6a6a6, #d9d9d9);
+  background-image: -moz-linear-gradient(top, #a6a6a6, #d9d9d9);
+  background-image: linear-gradient(top, #a6a6a6, #d9d9d9);
+}
+
+button.active,
+input[type="button"].active,
+input[type="submit"].active {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  background-color: #006ccc;
+  background-image: -webkit-linear-gradient(top, #007ae5, #005fb3);
+  background-image: -moz-linear-gradient(top, #007ae5, #005fb3);
+  background-image: linear-gradient(top, #007ae5, #005fb3);
+}
+button.active:hover,
+input[type="button"].active:hover,
+input[type="submit"].active:hover, button.active:focus,
+input[type="button"].active:focus,
+input[type="submit"].active:focus {
+  outline: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  background-color: #004786;
+  background-image: -webkit-linear-gradient(top, #004480, #004b8c);
+  background-image: -moz-linear-gradient(top, #004480, #004b8c);
+  background-image: linear-gradient(top, #004480, #004b8c);
+}
+button.active:active,
+input[type="button"].active:active,
+input[type="submit"].active:active {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  background-color: #003d72;
+  background-image: -webkit-linear-gradient(top, #003059, #004b8c);
+  background-image: -moz-linear-gradient(top, #003059, #004b8c);
+  background-image: linear-gradient(top, #003059, #004b8c);
+}
+
+input.cancel,
+input[type="button"][value="Cancel"],
+input[type="submit"][value="Cancel"] {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  background-color: #d54a45;
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(top, #ee5f5b, #bd362f);
+}
+input.cancel:hover,
+input[type="button"][value="Cancel"]:hover,
+input[type="submit"][value="Cancel"]:hover, input.cancel:focus,
+input[type="button"][value="Cancel"]:focus,
+input[type="submit"][value="Cancel"]:focus {
+  outline: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  background-color: #bc362f;
+  background-image: -webkit-linear-gradient(top, #a32f29, #d63e36);
+  background-image: -moz-linear-gradient(top, #a32f29, #d63e36);
+  background-image: linear-gradient(top, #a32f29, #d63e36);
+}
+input.cancel:active,
+input[type="button"][value="Cancel"]:active,
+input[type="submit"][value="Cancel"]:active {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  background-color: #932a25;
+  background-image: -webkit-linear-gradient(top, #7a231f, #ad322b);
+  background-image: -moz-linear-gradient(top, #7a231f, #ad322b);
+  background-image: linear-gradient(top, #7a231f, #ad322b);
+}
+
+button[disabled="disabled"], button[disabled="disabled"]:hover, button[disabled="disabled"]:focus, button[disabled="disabled"]:active,
+input[type="button"][disabled="disabled"]:hover,
+input[type="button"][disabled="disabled"]:focus,
+input[type="button"][disabled="disabled"]:active,
+input[type="submit"][disabled="disabled"]:hover,
+input[type="submit"][disabled="disabled"]:focus,
+input[type="submit"][disabled="disabled"]:active,
+input[type="button"][disabled="disabled"],
+input[type="submit"][disabled="disabled"] {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  color: #333333;
+  background-color: #e6e6e6;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: linear-gradient(top, #e6e6e6, #e6e6e6);
+}
+
 /* @group Typography */
 html {
   border: none;
@@ -1112,19 +1245,25 @@ pre {
 /* @end Typography */
 /* @group Links */
 a {
+  color: #57068c;
   text-decoration: none;
   border: none;
 }
 a:link, a:visited {
+  color: #57068c;
   border: none;
 }
 a[href]:hover, a[href]:focus {
+  color: #57068c;
+  text-decoration: underline;
   border: none;
 }
 a:active {
+  color: #57068c;
   border: none;
 }
 .logo a, h1 a, h2 a, h3 a {
+  color: #57068c;
   border: none;
 }
 
