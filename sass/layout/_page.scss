@@ -2,22 +2,12 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 
-body.toolbar-drawer {
-  margin-top:-35px;
-  .page {
-    margin-top:-45px;
-  }
-}
-#toolbar {
-  position: static !important;
-  margin-top:14px;
-  a {
-    margin-left:10px;
-  }
-}
+
 html{
   height:100%;
 }
+
+
 body {
   background:$grey;
   margin:0 auto;
@@ -27,7 +17,7 @@ body {
   color:black;
   min-height:100%;
   @include navs;
-  @include buttons;
+  //@include input-buttons;
   a {
   //color:$orange_imr;
   font-family:$sans;
@@ -56,9 +46,17 @@ body {
 }
 
 .wrapper {
+  .node {
+    a {
+      font-size:1.05em;
+    }
+  }
+  .article-header {
+    margin-top:3em;
+  }
   width: 70%;
   max-width: 1200px;
-  padding:2em;
+  padding: 0 2em;
   background-color: #fff;
   overflow: hidden;
   margin:0 auto;
@@ -108,12 +106,6 @@ body {
       border-radius: 8px 8px 0 0;
       a {
         border-bottom:none;
-      }
-      input[type=text]{
-        width:30.5%;
-        float:right;
-        padding: .8em 0.8em;
-        @include radius(5px);
       }
     }
   }

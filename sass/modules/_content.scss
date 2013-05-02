@@ -3,5 +3,18 @@
 //////////////////////////////
 
 .content {
-  
+  blockquote {
+  	border-top:none;
+  	border-bottom:none;
+  	border-left:4px solid $grey;
+  	@include radius(0);
+  	margin-left:0;
+  	line-height:1.25em;
+  	color:darken($orange_imr,10%);
+  	//color:#90300a;
+  }
 }  
+
+.node-form {
+  	font-size:.9em;
+  }

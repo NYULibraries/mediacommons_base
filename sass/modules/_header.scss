@@ -5,3 +5,19 @@
 footer {
   // yadda, yadda
 }
+
+#search {
+	float:right;
+	width:30.5%;
+	form {
+		margin:0;
+	}
+	input[type="text"]{
+		float:left;
+		width:69%;
+	}
+	input[type="submit"]{
+		float:right;
+		width:29%;
+	}
+}

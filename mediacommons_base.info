@@ -8,6 +8,7 @@ screenshot = screenshot.png
 stylesheets[all][] = css/mediacommons_base.css
 
 regions[header] = Header
+regions[navigation] = Navigation
 regions[search] = Search
 regions[content] = Content
 regions[left] = Left Sidebar

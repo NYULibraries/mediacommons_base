@@ -6,9 +6,13 @@
       
       <section class="header">    
         <div class="wrapper">
-
-          <?php print render($page['search']); ?>
-          <img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/files/mc_new.png' ?>">
+          <img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/files/tne_new.png' ?>">
+          <div id="search">
+            <?php print render($page['search']); ?>
+          </div>
+          <div class="content-nav">
+            <?php print render($page['navigation']); ?>
+          </div>
           <?php if ($logo): ?>
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
           <?php endif; ?>      

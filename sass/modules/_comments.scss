@@ -12,14 +12,22 @@
   line-height:1.5em;
   @include radius(4px);
   .comment {
-    border-bottom: 1px solid $grey2;
+    border-top: 1px solid $grey2;
     padding:1em 0 0 0;
 
   }
   .comment-form {
-    border-bottom: 1px solid $grey2;
+    //border-bottom: 1px solid $grey2;
   }
   #edit-author--2,.filter-wrapper {
     display:none;
+  }
+  #edit-preview{
+    display:none;
+  }
+  #edit-submit {
+    float:right;
+    display:block;
+    clear:both;
   }
 }

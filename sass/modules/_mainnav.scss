@@ -7,80 +7,14 @@ nav {
 }
 
 
-// Primary mixin
-@mixin buttons {
-  a.button, button, input[type=submit] {
-    @include button(white, $blue_mc);
-    &.mc  { @include button(white, $blue_mc); }
-    &.imr   { @include button(white, $orange_imr); }
-    &.mcp { @include button(white, $green_mcp); }
-    &.tne { @include button(white, $aqua_tne); }
-    &.ac { @include button(white, $red_ac); }
-  }
-}
-
-// Button mixin
-@mixin button($text-color, $bg-color) {
-  font-family:$sans;
-  font-size:1em;
-  //letter-spacing:.08em;
-  font-weight:600;
-  line-height:1.9em;
-  padding: $size/2 $size;
-  margin-right:.25em;
-  text-decoration:none;
-  border:none;
-  @include color-button($text-color, $bg-color);
-  @include transition;
-  @include radius(2px);
-  &:hover, &:focus { @include color-button($text-color, darken($bg-color, 5%)); @include transition; outline:none;}
-  &:active { background: darken($bg-color, 5%); }
-}
-
-
-// Primary input mixin
-@mixin input-buttons {
-  input[type="submit"].button {
-    @include input-button(black, silver);
-    &.mc  { @include button(white, $blue_mc); }
-    &.imr   { @include button(white, $orange_imr); }
-    &.mcp { @include button(white, $green_mcp); }
-    &.tne { @include button(white, $aqua_tne); }
-    &.ac { @include button(white, $red_ac); }
-    -webkit-appearance: none;
-    border-radius:0;
-  }
-}
-
-// Input button mixin
-@mixin input-button($text-color, $bg-color) {
-  font-family:sans;
-  font-size:1em;
-  font-weight:600;
-  line-height:1em;
-  padding: 0 $size;
-  border:none;
-  //clear:both;
-  text-decoration:none;
-  @include color-button($text-color, $bg-color);
-  @include transition;
-  &:hover, &:focus { @include color-button($text-color, darken($bg-color, 5%)); @include transition; }
-  &:active { background: darken($bg-color, 5%); }
-}
-
-@mixin color-button($text-color, $bg-color) {
-  color: $text-color;
-  background: $bg-color;
-}
 
 // Primary mixin
 @mixin navs {
-	@include nav($blue_mc);
-  &.mc  { @include nav($blue_mc); }
-  &.imr   { @include nav($orange_imr); }
-  &.mcp { @include nav($green_mcp); }
-  &.tne { @include nav($aqua_tne); }
-  &.ac { @include nav($red_ac); }
+  &.mc  { @include nav($blue_mc);@include button($blue_mc); }
+  &.imr   { @include nav($orange_imr);@include button($orange_imr); }
+  &.mcp { @include nav($green_mcp);@include button($green_mcp); }
+  &.tne { @include nav($aqua_tne);@include button($aqua_tne); }
+  &.ac { @include nav($red_ac);@include button($red_ac); }
 }
 
 // Basic - dumb media query
@@ -110,6 +44,28 @@ nav {
 }
 
 // Nav mixin
+@mixin button($bgcolor){
+  input[type="submit"] {
+    text-transform:uppercase;
+    font-family:$sans;
+    font-size:.9em;
+    background:$bgcolor;
+    color:white;
+    border:none;
+    line-height:2em;
+    //padding:0 $size;
+    @include transition;
+    @include radius(4px);
+    &:hover {
+      @include transition;
+      background:darken($bgcolor,10%);
+    }
+    &.active {
+      background:$bgcolor;
+    }
+  }
+  }
+
 @mixin nav($bgcolor){
   a {
     font-family:$sans;
@@ -142,6 +98,7 @@ nav {
       }
     }
   }
+
   span.author {
     color:$bgcolor;
     font-size:1em;

@@ -1278,6 +1278,38 @@ a.control:active {
   content: "\e006";
 }
 
+#search {
+  float: right;
+  width: 30.5%;
+}
+#search form {
+  margin: 0;
+}
+#search input[type="text"] {
+  float: left;
+  width: 69%;
+}
+#search input[type="submit"] {
+  float: right;
+  width: 29%;
+}
+
+.content blockquote {
+  border-top: none;
+  border-bottom: none;
+  border-left: 4px solid #f3f3f3;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-left: 0;
+  line-height: 1.25em;
+  color: #b0441a;
+}
+
+.node-form {
+  font-size: .9em;
+}
+
 .comment-wrapper {
   background: #f3f3f3;
   margin: 1em auto;
@@ -1295,19 +1327,51 @@ a.control:active {
   border-radius: 4px;
 }
 .comment-wrapper .comment {
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
   padding: 1em 0 0 0;
-}
-.comment-wrapper .comment-form {
-  border-bottom: 1px solid #d9d9d9;
 }
 .comment-wrapper #edit-author--2, .comment-wrapper .filter-wrapper {
   display: none;
 }
+.comment-wrapper #edit-preview {
+  display: none;
+}
+.comment-wrapper #edit-submit {
+  float: right;
+  display: block;
+  clear: both;
+}
+
+.content-nav ul {
+  display: block;
+  margin: 0.25em 0 0 0;
+  padding: 0;
+}
+.content-nav li {
+  margin: 0;
+  padding-right: 2em;
+  display: inline-block;
+}
+.content-nav li a {
+  font-size: .9em;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding: 0.5em 1em;
+  border-bottom: none;
+  font-weight: 600;
+  color: #ccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f3f3f3;
+}
+.content-nav li a:hover {
+  background: #fff;
+}
 
 .tabs .primary {
   border-bottom: 0;
-  margin: 0;
+  margin: 2em 0;
   padding: 0;
 }
 .tabs .primary li {
@@ -1352,6 +1416,9 @@ body.toolbar-drawer .page {
   position: static !important;
   margin-top: 14px;
 }
+#toolbar li {
+  text-indent: 0;
+}
 #toolbar a {
   margin-left: 10px;
 }
@@ -1367,119 +1434,6 @@ body {
   line-height: 1.6em;
   color: black;
   min-height: 100%;
-}
-body a {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: .9em;
-  color: #196195;
-  border-bottom: 1px solid #8ec5ec;
-}
-body a:hover {
-  color: #124569;
-}
-body a.active {
-  color: #196195;
-  background: #ebebeb;
-}
-body a.viewer {
-  background: #ebebeb;
-  color: #196195;
-  line-height: 1em;
-  padding: 1em 1.5em;
-  margin: 0 0 1em 0;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: 600;
-  display: inline-block;
-  border-bottom: none;
-}
-body a.viewer:hover {
-  background: #f3f3f3;
-  color: #207dc1;
-}
-body span.author {
-  color: #196195;
-  font-size: 1em;
-}
-body .mediacommons-network {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #196195;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #196195 0%, #165684 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #196195), color-stop(100%, #165684));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #196195 0%, #165684 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #196195 0%, #165684 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #196195 0%, #165684 100%);
-  /* IE10+ */
-  background: linear-gradient(to right, #196195 0%, #165684 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$bgcolor', endColorstr='darken($bgcolor,4%)',GradientType=1 );
-  /* IE6-9 */
-  border-right: 1px solid #124569;
-  color: white;
-}
-body .mediacommons-network ul {
-  padding: 0;
-  text-align: left;
-  width: 70%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-body .mediacommons-network ul.mobile {
-  display: none;
-}
-body .mediacommons-network ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  float: left;
-  text-indent: 0;
-}
-body .mediacommons-network ul li.login {
-  float: right;
-}
-body .mediacommons-network ul li.login a {
-  padding: 0 1em;
-}
-body .mediacommons-network ul li a {
-  color: #3797dd;
-  font-weight: bold;
-  display: block;
-  line-height: 3em;
-  padding: 0 1.7em;
-  margin: 0;
-  text-transform: uppercase;
-  border: none;
-}
-body .mediacommons-network ul li a.active {
-  background: #1d6fab;
-  color: white;
-}
-body .mediacommons-network ul li a:hover, body .mediacommons-network ul li a:focus {
-  background: #1b6aa2;
-  color: white;
-}
-@media only screen and (max-width: 1300px) {
-  body .mediacommons-network {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-  body .mediacommons-network ul.desktop {
-    display: none;
-  }
-  body .mediacommons-network ul.mobile {
-    display: block;
-  }
 }
 body.mc a {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -1594,6 +1548,30 @@ body.mc .mediacommons-network ul li a:hover, body.mc .mediacommons-network ul li
     display: block;
   }
 }
+body.mc input[type="submit"] {
+  text-transform: uppercase;
+  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: .9em;
+  background: #196195;
+  color: white;
+  border: none;
+  line-height: 2em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+body.mc input[type="submit"]:hover {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  background: #124569;
+}
+body.mc input[type="submit"].active {
+  background: #196195;
+}
 body.imr a {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: .9em;
@@ -1706,6 +1684,30 @@ body.imr .mediacommons-network ul li a:hover, body.imr .mediacommons-network ul 
   body.imr .mediacommons-network ul.mobile {
     display: block;
   }
+}
+body.imr input[type="submit"] {
+  text-transform: uppercase;
+  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: .9em;
+  background: #dd5520;
+  color: white;
+  border: none;
+  line-height: 2em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+body.imr input[type="submit"]:hover {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  background: #b0441a;
+}
+body.imr input[type="submit"].active {
+  background: #dd5520;
 }
 body.mcp a {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -1820,6 +1822,30 @@ body.mcp .mediacommons-network ul li a:hover, body.mcp .mediacommons-network ul 
     display: block;
   }
 }
+body.mcp input[type="submit"] {
+  text-transform: uppercase;
+  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: .9em;
+  background: #456b2d;
+  color: white;
+  border: none;
+  line-height: 2em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+body.mcp input[type="submit"]:hover {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  background: #2e471e;
+}
+body.mcp input[type="submit"].active {
+  background: #456b2d;
+}
 body.tne a {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: .9em;
@@ -1932,6 +1958,30 @@ body.tne .mediacommons-network ul li a:hover, body.tne .mediacommons-network ul 
   body.tne .mediacommons-network ul.mobile {
     display: block;
   }
+}
+body.tne input[type="submit"] {
+  text-transform: uppercase;
+  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: .9em;
+  background: #148385;
+  color: white;
+  border: none;
+  line-height: 2em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+body.tne input[type="submit"]:hover {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  background: #0d5759;
+}
+body.tne input[type="submit"].active {
+  background: #148385;
 }
 body.ac a {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -2046,179 +2096,29 @@ body.ac .mediacommons-network ul li a:hover, body.ac .mediacommons-network ul li
     display: block;
   }
 }
-body a.button, body button, body input[type=submit] {
+body.ac input[type="submit"] {
+  text-transform: uppercase;
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.9em;
-  padding: 0.625em 1.25em;
-  margin-right: .25em;
-  text-decoration: none;
-  border: none;
-  color: white;
-  background: #196195;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-body a.button:hover, body a.button:focus, body button:hover, body button:focus, body input[type=submit]:hover, body input[type=submit]:focus {
-  color: white;
-  background: #15537f;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  outline: none;
-}
-body a.button:active, body button:active, body input[type=submit]:active {
-  background: #15537f;
-}
-body a.button.mc, body button.mc, body input[type=submit].mc {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.9em;
-  padding: 0.625em 1.25em;
-  margin-right: .25em;
-  text-decoration: none;
-  border: none;
-  color: white;
-  background: #196195;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-body a.button.mc:hover, body a.button.mc:focus, body button.mc:hover, body button.mc:focus, body input[type=submit].mc:hover, body input[type=submit].mc:focus {
-  color: white;
-  background: #15537f;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  outline: none;
-}
-body a.button.mc:active, body button.mc:active, body input[type=submit].mc:active {
-  background: #15537f;
-}
-body a.button.imr, body button.imr, body input[type=submit].imr {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.9em;
-  padding: 0.625em 1.25em;
-  margin-right: .25em;
-  text-decoration: none;
-  border: none;
-  color: white;
-  background: #dd5520;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-body a.button.imr:hover, body a.button.imr:focus, body button.imr:hover, body button.imr:focus, body input[type=submit].imr:hover, body input[type=submit].imr:focus {
-  color: white;
-  background: #c74c1d;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  outline: none;
-}
-body a.button.imr:active, body button.imr:active, body input[type=submit].imr:active {
-  background: #c74c1d;
-}
-body a.button.mcp, body button.mcp, body input[type=submit].mcp {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.9em;
-  padding: 0.625em 1.25em;
-  margin-right: .25em;
-  text-decoration: none;
-  border: none;
-  color: white;
-  background: #456b2d;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-body a.button.mcp:hover, body a.button.mcp:focus, body button.mcp:hover, body button.mcp:focus, body input[type=submit].mcp:hover, body input[type=submit].mcp:focus {
-  color: white;
-  background: #395925;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  outline: none;
-}
-body a.button.mcp:active, body button.mcp:active, body input[type=submit].mcp:active {
-  background: #395925;
-}
-body a.button.tne, body button.tne, body input[type=submit].tne {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.9em;
-  padding: 0.625em 1.25em;
-  margin-right: .25em;
-  text-decoration: none;
-  border: none;
-  color: white;
-  background: #148385;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-body a.button.tne:hover, body a.button.tne:focus, body button.tne:hover, body button.tne:focus, body input[type=submit].tne:hover, body input[type=submit].tne:focus {
-  color: white;
-  background: #116d6f;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  outline: none;
-}
-body a.button.tne:active, body button.tne:active, body input[type=submit].tne:active {
-  background: #116d6f;
-}
-body a.button.ac, body button.ac, body input[type=submit].ac {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.9em;
-  padding: 0.625em 1.25em;
-  margin-right: .25em;
-  text-decoration: none;
-  border: none;
-  color: white;
+  font-size: .9em;
   background: #be1e2d;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-body a.button.ac:hover, body a.button.ac:focus, body button.ac:hover, body button.ac:focus, body input[type=submit].ac:hover, body input[type=submit].ac:focus {
   color: white;
-  background: #a81b28;
+  border: none;
+  line-height: 2em;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
-  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
-body a.button.ac:active, body button.ac:active, body input[type=submit].ac:active {
-  background: #a81b28;
+body.ac input[type="submit"]:hover {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  background: #921723;
+}
+body.ac input[type="submit"].active {
+  background: #be1e2d;
 }
 body a {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -2246,11 +2146,17 @@ body a:focus {
 .wrapper {
   width: 70%;
   max-width: 1200px;
-  padding: 2em;
+  padding: 0 2em;
   background-color: #fff;
   overflow: hidden;
   margin: 0 auto;
   font-family: "Merriweather", serif;
+}
+.wrapper .node a {
+  font-size: 1.05em;
+}
+.wrapper .article-header {
+  margin-top: 3em;
 }
 .wrapper h1 {
   font-size: 2.5em;
@@ -2297,12 +2203,4 @@ body a:focus {
 }
 .header .wrapper a {
   border-bottom: none;
-}
-.header .wrapper input[type=text] {
-  width: 30.5%;
-  float: right;
-  padding: 0.8em 0.8em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
