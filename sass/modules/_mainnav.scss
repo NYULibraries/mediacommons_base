@@ -5,3 +5,199 @@
 nav {
   // yadda, yadda
 }
+
+
+// Primary mixin
+@mixin buttons {
+  a.button, button, input[type=submit] {
+    @include button(white, $blue_mc);
+    &.mc  { @include button(white, $blue_mc); }
+    &.imr   { @include button(white, $orange_imr); }
+    &.mcp { @include button(white, $green_mcp); }
+    &.tne { @include button(white, $aqua_tne); }
+    &.ac { @include button(white, $red_ac); }
+  }
+}
+
+// Button mixin
+@mixin button($text-color, $bg-color) {
+  font-family:$sans;
+  font-size:1em;
+  //letter-spacing:.08em;
+  font-weight:600;
+  line-height:1.9em;
+  padding: $size/2 $size;
+  margin-right:.25em;
+  text-decoration:none;
+  border:none;
+  @include color-button($text-color, $bg-color);
+  @include transition;
+  @include radius(2px);
+  &:hover, &:focus { @include color-button($text-color, darken($bg-color, 5%)); @include transition; outline:none;}
+  &:active { background: darken($bg-color, 5%); }
+}
+
+
+// Primary input mixin
+@mixin input-buttons {
+  input[type="submit"].button {
+    @include input-button(black, silver);
+    &.mc  { @include button(white, $blue_mc); }
+    &.imr   { @include button(white, $orange_imr); }
+    &.mcp { @include button(white, $green_mcp); }
+    &.tne { @include button(white, $aqua_tne); }
+    &.ac { @include button(white, $red_ac); }
+    -webkit-appearance: none;
+    border-radius:0;
+  }
+}
+
+// Input button mixin
+@mixin input-button($text-color, $bg-color) {
+  font-family:sans;
+  font-size:1em;
+  font-weight:600;
+  line-height:1em;
+  padding: 0 $size;
+  border:none;
+  //clear:both;
+  text-decoration:none;
+  @include color-button($text-color, $bg-color);
+  @include transition;
+  &:hover, &:focus { @include color-button($text-color, darken($bg-color, 5%)); @include transition; }
+  &:active { background: darken($bg-color, 5%); }
+}
+
+@mixin color-button($text-color, $bg-color) {
+  color: $text-color;
+  background: $bg-color;
+}
+
+// Primary mixin
+@mixin navs {
+	@include nav($blue_mc);
+  &.mc  { @include nav($blue_mc); }
+  &.imr   { @include nav($orange_imr); }
+  &.mcp { @include nav($green_mcp); }
+  &.tne { @include nav($aqua_tne); }
+  &.ac { @include nav($red_ac); }
+}
+
+// Basic - dumb media query
+@mixin resize-nav {
+  width:100%;
+  height:auto;
+  max-width:100%;
+  ul{
+    &.desktop {
+      display:none;
+    }
+    &.mobile{
+      display:block;
+    }
+  }
+}
+
+@mixin thegradient($bgcolor) {
+  background: $bgcolor; /* Old browsers */
+  background: -moz-linear-gradient(left,  $bgcolor 0%, darken($bgcolor,4%) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$bgcolor), color-stop(100%,darken($bgcolor,4%))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* IE10+ */
+  background: linear-gradient(to right,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='darken($bgcolor,4%)',GradientType=1 ); /* IE6-9 */
+}
+
+// Nav mixin
+@mixin nav($bgcolor){
+  a {
+    font-family:$sans;
+    font-size:.9em;
+    color:$bgcolor;
+    border-bottom:1px solid lighten($bgcolor,40%);
+    &:hover {
+      color:darken($bgcolor,10%);
+    }
+    &.active {
+      //border-bottom:2px solid $bgcolor;
+      color:$bgcolor;
+      background:#ebebeb;
+    }
+    &.viewer {
+      background:#ebebeb;
+      color:$bgcolor;
+      line-height:1em;
+      padding:1em 1.5em;
+      margin:0 0 1em 0;
+      text-transform:uppercase;
+      text-align:center;
+      border-radius:10px;
+      font-weight:600;
+      display:inline-block;
+      border-bottom:none;
+      &:hover {
+        background:#f3f3f3;
+        color:lighten($bgcolor,10%);
+      }
+    }
+  }
+  span.author {
+    color:$bgcolor;
+    font-size:1em;
+  }
+  .mediacommons-network {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width:100%;
+    @include thegradient($bgcolor);
+    border-right:1px solid darken($bgcolor,10%);
+    color:white;
+    ul {
+      padding:0;
+      text-align:left;
+      width:70%;
+      max-width:1200px;
+      margin: 0 auto;
+      &.mobile {
+        display:none;
+      }
+      li {
+        display:inline-block;
+        list-style-type: none;
+        margin:0;
+        float:left;
+        text-indent:0;
+        &.login {
+          float:right;
+          a {
+            padding:0 1em;
+          }
+        }
+        a {
+          color:lighten($bgcolor,20%);
+          font-weight:bold;
+          display:block;
+          line-height:3em;
+          padding:0 1.7em;
+          margin:0;
+          text-transform:uppercase;
+          border:none;
+          &.active {
+            background:lighten($bgcolor,5%);
+            color:white;
+          }
+          &:hover, &:focus {
+            background:lighten($bgcolor,3%);
+            color:white;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1300px) {
+      @include resize-nav;
+    }
+  }
+}

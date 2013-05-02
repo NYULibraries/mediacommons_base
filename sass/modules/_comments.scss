@@ -1,0 +1,25 @@
+.comment-wrapper {
+  background:$grey;
+  margin: 1em auto;
+  padding:1em;
+  background:$grey;
+  width:30.5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float:right;
+  font-size:.8em;
+  line-height:1.5em;
+  @include radius(4px);
+  .comment {
+    border-bottom: 1px solid $grey2;
+    padding:1em 0 0 0;
+
+  }
+  .comment-form {
+    border-bottom: 1px solid $grey2;
+  }
+  #edit-author--2,.filter-wrapper {
+    display:none;
+  }
+}

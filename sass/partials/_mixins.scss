@@ -29,3 +29,23 @@
 @mixin mc-font-faced($font-name: false) {
   @if $font-name { font-family: $font-name; }
 }
+
+@mixin transition($speed: 0.2s) {
+  -webkit-transition: $speed ease-in-out;
+  -moz-transition: $speed ease-in-out;
+  -o-transition: $speed ease-in-out;
+  transition: $speed ease-in-out;
+}
+
+@mixin radius ($radii){
+  -webkit-border-radius: $radii;
+  -moz-border-radius: $radii;
+  border-radius: $radii;
+}
+
+@mixin profile($size) {
+  max-width:$size;
+  width: $size;
+  height: $size;
+  @include radius($size/2);
+}

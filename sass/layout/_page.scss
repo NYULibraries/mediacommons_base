@@ -1,3 +1,119 @@
 //////////////////////////////
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
+
+body.toolbar-drawer {
+  margin-top:-35px;
+  .page {
+    margin-top:-45px;
+  }
+}
+#toolbar {
+  position: static !important;
+  margin-top:14px;
+  a {
+    margin-left:10px;
+  }
+}
+html{
+  height:100%;
+}
+body {
+  background:$grey;
+  margin:0 auto;
+  font-family:Georgia;
+  line-height:1.6em;
+  //font-size:.90em;
+  color:black;
+  min-height:100%;
+  @include navs;
+  @include buttons;
+  a {
+  //color:$orange_imr;
+  font-family:$sans;
+  @include transition;
+  text-decoration:none;
+  border-bottom:1px solid #efc9be;
+  &:hover {
+    @include transition;
+    //color: darken($orange_imr,20%);
+
+  }
+  &:focus {
+    background:yellow;
+    outline:none;
+  }
+}
+
+}
+
+.mediacommons-network {
+  img {
+    display:inline-block;
+    //width:100%;
+    max-width:130px;
+  }
+}
+
+.wrapper {
+  width: 70%;
+  max-width: 1200px;
+  padding:2em;
+  background-color: #fff;
+  overflow: hidden;
+  margin:0 auto;
+  font-family: 'Merriweather', serif;
+  h1 {
+    font-size:2.5em;
+    line-height:1em;
+    margin:.4em 0;
+    padding:0;
+    font-weight:600;
+  }
+  h2 {
+    font-size:1em;
+    border-bottom:3px solid $grey1;
+    margin-top:.5em;
+    padding-bottom:.5em;
+    font-weight:600;
+    &.section-title {
+      margin-bottom:2em;
+    }
+  }
+  h3 {
+    color:#999;
+    margin:0;
+    display:inline-block;
+    font-weight:normal;
+  }
+  .post, .cluster, .content {
+    width:67%;
+    display:inline-block;
+    font-size:1.2em;
+    line-height:1.55em;
+  }
+}
+
+.header {
+    background:#ebebeb;
+    margin-top:2.2em;
+    padding-top:1em;
+    font-size:1.25em;
+    line-height:1.45em;
+    //border-bottom:1px solid #f3f3f3;
+    .wrapper {
+      padding:2em;
+      margin:1em auto 0 auto;
+      background: #f8f8f8;
+      border-radius: 8px 8px 0 0;
+      a {
+        border-bottom:none;
+      }
+      input[type=text]{
+        width:30.5%;
+        float:right;
+        padding: .8em 0.8em;
+        @include radius(5px);
+      }
+    }
+  }

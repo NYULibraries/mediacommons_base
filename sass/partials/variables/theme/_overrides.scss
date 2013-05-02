@@ -2,9 +2,9 @@
 // VARIABLES: For Theme — Overides for Pattern-Primer  
 //////////////////////////////
 
-$body-font-family: Calibri, 'Helvetica Neue', Arial, sans-serif;
+$body-font-family: Georgia, Cambria, "Times New Roman", Times, serif!default;
 $secondary-font: $body-font-family;
-$header-font-family: $body-font-family;
+$header-font-family: 'Merriweather', serif;
 
 /// body
 $body-background-color: lighten(nth($black , 6), 0%);

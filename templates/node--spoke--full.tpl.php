@@ -1,3 +1,4 @@
+
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php print $title_safe; ?>
   
@@ -15,7 +16,7 @@
       hide($content['links']);
       print render($content);
     ?>
-  </div>
+  
 
   <?php
     // Remove the "Add new comment" link on the teaser page or if the comment
@@ -31,5 +32,6 @@
       <?php print $links; ?>
     </div>
   <?php endif; ?>
+  </div>
   <?php print render($content['comments']); ?>
 </div>
