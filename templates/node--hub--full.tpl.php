@@ -11,11 +11,7 @@
         <?php print $safe_tags; ?>      
       </div>
     <div class="yui3-g">
-      <div class="yui3-u">
         <?php print $spokes; ?>
-      </div>
-    </div>
-    <div class="yui3-g contributors">
       <?php print $contributors; ?>
     </div>  
   </div>

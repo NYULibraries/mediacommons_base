@@ -14,10 +14,19 @@ footer {
 	}
 	input[type="text"]{
 		float:left;
-		width:69%;
+		width:74%;
 	}
 	input[type="submit"]{
 		float:right;
-		width:29%;
+		width:24%;
+		font-size:.7em;
 	}
+}
+
+div.status {
+	background-image: none;
+	border-color: black;
+	margin-top: 2em;
+	background-color:black;
+	color: yellow;
 }

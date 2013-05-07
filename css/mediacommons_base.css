@@ -1287,11 +1287,20 @@ a.control:active {
 }
 #search input[type="text"] {
   float: left;
-  width: 69%;
+  width: 74%;
 }
 #search input[type="submit"] {
   float: right;
-  width: 29%;
+  width: 24%;
+  font-size: .7em;
+}
+
+div.status {
+  background-image: none;
+  border-color: black;
+  margin-top: 2em;
+  background-color: black;
+  color: yellow;
 }
 
 .content blockquote {
@@ -1308,38 +1317,6 @@ a.control:active {
 
 .node-form {
   font-size: .9em;
-}
-
-.comment-wrapper {
-  background: #f3f3f3;
-  margin: 1em auto;
-  padding: 1em;
-  background: #f3f3f3;
-  width: 30.5%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  float: right;
-  font-size: .8em;
-  line-height: 1.5em;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-.comment-wrapper .comment {
-  border-top: 1px solid #d9d9d9;
-  padding: 1em 0 0 0;
-}
-.comment-wrapper #edit-author--2, .comment-wrapper .filter-wrapper {
-  display: none;
-}
-.comment-wrapper #edit-preview {
-  display: none;
-}
-.comment-wrapper #edit-submit {
-  float: right;
-  display: block;
-  clear: both;
 }
 
 .content-nav ul {
@@ -1403,6 +1380,46 @@ a.control:active {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
+}
+
+.comment-wrapper {
+  background: #f3f3f3;
+  margin: 1em auto;
+  padding: 1em;
+  background: #f3f3f3;
+  width: 30.5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  font-size: .8em;
+  line-height: 1.5em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.comment-wrapper .comment {
+  border-top: 1px solid #d9d9d9;
+  padding: 1em 0 0 0;
+}
+.comment-wrapper .comment-form {
+  overflow: hidden;
+}
+.comment-wrapper #edit-author--2, .comment-wrapper .filter-wrapper {
+  display: none;
+}
+.comment-wrapper #edit-preview {
+  display: none;
+}
+.comment-wrapper #edit-submit {
+  float: right;
+  display: block;
+  clear: both;
+}
+.comment-wrapper h3 a {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  color: black!important;
+  border-bottom: none!important;
 }
 
 body.toolbar-drawer {
@@ -2200,6 +2217,7 @@ body a:focus {
   margin: 1em auto 0 auto;
   background: #f8f8f8;
   border-radius: 8px 8px 0 0;
+  box-shadow: 0 10px 40px #e2e1e1;
 }
 .header .wrapper a {
   border-bottom: none;

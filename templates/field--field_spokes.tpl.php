@@ -1,5 +1,8 @@
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+	<strong>Spokes: </strong>
+	<ul>
   <?php foreach ($items as $delta => $item) : ?>
-    <div class="yui3-u"><?php print render($item); ?></div>
+    <li><?php print render($item); ?></li>
   <?php endforeach; ?>
+</ul>
 </div>
