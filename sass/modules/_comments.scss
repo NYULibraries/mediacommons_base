@@ -1,4 +1,16 @@
+/* all */
+::-webkit-input-placeholder { color:$grey1; font-style: italic;}
+::-moz-placeholder { color:$grey1; font-style: italic; } /* firefox 19+ */
+:-ms-input-placeholder { color:$grey1; font-style: italic; } /* ie */
+input:-moz-placeholder { color:$grey1; font-style: italic; }
+
 .comment-wrapper {
+  label {
+    display:none;
+  }
+  .form-text, .text-full {
+    padding:1.5em 1em;
+  }
   background:$grey;
   margin: 1em auto;
   padding:1em;
@@ -18,16 +30,26 @@
       width:100%;
     }
     ul.inline {
+      text-transform: capitalize;
       margin-bottom:1em;
       display:block;
       li {
         margin:0;
         padding:0;
-        &.comment-delete {
+        text-indent:0;
+        &.comment-delete, &.comment-edit {
           float:right;
+          margin-left:.5em;
+          a {
+            display:inline-block;
+            opacity:.7;
+          }
         }
         &.comment-reply {
-          font-weight:bold;
+          a {
+            text-transform: capitalize;
+            display:inline-block;
+          }
         }
       }
     }

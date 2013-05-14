@@ -259,3 +259,13 @@ function mediacommons_base_preprocess_comment(&$variables) {
 
   $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['author'], '!datetime' => $variables['created']));
 }
+
+
+// Add some cool text to the search block form
+function mediacommons_base_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'comment_node_spoke_form') {
+    // HTML5 placeholder attribute
+    $form['subject']['#attributes']['placeholder'] = t('Title (optional)');
+    $form['comment_body']['#attributes']['placeholder'] = t('Make your comment');
+  }
+}

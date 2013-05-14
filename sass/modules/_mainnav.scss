@@ -74,6 +74,7 @@ nav {
     border-bottom:1px solid lighten($bgcolor,40%);
     &:hover {
       color:darken($bgcolor,10%);
+      border-bottom:1px solid lighten($bgcolor,50%);
     }
     &.active {
       //border-bottom:2px solid $bgcolor;
