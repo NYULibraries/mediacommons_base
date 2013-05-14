@@ -17,6 +17,7 @@ body {
   color:black;
   min-height:100%;
   @include navs;
+  @include blockquotes;
   //@include input-buttons;
   a {
   //color:$orange_imr;
@@ -45,6 +46,10 @@ body {
   }
 }
 
+.wrapper.the-content {
+  border-radius: 0 0 8px 8px;
+  padding-bottom:3em;
+}
 .wrapper {
   .node {
     a {
@@ -90,6 +95,11 @@ body {
     font-size:1.2em;
     line-height:1.55em;
   }
+  .node-hub {
+    .content {
+      width:100%;
+    }
+  }
 }
 
 .header {
@@ -107,6 +117,43 @@ body {
       box-shadow:0 10px 40px #e2e1e1;
       a {
         border-bottom:none;
+      }
+    }
+  }
+@mixin radius ($radii){
+  -webkit-border-radius: $radii;
+  -moz-border-radius: $radii;
+  border-radius: $radii;
+}
+
+@mixin profile($size) {
+  max-width:$size;
+      width: $size;
+      height: $size;
+  @include radius($size/2);
+}
+  .contributors {
+    .user-picture {
+      //border:1px solid #ebebeb;
+      //border-radius: 8px;
+      //background:#f8f8f8;
+      //padding:1em;
+      display:block;
+      overflow:hidden;
+      margin-top:1em;
+      //@include profile(30px);
+      a {
+        float: left;
+        margin-right:1em;
+        font-size:.85em;
+        display:block;
+        padding:.1em 0;
+        border-bottom:none;;
+        img {
+          @include profile(30px);
+          border: 1px solid #ccc;
+          vertical-align:middle;
+        }
       }
     }
   }

@@ -1,21 +1,23 @@
-
   <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
     <?php print $title_safe; ?>
-    <div class="yui3-g content">
-      <div class="yui3-u description">
-        <?php print $description; ?>
-      </div>
-    </div>
-    <div class="yui3-u tease">
+    <div class="content">
+      <div class="image">
         <?php print $safe_tease; ?>
-        <?php print $safe_tags; ?>      
       </div>
-    <div class="yui3-g">
-      <div class="yui3-u">
-        <?php print $spokes; ?>
+      <div class="description">
+        <?php print $description; ?>
+        
+        <div class="tease">
+          <?php print $safe_tags; ?>      
+        </div>
+        <div class="trigger"><a href="javascript:void(0);" class="viewer">Articles &amp; Authors</a></div>
+        <div class="associated" style="display:none">
+          <div class="contributors">
+            <?php print $contributors; ?>
+          </div>  
+          <?php print $spokes; ?>
+        </div>
       </div>
     </div>
-    <div class="yui3-g contributors">
-      <?php print $contributors; ?>
-    </div>  
+    
   </div>

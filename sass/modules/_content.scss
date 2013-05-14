@@ -2,19 +2,97 @@
 // MODULES: Style that are layout independent 
 //////////////////////////////
 
-.content {
-  blockquote {
+
+@mixin blockquotes {
+  &.mc  { @include blockquote($blue_mc); }
+  &.imr   { @include blockquote($orange_imr); }
+  &.mcp { @include blockquote($green_mcp); }
+  &.tne { @include blockquote($aqua_tne); }
+  &.ac { @include blockquote($red_ac); }
+}
+
+@mixin blockquote($bgcolor) {
+  blockquote{
   	border-top:none;
   	border-bottom:none;
   	border-left:4px solid $grey;
   	@include radius(0);
   	margin-left:0;
   	line-height:1.25em;
-  	color:darken($orange_imr,10%);
-  	//color:#90300a;
+  	color:darken($bgcolor,10%);
   }
-}  
+}
+
+ul.tags {
+  padding:0;
+  li {
+    display:inline-block;
+    list-style-type: none;
+    &:after {
+      content: ", ";
+    }
+    &:last-child:after{
+      content: "";
+    }
+  }
+}
+
+ul.spokes {
+  padding:0;
+  li {
+    margin:0;
+    text-indent:0;
+    list-style-type: none;
+    border-bottom:1px solid $grey;
+    padding:.25em 0;
+    a {
+      border-bottom:none;
+    }
+  }
+}
 
 .node-form {
   	font-size:.9em;
   }
+
+.node-hub {
+  .image {
+    display: inline-block;
+    float: left;
+    margin-bottom: 1em;
+    width:36.5%;
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+  .description {
+    width: 62%;
+    float: right;
+    //font-size: .9em;
+    display: inline-block;
+    p {
+      margin-top:0;
+    }
+    .contributors {
+      border: 1px solid #ebebeb;
+      border-radius: 8px;
+      background: #f8f8f8;
+      padding: 1em;
+      display: block;
+      overflow: hidden;
+      margin-top: 1em;
+    }
+  }
+}
+
+.marker {
+  color: black;
+  background: yellow;
+  font-size: .8em;
+  padding: .25em .5em;
+  text-transform: uppercase;
+  font-family: "Myriad Pro";
+  display:inline-block;
+  line-height:1em;
+}

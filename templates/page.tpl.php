@@ -48,6 +48,7 @@
       </section>
       
       <div class="wrapper">    
+
         <?php print render($title_prefix); ?>
         
         <?php if ($title): ?><div id="titlebar" class="titlebar article-header"><span class="icon book"></span><h1 class="title" id="page-title"><?php print truncate_utf8( t($title), 90, TRUE, TRUE); ?></h1></div><?php endif; ?>
@@ -65,19 +66,20 @@
         <?php endif; ?>
       </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper the-content">
     <?php print render($page['content']); ?>
     </div>
     <?php if ($feed_icons) : ?>
       <?php print $feed_icons; ?> 
     <?php endif; ?>
     
-    <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
+  </div>
+
+</div>
+<?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
       <div class="footer yui3-g wrapper">
         <div class="yui3-u-1">  
             <?php print render($page['footer']); ?>
         </div>
     </div>
     <?php endif; ?>
-  </div>
-</div>

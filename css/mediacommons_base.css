@@ -1303,20 +1303,75 @@ div.status {
   color: yellow;
 }
 
-.content blockquote {
-  border-top: none;
+ul.tags {
+  padding: 0;
+}
+ul.tags li {
+  display: inline-block;
+  list-style-type: none;
+}
+ul.tags li:after {
+  content: ", ";
+}
+ul.tags li:last-child:after {
+  content: "";
+}
+
+ul.spokes {
+  padding: 0;
+}
+ul.spokes li {
+  margin: 0;
+  text-indent: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 0.25em 0;
+}
+ul.spokes li a {
   border-bottom: none;
-  border-left: 4px solid #f3f3f3;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin-left: 0;
-  line-height: 1.25em;
-  color: #b0441a;
 }
 
 .node-form {
   font-size: .9em;
+}
+
+.node-hub .image {
+  display: inline-block;
+  float: left;
+  margin-bottom: 1em;
+  width: 36.5%;
+}
+.node-hub .image img {
+  width: 100%;
+  vertical-align: top;
+}
+.node-hub .description {
+  width: 62%;
+  float: right;
+  display: inline-block;
+}
+.node-hub .description p {
+  margin-top: 0;
+}
+.node-hub .description .contributors {
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  background: #f8f8f8;
+  padding: 1em;
+  display: block;
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+.marker {
+  color: black;
+  background: yellow;
+  font-size: .8em;
+  padding: 0.25em 0.5em;
+  text-transform: uppercase;
+  font-family: "Myriad Pro";
+  display: inline-block;
+  line-height: 1em;
 }
 
 .content-nav ul {
@@ -1344,6 +1399,33 @@ div.status {
 }
 .content-nav li a:hover {
   background: #fff;
+}
+
+.footer.wrapper {
+  background: none;
+  padding: 0;
+  margin-top: 1em;
+}
+.footer.wrapper table {
+  font-size: .9em;
+  width: 100%;
+}
+.footer.wrapper table .node-title, .footer.wrapper table .node-author {
+  display: inline-block;
+}
+.footer.wrapper table .node-title a {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  color: black;
+  border-bottom: none;
+}
+.footer.wrapper table .node-author {
+  font-size: .8em;
+}
+.footer.wrapper table .node-author a {
+  font-size: 1.2em;
+}
+.footer.wrapper table .node-author:before {
+  content: ", by ";
 }
 
 .tabs .primary {
@@ -2137,6 +2219,61 @@ body.ac input[type="submit"]:hover {
 body.ac input[type="submit"].active {
   background: #be1e2d;
 }
+body.mc blockquote {
+  border-top: none;
+  border-bottom: none;
+  border-left: 4px solid #f3f3f3;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-left: 0;
+  line-height: 1.25em;
+  color: #124569;
+}
+body.imr blockquote {
+  border-top: none;
+  border-bottom: none;
+  border-left: 4px solid #f3f3f3;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-left: 0;
+  line-height: 1.25em;
+  color: #b0441a;
+}
+body.mcp blockquote {
+  border-top: none;
+  border-bottom: none;
+  border-left: 4px solid #f3f3f3;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-left: 0;
+  line-height: 1.25em;
+  color: #2e471e;
+}
+body.tne blockquote {
+  border-top: none;
+  border-bottom: none;
+  border-left: 4px solid #f3f3f3;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-left: 0;
+  line-height: 1.25em;
+  color: #0d5759;
+}
+body.ac blockquote {
+  border-top: none;
+  border-bottom: none;
+  border-left: 4px solid #f3f3f3;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-left: 0;
+  line-height: 1.25em;
+  color: #921723;
+}
 body a {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   -webkit-transition: all 1s;
@@ -2158,6 +2295,11 @@ body a:focus {
 .mediacommons-network img {
   display: inline-block;
   max-width: 130px;
+}
+
+.wrapper.the-content {
+  border-radius: 0 0 8px 8px;
+  padding-bottom: 3em;
 }
 
 .wrapper {
@@ -2204,6 +2346,9 @@ body a:focus {
   font-size: 1.2em;
   line-height: 1.55em;
 }
+.wrapper .node-hub .content {
+  width: 100%;
+}
 
 .header {
   background: #ebebeb;
@@ -2221,4 +2366,39 @@ body a:focus {
 }
 .header .wrapper a {
   border-bottom: none;
+}
+
+.contributors .user-picture {
+  display: block;
+  overflow: hidden;
+  margin-top: 1em;
+}
+.contributors .user-picture a {
+  float: left;
+  margin-right: 1em;
+  font-size: .85em;
+  display: block;
+  padding: 0.1em 0;
+  border-bottom: none;
+}
+.contributors .user-picture a img {
+  max-width: 30px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+  vertical-align: middle;
+}
+
+.node-hub .profile {
+  clear: none;
+  margin: 0;
+}
+.node-hub .profile h3, .node-hub .profile dl {
+  display: none;
+}
+.node-hub .profile .user-picture {
+  float: left;
 }

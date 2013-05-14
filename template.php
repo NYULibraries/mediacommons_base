@@ -96,7 +96,7 @@ function mediacommons_base_process_field(&$vars) {
  */
 
 function mediacommons_base_process_user_profile(&$vars) {
-  $vars['safe_user_profile'] = render($vars['user_profile']); 
+  $vars['safe_user_profile'] = render($vars['user_profile']);
 }
 
 function mediacommons_base_process_node(&$vars) {
@@ -122,7 +122,7 @@ function mediacommons_base_process_node(&$vars) {
           if (!empty($content['comments']['comment_form'])) {
             unset($content['links']['comment']['#links']['comment-add']);
           }
-          
+
           /** Display contributors. */
           $vars['contributors'] = render($content['field_contributors']);
 
@@ -132,10 +132,12 @@ function mediacommons_base_process_node(&$vars) {
           /** Display description. */
           $vars['description'] = render($content['field_description']);
           
-          if ($vars['field_type'][0]['value'] == 0) {
+          /** GB -- this was throwing errors **/
+
+          /**if ($vars['field_type'][0]['value'] == 0) {
             $vars['safe_tease'] = render($content['field_video_embed_link']);            
           }
-          else {
+          else**/ {
             $vars['safe_tease'] = render($content['field_representative_image']);            
           }
           
@@ -225,4 +227,35 @@ function mediacommons_base_html_tag($variables) {
     $output .= '</' . $element['#tag'] . '>';
     return $output;
   }
+}
+
+/*
+ * GB, added hook to format date.
+
+*/
+
+
+function mediacommons_base_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $variables['date'] = format_date($node->created, 'custom', 'F d,Y');
+
+  if (variable_get('node_submitted_' . $node->type, TRUE)) {
+    $variables['display_submitted'] = TRUE;
+    $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['name'], '!datetime' => $variables['date']));
+    $variables['user_picture'] = theme_get_setting('toggle_node_user_picture') ? theme('user_picture', array('account' => $node)) : '';
+  }
+  else {
+    $variables['display_submitted'] = FALSE;
+    $variables['submitted'] = '';
+    $variables['user_picture'] = '';
+  }
+}
+
+function mediacommons_base_preprocess_comment(&$variables) {
+  $comment = $variables['elements']['#comment'];
+  $node = $variables['elements']['#node'];
+  $variables['created']   = format_date($comment->created, 'custom', 'F d,Y');
+  $variables['changed']   = format_date($comment->changed, 'custom', 'F d,Y');
+
+  $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['author'], '!datetime' => $variables['created']));
 }
