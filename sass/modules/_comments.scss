@@ -14,7 +14,23 @@
   .comment {
     border-top: 1px solid $grey2;
     padding:1em 0 0 0;
-
+    .content {
+      width:100%;
+    }
+    ul.inline {
+      margin-bottom:1em;
+      display:block;
+      li {
+        margin:0;
+        padding:0;
+        &.comment-delete {
+          float:right;
+        }
+        &.comment-reply {
+          font-weight:bold;
+        }
+      }
+    }
   }
   .comment-form {
     //border-bottom: 1px solid $grey2;

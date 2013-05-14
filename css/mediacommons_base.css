@@ -1484,6 +1484,23 @@ ul.spokes li a {
   border-top: 1px solid #d9d9d9;
   padding: 1em 0 0 0;
 }
+.comment-wrapper .comment .content {
+  width: 100%;
+}
+.comment-wrapper .comment ul.inline {
+  margin-bottom: 1em;
+  display: block;
+}
+.comment-wrapper .comment ul.inline li {
+  margin: 0;
+  padding: 0;
+}
+.comment-wrapper .comment ul.inline li.comment-delete {
+  float: right;
+}
+.comment-wrapper .comment ul.inline li.comment-reply {
+  font-weight: bold;
+}
 .comment-wrapper .comment-form {
   overflow: hidden;
 }
@@ -2390,6 +2407,13 @@ body a:focus {
   border-radius: 15px;
   border: 1px solid #cccccc;
   vertical-align: middle;
+}
+
+.new {
+  background: yellow;
+  color: red;
+  padding: .25em;
+  margin-right: .25em;
 }
 
 .node-hub .profile {
