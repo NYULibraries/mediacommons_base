@@ -1578,6 +1578,7 @@ body.toolbar-drawer .page {
 
 html {
   height: 100%;
+  background: #f3f3f3;
 }
 
 body {
@@ -2433,14 +2434,17 @@ body a:focus {
 .contributors .user-picture {
   display: block;
   overflow: hidden;
-  margin-top: 1em;
+  margin-top: 0em;
 }
 .contributors .user-picture a {
   float: left;
-  margin-right: 1em;
+  margin-right: .25em;
   font-size: .85em;
   display: block;
   padding: 0.1em 0;
+  border-bottom: none;
+}
+.contributors .user-picture a:hover {
   border-bottom: none;
 }
 .contributors .user-picture a img {
@@ -2450,7 +2454,6 @@ body a:focus {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  border: 1px solid #cccccc;
   vertical-align: middle;
 }
 
