@@ -6,7 +6,7 @@
       
       <section class="header">    
         <div class="wrapper">
-          <img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/files/tne_new.png' ?>">
+          <img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/themes/mediacommons_base/images/logos/tne_new.png' ?>">
           <div id="search">
             <?php print render($page['search']); ?>
           </div>
