@@ -132,6 +132,10 @@ body {
       height: $size;
   @include radius($size/2);
 }
+
+.trigger {
+  font-size:.8em;
+}
   .contributors {
     .user-picture {
       //border:1px solid #ebebeb;

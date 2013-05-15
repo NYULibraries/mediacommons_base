@@ -1610,7 +1610,7 @@ body.mc a.viewer {
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
   border-bottom: none;
@@ -1748,7 +1748,7 @@ body.imr a.viewer {
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
   border-bottom: none;
@@ -1886,7 +1886,7 @@ body.mcp a.viewer {
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
   border-bottom: none;
@@ -2024,7 +2024,7 @@ body.tne a.viewer {
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
   border-bottom: none;
@@ -2162,7 +2162,7 @@ body.ac a.viewer {
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
   border-bottom: none;
@@ -2424,6 +2424,10 @@ body a:focus {
 }
 .header .wrapper a {
   border-bottom: none;
+}
+
+.trigger {
+  font-size: .8em;
 }
 
 .contributors .user-picture {
