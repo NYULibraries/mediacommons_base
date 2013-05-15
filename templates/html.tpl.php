@@ -28,7 +28,7 @@
 			<li><a href="#">MediaCommons Press</a></li>
 			<li><a href="tne-multi.html" class="active">The New Everyday</a></li>
 			<li><a href="alt-search.html">#Alt-Academy</a></li>
-			<li class="login"><a href="http://localhost:8888/mediacommons/user/login">Login</a></li>
+			<li class="login"><a href="http://dev-dl-pa.home.nyu.edu/mediacommons/user/login">Login</a></li>
 		</ul>
 		<ul class="mobile">
 			<li><a href=""><img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/files/mediacommons_new.png' ?>"></a></li>
