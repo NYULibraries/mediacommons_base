@@ -31,7 +31,7 @@
 
 			<?php
 			if ($user->uid > 0) {
-			    print '<li class="login">' . l(t('logout'), 'logout'). '</li>';
+			    print '<li class="login">' . l(t('logout'), 'user/logout') . '</li>';
 			}
 			else {
 			    print '<li class="login">' . l(t('login'), 'user'). '</li>';
