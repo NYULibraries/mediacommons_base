@@ -6,6 +6,11 @@ footer {
   // yadda, yadda
 } 
 
+.wrapper.the-content {
+  @include bottom-radius($container-radius);
+  padding-bottom:3em;
+}
+
 .footer.wrapper {
 	background:none;
 	padding:0;

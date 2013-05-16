@@ -21,10 +21,8 @@
       border-bottom:none;
       font-weight:600;
       color:#ccc;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      background:#f3f3f3;
+      @include radius($nav-radius);
+      background:$grey;
       &:hover {
         background:#fff;
         border-bottom:none!important;

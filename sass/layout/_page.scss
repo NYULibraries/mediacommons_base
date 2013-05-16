@@ -8,49 +8,40 @@ html{
   background:$grey;
 }
 
+input[type=text]{
+  @include radius($button-radius);
+}
 
 body {
   background:$grey;
   margin:0 auto;
   font-family:Georgia;
   line-height:1.6em;
-  //font-size:.90em;
   color:black;
   min-height:100%;
   @include navs;
   @include blockquotes;
-  //@include input-buttons;
   a {
-  //color:$orange_imr;
   font-family:$sans;
   @include transition;
   text-decoration:none;
-  //border-bottom:1px solid #efc9be;
-  &:hover {
-    @include transition;
-    //color: darken($orange_imr,20%);
-
+    &:hover {
+      @include transition;
+    }
+    &:focus {
+      background:yellow;
+      outline:none;
+    }
   }
-  &:focus {
-    background:yellow;
-    outline:none;
-  }
-}
-
 }
 
 .mediacommons-network {
   img {
     display:inline-block;
-    //width:100%;
     max-width:130px;
   }
 }
 
-.wrapper.the-content {
-  border-radius: 0 0 8px 8px;
-  padding-bottom:3em;
-}
 .wrapper {
   .node {
     a {
@@ -103,37 +94,6 @@ body {
   }
 }
 
-.header {
-    background:#ebebeb;
-    margin-top:2.2em;
-    padding-top:1em;
-    font-size:1.25em;
-    line-height:1.45em;
-    //border-bottom:1px solid #f3f3f3;
-    .wrapper {
-      padding:2em;
-      margin:1em auto 0 auto;
-      background: #f8f8f8;
-      border-radius: 8px 8px 0 0;
-      box-shadow:0 10px 40px #e2e1e1;
-      a {
-        border-bottom:none;
-      }
-    }
-  }
-@mixin radius ($radii){
-  -webkit-border-radius: $radii;
-  -moz-border-radius: $radii;
-  border-radius: $radii;
-}
-
-@mixin profile($size) {
-  max-width:$size;
-      width: $size;
-      height: $size;
-  @include radius($size/2);
-}
-
 .trigger {
   font-size:.8em;
 }
@@ -142,7 +102,6 @@ body {
       display:block;
       overflow:hidden;
       margin-top:0em;
-      //@include profile(30px);
       a {
         float: left;
         margin-right:.25em;

@@ -1278,6 +1278,29 @@ a.control:active {
   content: "\e006";
 }
 
+.header {
+  background: #ebebeb;
+  margin-top: 2.2em;
+  padding-top: 1em;
+  font-size: 1.25em;
+  line-height: 1.45em;
+}
+.header .wrapper {
+  padding: 2em;
+  margin: 1em auto 0 auto;
+  background: #f8f8f8;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 10px 40px #e2e1e1;
+}
+.header .wrapper a {
+  border-bottom: none;
+}
+
 #search {
   float: right;
   width: 30.5%;
@@ -1285,14 +1308,20 @@ a.control:active {
 #search form {
   margin: 0;
 }
-#search input[type="text"] {
+#search form input[type="text"] {
   float: left;
   width: 74%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
-#search input[type="submit"] {
+#search form input[type="submit"] {
   float: right;
   width: 24%;
   font-size: .7em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 div.status {
@@ -1392,14 +1421,24 @@ ul.spokes li a {
   border-bottom: none;
   font-weight: 600;
   color: #ccc;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
   background: #f3f3f3;
 }
 .content-nav li a:hover {
   background: #fff;
   border-bottom: none!important;
+}
+
+.wrapper.the-content {
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-bottom: 3em;
 }
 
 .footer.wrapper {
@@ -1582,6 +1621,12 @@ html {
   background: #f3f3f3;
 }
 
+input[type=text] {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
 body {
   background: #f3f3f3;
   margin: 0 auto;
@@ -1715,9 +1760,9 @@ body.mc input[type="submit"] {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 body.mc input[type="submit"]:hover {
   -webkit-transition: all 1s;
@@ -1853,9 +1898,9 @@ body.imr input[type="submit"] {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 body.imr input[type="submit"]:hover {
   -webkit-transition: all 1s;
@@ -1991,9 +2036,9 @@ body.mcp input[type="submit"] {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 body.mcp input[type="submit"]:hover {
   -webkit-transition: all 1s;
@@ -2129,9 +2174,9 @@ body.tne input[type="submit"] {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 body.tne input[type="submit"]:hover {
   -webkit-transition: all 1s;
@@ -2267,9 +2312,9 @@ body.ac input[type="submit"] {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 body.ac input[type="submit"]:hover {
   -webkit-transition: all 1s;
@@ -2357,11 +2402,6 @@ body a:focus {
   max-width: 130px;
 }
 
-.wrapper.the-content {
-  border-radius: 0 0 8px 8px;
-  padding-bottom: 3em;
-}
-
 .wrapper {
   width: 70%;
   max-width: 1200px;
@@ -2408,24 +2448,6 @@ body a:focus {
 }
 .wrapper .node-hub .content {
   width: 100%;
-}
-
-.header {
-  background: #ebebeb;
-  margin-top: 2.2em;
-  padding-top: 1em;
-  font-size: 1.25em;
-  line-height: 1.45em;
-}
-.header .wrapper {
-  padding: 2em;
-  margin: 1em auto 0 auto;
-  background: #f8f8f8;
-  border-radius: 8px 8px 0 0;
-  box-shadow: 0 10px 40px #e2e1e1;
-}
-.header .wrapper a {
-  border-bottom: none;
 }
 
 .trigger {

@@ -7,7 +7,6 @@ nav {
 }
 
 
-
 // Primary mixin
 @mixin navs {
   &.mc  { @include nav($blue_mc);@include button($blue_mc); }
@@ -53,9 +52,8 @@ nav {
     color:white;
     border:none;
     line-height:2em;
-    //padding:0 $size;
     @include transition;
-    @include radius(4px);
+    @include radius($button-radius);
     &:hover {
       @include transition;
       background:darken($bgcolor,10%);

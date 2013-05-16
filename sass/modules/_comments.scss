@@ -22,7 +22,7 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
   float:right;
   font-size:.8em;
   line-height:1.5em;
-  @include radius(4px);
+  @include radius($container-radius);
   .comment {
     border-top: 1px solid $grey2;
     padding:1em 0 0 0;
@@ -55,7 +55,6 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
     }
   }
   .comment-form {
-    //border-bottom: 1px solid $grey2;
     overflow:hidden;
   }
   #edit-author--2,.filter-wrapper {
