@@ -1399,6 +1399,7 @@ ul.spokes li a {
 }
 .content-nav li a:hover {
   background: #fff;
+  border-bottom: none!important;
 }
 
 .footer.wrapper {
