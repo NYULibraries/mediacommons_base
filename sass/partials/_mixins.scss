@@ -93,6 +93,7 @@
   width: $size;
   height: $size;
   @include radius($size/2);
+}
  
 
 // IE Fixin Mixins
