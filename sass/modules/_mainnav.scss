@@ -112,6 +112,7 @@ nav {
     border-right:1px solid darken($bgcolor,10%);
     color:white;
     ul {
+      position:relative;
       padding:0;
       text-align:left;
       width:70%;
@@ -123,11 +124,12 @@ nav {
       li {
         display:inline-block;
         list-style-type: none;
-        margin:0;
-        float:left;
+        margin:0 0 0 -4px;
+        //float:left;
         text-indent:0;
         &.login {
-          float:right;
+          position:absolute;
+          right:0;
           a {
             padding:0 1em;
           }

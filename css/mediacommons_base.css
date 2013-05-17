@@ -1301,6 +1301,10 @@ a.control:active {
   border-bottom: none;
 }
 
+.article-header {
+  margin: 3em 0 2em 0;
+}
+
 #search {
   float: right;
   width: 30.5%;
@@ -1368,23 +1372,26 @@ ul.spokes li a {
   display: inline-block;
   float: left;
   margin-bottom: 1em;
-  width: 36.5%;
+  width: 32%;
 }
 .node-hub .image img {
   width: 100%;
   vertical-align: top;
 }
 .node-hub .description {
-  width: 62%;
+  width: 65%;
   float: right;
   display: inline-block;
+  text-align: justify;
 }
 .node-hub .description p {
   margin-top: 0;
 }
 .node-hub .description .contributors {
   border: 1px solid #ebebeb;
-  border-radius: 8px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   background: #f8f8f8;
   padding: 1em;
   display: block;
@@ -1696,6 +1703,7 @@ body.mc .mediacommons-network {
   color: white;
 }
 body.mc .mediacommons-network ul {
+  position: relative;
   padding: 0;
   text-align: left;
   width: 70%;
@@ -1708,12 +1716,12 @@ body.mc .mediacommons-network ul.mobile {
 body.mc .mediacommons-network ul li {
   display: inline-block;
   list-style-type: none;
-  margin: 0;
-  float: left;
+  margin: 0 0 0 -4px;
   text-indent: 0;
 }
 body.mc .mediacommons-network ul li.login {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 body.mc .mediacommons-network ul li.login a {
   padding: 0 1em;
@@ -1834,6 +1842,7 @@ body.imr .mediacommons-network {
   color: white;
 }
 body.imr .mediacommons-network ul {
+  position: relative;
   padding: 0;
   text-align: left;
   width: 70%;
@@ -1846,12 +1855,12 @@ body.imr .mediacommons-network ul.mobile {
 body.imr .mediacommons-network ul li {
   display: inline-block;
   list-style-type: none;
-  margin: 0;
-  float: left;
+  margin: 0 0 0 -4px;
   text-indent: 0;
 }
 body.imr .mediacommons-network ul li.login {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 body.imr .mediacommons-network ul li.login a {
   padding: 0 1em;
@@ -1972,6 +1981,7 @@ body.mcp .mediacommons-network {
   color: white;
 }
 body.mcp .mediacommons-network ul {
+  position: relative;
   padding: 0;
   text-align: left;
   width: 70%;
@@ -1984,12 +1994,12 @@ body.mcp .mediacommons-network ul.mobile {
 body.mcp .mediacommons-network ul li {
   display: inline-block;
   list-style-type: none;
-  margin: 0;
-  float: left;
+  margin: 0 0 0 -4px;
   text-indent: 0;
 }
 body.mcp .mediacommons-network ul li.login {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 body.mcp .mediacommons-network ul li.login a {
   padding: 0 1em;
@@ -2110,6 +2120,7 @@ body.tne .mediacommons-network {
   color: white;
 }
 body.tne .mediacommons-network ul {
+  position: relative;
   padding: 0;
   text-align: left;
   width: 70%;
@@ -2122,12 +2133,12 @@ body.tne .mediacommons-network ul.mobile {
 body.tne .mediacommons-network ul li {
   display: inline-block;
   list-style-type: none;
-  margin: 0;
-  float: left;
+  margin: 0 0 0 -4px;
   text-indent: 0;
 }
 body.tne .mediacommons-network ul li.login {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 body.tne .mediacommons-network ul li.login a {
   padding: 0 1em;
@@ -2248,6 +2259,7 @@ body.ac .mediacommons-network {
   color: white;
 }
 body.ac .mediacommons-network ul {
+  position: relative;
   padding: 0;
   text-align: left;
   width: 70%;
@@ -2260,12 +2272,12 @@ body.ac .mediacommons-network ul.mobile {
 body.ac .mediacommons-network ul li {
   display: inline-block;
   list-style-type: none;
-  margin: 0;
-  float: left;
+  margin: 0 0 0 -4px;
   text-indent: 0;
 }
 body.ac .mediacommons-network ul li.login {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 body.ac .mediacommons-network ul li.login a {
   padding: 0 1em;
@@ -2413,9 +2425,6 @@ body a:focus {
 }
 .wrapper .node a {
   font-size: 1.05em;
-}
-.wrapper .article-header {
-  margin-top: 3em;
 }
 .wrapper h1 {
   font-size: 2.5em;

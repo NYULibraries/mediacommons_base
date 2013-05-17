@@ -48,9 +48,6 @@ body {
       font-size:1.05em;
     }
   }
-  .article-header {
-    margin-top:3em;
-  }
   width: 70%;
   max-width: 1200px;
   padding: 0 2em;
@@ -114,7 +111,6 @@ body {
         }
         img {
           @include profile(30px);
-          //border: 1px solid #ccc;
           vertical-align:middle;
         }
       }

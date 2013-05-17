@@ -61,22 +61,23 @@ ul.spokes {
     display: inline-block;
     float: left;
     margin-bottom: 1em;
-    width:36.5%;
+    width:32%;
     img {
       width: 100%;
       vertical-align: top;
     }
   }
   .description {
-    width: 62%;
+    width: 65%;
     float: right;
     display: inline-block;
+    text-align:justify;
     p {
       margin-top:0;
     }
     .contributors {
       border: 1px solid #ebebeb;
-      border-radius: 8px;
+      @include radius($button-radius);
       background: #f8f8f8;
       padding: 1em;
       display: block;
