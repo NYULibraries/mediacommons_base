@@ -28,25 +28,6 @@ footer {
     margin:3em 0 2em 0;
   }
 
-#search {
-	float:right;
-	width:30.5%;
-	form {
-		margin:0;
-    input[type="text"]{
-    float:left;
-    width:74%;
-    @include radius($container-radius);
-  }
-  input[type="submit"]{
-    float:right;
-    width:24%;
-    font-size:.7em;
-    @include radius($container-radius);
-  }
-	}
-}
-
 div.status {
 	background-image: none;
 	border-color: black;

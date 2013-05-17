@@ -5,11 +5,16 @@
     <?php print render($title_suffix); ?>
   <?php endif; ?>
 
-  
+  <?php
+	if ($user->uid > 0) {
+	}
+	else {
+	    print '<div class="must-login"><p>You must be logged in to comment.</p><p>' . l(t('login'), 'user'). '</p></div>';
+	}
+	?>
 
   <?php if ($content['comment_form']): ?>
     <?php print render($content['comment_form']); ?>
   <?php endif; ?>
-
   <?php print render($content['comments']); ?>
 </div>

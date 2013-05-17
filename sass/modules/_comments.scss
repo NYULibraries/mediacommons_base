@@ -5,6 +5,13 @@
 input:-moz-placeholder { color:$grey1; font-style: italic; }
 
 .comment-wrapper {
+  .must-login {
+    background: #fafafa;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-style:italic;
+  }
+
   label {
     display:none;
   }
