@@ -5,6 +5,8 @@
 $body-font-family: Georgia, Cambria, "Times New Roman", Times, serif!default;
 $secondary-font: $body-font-family;
 $header-font-family: 'Merriweather', serif;
+$blockquote-font-family: $body-font-family;
+
 
 /// body
 $body-background-color: lighten(nth($black , 6), 0%);
