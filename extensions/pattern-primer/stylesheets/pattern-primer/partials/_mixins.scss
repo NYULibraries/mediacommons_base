@@ -1,27 +1,3 @@
-@mixin set-link-colors($link-color, $mode: saturation default, $amount-1: 10%, $amount-2: -20%) {
-  
-  $link-color-over: adjust-saturation($link-color, $amount-1);
-  $link-color-visited: adjust-saturation($link-color, $amount-2);
-  
-  @if $mode == lightness { 
-    $link-color-over: adjust-lightness($link-color, $amount-1);
-    $link-color-visited: adjust-lightness($link-color, $amount-2);
-  }
-  @if $mode == hue { 
-    $link-color-over: adjust-lightness($link-color, $amount-1);
-    $link-color-visited: adjust-lightness($link-color, $amount-2);
-  }
-  
-  @include hover-link;
-  @include link-colors( $link-color,
-                        $hover: $link-color-over,
-                        $active: $link-color-over,
-                        $visited: $link-color-visited,
-                        $focus: $link-color-over
-                      );
-}
-
-
 @mixin simple-background-gradient($button-color, $background-gradient-pos, $background-gradient-1, $background-gradient-2) {
   color: $button-color;
   // provide background color for older IEs
