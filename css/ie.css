@@ -1453,6 +1453,20 @@ a.control:active {
 
 .article-header {
   margin: 3em 0 2em 0;
+  position: relative;
+}
+.article-header .social {
+  position: absolute;
+  right: 0;
+  top: .5em;
+  text-align: right;
+}
+.article-header .social a.share {
+  border-bottom: none;
+  margin-left: .25em;
+}
+.article-header .social a.share:hover {
+  opacity: .8;
 }
 
 div.status {
@@ -1664,6 +1678,13 @@ ul.spokes li a {
 input:-moz-placeholder {
   color: #e9e9e9;
   font-style: italic;
+}
+
+.comment_login {
+  font-style: italic;
+}
+.comment_login a {
+  background: yellow;
 }
 
 .comment-wrapper {
@@ -2679,4 +2700,8 @@ body a:focus {
 }
 .node-hub .profile .user-picture {
   float: left;
+}
+
+.comment.clearfix:nth-child(3) {
+  border-top: none;
 }

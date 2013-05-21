@@ -4,6 +4,13 @@
 :-ms-input-placeholder { color:$grey1; font-style: italic; } /* ie */
 input:-moz-placeholder { color:$grey1; font-style: italic; }
 
+
+.comment_login {
+  font-style:italic;
+  a {
+      background:yellow;
+    }
+}
 .comment-wrapper {
   .must-login {
     background: #fafafa;

@@ -26,6 +26,20 @@ header {
 
 .article-header {
     margin:3em 0 2em 0;
+    position:relative;
+    .social {
+      position:absolute;
+      right:0;
+      top:.5em;
+      text-align:right;
+      a.share {
+        border-bottom:none;
+        margin-left:.25em;
+        &:hover {
+          opacity:.8;
+        }
+      }
+    }
   }
 
 div.status {

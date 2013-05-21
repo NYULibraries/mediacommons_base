@@ -52,11 +52,6 @@
         <?php print render($title_prefix); ?>
         
         
-        
-        <?php if ($tabs) : ?>
-          <div class="tabs"><?php print render($tabs); ?></div>
-        <?php endif; ?>
-        
         <?php print render($page['help']); ?>
         
         <?php if ($action_links): ?>
@@ -65,6 +60,9 @@
       </div>
     </div>
     <div class="wrapper the-content">
+      <?php if ($tabs) : ?>
+          <div class="tabs"><?php print render($tabs); ?></div>
+        <?php endif; ?>
     <?php print render($page['content']); ?>
     </div>
     <?php if ($feed_icons) : ?>
