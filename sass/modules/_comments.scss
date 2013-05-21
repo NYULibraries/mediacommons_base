@@ -12,6 +12,15 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
     }
 }
 .comment-wrapper {
+
+  h4 {
+    margin:.5em 0 0 0;
+    padding:0;
+    color:#333;
+    font-weight:bold;
+    font-size:1.5em;
+    border-bottom:1px solid #333;
+  }
   .must-login {
     background: #fafafa;
     padding: 1em;
@@ -25,18 +34,18 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
   .form-text, .text-full {
     padding:1.5em 1em;
   }
-  background:$grey;
-  margin: 1em auto;
-  padding:1em;
-  background:$grey;
-  width:30.5%;
+  //margin: 1em auto;
+  //padding:1em;
+  //background:$grey;
+  //width:30.5%;
+  width:38.5%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float:right;
   font-size:.8em;
   line-height:1.5em;
-  @include radius($container-radius);
+  //@include radius($container-radius);
   .comment {
     border-top: 1px solid $grey2;
     padding:1em 0 0 0;
@@ -70,6 +79,9 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
   }
   .comment-form {
     overflow:hidden;
+    background:$grey;
+    padding:.5em 1.25em 1em;
+    margin-bottom:0;
   }
   #edit-author--2,.filter-wrapper {
     display:none;
