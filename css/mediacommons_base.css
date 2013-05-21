@@ -2633,6 +2633,9 @@ body a:focus {
 .trigger {
   font-size: .8em;
 }
+.trigger a:hover {
+  text-decoration: none;
+}
 
 .contributors .user-picture {
   display: block;

@@ -92,6 +92,9 @@ body {
 
 .trigger {
   font-size:.8em;
+  a:hover {
+    text-decoration:none;
+  }
 }
   .contributors {
     .user-picture {
