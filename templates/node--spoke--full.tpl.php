@@ -1,13 +1,21 @@
 
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <?php print $title_safe; ?>
-  
-  <?php if ($display_submitted): ?>
+
+<div class="article-header">
+      <?php echo render($content['field_field_period']); ?>
+
+      <?php if ($title): ?><div id="titlebar" class="titlebar"><span class="icon book"></span><h1 class="title" id="page-title"><?php print truncate_utf8( t($title), 90, TRUE, TRUE); ?></h1></div><?php endif; ?>
+      <?php print render($title_suffix); ?>
+       <?php if ($display_submitted): ?>
     <div class="meta submitted">
       <?php print $user_picture; ?>
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>
+
+    </div>
+  <?php print $title_safe; ?>
+  
 
   <div class="content clearfix"<?php print $content_attributes; ?>>
     <?php
@@ -33,5 +41,7 @@
     </div>
   <?php endif; ?>
   </div>
+
   <?php print render($content['comments']); ?>
+
 </div>

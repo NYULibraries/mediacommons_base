@@ -80,20 +80,17 @@ nav {
       background:#ebebeb;
     }
     &.viewer {
-      background:#ebebeb;
       color:$bgcolor;
       line-height:1em;
-      padding:1em 1.5em;
+      padding-bottom:.25em;
       margin:0 0 1em 0;
       text-transform:uppercase;
       text-align:center;
-      border-radius:4px;
       font-weight:600;
       display:inline-block;
-      border-bottom:none;
+      border-bottom:2px solid $bgcolor;
       &:hover {
-        background:#f3f3f3;
-        color:lighten($bgcolor,10%);
+        color:darken($bgcolor,20%);
       }
     }
   }

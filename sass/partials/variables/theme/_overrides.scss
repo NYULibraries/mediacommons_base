@@ -4,7 +4,8 @@
 
 $body-font-family: Georgia, Cambria, "Times New Roman", Times, serif!default;
 $secondary-font: $body-font-family;
-$header-font-family: 'Merriweather', serif;
+$header-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
 
 /// body
 $body-background-color: lighten(nth($black , 6), 0%);

@@ -2,6 +2,7 @@
 // VARIABLES: For Base styles that aren't in Pattern-Primer 
 //////////////////////////////
 
+
 $base-font-size: 14px;
 $bs: border-box;
 
@@ -21,6 +22,7 @@ $nav-radius: 60px;
 
 $size:1.25em;
 
-$sans: "Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif!default;
+//$sans: "Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif!default;
 $serif: Georgia,Cambria,"Times New Roman",Times,serif!default;
-
+//$serif:'Merriweather', serif;
+$sans:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 

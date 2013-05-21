@@ -48,12 +48,10 @@
       </section>
       
       <div class="wrapper">    
-
+        
         <?php print render($title_prefix); ?>
         
-        <?php if ($title): ?><div id="titlebar" class="titlebar article-header"><span class="icon book"></span><h1 class="title" id="page-title"><?php print truncate_utf8( t($title), 90, TRUE, TRUE); ?></h1></div><?php endif; ?>
-          <?php print render($title_suffix); ?>
-        <?php print render($title_suffix); ?>
+        
         
         <?php if ($tabs) : ?>
           <div class="tabs"><?php print render($tabs); ?></div>

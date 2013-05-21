@@ -722,7 +722,7 @@ body {
 }
 
 h1 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 2.5em;
   line-height: 1.125em;
@@ -733,7 +733,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.875em;
   line-height: 1.5em;
@@ -744,7 +744,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.5625em;
   line-height: 1.4em;
@@ -755,7 +755,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.25em;
   line-height: 1.5em;
@@ -766,7 +766,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.125em;
   line-height: 1.6667em;
@@ -1262,6 +1262,17 @@ a.control:active {
   box-sizing: border-box;
 }
 
+.field-name-field-field-period {
+  margin: -0.5em 0 0.5em 0;
+  display: inline-block;
+}
+
+.date-display-start, .date-display-end {
+  text-transform: uppercase;
+  font-style: normal;
+  background: #ffc;
+}
+
 .icon-help:before {
   content: "\e003";
 }
@@ -1385,6 +1396,11 @@ ul.spokes li a {
   font-family: "Myriad Pro";
   display: inline-block;
   line-height: 1em;
+}
+
+.tease {
+  border-top: 1px dashed #cccccc;
+  margin-top: 1em;
 }
 
 .content-nav ul {
@@ -1605,7 +1621,7 @@ input:-moz-placeholder {
   width: 74.21%;
   padding: 1.125em 0.25em;
   font-size: .8em;
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #5a5a5a;
   font-weight: normal;
   -webkit-border-top-left-radius: 4px;
@@ -1675,7 +1691,7 @@ body {
   min-height: 100%;
 }
 body.mc a {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   color: #196195;
   border-bottom: 1px solid #8ec5ec;
@@ -1689,21 +1705,18 @@ body.mc a.active {
   background: #ebebeb;
 }
 body.mc a.viewer {
-  background: #ebebeb;
   color: #196195;
   line-height: 1em;
-  padding: 1em 1.5em;
+  padding-bottom: .25em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
-  border-bottom: none;
+  border-bottom: 2px solid #196195;
 }
 body.mc a.viewer:hover {
-  background: #f3f3f3;
-  color: #207dc1;
+  color: #0a283e;
 }
 body.mc span.author {
   color: #196195;
@@ -1791,7 +1804,7 @@ body.mc .mediacommons-network ul li a:hover, body.mc .mediacommons-network ul li
 }
 body.mc input[type="submit"] {
   text-transform: uppercase;
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   background: #196195;
   color: white;
@@ -1814,7 +1827,7 @@ body.mc input[type="submit"].active {
   background: #196195;
 }
 body.imr a {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   color: #dd5520;
   border-bottom: 1px solid #f8dcd1;
@@ -1828,21 +1841,18 @@ body.imr a.active {
   background: #ebebeb;
 }
 body.imr a.viewer {
-  background: #ebebeb;
   color: #dd5520;
   line-height: 1em;
-  padding: 1em 1.5em;
+  padding-bottom: .25em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
-  border-bottom: none;
+  border-bottom: 2px solid #dd5520;
 }
 body.imr a.viewer:hover {
-  background: #f3f3f3;
-  color: #e5764b;
+  color: #843313;
 }
 body.imr span.author {
   color: #dd5520;
@@ -1930,7 +1940,7 @@ body.imr .mediacommons-network ul li a:hover, body.imr .mediacommons-network ul 
 }
 body.imr input[type="submit"] {
   text-transform: uppercase;
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   background: #dd5520;
   color: white;
@@ -1953,7 +1963,7 @@ body.imr input[type="submit"].active {
   background: #dd5520;
 }
 body.mcp a {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   color: #456b2d;
   border-bottom: 1px solid #abd193;
@@ -1967,21 +1977,18 @@ body.mcp a.active {
   background: #ebebeb;
 }
 body.mcp a.viewer {
-  background: #ebebeb;
   color: #456b2d;
   line-height: 1em;
-  padding: 1em 1.5em;
+  padding-bottom: .25em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
-  border-bottom: none;
+  border-bottom: 2px solid #456b2d;
 }
 body.mcp a.viewer:hover {
-  background: #f3f3f3;
-  color: #5c8f3c;
+  color: #17230f;
 }
 body.mcp span.author {
   color: #456b2d;
@@ -2069,7 +2076,7 @@ body.mcp .mediacommons-network ul li a:hover, body.mcp .mediacommons-network ul 
 }
 body.mcp input[type="submit"] {
   text-transform: uppercase;
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   background: #456b2d;
   color: white;
@@ -2092,7 +2099,7 @@ body.mcp input[type="submit"].active {
   background: #456b2d;
 }
 body.tne a {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   color: #148385;
   border-bottom: 1px solid #7ae9eb;
@@ -2106,21 +2113,18 @@ body.tne a.active {
   background: #ebebeb;
 }
 body.tne a.viewer {
-  background: #ebebeb;
   color: #148385;
   line-height: 1em;
-  padding: 1em 1.5em;
+  padding-bottom: .25em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
-  border-bottom: none;
+  border-bottom: 2px solid #148385;
 }
 body.tne a.viewer:hover {
-  background: #f3f3f3;
-  color: #1bafb1;
+  color: #072c2c;
 }
 body.tne span.author {
   color: #148385;
@@ -2208,7 +2212,7 @@ body.tne .mediacommons-network ul li a:hover, body.tne .mediacommons-network ul 
 }
 body.tne input[type="submit"] {
   text-transform: uppercase;
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   background: #148385;
   color: white;
@@ -2231,7 +2235,7 @@ body.tne input[type="submit"].active {
   background: #148385;
 }
 body.ac a {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   color: #be1e2d;
   border-bottom: 1px solid #f3b5bb;
@@ -2245,21 +2249,18 @@ body.ac a.active {
   background: #ebebeb;
 }
 body.ac a.viewer {
-  background: #ebebeb;
   color: #be1e2d;
   line-height: 1em;
-  padding: 1em 1.5em;
+  padding-bottom: .25em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
   text-align: center;
-  border-radius: 4px;
   font-weight: 600;
   display: inline-block;
-  border-bottom: none;
+  border-bottom: 2px solid #be1e2d;
 }
 body.ac a.viewer:hover {
-  background: #f3f3f3;
-  color: #de3141;
+  color: #661018;
 }
 body.ac span.author {
   color: #be1e2d;
@@ -2347,7 +2348,7 @@ body.ac .mediacommons-network ul li a:hover, body.ac .mediacommons-network ul li
 }
 body.ac input[type="submit"] {
   text-transform: uppercase;
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: .9em;
   background: #be1e2d;
   color: white;
@@ -2425,7 +2426,7 @@ body.ac blockquote {
   color: #921723;
 }
 body a {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s;
@@ -2453,7 +2454,6 @@ body a:focus {
   background-color: #fff;
   overflow: hidden;
   margin: 0 auto;
-  font-family: "Merriweather", serif;
 }
 .wrapper .node a {
   font-size: 1.05em;
