@@ -2628,6 +2628,7 @@ body a:focus {
   margin: 0.4em 0;
   padding: 0;
   font-weight: 600;
+  width: 90%;
 }
 .wrapper h2 {
   font-size: 1em;
