@@ -855,7 +855,7 @@ body {
 }
 
 h1 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 2.5em;
   line-height: 1.125em;
@@ -866,7 +866,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.875em;
   line-height: 1.5em;
@@ -877,7 +877,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.5625em;
   line-height: 1.4em;
@@ -888,7 +888,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.25em;
   line-height: 1.5em;
@@ -899,7 +899,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Merriweather", serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: 1.125em;
   line-height: 1.6667em;
