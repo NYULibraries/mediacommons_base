@@ -1452,7 +1452,7 @@ a.control:active {
 }
 
 .article-header {
-  margin: 3em 0 1em 0;
+  margin: 3em 0 2em 0;
   position: relative;
 }
 .article-header .social {
@@ -1540,8 +1540,16 @@ ul.spokes li a {
   margin-top: 1em;
 }
 
+.node-hub p, .node-spoke p {
+  margin: 0 0 1.25em 0;
+}
 .node-hub ul, .node-spoke ul {
   padding: 0;
+}
+
+.node-spoke .content img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .marker {
@@ -1691,6 +1699,10 @@ input:-moz-placeholder {
   background: yellow;
 }
 
+#comments {
+  margin-top: 0;
+}
+
 .comment-wrapper {
   width: 38.5%;
   -moz-box-sizing: border-box;
@@ -1704,7 +1716,7 @@ input:-moz-placeholder {
   margin: 0.5em 0;
 }
 .comment-wrapper h4 {
-  margin: 0.5em 0 0 0;
+  margin: 0;
   padding: 0;
   color: #333;
   font-weight: bold;

@@ -11,6 +11,10 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
       background:yellow;
     }
 }
+
+#comments {
+  margin-top:0;
+}
 .comment-wrapper {
 
   p {
@@ -18,7 +22,7 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
   }
 
   h4 {
-    margin:.5em 0 0 0;
+    margin:0;
     padding:0;
     color:#333;
     font-weight:bold;

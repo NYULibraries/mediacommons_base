@@ -88,8 +88,20 @@ ul.spokes {
 }
 
 .node-hub, .node-spoke {
+  p {
+    margin: 0 0 1.25em 0
+  }
   ul {
     padding:0;
+  }
+}
+
+.node-spoke {
+  .content {
+    img {
+      width:100%;
+      max-width:100%;
+    }
   }
 }
 
