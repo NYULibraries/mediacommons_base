@@ -35,6 +35,12 @@ body {
   }
 }
 
+#user-login, #user-register-form, #user-pass {
+  width: 60%;
+  background: $grey;
+  padding: 1em 2em;
+  border: 1px solid darken($grey,5%);
+}
 .mediacommons-network {
   img {
     display:inline-block;

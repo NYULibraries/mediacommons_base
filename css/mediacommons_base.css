@@ -2630,6 +2630,13 @@ body a:focus {
   outline: none;
 }
 
+#user-login, #user-register-form, #user-pass {
+  width: 60%;
+  background: #f3f3f3;
+  padding: 1em 2em;
+  border: 1px solid #e6e6e6;
+}
+
 .mediacommons-network img {
   display: inline-block;
   max-width: 130px;
