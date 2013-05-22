@@ -13,6 +13,10 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
 }
 .comment-wrapper {
 
+  p {
+    margin:.5em 0;
+  }
+
   h4 {
     margin:.5em 0 0 0;
     padding:0;
@@ -48,13 +52,13 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
   //@include radius($container-radius);
   .comment {
     border-top: 1px solid $grey2;
-    padding:1em 0 0 0;
+    padding:0;
     .content {
       width:100%;
     }
     ul.inline {
       text-transform: capitalize;
-      margin-bottom:1em;
+      margin-bottom:2em;
       display:block;
       li {
         margin:0;

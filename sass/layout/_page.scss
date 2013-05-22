@@ -22,9 +22,9 @@ body {
   @include navs;
   @include blockquotes;
   a {
-  font-family:$sans;
-  @include transition;
-  text-decoration:none;
+    font-family:$sans;
+    @include transition;
+    text-decoration:none;
     &:hover {
       @include transition;
     }

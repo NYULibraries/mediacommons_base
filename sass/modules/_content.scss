@@ -87,6 +87,12 @@ ul.spokes {
   }
 }
 
+.node-hub, .node-spoke {
+  ul {
+    padding:0;
+  }
+}
+
 .marker {
   color: black;
   background: yellow;

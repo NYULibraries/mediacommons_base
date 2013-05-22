@@ -1540,6 +1540,10 @@ ul.spokes li a {
   margin-top: 1em;
 }
 
+.node-hub ul, .node-spoke ul {
+  padding: 0;
+}
+
 .marker {
   color: black;
   background: yellow;
@@ -1696,6 +1700,9 @@ input:-moz-placeholder {
   font-size: .8em;
   line-height: 1.5em;
 }
+.comment-wrapper p {
+  margin: 0.5em 0;
+}
 .comment-wrapper h4 {
   margin: 0.5em 0 0 0;
   padding: 0;
@@ -1718,14 +1725,14 @@ input:-moz-placeholder {
 }
 .comment-wrapper .comment {
   border-top: 1px solid #d9d9d9;
-  padding: 1em 0 0 0;
+  padding: 0;
 }
 .comment-wrapper .comment .content {
   width: 100%;
 }
 .comment-wrapper .comment ul.inline {
   text-transform: capitalize;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   display: block;
 }
 .comment-wrapper .comment ul.inline li {
@@ -1861,8 +1868,9 @@ body.mc a {
   border-bottom: 1px solid #8ec5ec;
 }
 body.mc a:hover {
-  color: #124569;
-  border-bottom: 1px solid #badbf3;
+  color: #0a283e;
+  border-bottom: 1px solid black;
+  text-decoration: none;
 }
 body.mc a.active {
   color: #196195;
@@ -1997,8 +2005,9 @@ body.imr a {
   border-bottom: 1px solid #f8dcd1;
 }
 body.imr a:hover {
-  color: #b0441a;
-  border-bottom: 1px solid #fffefd;
+  color: #843313;
+  border-bottom: 1px solid black;
+  text-decoration: none;
 }
 body.imr a.active {
   color: #dd5520;
@@ -2133,8 +2142,9 @@ body.mcp a {
   border-bottom: 1px solid #abd193;
 }
 body.mcp a:hover {
-  color: #2e471e;
-  border-bottom: 1px solid #c7e1b6;
+  color: #17230f;
+  border-bottom: 1px solid black;
+  text-decoration: none;
 }
 body.mcp a.active {
   color: #456b2d;
@@ -2269,8 +2279,9 @@ body.tne a {
   border-bottom: 1px solid #7ae9eb;
 }
 body.tne a:hover {
-  color: #0d5759;
-  border-bottom: 1px solid #a6f0f2;
+  color: #072c2c;
+  border-bottom: 1px solid black;
+  text-decoration: none;
 }
 body.tne a.active {
   color: #148385;
@@ -2405,8 +2416,9 @@ body.ac a {
   border-bottom: 1px solid #f3b5bb;
 }
 body.ac a:hover {
-  color: #921723;
-  border-bottom: 1px solid #fae1e3;
+  color: #661018;
+  border-bottom: 1px solid black;
+  text-decoration: none;
 }
 body.ac a.active {
   color: #be1e2d;
