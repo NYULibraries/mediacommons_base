@@ -50,7 +50,7 @@
     </div>
   <?php endif; ?>
   </div>
-
+  
   <?php print render($content['comments']); ?>
 
 </div>

@@ -24,16 +24,16 @@
         
         <?php print $description; ?>
         
-        <div class="trigger"><a href="javascript:void(0);" class="viewer">Articles &amp; Authors</a></div>
+        <div class="tease">
+          <?php print $safe_tags; ?>      
+        </div>
+
+        <div class="trigger"><a href="javascript:void(0);" class="viewer">Articles &amp; Contributors</a></div>
           <div class="associated" style="display:none">
             <div class="contributors">
               <?php print $contributors; ?>
             </div>  
             <?php print $spokes; ?>
-          </div>
-
-          <div class="tease">
-            <?php print $safe_tags; ?>      
           </div>
 
         </div>

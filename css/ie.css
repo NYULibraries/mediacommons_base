@@ -1412,6 +1412,15 @@ a.control:active {
   background: #ffc;
 }
 
+h4 {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: 1px solid #333333;
+}
+
 .icon-help:before {
   content: "\e003";
 }
@@ -1471,10 +1480,14 @@ a.control:active {
 
 div.status {
   background-image: none;
-  border-color: black;
+  border-color: yellow;
   margin-top: 2em;
-  background-color: black;
-  color: yellow;
+  background-color: yellow;
+  color: black;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -moz-box-shadow: 0 0 30px #ebebeb;
+  -webkit-box-shadow: 0 0 30px #ebebeb;
+  box-shadow: 0 0 30px #ebebeb;
 }
 
 ul.tags {
@@ -1513,14 +1526,14 @@ ul.spokes li a {
   display: inline-block;
   float: left;
   margin-bottom: 1em;
-  width: 32%;
+  width: 38.5%;
 }
 .node-hub .image img {
   width: 100%;
   vertical-align: top;
 }
 .node-hub .description {
-  width: 65%;
+  width: 58.5%;
   float: right;
   display: inline-block;
   text-align: justify;
@@ -1529,12 +1542,6 @@ ul.spokes li a {
   margin-top: 0;
 }
 .node-hub .description .contributors {
-  border: 1px solid #ebebeb;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  background: #f8f8f8;
-  padding: 1em;
   display: block;
   overflow: hidden;
   margin-top: 1em;
@@ -1563,9 +1570,10 @@ ul.spokes li a {
   line-height: 1em;
 }
 
-.tease {
-  border-top: 1px dashed #cccccc;
-  margin-top: 1em;
+.field-name-field-tags {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 1em;
 }
 
 .content-nav ul {
@@ -1715,14 +1723,6 @@ input:-moz-placeholder {
 .comment-wrapper p {
   margin: 0.5em 0;
 }
-.comment-wrapper h4 {
-  margin: 0;
-  padding: 0;
-  color: #333;
-  font-weight: bold;
-  font-size: 1.5em;
-  border-bottom: 1px solid #333333;
-}
 .comment-wrapper .must-login {
   background: #fafafa;
   padding: 1em;
@@ -1782,9 +1782,49 @@ input:-moz-placeholder {
   clear: both;
 }
 .comment-wrapper h3 a {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
-  color: black!important;
+  font-weight: 600;
+  font-size: .3em;
+  color: #333!important;
   border-bottom: none!important;
+}
+
+#comments {
+  background: #eeeeee;
+}
+#comments h4 {
+  color: white;
+  padding: 1em;
+  background: #333333;
+}
+#comments .comment-form {
+  background: #cccccc;
+  margin: 0;
+  padding: 1em 1.25em 2em;
+}
+#comments .comment-form input[type=text], #comments .comment-form textarea {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#comments .comment-form .grippie {
+  border: none;
+}
+#comments .comment-form input[type=submit] {
+  width: 100%;
+  line-height: 3em;
+}
+#comments .comment {
+  background: #eeeeee;
+  padding: 0 1em;
+}
+#comments .indented {
+  margin: 0;
+  background: #ebebeb;
+}
+#comments .indented .comment {
+  border-top: 1px dashed #cccccc;
+  background: #f8f8f8;
 }
 
 #search {
@@ -1897,7 +1937,6 @@ body.mc a.viewer {
   text-align: center;
   font-weight: 600;
   display: inline-block;
-  border-bottom: 2px solid #196195;
 }
 body.mc a.viewer:hover {
   color: #0a283e;
@@ -2034,7 +2073,6 @@ body.imr a.viewer {
   text-align: center;
   font-weight: 600;
   display: inline-block;
-  border-bottom: 2px solid #dd5520;
 }
 body.imr a.viewer:hover {
   color: #843313;
@@ -2171,7 +2209,6 @@ body.mcp a.viewer {
   text-align: center;
   font-weight: 600;
   display: inline-block;
-  border-bottom: 2px solid #456b2d;
 }
 body.mcp a.viewer:hover {
   color: #17230f;
@@ -2308,7 +2345,6 @@ body.tne a.viewer {
   text-align: center;
   font-weight: 600;
   display: inline-block;
-  border-bottom: 2px solid #148385;
 }
 body.tne a.viewer:hover {
   color: #072c2c;
@@ -2445,7 +2481,6 @@ body.ac a.viewer {
   text-align: center;
   font-weight: 600;
   display: inline-block;
-  border-bottom: 2px solid #be1e2d;
 }
 body.ac a.viewer:hover {
   color: #661018;
@@ -2694,10 +2729,16 @@ body a:focus {
   text-decoration: none;
 }
 
+.contributors {
+  font-size: .8em;
+}
 .contributors .user-picture {
   display: block;
   overflow: hidden;
   margin-top: 0em;
+}
+.contributors .user-picture:after {
+  content: " F.name L.name";
 }
 .contributors .user-picture a {
   float: left;
@@ -2706,18 +2747,17 @@ body a:focus {
   display: block;
   padding: 0.1em 0;
   border-bottom: none;
-}
-.contributors .user-picture a:hover {
-  border-bottom: none;
-}
-.contributors .user-picture a img {
   max-width: 30px;
   width: 30px;
   height: 30px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  vertical-align: middle;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+}
+.contributors .user-picture a:hover {
+  border: 1px solid #cccccc;
 }
 
 .new {

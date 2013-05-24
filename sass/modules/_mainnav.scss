@@ -89,7 +89,7 @@ nav {
       text-align:center;
       font-weight:600;
       display:inline-block;
-      border-bottom:2px solid $bgcolor;
+      //border-bottom:2px solid $bgcolor;
       &:hover {
         color:darken($bgcolor,20%);
       }

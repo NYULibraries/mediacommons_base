@@ -76,6 +76,7 @@
       <div class="footer yui3-g wrapper">
         <div class="yui3-u-1">  
             <?php print render($page['footer']); ?>
+            MediaCommons: A Digital Scholarly Network -- Powered by NYU
         </div>
     </div>
     <?php endif; ?>
