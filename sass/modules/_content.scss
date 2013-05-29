@@ -1,5 +1,5 @@
 //////////////////////////////
-// MODULES: Style that are layout independent 
+// MODULES: Styles that are layout independent 
 //////////////////////////////
 
 
@@ -13,13 +13,13 @@
 
 @mixin blockquote($bgcolor) {
   blockquote{
-  	border-top:none;
-  	border-bottom:none;
-  	border-left:4px solid $grey;
-  	@include radius(0);
-  	margin-left:0;
-  	line-height:1.25em;
-  	color:darken($bgcolor,10%);
+    border-top:none;
+    border-bottom:none;
+    border-left:4px solid $grey;
+    @include radius(0);
+    margin-left:0;
+    line-height:1.25em;
+    color:darken($bgcolor,10%);
   }
   
 }
@@ -53,7 +53,7 @@ ul.spokes {
 }
 
 .node-form {
-  	font-size:.9em;
+    font-size:.9em;
   }
 
 .node-hub {

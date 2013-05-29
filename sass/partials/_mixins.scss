@@ -1,3 +1,7 @@
+//////////////////////////////
+// MIXINS: Mixins should have arguments. Otherwise use extendables...
+//////////////////////////////
+
 // add a background to the media query indicator - dev only 
 @mixin breakpoint-back {
   // Cause you can't extend silently from a media query

@@ -1,13 +1,13 @@
 #search {
   margin-left:6px;
-	float:right;
-	width:30.5%;
+  float:right;
+  width:30.5%;
   text-align:right;
   //background:$aqua_tne;
   @include radius($container-radius);
-	form {
+  form {
     display:block;
-		margin:0;
+    margin:0;
     input[type="text"]{
       width:74.21%;
       padding:1.125em .25em;
@@ -28,5 +28,5 @@
       @include forced-button(0px);
       -webkit-appearance:none;
     }
-	}
+  }
 }
