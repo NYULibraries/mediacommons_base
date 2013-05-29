@@ -61,14 +61,14 @@ ul.spokes {
     display: inline-block;
     float: left;
     margin-bottom: 1em;
-    width:32%;
+    width:38.5%;
     img {
       width: 100%;
       vertical-align: top;
     }
   }
   .description {
-    width: 65%;
+    width: 58.5%;
     float: right;
     display: inline-block;
     text-align:justify;
@@ -76,13 +76,31 @@ ul.spokes {
       margin-top:0;
     }
     .contributors {
-      border: 1px solid #ebebeb;
-      @include radius($button-radius);
-      background: #f8f8f8;
+      //border: 1px solid #ebebeb;
+      //@include radius($button-radius);
+      //background: #f8f8f8;
       padding: 1em;
       display: block;
       overflow: hidden;
       margin-top: 1em;
+    }
+  }
+}
+
+.node-hub, .node-spoke {
+  p {
+    margin: 0 0 1.25em 0
+  }
+  ul {
+    padding:0;
+  }
+}
+
+.node-spoke {
+  .content {
+    img {
+      width:100%;
+      max-width:100%;
     }
   }
 }
@@ -96,4 +114,15 @@ ul.spokes {
   font-family: "Myriad Pro";
   display:inline-block;
   line-height:1em;
+}
+
+.tease {
+  //border-top:1px solid #ccc;
+  //margin-top:1em;
+}
+
+.field-name-field-tags {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin-bottom: 1em;
 }

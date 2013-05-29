@@ -22,9 +22,9 @@ body {
   @include navs;
   @include blockquotes;
   a {
-  font-family:$sans;
-  @include transition;
-  text-decoration:none;
+    font-family:$sans;
+    @include transition;
+    text-decoration:none;
     &:hover {
       @include transition;
     }
@@ -35,6 +35,12 @@ body {
   }
 }
 
+#user-login, #user-register-form, #user-pass {
+  width: 60%;
+  background: $grey;
+  padding: 1em 2em;
+  border: 1px solid darken($grey,5%);
+}
 .mediacommons-network {
   img {
     display:inline-block;
@@ -54,13 +60,13 @@ body {
   background-color: #fff;
   overflow: hidden;
   margin:0 auto;
-  font-family: 'Merriweather', serif;
   h1 {
     font-size:2.5em;
     line-height:1em;
     margin:.4em 0;
     padding:0;
     font-weight:600;
+    width:90%;
   }
   h2 {
     font-size:1em;
@@ -79,7 +85,8 @@ body {
     font-weight:normal;
   }
   .post, .cluster, .content {
-    width:67%;
+    //width:67%;
+    width:58.5%;
     display:inline-block;
     font-size:1.2em;
     line-height:1.55em;
@@ -93,12 +100,19 @@ body {
 
 .trigger {
   font-size:.8em;
+  a:hover {
+    text-decoration:none;
+  }
 }
   .contributors {
+    font-size:.8em;
     .user-picture {
       display:block;
       overflow:hidden;
       margin-top:0em;
+      &:after {
+        content: " F.name L.name";
+      }
       a {
         float: left;
         margin-right:.25em;
@@ -106,12 +120,11 @@ body {
         display:block;
         padding:.1em 0;
         border-bottom:none;
+        @include profile(30px);
+        border:1px solid #ebebeb;
+        overflow:hidden;
         &:hover {
-          border-bottom:none;
-        }
-        img {
-          @include profile(30px);
-          vertical-align:middle;
+          border:1px solid #ccc;
         }
       }
     }

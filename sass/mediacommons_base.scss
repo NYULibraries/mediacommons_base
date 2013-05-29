@@ -11,8 +11,8 @@
 @import "partials/_colors";
 @import "partials/_extendables";
 @import "partials/_functions";
-@import "partials/_mixins";
 @import "partials/variables/_variables"; 
+@import "partials/_mixins";
 
 @import "pattern-primer/reset"; 
 @import "pattern-primer/base";
@@ -21,6 +21,7 @@
 
 @import "base/_page";
 
+@import "modules/_typography";
 @import "modules/_icons";
 @import "modules/_header"; 
 @import "modules/_usernav";
@@ -31,6 +32,7 @@
 @import "modules/_tabs";
 @import "modules/_comments";
 @import "modules/_forms";
+@import "modules/_search";
 
 @import "layout/_breakpoints";
 @import "layout/_toolbar";

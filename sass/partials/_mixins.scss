@@ -34,6 +34,12 @@
   @if $font-name { font-family: $font-name; }
 }
 
+@mixin shadow($spread, $color){
+  -moz-box-shadow: 0 0 $spread $color;
+   -webkit-box-shadow: 0 0 $spread $color;
+   box-shadow: 0 0 $spread $color;
+}
+
 @mixin transition($speed: 0.2s) {
   -webkit-transition: $speed ease-in-out;
   -moz-transition: $speed ease-in-out;

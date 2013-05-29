@@ -48,16 +48,9 @@
       </section>
       
       <div class="wrapper">    
-
+        
         <?php print render($title_prefix); ?>
         
-        <?php if ($title): ?><div id="titlebar" class="titlebar article-header"><span class="icon book"></span><h1 class="title" id="page-title"><?php print truncate_utf8( t($title), 90, TRUE, TRUE); ?></h1></div><?php endif; ?>
-          <?php print render($title_suffix); ?>
-        <?php print render($title_suffix); ?>
-        
-        <?php if ($tabs) : ?>
-          <div class="tabs"><?php print render($tabs); ?></div>
-        <?php endif; ?>
         
         <?php print render($page['help']); ?>
         
@@ -67,6 +60,9 @@
       </div>
     </div>
     <div class="wrapper the-content">
+      <?php if ($tabs) : ?>
+          <div class="tabs"><?php print render($tabs); ?></div>
+        <?php endif; ?>
     <?php print render($page['content']); ?>
     </div>
     <?php if ($feed_icons) : ?>
@@ -80,6 +76,7 @@
       <div class="footer yui3-g wrapper">
         <div class="yui3-u-1">  
             <?php print render($page['footer']); ?>
+            MediaCommons: A Digital Scholarly Network -- Powered by NYU
         </div>
     </div>
     <?php endif; ?>
