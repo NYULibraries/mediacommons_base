@@ -1542,6 +1542,7 @@ ul.spokes li a {
   margin-top: 0;
 }
 .node-hub .description .contributors {
+  padding: 1em;
   display: block;
   overflow: hidden;
   margin-top: 1em;
@@ -1797,12 +1798,12 @@ input:-moz-placeholder {
   background: #333333;
 }
 #comments .comment-form {
-  background: #cccccc;
+  background: #f3f3f3;
   margin: 0;
   padding: 1em 1.25em 2em;
 }
 #comments .comment-form input[type=text], #comments .comment-form textarea {
-  border: none;
+  border: 1px solid #e6e6e6;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -1811,20 +1812,29 @@ input:-moz-placeholder {
   border: none;
 }
 #comments .comment-form input[type=submit] {
-  width: 100%;
-  line-height: 3em;
+  line-height: 4em;
+  margin: 0.5em 0 0 0;
+  padding: 0 3em;
 }
 #comments .comment {
   background: #eeeeee;
   padding: 0 1em;
 }
 #comments .indented {
-  margin: 0;
-  background: #ebebeb;
+  margin: .75em;
+  background: #f8f8f8;
 }
 #comments .indented .comment {
-  border-top: 1px dashed #cccccc;
   background: #f8f8f8;
+  border-top: none;
+}
+#comments .indented .indented {
+  background: #fff;
+  margin: 0;
+}
+#comments .indented .indented .comment {
+  border-top: 1px solid #eeeeee;
+  background: #fff;
 }
 
 #search {
