@@ -26,7 +26,7 @@
       <li><a href="#"><img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/files/mediacommons_new.png' ?>"></a></li>
       <li><a href="#">In Media Res</a></li>
       <li><a href="#">MediaCommons Press</a></li>
-      <li><a href="#" class="active">The New Everyday</a></li>
+      <li><a href="http://dev-dl-pa.home.nyu.edu/mediacommons/" class="active">The New Everyday</a></li>
       <li><a href="#">#Alt-Academy</a></li>
 
       <?php
