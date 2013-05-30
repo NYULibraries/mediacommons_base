@@ -1462,14 +1462,32 @@ h4 {
 
 .article-header {
   margin: 3em 0 2em 0;
+  position: relative;
+}
+.article-header .social {
+  position: absolute;
+  right: 0;
+  top: .5em;
+  text-align: right;
+}
+.article-header .social a.share {
+  border-bottom: none;
+  margin-left: .25em;
+}
+.article-header .social a.share:hover {
+  opacity: .8;
 }
 
 div.status {
   background-image: none;
-  border-color: black;
+  border-color: yellow;
   margin-top: 2em;
-  background-color: black;
-  color: yellow;
+  background-color: yellow;
+  color: black;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -moz-box-shadow: 0 0 30px #ebebeb;
+  -webkit-box-shadow: 0 0 30px #ebebeb;
+  box-shadow: 0 0 30px #ebebeb;
 }
 
 ul.tags {
