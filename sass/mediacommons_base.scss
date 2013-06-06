@@ -1,23 +1,27 @@
 @import "compass/typography";
 @import "compass/css3";
-@import "breakpoint";
+@import "toolkit";
 
 //@import "libraries/yui3/_cssfonts";
 //@import "libraries/yui3/_cssgrids";
 //@import "libraries/yui3/_cssbase";
 //@import "libraries/yui3/_cssbase-context"; 
 
-@import "partials/_browsers"; 
+@import "partials/_browsers";
 @import "partials/_colors";
+@import "partials/_mixins";
+@import "partials/_variables";
 @import "partials/_extendables";
 @import "partials/_functions";
-@import "partials/variables/_variables"; 
-@import "partials/_mixins";
 
-@import "pattern-primer/reset"; 
-@import "pattern-primer/base";
-@import "pattern-primer/modules";
+// Reset 
+@import "compass-pattern-primer/reset"; 
+
+@import "compass-pattern-primer/partials/"; 
 @import "partials/variables/theme/_overrides";
+
+@import "compass-pattern-primer/base";
+@import "compass-pattern-primer/modules";
 
 @import "base/_page";
 

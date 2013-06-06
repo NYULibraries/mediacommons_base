@@ -1,3 +1,7 @@
+//////////////////////////////
+// MODULES: Styles that are layout independent 
+//////////////////////////////
+
 .search-form {
   &:hover{
     @include shadow(30px, #ebebeb);

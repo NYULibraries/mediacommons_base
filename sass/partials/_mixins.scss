@@ -118,8 +118,6 @@ $old-ie: false !default;
     }
 }
 
-// For adding desktop ('full naviagtion') media queries to IE stylesheet without using Media Queries. 
-
 $fixed-media-query: false !default;
 
 @mixin respond-to-ie($mediaquery) {
@@ -137,4 +135,12 @@ $fixed-media-query: false !default;
             @content;
         }
     }
+}
+
+@mixin opacitIE($opacity) {
+  // Could be extended for other older browsers if needed http://css-tricks.com/css-transparency-settings-for-all-broswers/
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    zoom: 1;  // trigger hasLayout
+  }
+  filter: unquote("alpha(opacity=#{round($opacity * 100)})");
 }
