@@ -1,4 +1,4 @@
-name = MediaaCommons Starter Kit
+name = MediaCommons Starter Kit
 description = Sub-theme example to help you start a MediaCommon project.
 base theme = mediacommons_base
 core = 7.x

@@ -1,5 +1,5 @@
-name = MediaaCommons Base
-description = MediaaCommons Base provides a base theme for all of MediaCommons Network sites.
+name = MediaCommons Base
+description = MediaCommons Base provides a base theme for all of MediaCommons Network sites.
 core = 7.x
 engine = phptemplate
 version = 1.x
