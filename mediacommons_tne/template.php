@@ -2,13 +2,13 @@
 
 /** http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_preprocess_html/7 */
 function mediacommons_profile_process_html(&$vars) {
-  dpm(__FUNCTION__);
+  //dpm(__FUNCTION__);
   $vars['classes'] = 'mediacommons_profile ' . $vars['classes'];
 }
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
 function mediacommons_profile_preprocess_page(&$vars) {
-  dpm(__FUNCTION__);
+  //dpm(__FUNCTION__);
 }
 
 /**
@@ -55,7 +55,7 @@ function mediacommons_profile_preprocess_page(&$vars) {
  * @ingroup themeable
  */
 function mediacommons_profile_process_field(&$vars) {
-  dpm(__FUNCTION__);
+  //dpm(__FUNCTION__);
 }
 
 /**
@@ -93,9 +93,9 @@ function mediacommons_profile_process_field(&$vars) {
  */
 
 function mediacommons_profile_process_user_profile(&$vars) {
-  dpm(__FUNCTION__); 
+  //dpm(__FUNCTION__); 
 }
 
 function mediacommons_profile_process_node(&$vars) {
-  dpm(__FUNCTION__);
+  //dpm(__FUNCTION__);
 }

@@ -38,10 +38,6 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
   .form-text, .text-full {
     padding:1.5em 1em;
   }
-  //margin: 1em auto;
-  //padding:1em;
-  //background:$grey;
-  //width:30.5%;
   width:38.5%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -49,7 +45,6 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
   float:right;
   font-size:.8em;
   line-height:1.5em;
-  //@include radius($container-radius);
   .comment {
     border-top: 1px solid $grey2;
     padding:0;
@@ -122,7 +117,7 @@ input:-moz-placeholder { color:$grey1; font-style: italic; }
     padding:1em 1.25em 2em;
     input[type=text],textarea{
       border:1px solid darken($grey,5%);
-      @include radius(0);
+      @include border-radius(0);
     }
     .grippie {
         border:none;

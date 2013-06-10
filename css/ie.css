@@ -3267,11 +3267,11 @@ h4 {
   padding: 2em;
   margin: 1em auto 0 auto;
   background: #f8f8f8;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topleft: 4px;
-  -moz-border-radius-topright: 4px;
+  -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   box-shadow: 0 10px 40px #e2e1e1;
 }
@@ -3304,9 +3304,9 @@ div.status {
   background-color: yellow;
   color: black;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  -moz-box-shadow: 0 0 30px #ebebeb;
-  -webkit-box-shadow: 0 0 30px #ebebeb;
-  box-shadow: 0 0 30px #ebebeb;
+  -webkit-box-shadow: 0, 0, 30px, #ebebeb;
+  -moz-box-shadow: 0, 0, 30px, #ebebeb;
+  box-shadow: 0, 0, 30px, #ebebeb;
 }
 
 ul.tags {
@@ -3425,12 +3425,12 @@ ul.spokes li a {
 }
 
 .wrapper.the-content {
-  -webkit-border-bottom-right-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
   -moz-border-radius-bottomleft: 4px;
-  border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   padding-bottom: 3em;
 }
 
@@ -3480,9 +3480,9 @@ ul.spokes li a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .tabs .primary li a.active {
   border: 0;
@@ -3492,9 +3492,9 @@ ul.spokes li a {
 }
 .tabs .primary li a:hover {
   background: silver;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* all */
@@ -3676,11 +3676,11 @@ input:-moz-placeholder {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #5a5a5a;
   font-weight: normal;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
-  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: 1px solid #ebebeb;
 }
@@ -3690,25 +3690,25 @@ input:-moz-placeholder {
   width: 24.02%;
   font-size: .7em;
   padding: .35em 0;
-  -webkit-border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
   -moz-border-radius-topright: 4px;
-  -moz-border-radius-bottomright: 4px;
+  -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  -webkit-border-top-left-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
   -moz-border-radius-topleft: 0px;
-  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-top-left-radius: 0px;
   border-top-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
   border-bottom-left-radius: 0px;
   -webkit-appearance: none;
 }
 
 .search-form {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 38.5%;
   display: inline-block;
   background: #f3f3f3;
@@ -3717,12 +3717,12 @@ input:-moz-placeholder {
   border: 1px solid #ebebeb;
 }
 .search-form:hover {
-  -moz-box-shadow: 0 0 30px #ebebeb;
-  -webkit-box-shadow: 0 0 30px #ebebeb;
-  box-shadow: 0 0 30px #ebebeb;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-box-shadow: 0, 0, 30px, #ebebeb;
+  -moz-box-shadow: 0, 0, 30px, #ebebeb;
+  box-shadow: 0, 0, 30px, #ebebeb;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .search-form label {
   font-style: italic;
@@ -3956,17 +3956,17 @@ body.mc input[type="submit"] {
   color: white;
   border: none;
   line-height: 2em;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
 body.mc input[type="submit"]:hover {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: #124569;
 }
 body.mc input[type="submit"].active {
@@ -4092,17 +4092,17 @@ body.imr input[type="submit"] {
   color: white;
   border: none;
   line-height: 2em;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
 body.imr input[type="submit"]:hover {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: #b0441a;
 }
 body.imr input[type="submit"].active {
@@ -4228,17 +4228,17 @@ body.mcp input[type="submit"] {
   color: white;
   border: none;
   line-height: 2em;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
 body.mcp input[type="submit"]:hover {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: #2e471e;
 }
 body.mcp input[type="submit"].active {
@@ -4364,17 +4364,17 @@ body.tne input[type="submit"] {
   color: white;
   border: none;
   line-height: 2em;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
 body.tne input[type="submit"]:hover {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: #0d5759;
 }
 body.tne input[type="submit"].active {
@@ -4500,17 +4500,17 @@ body.ac input[type="submit"] {
   color: white;
   border: none;
   line-height: 2em;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
 body.ac input[type="submit"]:hover {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: #921723;
 }
 body.ac input[type="submit"].active {
@@ -4573,15 +4573,15 @@ body.ac blockquote {
 }
 body a {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
 body a:hover {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 body a:focus {
   background: yellow;

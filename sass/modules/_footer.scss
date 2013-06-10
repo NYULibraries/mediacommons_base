@@ -7,7 +7,7 @@ footer {
 } 
 
 .wrapper.the-content {
-  @include bottom-radius($container-radius);
+  @include border-bottom-radius($container-radius);
   padding-bottom:3em;
 }
 

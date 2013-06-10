@@ -9,7 +9,7 @@ html{
 }
 
 input[type=text]{
-  @include radius($button-radius);
+  @include border-radius($button-radius);
 }
 
 body {
@@ -23,10 +23,10 @@ body {
   @include blockquotes;
   a {
     font-family:$sans;
-    @include transition;
+    @include transition(all 0.2s ease-in-out);
     text-decoration:none;
     &:hover {
-      @include transition;
+      @include transition(all 0.2s ease-in-out);
     }
     &:focus {
       background:yellow;

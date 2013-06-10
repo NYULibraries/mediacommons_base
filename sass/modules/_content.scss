@@ -16,7 +16,7 @@
     border-top:none;
     border-bottom:none;
     border-left:4px solid $grey;
-    @include radius(0);
+    @include border-radius(0);
     margin-left:0;
     line-height:1.25em;
     color:darken($bgcolor,10%);

@@ -8,7 +8,7 @@
   width:30.5%;
   text-align:right;
   //background:$aqua_tne;
-  @include radius($container-radius);
+  @include border-radius($container-radius);
   form {
     display:block;
     margin:0;
@@ -19,7 +19,7 @@
       font-family:$sans;
       color:darken($grey,60%);
       font-weight:normal;
-      @include left-radius($container-radius);
+      @include border-left-radius($container-radius);
       border:1px solid #ebebeb;
     }
     input[type="submit"]{
@@ -28,8 +28,9 @@
       width:24.02%;
       font-size:.7em;
       padding:.35em 0;
-      @include right-radius($container-radius);
-      @include forced-button(0px);
+      @include border-right-radius($container-radius);
+      @include border-top-left-radius(0px);
+      @include border-bottom-left-radius(0px);
       -webkit-appearance:none;
     }
   }

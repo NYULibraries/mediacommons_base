@@ -16,7 +16,7 @@ header {
     padding:2em;
     margin:1em auto 0 auto;
     background: #f8f8f8;
-    @include top-radius($container-radius);
+    @include border-top-radius($container-radius);
     box-shadow:0 10px 40px #e2e1e1;
     a {
       border-bottom:none;
@@ -49,5 +49,5 @@ div.status {
   background-color:yellow;
   color: black;
   font-family:$sans;
-  @include shadow(30px, #ebebeb);
+  @include box-shadow(0, 0, 30px, #ebebeb);
 }

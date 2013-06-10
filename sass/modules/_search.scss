@@ -4,10 +4,10 @@
 
 .search-form {
   &:hover{
-    @include shadow(30px, #ebebeb);
-    @include transition;
+    @include box-shadow(0, 0, 30px, #ebebeb);
+    @include transition(all 0.2s ease-in-out);
   }
-  @include transition;
+  @include transition(all 0.2s ease-in-out);
   width: 38.5%;
   display: inline-block;
   background: $grey;
@@ -22,7 +22,7 @@
   input[type="text"]{
     padding: 1.125em 0.25em;
     border: 1px solid #ebebeb;
-    @include radius(0);
+    @include border-radius(0);
     margin-bottom:1em;
   }
   fieldset {

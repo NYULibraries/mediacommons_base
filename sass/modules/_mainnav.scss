@@ -52,10 +52,10 @@ nav {
     color:white;
     border:none;
     line-height:2em;
-    @include transition;
-    @include radius($button-radius);
+    @include transition(all 0.2s ease-in-out);
+    @include border-radius($button-radius);
     &:hover {
-      @include transition;
+      @include transition(all 0.2s ease-in-out);
       background:darken($bgcolor,10%);
     }
     &.active {

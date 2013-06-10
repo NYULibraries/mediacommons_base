@@ -21,7 +21,7 @@
       border-bottom:none;
       font-weight:600;
       color:#ccc;
-      @include radius($nav-radius);
+      @include border-radius($nav-radius);
       background:$grey;
       &:hover {
         background:#fff;
