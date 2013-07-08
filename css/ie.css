@@ -716,7 +716,6 @@ input[type="submit"], input.cancel {
   font-size: inherit;
   font-weight: normal;
   font-style: normal;
-  border: 1px solid #bbbbbb;
   cursor: pointer;
   padding: 0.33em 0.66em;
   line-height: 1;
@@ -846,7 +845,6 @@ a.control {
   font-size: 1.5em;
   padding: 0.5em 0.75em;
   line-height: 1;
-  border: 1px solid #666666;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -880,7 +878,6 @@ a.control:active {
   margin: 1em;
   color: #3a87ad;
   background-color: #d9edf7;
-  border: 1px solid #bce8f1;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
@@ -911,7 +908,9 @@ a.control:active {
 
 .options {
   list-style: none;
-  border-top: 1px solid #cccccc;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #cccccc;
 }
 .options li {
   text-indent: 0;
@@ -921,11 +920,12 @@ a.control:active {
   font-weight: bold;
   margin: 0;
   padding: 0.3125em 0.625em;
-  border-bottom: 1px solid #cccccc;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cccccc;
 }
 .options a {
   display: block;
-  border: none;
 }
 
 .pagination {
@@ -941,7 +941,6 @@ a.control:active {
   padding: 0.5em 1em;
   line-height: 1em;
   margin: 0.1em;
-  border: 1px solid #666666;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -1462,7 +1461,6 @@ input[type="submit"], input.cancel {
   font-size: inherit;
   font-weight: normal;
   font-style: normal;
-  border: 1px solid #bbbbbb;
   cursor: pointer;
   padding: 0.33em 0.66em;
   line-height: 1;
@@ -1592,7 +1590,6 @@ a.control {
   font-size: 1.5em;
   padding: 0.5em 0.75em;
   line-height: 1;
-  border: 1px solid #666666;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -1626,7 +1623,6 @@ a.control:active {
   margin: 1em;
   color: #3a87ad;
   background-color: #d9edf7;
-  border: 1px solid #bce8f1;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
@@ -1657,7 +1653,9 @@ a.control:active {
 
 .options {
   list-style: none;
-  border-top: 1px solid #cccccc;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #cccccc;
 }
 .options li {
   text-indent: 0;
@@ -1667,11 +1665,12 @@ a.control:active {
   font-weight: bold;
   margin: 0;
   padding: 0.3125em 0.625em;
-  border-bottom: 1px solid #cccccc;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cccccc;
 }
 .options a {
   display: block;
-  border: none;
 }
 
 .pagination {
@@ -1687,7 +1686,6 @@ a.control:active {
   padding: 0.5em 1em;
   line-height: 1em;
   margin: 0.1em;
-  border: 1px solid #666666;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -2190,7 +2188,6 @@ img, video {
 }
 
 html {
-  border: none;
   background-color: white;
 }
 
@@ -2203,8 +2200,6 @@ body {
   line-height: 1.875em;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   color: #333333;
-  border: none;
-  border: none;
   border-color: rgba(0, 0, 0, 0.13);
 }
 
@@ -2214,9 +2209,8 @@ h1 {
   font-size: 2.5em;
   line-height: 1.125em;
   padding-top: 1em;
-  margin-none: 0.3em;
+  margin-bottom: 0.3em;
   color: #444444;
-  border-bottom: 0 solid #669933;
 }
 
 h2 {
@@ -2227,7 +2221,6 @@ h2 {
   padding-top: 0.8333em;
   margin-bottom: 0.7em;
   color: #555555;
-  border: none;
 }
 
 h3 {
@@ -2238,7 +2231,6 @@ h3 {
   padding-top: 1em;
   margin-bottom: 0.7em;
   color: #666666;
-  border: none;
 }
 
 h4 {
@@ -2249,7 +2241,6 @@ h4 {
   padding-top: 1em;
   margin-bottom: 1em;
   color: #777777;
-  border: none;
 }
 
 h5 {
@@ -2260,17 +2251,16 @@ h5 {
   padding-top: 1.1111em;
   margin: 0;
   color: #888888;
-  border: none;
 }
 
 h6 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   font-size: inherit;
   line-height: inherit;
   padding-top: 1em;
   margin: 0;
   color: #999999;
-  border: none;
 }
 
 b, strong {
@@ -2282,7 +2272,6 @@ i, em {
 }
 
 hr {
-  border: none;
   height: 0.1em;
   background: #cccccc;
   background-color: rgba(0, 0, 0, 0.2);
@@ -2300,8 +2289,9 @@ li {
 
 blockquote {
   margin: 1em;
-  border-top: 0.1em solid #cccccc;
-  border-bottom: 0.1em solid #cccccc;
+  border-width: 0.1em 0 0.1em 0;
+  border-style: solid;
+  border-color: #cccccc;
   padding: 0 1em;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: normal;
@@ -2355,7 +2345,6 @@ h1 + p:first-letter {
   letter-spacing: -0.025em;
   margin-right: 0.075em;
   color: #333333;
-  border: none;
 }
 
 time {
@@ -2374,7 +2363,6 @@ time:before {
 pre {
   margin: 1em;
   padding: 2em;
-  border: 1px solid #dddddd;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
   border-radius: 2em;
@@ -2390,24 +2378,19 @@ pre {
 a {
   color: #57068c;
   text-decoration: none;
-  border: none;
 }
 a:link, a:visited {
   color: #57068c;
-  border: none;
 }
 a[href]:hover, a[href]:focus {
   color: #57068c;
   text-decoration: underline;
-  border: none;
 }
 a:active {
   color: #57068c;
-  border: none;
 }
 .logo a, h1 a, h2 a, h3 a {
   color: #57068c;
-  border: none;
 }
 
 label {
@@ -2422,7 +2405,6 @@ select {
   font-family: inherit;
   font-size: inherit;
   padding: 0.125em;
-  border: 1px solid #cccccc;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -2447,14 +2429,12 @@ textarea[required] {
 [role="search"] {
   position: relative;
   background-color: white;
-  border: 1px solid #cccccc;
   padding: 0 0.75em;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
 }
 [role="search"] input[type="search"], [role="search"] input {
-  border: none;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
@@ -2487,7 +2467,6 @@ input[type="submit"], input.cancel {
   font-size: inherit;
   font-weight: normal;
   font-style: normal;
-  border: 1px solid #bbbbbb;
   cursor: pointer;
   padding: 0.33em 0.66em;
   line-height: 1;
@@ -2617,7 +2596,6 @@ a.control {
   font-size: 1.5em;
   padding: 0.5em 0.75em;
   line-height: 1;
-  border: 1px solid #666666;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
@@ -2651,7 +2629,6 @@ a.control:active {
   margin: 1em;
   color: #3a87ad;
   background-color: #d9edf7;
-  border: 1px solid #bce8f1;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
@@ -2682,7 +2659,9 @@ a.control:active {
 
 .options {
   list-style: none;
-  border-top: 1px solid #cccccc;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #cccccc;
 }
 .options li {
   text-indent: 0;
@@ -2692,11 +2671,12 @@ a.control:active {
   font-weight: bold;
   margin: 0;
   padding: 0.3125em 0.625em;
-  border-bottom: 1px solid #cccccc;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cccccc;
 }
 .options a {
   display: block;
-  border: none;
 }
 
 .pagination {
@@ -2712,7 +2692,6 @@ a.control:active {
   padding: 0.5em 1em;
   line-height: 1em;
   margin: 0.1em;
-  border: 1px solid #666666;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
