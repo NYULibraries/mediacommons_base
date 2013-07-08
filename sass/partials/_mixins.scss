@@ -25,12 +25,36 @@
   @else { @include background-image(linear-gradient($direction, $start $start-pos, $mid $mid-pos, $end $end-pos)); }
 }
 
-@mixin mc-font-face( $font-name, $font-woff, $font-ttf, $inline-fonts: false, $font-style:normal, $font-weight:normal, $eot:false ) {
-  @if $inline-fonts and $font-name { @include font-face( $font-name, inline-font-files( $font-woff, woff, $font-ttf, truetype ), $eot, $font-weight, $font-style ); }
-  @else if $font-name { @include font-face( $font-name, font-files( $font-woff, woff, $font-ttf, truetype ), $eot, $font-weight, $font-style ); }
+@mixin web-font-face($font-name, $font-file-name, $font-weight: normal, $font-style: normal, $inline-fonts: false) { 
+  @if $inline-fonts and $font-name {
+  @include font-face(
+    $font-name, 
+    inline-font-files(
+      "#{$font-file-name}.woff", woff, 
+      "#{$font-file-name}.ttf", truetype, 
+      "#{$font-file-name}.svg", svg
+    ), 
+    "#{$font-file-name}.eot",  
+    $font-weight, 
+    $font-style
+  );
+  }
+  @else if $font-name { 
+    @include font-face(
+      $font-name, 
+      font-files(
+        "#{$font-file-name}.woff", woff, 
+        "#{$font-file-name}.ttf", truetype,
+        "#{$font-file-name}.svg##{$font-name}", svg
+      ), 
+      "#{$font-file-name}.eot", 
+      $font-weight, 
+      $font-style
+    );
+  }
 }
 
-@mixin mc-font-faced($font-name: false) {
+@mixin web-font-family($font-name: false) {
   @if $font-name { font-family: $font-name; }
 }
 
