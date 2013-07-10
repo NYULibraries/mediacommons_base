@@ -6,7 +6,7 @@
 * { @include box-sizing($bs); }
 
 // Icon fonts
-//@include mc-font-face($icon-font-name, $icon-font-woff, $icon-font-ttf, $inline-fonts, $font-weight, $font-style, $icon-font-eot);  
+//@include mc-font-face($icon-font-name, $icon-font-file-name, $font-weight, $font-style, $inline-fonts);
 
 // hidden elements
 .skip {
