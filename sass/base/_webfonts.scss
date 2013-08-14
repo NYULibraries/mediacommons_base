@@ -1,0 +1,44 @@
+//////////////////////////////
+// BASE: Page specific styles that aren't in Pattern-Primer 
+//////////////////////////////
+
+//@include web-font-face($body-font-name, $body-font-file-name, $font-weight, $font-style, $inline-fonts);
+//
+//@include web-font-face($body-bold-font-name, $body-bold-font-file-name, $body-bold-font-weight, $font-style, $inline-fonts); 
+//
+//@include web-font-face($body-italic-font-name, $body-italic-font-file-name, $font-weight, $body-italic-font-style, $inline-fonts);
+//
+//@include web-font-face($body-bold-italic-font-name, $body-bold-italic-font-file-name, $body-bold-italic-font-weight, $body-bold-italic-font-style, $inline-fonts);
+//
+//@include web-font-face($heading-font-name, $heading-font-file-name, $font-weight, $font-style, $inline-fonts);
+//
+//@include web-font-face($heading-bold-font-name, $heading-bold-font-file-name, $heading-bold-font-weight, $font-style, $inline-fonts);
+
+strong, b {
+  @include web-font-family($body-bold-font-name);
+}
+em, i {
+  @include web-font-family($body-italic-font-name);
+}
+// never sure what order the tags will be in and if there mixed
+strong em, 
+b i, 
+em strong, 
+i b, 
+strong i, 
+b em, 
+i strong, 
+em b {
+  @include web-font-family($body-bold-italic-font-name);
+}
+#{headings()} {
+  strong {
+    @include web-font-family($heading-bold-font-name);
+  }
+}
+blockquote strong {
+  @include web-font-family($heading-bold-font-name);
+}
+h4 {
+  font-family: $heading-bold-font-name;
+}

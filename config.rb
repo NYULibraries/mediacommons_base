@@ -1,6 +1,7 @@
 # Require any additional compass plugins here.
 require 'compass-pattern-primer'
-require 'toolkit'   
+require 'toolkit'
+require 'modular-scale'   
 
 # Set this to the root of your project when deployed:
 http_path = "/mediacommons/sites/mediacommons.futureofthebook.org/themes/mediacommons_base"
@@ -18,7 +19,7 @@ output_style = :expanded
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+# line_comments = false
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:

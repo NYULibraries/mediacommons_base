@@ -43,4 +43,20 @@
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+} 
+
+
+%element-invisible-mq { 
+    @include respond-to('full navigation') {  
+    // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+      // IE6, IE7 
+      clip: rect(1px 1px 1px 1px); 
+    }
+    clip: rect(1px, 1px, 1px, 1px);
+  }
 }

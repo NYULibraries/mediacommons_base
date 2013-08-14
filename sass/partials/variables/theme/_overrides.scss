@@ -2,36 +2,72 @@
 // VARIABLES: For Theme — Overides for Compass Pattern-Primer  
 //////////////////////////////
 
-$body-font-family: Georgia, Cambria, "Times New Roman", Times, serif !default;
-$secondary-font: $body-font-family;
-$header-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; ;
-$blockquote-font-family: $body-font-family;
+$body-font-family: $body-font-name, "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+// $secondary-font: $body-font-family;
+$header-font-family: $heading-font-name, "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+$header-font-family: $heading-font-name, "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+$blockquote-font-family: $header-font-family;
+//$monospaced-font-family: "Droid Sans Mono", Menlo, Courier New, Courier, Mono, monospace; 
 
+$body-font-size: 16px; 
+$body-line-height: 1.5em;
 
-/// body
-$body-background-color: lighten(nth($black , 6), 0%);
+///// body
+$body-background-color: nth($black , 6);
 $body-background-rgba: rgba($body-background-color, 1);
 $body-border-width: false;
 
-$body-margin: 0;
+$body-margin: 0 auto;
 $body-padding: 0;
 
-$html-border-width: false;
-$html-background-color: lighten($body-background-color, 10%);
+$html-border-color: nth($primary, 1);
+$html-background-color: $body-background-color;
 
-$link-color: #57068c;
+// Links
+$link-color: nth($primary, 1);
 $link-text-decoration: none;
 $link-border-width: false;
-
-/// Visited
-$link-visited-link-color: $link-color;
-$link-visited-border-width: $link-border-width;
-/// Hover
-$link-hover-link-color: $link-color;
-$link-text-decoration: none; 
+///// Visited
+$link-visited-link-color: nth($primary, 2);
+$link-visited--border-width: $link-border-width;
+///// Hover
+$link-hover-link-color: lighten($link-color, 10%);
+// $link-hover-text-decoration: none; 
 $link-hover-border-width: $link-border-width;
-/// Active
-$link-active-link-color: $link-color;
+$link-hover-border-color: $link-color;
+///// Active
+$link-active-link-color: $link-color; 
+
+$article-fl-float: none;
+$article-fl-font-family: inherit;
+$article-fl-font-bold: false; 
+$article-fl-font-size: inherit;
+$article-fl-line-height: inherit;
+$article-fl-letter-spacing: inherit;
+$article-fl-margin: 0;
+$article-fl-margin-pos: false;
+$article-fl-background-color: inherit;
+$article-fl-color: inherit; 
+
+$article-font-size: inherit;
+$article-line-height: inherit;
+$article-word-spacing: 0em;
+$article-margin: 1em 0;
+
+$time-display: block;
+$time-text-align: left;
+$time-font-family: $body-font-family;
+$time-font-bold: false; // normal
+$time-font-italic: false; // normal
+$time-font-uppercase: false; // uppercase
+$time-font-variant: false; // normal
+$time-font-size: 1em;
+$time-line-height: 1.5em;
+$time-letter-spacing: 0.2em;
+$time-color: #888;
+$time-content: '';
+
+
 
 $h1-border-width: false; 
 $h2-border-width: false;

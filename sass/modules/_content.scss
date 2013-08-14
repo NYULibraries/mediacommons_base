@@ -3,26 +3,26 @@
 //////////////////////////////
 
 
-@mixin blockquotes {
-  &.mc  { @include blockquote($blue_mc); }
-  &.imr   { @include blockquote($orange_imr); }
-  &.mcp { @include blockquote($green_mcp); }
-  &.tne { @include blockquote($aqua_tne); }
-  &.ac { @include blockquote($red_ac); }
-}
-
-@mixin blockquote($bgcolor) {
-  blockquote{
-    border-top:none;
-    border-bottom:none;
-    border-left:4px solid $grey;
-    @include border-radius(0);
-    margin-left:0;
-    line-height:1.25em;
-    color:darken($bgcolor,10%);
-  }
-  
-}
+//@mixin blockquotes {
+//  &.mc  { @include blockquote($blue_mc); }
+//  &.imr   { @include blockquote($orange_imr); }
+//  &.mcp { @include blockquote($green_mcp); }
+//  &.tne { @include blockquote($aqua_tne); }
+//  &.ac { @include blockquote($red_ac); }
+//}
+//
+//@mixin blockquote($bgcolor) {
+//  blockquote{
+//    border-top:none;
+//    border-bottom:none;
+//    border-left:4px solid $grey;
+//    @include border-radius(0);
+//    margin-left:0;
+//    line-height:1.25em;
+//    color:darken($bgcolor,10%);
+//  }
+//  
+//}
 
 ul.tags {
   padding:0;
