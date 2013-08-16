@@ -31,6 +31,7 @@
 
 @import "modules/_typography";
 @import "modules/_icons";
+@import "modules/_globalnav";
 @import "modules/_header"; 
 @import "modules/_usernav";
 @import "modules/_mainnav";
@@ -41,9 +42,11 @@
 @import "modules/_comments";
 @import "modules/_forms";
 @import "modules/_search";
+@import "modules/_user_profile"; 
 
 @import "layout/_breakpoints";
 @import "layout/_toolbar";
+@import "layout/_comments";
 @import "layout/_page";
 
 @import "_temp_todelete";

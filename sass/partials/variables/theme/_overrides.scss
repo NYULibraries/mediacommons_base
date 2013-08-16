@@ -63,11 +63,9 @@ $time-font-uppercase: false; // uppercase
 $time-font-variant: false; // normal
 $time-font-size: 1em;
 $time-line-height: 1.5em;
-$time-letter-spacing: 0.2em;
-$time-color: #888;
+$time-letter-spacing: 0.05em;
+$time-color: nth($black , 2);
 $time-content: '';
-
-
 
 $h1-border-width: false; 
 $h2-border-width: false;

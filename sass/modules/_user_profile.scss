@@ -1,0 +1,19 @@
+//////////////////////////////
+// MODULES: Styles that are layout independent 
+//////////////////////////////
+
+.vcard {
+  margin: 1em 0;
+  > .url .photo {
+    float: left;
+    margin: 0 .5em 0 0;
+  } 
+  address, .fn.url {
+    font-weight: bold;
+  }
+  .org {
+    &:before {
+      content: " — ";
+    }
+  }
+}

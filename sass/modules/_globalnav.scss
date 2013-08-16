@@ -1,0 +1,99 @@
+.global {
+  @include web-font-family($heading-font-name); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: (.875em * 2);
+  background: darken(nth($black,1), 5%);
+  > ul {
+    @include horizontal-list(.5em);
+    line-height: 2em;
+    font-size: .875em;
+    > li {
+      text-indent: 0;
+      margin: 0;
+      a {
+        color: nth($black, 5);
+      }
+    }  
+    &.global {
+      @include horizontal-list(.5em);
+      float: left;
+      max-width:75%;
+      //overflow: hidden; 
+      > li {
+        &:first-child:before {
+          content: "MediaCommons";
+          color: nth($primary, 2);
+          display: inline;
+          margin: 0 1em 0 1em;
+        }
+      }
+    }   
+    &.logged-out {
+      @include horizontal-list(1em);
+      float: right;
+      max-width: 25%;
+      padding: 0 1em;
+      > li + li {
+        width: 60px;
+        @include inline-block-list-container;
+      }
+      li > ul {
+          @include inline-block-list;
+          position: absolute;
+          right:0;
+        > li {
+          width:300px;
+          @include inline-block-list-item(1em); 
+          text-indent: 0;
+          background: nth($black, 1);
+          form {
+            font-size: .875em;
+            width:300px;
+            padding:0 1em;
+            input {
+              max-width: 100%;
+              display: block;
+              margin: 0 0 1em 0;
+            }
+            .description {
+              display:none;
+              white-space: normal;
+              font-size:.875em;
+              line-height: 1.2em;
+            } 
+            label {
+              display:none;
+            }
+            #edit-submit {
+              float: right;
+            }
+            .button-link {
+              line-height: 1.2em;
+            }
+            .social-login {
+              margin: .5em 0;
+              clear:both;
+              display: block;
+              font-size:.825em;
+              line-height: 1.2em;
+              .twitter {
+                display: inline-block; 
+                float: left;
+                //border: solid;
+                
+              }
+              .facebook{
+                display: inline-block;
+                float: right;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
