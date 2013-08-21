@@ -1458,7 +1458,6 @@ h4 {
 }
 /* line 47, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li {
-  width: 300px;
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1471,7 +1470,8 @@ h4 {
   white-space: nowrap;
   padding-left: 1em;
   padding-right: 1em;
-  text-indent: 0;
+  width: 300px;
+  text-indent: 0em;
   background: #333333;
 }
 /* line 52, ../sass/modules/_globalnav.scss */
@@ -2156,6 +2156,15 @@ article {
 /* line 120, ../sass/layout/_page.scss */
 article > header {
   padding: 0 1em;
+}
+
+/* line 5, ../sass/state/_globalnav.scss */
+.global .logged-out li > ul > li.is-hidden {
+  display: none;
+}
+/* line 8, ../sass/state/_globalnav.scss */
+.global .logged-out li > ul > li.is-visible {
+  display: inline-block;
 }
 
 /* line 2, ../sass/_temp_todelete.scss */

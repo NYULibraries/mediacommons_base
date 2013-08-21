@@ -1,6 +1,7 @@
 //////////////////////////////
 // VARIABLES: For layout breakpoints 
 //////////////////////////////
+$breakpoints-to-ems: true;
 
 $breakpoints: 'extra-wide' (1281px 1680px),
               'wide' (801px 1280px),

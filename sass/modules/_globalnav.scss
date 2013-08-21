@@ -45,13 +45,13 @@
           position: absolute;
           right:0;
         > li {
-          width:300px;
-          @include inline-block-list-item(1em); 
-          text-indent: 0;
+          @include inline-block-list-item(1em);
+          width: 300px;
+          text-indent: 0em;
           background: nth($black, 1);
           form {
             font-size: .875em;
-            width:300px;
+            width: 300px;
             padding:0 1em;
             input {
               max-width: 100%;

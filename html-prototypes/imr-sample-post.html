@@ -1,6 +1,4 @@
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/global.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">     <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
   <head>
     <meta charset="utf-8">
@@ -11,8 +9,8 @@
   </head>
   <body>
     <a href="#main-nav" class="skip-to-nav">Skip to Navigation</a>
-  <main>            
-    <article> 
+  <main role="main">            
+    <article role="article"> 
       <header>
         <h1>Data Collection, Television, and Twitter</h1>
         <div class="vcard"><a href="http://mediacommons.futureofthebook.org/imr/users/michaellahey" title="View user profile." rel="contact" class="url"><img src="http://mediacommons.futureofthebook.org/imr/files/pictures/picture-9895.jpg" alt="Michael Lahey&#039;s picture" title="Michael Lahey&#039;s picture"  class="photo" /></a>
@@ -163,9 +161,9 @@
     </section>
   </article>
 </main>
-  <header id="site-header">
+  <header role="banner">
     <h1 class="logo site-name"><a href="http://mediacommons.futureofthebook.org/imr/" title="Home" rel="home">In Media Res</a></h1>
-    <form action="/imr/2013/08/06/data-collection-television-and-twitter"  accept-charset="UTF-8" method="post" id="search-block-form">
+    <form role="search" action="/imr/2013/08/06/data-collection-television-and-twitter"  accept-charset="UTF-8" method="post" id="search-block-form">
        <label for="edit-search-block-form-1">Search this site: </label>
        <input type="search" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Enter the terms you wish to search for." placeholder="Search&hellip;" class="form-text" />
       <input type="submit" name="op" id="edit-submit-2" value="Search"  class="form-submit" />
@@ -174,32 +172,32 @@
       <input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form" />
     </form> 
   </header>
-  <nav class="nav global">
-    <ul class="global">
-      <li>
+  <nav class="nav global" role="navigation">
+    <ul class="global" role="menubar"> 
+      <li role="menuitem">
         <a href="#">Frontpage</a>
       </li>
-      <li>
+      <li role="menuitem">
         <a href="#">In Media Res</a>
-      </li>
-      <li>
+      </li role="menuitem">
+      <li role="menuitem">
         <a href="#">The New Everyday</a>
       </li>
-      <li>
+      <li role="menuitem">
         <a href="#">#Alt-Academy</a>
       </li>
-      <li>
+      <li role="menuitem">
         <a href="#">MediaCommons Press</a>
       </li> 
     </ul>
-    <ul class="logged-out">
-      <li>
+    <ul class="logged-out" role="menubar">
+      <li role="menuitem">
         <a href="#">Join</a>
-      </li>
-      <li>
-        <a href="#">Login</a>
-        <ul>
-          <li>
+      </li role="menuitem">
+      <li role="menuitem" aria-haspopup="true">
+        Login
+        <ul role="menu" aria-hidden="true">
+          <li role="menuitem">
             <form action="/imr/user/login"  accept-charset="UTF-8" method="post" id="user-login">
               <label for="edit-name">Username or e-mail address: <span class="form-required" title="This field is required.">*</span></label>
               <input type="text" maxlength="60" name="name" id="edit-name" size="60" value="" class="form-text required" placeholder="Username or e-mail address" />
@@ -221,26 +219,26 @@
    </ul>
   </nav>
 
-  <nav class="nav main imr" id="main-nav">
-    <ul class="main imr">
-      <li>
+  <nav class="nav main imr" id="main-nav" role="navigation">
+    <ul class="main imr" role="menubar">
+      <li role="menuitem">
         <a href="#">Home</a>
       </li>
-      <li>
+      <li role="menuitem">
         <a href="#">Recent Posts</a>
       </li>
-      <li>
+      <li role="menuitem">
         <a href="#">Current Calls</a>
       </li>
     </ul>
   </nav>
 
   <footer>
-    <ul>
-      <li>
+    <ul role="menubar">
+      <li role="menuitem">
         <a href="#">Copyright/Fair Use Policy</a>
       </li>
-      <li>
+      <li role="menuitem">
         <a href="mailto:editors@mediacommons.futureofthebook.org">Help</a>
       </li>
       <li>

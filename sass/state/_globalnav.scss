@@ -1,0 +1,14 @@
+.global {
+  .logged-out {
+    li > ul {
+      > li {
+        &.is-hidden {
+          display: none;
+        }
+        &.is-visible {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
