@@ -16,7 +16,7 @@ $body-line-height: 1.5em;
 $body-background-color: nth($black , 6);
 $body-background-rgba: rgba($body-background-color, 1);
 $body-border-width: false;
-
+$body-border-color-rgba: rgba(0,0,0,0); 
 $body-margin: 0 auto;
 $body-padding: 0;
 
@@ -51,7 +51,7 @@ $article-fl-color: inherit;
 
 $article-font-size: inherit;
 $article-line-height: inherit;
-$article-word-spacing: 0em;
+$article-word-spacing: inherit;
 $article-margin: 1em 0;
 
 $time-display: block;

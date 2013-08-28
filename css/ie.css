@@ -935,7 +935,7 @@ body {
   line-height: 1.5em;
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
   color: #333333;
-  border-color: rgba(0, 0, 0, 0.13);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 /* line 1, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
@@ -1071,7 +1071,7 @@ article > p,
 article section > p {
   font-size: inherit;
   line-height: inherit;
-  word-spacing: 0em;
+  word-spacing: inherit;
   margin: 1em 0;
   /*  Does this improve the reading experience?
     -webkit-hyphens: auto;
@@ -1218,17 +1218,17 @@ label {
   display: block;
 }
 
-/* line 17, ../sass/base/_webfonts.scss */
+/* line 18, ../sass/base/_webfonts.scss */
 strong, b {
   font-family: "Droid Serif";
 }
 
-/* line 20, ../sass/base/_webfonts.scss */
+/* line 21, ../sass/base/_webfonts.scss */
 em, i {
   font-family: "Droid Serif";
 }
 
-/* line 31, ../sass/base/_webfonts.scss */
+/* line 32, ../sass/base/_webfonts.scss */
 strong em,
 b i,
 em strong,
@@ -1240,42 +1240,19 @@ em b {
   font-family: "Droid Serif";
 }
 
-/* line 35, ../sass/base/_webfonts.scss */
+/* line 36, ../sass/base/_webfonts.scss */
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
   font-family: "Droid Sans";
 }
 
-/* line 39, ../sass/base/_webfonts.scss */
+/* line 40, ../sass/base/_webfonts.scss */
 blockquote strong {
   font-family: "Droid Sans";
 }
 
-/* line 42, ../sass/base/_webfonts.scss */
+/* line 43, ../sass/base/_webfonts.scss */
 h4 {
   font-family: "Droid Sans";
-}
-
-/* line 5, ../sass/modules/_typography.scss */
-.field-name-field-field-period {
-  margin: -.5em 0 .5em 0;
-  display: inline-block;
-}
-
-/* line 19, ../sass/modules/_typography.scss */
-.date-display-start, .date-display-end {
-  text-transform: uppercase;
-  font-style: normal;
-  background: #ffc;
-}
-
-/* line 25, ../sass/modules/_typography.scss */
-h4 {
-  margin: 0;
-  padding: 0;
-  color: #333;
-  font-weight: bold;
-  font-size: 1.5em;
-  border-bottom: 1px solid #333;
 }
 
 /* line 1, ../sass/modules/_globalnav.scss */
@@ -1518,352 +1495,10 @@ h4 {
   display: inline-block;
   float: left;
 }
-/* line 88, ../sass/modules/_globalnav.scss */
+/* line 86, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form .social-login .facebook {
   display: inline-block;
   float: right;
-}
-
-/* line 9, ../sass/modules/_header.scss */
-.header {
-  background: #ebebeb;
-  margin-top: 2.2em;
-  padding-top: 1em;
-  font-size: 1.25em;
-  line-height: 1.45em;
-}
-/* line 15, ../sass/modules/_header.scss */
-.header .wrapper {
-  padding: 2em;
-  margin: 1em auto 0 auto;
-  background: #f8f8f8;
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  box-shadow: 0 10px 40px #e2e1e1;
-}
-/* line 21, ../sass/modules/_header.scss */
-.header .wrapper a {
-  border-bottom: none;
-}
-
-/* line 27, ../sass/modules/_header.scss */
-.article-header {
-  margin: 3em 0 2em 0;
-  position: relative;
-}
-/* line 30, ../sass/modules/_header.scss */
-.article-header .social {
-  position: absolute;
-  right: 0;
-  top: .5em;
-  text-align: right;
-}
-/* line 35, ../sass/modules/_header.scss */
-.article-header .social a.share {
-  border-bottom: none;
-  margin-left: .25em;
-}
-/* line 38, ../sass/modules/_header.scss */
-.article-header .social a.share:hover {
-  opacity: .8;
-}
-
-/* line 45, ../sass/modules/_header.scss */
-div.status {
-  background-image: none;
-  border-color: yellow;
-  margin-top: 2em;
-  background-color: yellow;
-  color: black;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  -webkit-box-shadow: 0, 0, 30px, #ebebeb;
-  -moz-box-shadow: 0, 0, 30px, #ebebeb;
-  box-shadow: 0, 0, 30px, #ebebeb;
-}
-
-/* line 6, ../sass/modules/_subnavigation.scss */
-.content-nav ul {
-  display: block;
-  margin: .25em 0 0 0;
-  padding: 0;
-}
-/* line 12, ../sass/modules/_subnavigation.scss */
-.content-nav li {
-  margin: 0;
-  padding-right: 2em;
-  display: inline-block;
-}
-/* line 16, ../sass/modules/_subnavigation.scss */
-.content-nav li a {
-  font-size: .9em;
-  text-transform: uppercase;
-  line-height: 1em;
-  padding: .5em 1em;
-  border-bottom: none;
-  font-weight: 600;
-  color: #ccc;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  border-radius: 60px;
-  background: #f3f3f3;
-}
-/* line 26, ../sass/modules/_subnavigation.scss */
-.content-nav li a:hover {
-  background: #fff;
-  border-bottom: none !important;
-}
-
-/* line 9, ../sass/modules/_footer.scss */
-.wrapper.the-content {
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  padding-bottom: 3em;
-}
-
-/* line 14, ../sass/modules/_footer.scss */
-.footer.wrapper {
-  background: none;
-  padding: 0;
-  margin-top: 1em;
-}
-/* line 18, ../sass/modules/_footer.scss */
-.footer.wrapper table {
-  font-size: .9em;
-  width: 100%;
-}
-/* line 21, ../sass/modules/_footer.scss */
-.footer.wrapper table .node-title, .footer.wrapper table .node-author {
-  display: inline-block;
-}
-/* line 25, ../sass/modules/_footer.scss */
-.footer.wrapper table .node-title a {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  color: black;
-  border-bottom: none;
-}
-/* line 31, ../sass/modules/_footer.scss */
-.footer.wrapper table .node-author {
-  font-size: .8em;
-}
-/* line 33, ../sass/modules/_footer.scss */
-.footer.wrapper table .node-author a {
-  font-size: 1.2em;
-}
-/* line 36, ../sass/modules/_footer.scss */
-.footer.wrapper table .node-author:before {
-  content: ", by ";
-}
-
-/* line 6, ../sass/modules/_tabs.scss */
-.tabs .primary {
-  border-bottom: 0;
-  margin: 2em 0;
-  padding: 0;
-}
-/* line 10, ../sass/modules/_tabs.scss */
-.tabs .primary li {
-  margin-left: 0;
-  margin-right: 1em;
-}
-/* line 13, ../sass/modules/_tabs.scss */
-.tabs .primary li a {
-  border: 0;
-  padding: .5em 1em;
-  background: #f8f8f8;
-  text-transform: uppercase;
-  font-size: .9em;
-  border: 1px solid #f3f3f3;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 22, ../sass/modules/_tabs.scss */
-.tabs .primary li a.active {
-  border: 0;
-  background: #196195;
-  border: none;
-  color: white;
-}
-/* line 28, ../sass/modules/_tabs.scss */
-.tabs .primary li a:hover {
-  background: silver;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-/* line 5, ../sass/modules/_forms.scss */
-#search {
-  margin-left: 6px;
-  float: right;
-  width: 30.5%;
-  text-align: right;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 12, ../sass/modules/_forms.scss */
-#search form {
-  display: block;
-  margin: 0;
-}
-/* line 15, ../sass/modules/_forms.scss */
-#search form input[type="text"] {
-  width: 74.21%;
-  padding: 1.125em .25em;
-  font-size: .8em;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #5a5a5a;
-  font-weight: normal;
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border: 1px solid #ebebeb;
-}
-/* line 25, ../sass/modules/_forms.scss */
-#search form input[type="submit"] {
-  position: relative;
-  left: -6px;
-  width: 24.02%;
-  font-size: .7em;
-  padding: .35em 0;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  -moz-border-radius-topleft: 0px;
-  -webkit-border-top-left-radius: 0px;
-  border-top-left-radius: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  -webkit-appearance: none;
-}
-
-/* line 5, ../sass/modules/_search.scss */
-.search-form {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  width: 38.5%;
-  display: inline-block;
-  background: #f3f3f3;
-  padding: 1em;
-  margin-top: 0;
-  border: 1px solid #ebebeb;
-}
-/* line 6, ../sass/modules/_search.scss */
-.search-form:hover {
-  -webkit-box-shadow: 0, 0, 30px, #ebebeb;
-  -moz-box-shadow: 0, 0, 30px, #ebebeb;
-  box-shadow: 0, 0, 30px, #ebebeb;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 17, ../sass/modules/_search.scss */
-.search-form label {
-  font-style: italic;
-  margin-bottom: 1em;
-  display: block;
-}
-/* line 22, ../sass/modules/_search.scss */
-.search-form input[type="text"] {
-  padding: 1.125em 0.25em;
-  border: 1px solid #ebebeb;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin-bottom: 1em;
-}
-/* line 28, ../sass/modules/_search.scss */
-.search-form fieldset {
-  border: 1px solid #e6e6e6;
-}
-/* line 29, ../sass/modules/_search.scss */
-.search-form fieldset .criterion {
-  margin-right: 0;
-  float: none;
-}
-/* line 33, ../sass/modules/_search.scss */
-.search-form fieldset label {
-  display: inline;
-  font-weight: normal;
-}
-/* line 38, ../sass/modules/_search.scss */
-.search-form fieldset input[type="text"] {
-  margin-bottom: 0;
-  padding: 0;
-  padding: 1.125em 0.25em;
-  border: 1px solid #ebebeb;
-}
-
-/* line 47, ../sass/modules/_search.scss */
-.search-results-col {
-  width: 58.5%;
-  display: inline-block;
-  float: right;
-}
-/* line 51, ../sass/modules/_search.scss */
-.search-results-col .bold-title {
-  color: white;
-  padding: 1em;
-  background: #333333;
-  font-size: 1,25em;
-}
-/* line 56, ../sass/modules/_search.scss */
-.search-results-col .bold-title.none {
-  color: yellow;
-  font-style: italic;
-}
-/* line 61, ../sass/modules/_search.scss */
-.search-results-col .search-results-wrapper {
-  columns: 100px 2;
-  -webkit-columns: 100px 2;
-  /* Safari and Chrome */
-  -moz-columns: 100px 2;
-  /* Firefox */
-  display: block;
-  margin-top: 1em;
-}
-/* line 67, ../sass/modules/_search.scss */
-.search-results-col .search-results-wrapper ul.search-results {
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-/* line 71, ../sass/modules/_search.scss */
-.search-results-col .search-results-wrapper ul.search-results li.search-result {
-  list-style-position: inside;
-  margin-left: 0em;
-  text-indent: 0em;
-  display: inline-block;
-  border: 1px solid #f3f3f3;
-  padding: 1em;
-}
-/* line 78, ../sass/modules/_search.scss */
-.search-results-col .search-results-wrapper ul.search-results li.search-result .search-snippet-info {
-  padding-left: 0;
-}
-/* line 80, ../sass/modules/_search.scss */
-.search-results-col .search-results-wrapper ul.search-results li.search-result .search-snippet-info strong {
-  background: yellow;
 }
 
 /* line 5, ../sass/modules/_user_profile.scss */
@@ -1882,29 +1517,6 @@ div.status {
 /* line 15, ../sass/modules/_user_profile.scss */
 .vcard .org:before {
   content: " — ";
-}
-
-/* line 1, ../sass/layout/_toolbar.scss */
-body.toolbar-drawer {
-  margin-top: -35px;
-}
-/* line 3, ../sass/layout/_toolbar.scss */
-body.toolbar-drawer .page {
-  margin-top: -45px;
-}
-
-/* line 7, ../sass/layout/_toolbar.scss */
-#toolbar {
-  position: static !important;
-  margin-top: 14px;
-}
-/* line 8, ../sass/layout/_toolbar.scss */
-#toolbar li {
-  text-indent: 0;
-}
-/* line 13, ../sass/layout/_toolbar.scss */
-#toolbar a {
-  margin-left: 10px;
 }
 
 /* line 5, ../sass/layout/_comments.scss */
@@ -1936,23 +1548,4 @@ article > header {
 /* line 8, ../sass/state/_globalnav.scss */
 .global .logged-out li > ul > li.is-visible {
   display: inline-block;
-}
-
-/* line 2, ../sass/_temp_todelete.scss */
-.node-hub .profile {
-  clear: none;
-  margin: 0;
-}
-/* line 5, ../sass/_temp_todelete.scss */
-.node-hub .profile h3, .node-hub .profile dl {
-  display: none;
-}
-/* line 8, ../sass/_temp_todelete.scss */
-.node-hub .profile .user-picture {
-  float: left;
-}
-
-/* line 14, ../sass/_temp_todelete.scss */
-.comment.clearfix:nth-child(3) {
-  border-top: none;
 }

@@ -2,7 +2,6 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 
-
 .NAVCLASS {
   @include respond-to-ie('full navigation') {
     // add full navigation specific style

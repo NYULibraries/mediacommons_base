@@ -30,7 +30,7 @@
           margin: 0 1em 0 1em;
         }
       }
-    }   
+    }
     &.logged-out {
       @include horizontal-list(1em);
       float: right;
@@ -52,16 +52,16 @@
           form {
             font-size: .875em;
             width: 300px;
-            padding:0 1em;
+            padding: 0 1em;
             input {
               max-width: 100%;
               display: block;
               margin: 0 0 1em 0;
             }
             .description {
-              display:none;
+              display: none;
               white-space: normal;
-              font-size:.875em;
+              font-size: .875em;
               line-height: 1.2em;
             } 
             label {
@@ -75,15 +75,13 @@
             }
             .social-login {
               margin: .5em 0;
-              clear:both;
+              clear: both;
               display: block;
-              font-size:.825em;
+              font-size: .825em;
               line-height: 1.2em;
               .twitter {
                 display: inline-block; 
                 float: left;
-                //border: solid;
-                
               }
               .facebook{
                 display: inline-block;
