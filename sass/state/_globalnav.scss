@@ -1,13 +1,11 @@
 .global {
   .logged-out {
-    li > ul {
-      > li {
-        &.is-hidden {
-          display: none;
-        }
-        &.is-visible {
-          display: inline-block;
-        }
+    li[aria-haspopup="true"] > ul {
+      &[aria-hidden="true"] {
+        display: none;
+      }
+      &[aria-hidden="false"] {
+        display: inline-block;
       }
     }
   }

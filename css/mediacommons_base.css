@@ -1770,11 +1770,11 @@ article > header {
   padding: 0 1em;
 }
 
-/* line 5, ../sass/state/_globalnav.scss */
-.global .logged-out li > ul > li.is-hidden {
+/* line 4, ../sass/state/_globalnav.scss */
+.global .logged-out li[aria-haspopup="true"] > ul[aria-hidden="true"] {
   display: none;
 }
-/* line 8, ../sass/state/_globalnav.scss */
-.global .logged-out li > ul > li.is-visible {
+/* line 7, ../sass/state/_globalnav.scss */
+.global .logged-out li[aria-haspopup="true"] > ul[aria-hidden="false"] {
   display: inline-block;
 }
