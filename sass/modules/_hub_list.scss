@@ -1,0 +1,19 @@
+aside[role="complimentary"].partofhub {
+  ul[role="menu"] {
+    list-style: none;
+    margin: 0;
+    li {
+      text-indent: 0;
+      margin: 0;
+      clear: both;
+      + a {
+        //display: inline-block;
+        float: left;
+      }
+      > h3 {
+        float: left;
+        //display: inline;
+      }
+    }
+  }
+}

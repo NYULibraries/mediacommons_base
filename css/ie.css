@@ -933,14 +933,14 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: 1.5em;
-  font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+  font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
   color: #333333;
   border-color: rgba(0, 0, 0, 0);
 }
 
 /* line 1, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
 h1 {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   font-weight: normal;
   font-size: 2.77778em;
   line-height: 1.1em;
@@ -951,7 +951,7 @@ h1 {
 
 /* line 10, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
 h2 {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   font-weight: normal;
   font-size: 2.25em;
   line-height: 1.1em;
@@ -962,7 +962,7 @@ h2 {
 
 /* line 19, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
 h3 {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   font-weight: normal;
   font-size: 1.66667em;
   line-height: 1.1em;
@@ -973,7 +973,7 @@ h3 {
 
 /* line 28, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
 h4 {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   font-weight: bold;
   font-size: 1.35em;
   line-height: 1.1em;
@@ -984,7 +984,7 @@ h4 {
 
 /* line 37, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
 h5 {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   font-weight: normal;
   font-size: 1.35em;
   line-height: 1.1em;
@@ -995,7 +995,7 @@ h5 {
 
 /* line 46, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
 h6 {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   font-weight: bold;
   font-size: 1em;
   line-height: 1.1em;
@@ -1040,7 +1040,7 @@ blockquote {
   border-style: solid;
   border-color: #666666;
   padding: 0.25em 1em;
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
   font-weight: normal;
   font-size: 1.25em;
   line-height: inherit;
@@ -1058,7 +1058,7 @@ blockquote em {
 
 /* line 90, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_typography.scss */
 figcaption {
-  font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+  font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
   font-weight: normal;
   font-style: italic;
   font-size: 0.857em;
@@ -1101,7 +1101,7 @@ h1 + p:first-letter {
 time {
   display: block;
   text-align: left;
-  font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+  font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
   font-weight: normal;
   font-size: 1em;
   line-height: 1.5em;
@@ -1218,41 +1218,60 @@ label {
   display: block;
 }
 
-/* line 18, ../sass/base/_webfonts.scss */
-strong, b {
+/* line 19, ../sass/base/_webfonts.scss */
+.wf-droidserif-n4-active body {
+  font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+}
+
+/* line 24, ../sass/base/_webfonts.scss */
+.wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-active h3, .wf-droidsans-n4-active h4, .wf-droidsans-n4-active h5, .wf-droidsans-n4-active h6 {
+  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+}
+
+/* line 30, ../sass/base/_webfonts.scss */
+.wf-droidserif-n7-active strong, .wf-droidserif-n7-active b {
   font-family: "Droid Serif";
+  font-weight: 700;
+  font-style: normal;
 }
 
-/* line 21, ../sass/base/_webfonts.scss */
-em, i {
+/* line 37, ../sass/base/_webfonts.scss */
+.wf-droidserif-i4-active em, .wf-droidserif-i4-active i {
   font-family: "Droid Serif";
+  font-style: italic;
 }
 
-/* line 32, ../sass/base/_webfonts.scss */
-strong em,
-b i,
-em strong,
-i b,
-strong i,
-b em,
-i strong,
-em b {
+/* line 51, ../sass/base/_webfonts.scss */
+.wf-droidserif-i7-active strong em,
+.wf-droidserif-i7-active b i,
+.wf-droidserif-i7-active em strong,
+.wf-droidserif-i7-active i b,
+.wf-droidserif-i7-active strong i,
+.wf-droidserif-i7-active b em,
+.wf-droidserif-i7-active i strong,
+.wf-droidserif-i7-active em b {
   font-family: "Droid Serif";
+  font-weight: 700;
+  font-style: italic;
 }
 
-/* line 36, ../sass/base/_webfonts.scss */
-h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+/* line 59, ../sass/base/_webfonts.scss */
+.wf-droidsans-n7-active h1 strong, .wf-droidsans-n7-active h2 strong, .wf-droidsans-n7-active h3 strong, .wf-droidsans-n7-active h4 strong, .wf-droidsans-n7-active h5 strong, .wf-droidsans-n7-active h6 strong {
   font-family: "Droid Sans";
+  font-weight: 700;
+  font-style: normal;
 }
-
-/* line 40, ../sass/base/_webfonts.scss */
-blockquote strong {
+/* line 65, ../sass/base/_webfonts.scss */
+.wf-droidsans-n7-active blockquote strong {
   font-family: "Droid Sans";
+  font-weight: 700;
+  font-style: normal;
 }
-
-/* line 43, ../sass/base/_webfonts.scss */
-h4 {
+/* line 70, ../sass/base/_webfonts.scss */
+.wf-droidsans-n7-active h4 {
   font-family: "Droid Sans";
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* line 1, ../sass/modules/_globalnav.scss */
@@ -1499,6 +1518,26 @@ h4 {
 .global > ul.logged-out li > ul > li form .social-login .facebook {
   display: inline-block;
   float: right;
+}
+
+/* line 2, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] {
+  list-style: none;
+  margin: 0;
+}
+/* line 5, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li {
+  text-indent: 0;
+  margin: 0;
+  clear: both;
+}
+/* line 9, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li + a {
+  float: left;
+}
+/* line 13, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li > h3 {
+  float: left;
 }
 
 /* line 5, ../sass/modules/_user_profile.scss */
