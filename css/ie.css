@@ -1520,24 +1520,64 @@ label {
   float: right;
 }
 
-/* line 2, ../sass/modules/_hub_list.scss */
+/* line 1, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub {
+  background: #cccccc;
+}
+/* line 4, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub header {
+  padding: 1em 1em .5em 1em;
+  background: #999999;
+}
+/* line 7, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub header > span {
+  font-style: italic;
+  color: #666666;
+}
+/* line 12, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub h2 {
+  font-size: 1.4em;
+  padding: 0;
+  margin: 0 0 .5em 0;
+}
+/* line 17, ../sass/modules/_hub_list.scss */
 aside[role="complimentary"].partofhub ul[role="menu"] {
   list-style: none;
   margin: 0;
+  padding: 1em;
 }
-/* line 5, ../sass/modules/_hub_list.scss */
+/* line 22, ../sass/modules/_hub_list.scss */
 aside[role="complimentary"].partofhub ul[role="menu"] li {
+  display: table;
   text-indent: 0;
   margin: 0;
-  clear: both;
+  display: block;
+  width: 100%;
 }
-/* line 9, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li + a {
-  float: left;
+/* line 28, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child {
+  display: table-cell;
+  width: 20%;
+  padding: 0 .5em .5em 0;
+  border: solid;
 }
-/* line 13, ../sass/modules/_hub_list.scss */
+/* line 33, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child img {
+  max-width: 80px;
+}
+/* line 37, ../sass/modules/_hub_list.scss */
 aside[role="complimentary"].partofhub ul[role="menu"] li > h3 {
-  float: left;
+  vertical-align: top;
+  display: table-cell;
+  width: 80%;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 48, ../sass/modules/_hub_list.scss */
+aside + h2 {
+  clear: both;
 }
 
 /* line 5, ../sass/modules/_user_profile.scss */
@@ -1578,6 +1618,33 @@ article {
 /* line 120, ../sass/layout/_page.scss */
 article > header {
   padding: 0 1em;
+}
+
+/* line 9, ../sass/layout/_hub_list.scss */
+aside[role="complimentary"].partofhub header {
+  padding: 1em 1em .5em 1em;
+}
+/* line 12, ../sass/layout/_hub_list.scss */
+aside[role="complimentary"].partofhub h2 {
+  font-size: 1.4em;
+  padding: 0;
+  margin: 0 0 .5em 0;
+}
+/* line 19, ../sass/layout/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child {
+  width: 20%;
+  padding: 0 .5em .5em 0;
+  border: solid;
+}
+/* line 23, ../sass/layout/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child img {
+  max-width: 80px;
+}
+/* line 27, ../sass/layout/_hub_list.scss */
+aside[role="complimentary"].partofhub ul[role="menu"] li > h3 {
+  width: 80%;
+  font-size: 1.2em;
+  padding: 0;
 }
 
 /* line 4, ../sass/state/_globalnav.scss */
