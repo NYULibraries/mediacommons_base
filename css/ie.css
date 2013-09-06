@@ -919,9 +919,6 @@ input[type="submit"][disabled="disabled"] {
 
 /* line 1, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.6/stylesheets/compass-pattern-primer/base/_page.scss */
 html {
-  border-width: 0.5em 0 0 0;
-  border-style: solid;
-  border-color: #175988;
   background-color: #eaeaea;
 }
 
@@ -1274,7 +1271,7 @@ label {
   font-style: normal;
 }
 
-/* line 1, ../sass/modules/_globalnav.scss */
+/* line 5, ../sass/modules/_globalnav.scss */
 .global {
   font-family: "Droid Sans";
   position: absolute;
@@ -1284,7 +1281,7 @@ label {
   height: 1.75em;
   background: #262626;
 }
-/* line 9, ../sass/modules/_globalnav.scss */
+/* line 13, ../sass/modules/_globalnav.scss */
 .global > ul {
   margin: 0;
   padding: 0;
@@ -1321,16 +1318,16 @@ label {
 .global > ul li.last {
   padding-right: 0;
 }
-/* line 13, ../sass/modules/_globalnav.scss */
+/* line 17, ../sass/modules/_globalnav.scss */
 .global > ul > li {
   text-indent: 0;
   margin: 0;
 }
-/* line 16, ../sass/modules/_globalnav.scss */
+/* line 20, ../sass/modules/_globalnav.scss */
 .global > ul > li a {
   color: #e0e0e0;
 }
-/* line 20, ../sass/modules/_globalnav.scss */
+/* line 24, ../sass/modules/_globalnav.scss */
 .global > ul.global {
   margin: 0;
   padding: 0;
@@ -1367,14 +1364,14 @@ label {
 .global > ul.global li.last {
   padding-right: 0;
 }
-/* line 26, ../sass/modules/_globalnav.scss */
+/* line 30, ../sass/modules/_globalnav.scss */
 .global > ul.global > li:first-child:before {
   content: "MediaCommons";
   color: #5182a5;
   display: inline;
   margin: 0 1em 0 1em;
 }
-/* line 34, ../sass/modules/_globalnav.scss */
+/* line 38, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out {
   margin: 0;
   padding: 0;
@@ -1412,7 +1409,7 @@ label {
 .global > ul.logged-out li.last {
   padding-right: 0;
 }
-/* line 39, ../sass/modules/_globalnav.scss */
+/* line 43, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out > li + li {
   width: 60px;
   margin: 0;
@@ -1425,7 +1422,7 @@ label {
   display: table;
   clear: both;
 }
-/* line 43, ../sass/modules/_globalnav.scss */
+/* line 47, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul {
   margin: 0;
   padding: 0;
@@ -1452,7 +1449,7 @@ label {
   *display: inline;
   white-space: nowrap;
 }
-/* line 47, ../sass/modules/_globalnav.scss */
+/* line 51, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li {
   list-style-image: none;
   list-style-type: none;
@@ -1470,38 +1467,38 @@ label {
   text-indent: 0em;
   background: #333333;
 }
-/* line 52, ../sass/modules/_globalnav.scss */
+/* line 56, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form {
   font-size: .875em;
   width: 300px;
   padding: 0 1em;
 }
-/* line 56, ../sass/modules/_globalnav.scss */
+/* line 60, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form input {
   max-width: 100%;
   display: block;
   margin: 0 0 1em 0;
 }
-/* line 61, ../sass/modules/_globalnav.scss */
+/* line 65, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form .description {
   display: none;
   white-space: normal;
   font-size: .875em;
   line-height: 1.2em;
 }
-/* line 67, ../sass/modules/_globalnav.scss */
+/* line 71, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form label {
   display: none;
 }
-/* line 70, ../sass/modules/_globalnav.scss */
+/* line 74, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form #edit-submit {
   float: right;
 }
-/* line 73, ../sass/modules/_globalnav.scss */
+/* line 77, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form .button-link {
   line-height: 1.2em;
 }
-/* line 76, ../sass/modules/_globalnav.scss */
+/* line 80, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form .social-login {
   margin: .5em 0;
   clear: both;
@@ -1509,91 +1506,136 @@ label {
   font-size: .825em;
   line-height: 1.2em;
 }
-/* line 82, ../sass/modules/_globalnav.scss */
+/* line 86, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form .social-login .twitter {
   display: inline-block;
   float: left;
 }
-/* line 86, ../sass/modules/_globalnav.scss */
+/* line 90, ../sass/modules/_globalnav.scss */
 .global > ul.logged-out li > ul > li form .social-login .facebook {
   display: inline-block;
   float: right;
 }
 
+/* line 6, ../sass/modules/_header.scss */
+header[role="banner"] {
+  position: absolute;
+  top: 1.75em;
+  display: block;
+  height: 5em;
+  margin: 0 auto;
+  max-width: 60em;
+}
+/* line 15, ../sass/modules/_header.scss */
+header h1 {
+  display: inline-block;
+  float: left;
+}
+/* line 19, ../sass/modules/_header.scss */
+header form[role="search"] {
+  display: inline-block;
+  float: right;
+}
+
 /* line 1, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub {
+aside[role="complimentary"].part-of-hub {
   background: #cccccc;
 }
-/* line 4, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub header {
-  padding: 1em 1em .5em 1em;
+/* line 3, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].part-of-hub header {
+  padding: .5em .5em .5em 1em;
   background: #999999;
 }
-/* line 7, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub header > span {
+/* line 6, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].part-of-hub header > span {
   font-style: italic;
   color: #666666;
 }
-/* line 12, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub h2 {
+/* line 11, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].part-of-hub h2 {
   font-size: 1.4em;
   padding: 0;
   margin: 0 0 .5em 0;
 }
-/* line 17, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] {
+/* line 16, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].part-of-hub ul[role="menu"] {
   list-style: none;
   margin: 0;
   padding: 1em;
-}
-/* line 22, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li {
   display: table;
-  text-indent: 0;
-  margin: 0;
-  display: block;
   width: 100%;
 }
-/* line 28, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child {
+/* line 22, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].part-of-hub ul[role="menu"] li {
+  display: table-row;
+  text-indent: 0;
+  margin: 0;
+}
+/* line 26, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].part-of-hub ul[role="menu"] li > a:first-child {
   display: table-cell;
-  width: 20%;
   padding: 0 .5em .5em 0;
-  border: solid;
 }
-/* line 33, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child img {
-  max-width: 80px;
-}
-/* line 37, ../sass/modules/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li > h3 {
+/* line 30, ../sass/modules/_hub_list.scss */
+aside[role="complimentary"].part-of-hub ul[role="menu"] li > h3 {
   vertical-align: top;
   display: table-cell;
-  width: 80%;
   font-size: 1.2em;
   padding: 0;
   margin: 0;
 }
 
-/* line 48, ../sass/modules/_hub_list.scss */
+/* line 40, ../sass/modules/_hub_list.scss */
 aside + h2 {
   clear: both;
+}
+
+/* line 6, ../sass/modules/_spoke.scss */
+article[role="article"].spoke > header {
+  margin: 0 0 1em 0;
+}
+/* line 8, ../sass/modules/_spoke.scss */
+article[role="article"].spoke > header h1 {
+  margin: .5em 0 .33em 0;
+}
+
+/* line 1, ../sass/modules/_embeded_video.scss */
+figure.embeded-link {
+  clear: both;
+  width: 38.5rem;
+  height: 21.65625rem;
+  margin: 0 1em 1em 0;
+  float: left;
+}
+/* line 7, ../sass/modules/_embeded_video.scss */
+figure.embeded-link iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* line 5, ../sass/modules/_user_profile.scss */
 .vcard {
   margin: 1em 0;
+  clear: both;
 }
-/* line 7, ../sass/modules/_user_profile.scss */
+/* line 8, ../sass/modules/_user_profile.scss */
 .vcard > .url .photo {
   float: left;
   margin: 0 .5em 0 0;
 }
-/* line 11, ../sass/modules/_user_profile.scss */
+/* line 12, ../sass/modules/_user_profile.scss */
+.vcard img.photo {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 5px solid rgba(170, 170, 170, 0.3);
+}
+/* line 16, ../sass/modules/_user_profile.scss */
 .vcard address, .vcard .fn.url {
   font-weight: bold;
 }
-/* line 15, ../sass/modules/_user_profile.scss */
+/* line 20, ../sass/modules/_user_profile.scss */
 .vcard .org:before {
   content: " — ";
 }
@@ -1615,36 +1657,10 @@ article {
   max-width: 59.53742em;
   margin: 0 auto;
 }
-/* line 120, ../sass/layout/_page.scss */
-article > header {
-  padding: 0 1em;
-}
 
-/* line 9, ../sass/layout/_hub_list.scss */
-aside[role="complimentary"].partofhub header {
-  padding: 1em 1em .5em 1em;
-}
-/* line 12, ../sass/layout/_hub_list.scss */
-aside[role="complimentary"].partofhub h2 {
-  font-size: 1.4em;
-  padding: 0;
-  margin: 0 0 .5em 0;
-}
-/* line 19, ../sass/layout/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child {
-  width: 20%;
-  padding: 0 .5em .5em 0;
-  border: solid;
-}
-/* line 23, ../sass/layout/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li > a:first-child img {
-  max-width: 80px;
-}
-/* line 27, ../sass/layout/_hub_list.scss */
-aside[role="complimentary"].partofhub ul[role="menu"] li > h3 {
-  width: 80%;
-  font-size: 1.2em;
-  padding: 0;
+/* line 122, ../sass/layout/_page.scss */
+main {
+  margin-top: 6.75em;
 }
 
 /* line 4, ../sass/state/_globalnav.scss */

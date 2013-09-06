@@ -2,4 +2,5 @@
 // VARIABLES: For layout specific styles 
 //////////////////////////////
 
-$container-background: nth($black, 6);
+$main-top-margin: $globalnav-height + $header-height; 
+

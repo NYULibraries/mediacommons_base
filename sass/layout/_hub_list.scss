@@ -1,34 +1,38 @@
-@include respond-to-ie('desktop content') {
-  aside[role="complimentary"].partofhub {
-    max-width: 10em;
+@include respond-to-ie('desktop') {
+  aside[role="complimentary"].part-of-hub {
+    max-width: 20em;
     float: right;
+    clear: right
   }
-}
-
-aside[role="complimentary"].partofhub {
-  header {
-    padding: 1em 1em .5em 1em;
-  } 
-  h2 {
-    font-size: 1.4em;
-    padding: 0;
-    margin: 0 0 .5em 0;
-  }
-  ul[role="menu"] {
-    li {
-     > a:first-child {
-       width: 20%;
-       padding: 0 .5em .5em 0;
-       border: solid;
-        img {
-          max-width:80px;
+  aside[role="complimentary"].part-of-hub {
+    ul[role="menu"] {
+      li {
+       > a:first-child {
+         width: 25%;
+       } 
+       > h3 {
+         width: 75%;
         }
-      } 
-      > h3 {
-        width: 80%;
-        font-size: 1.2em;
-        padding: 0;
       }
     }
   }
 }
+@include respond-to-ie('tablet') {
+  aside[role="complimentary"].part-of-hub {
+    clear: left;
+    max-width: 36em;
+  }
+  aside[role="complimentary"].part-of-hub {
+    ul[role="menu"] {
+      li {
+       > a:first-child {
+         width: 20%;
+       } 
+       > h3 {
+         width: 80%;
+        }
+      }
+    }
+  }
+}
+

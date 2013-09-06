@@ -3,7 +3,23 @@
 //////////////////////////////
 
 header {
-  // yadda, yadda
+  &[role="banner"] {
+    position: absolute;
+    top: 1.75em;
+    
+    display: block;
+    height: $header-height;
+    margin: 0 auto;
+    max-width: 60em;
+  }
+  h1 {
+    display: inline-block;
+    float: left;
+  }
+  form[role="search"] {
+    display:inline-block;
+    float: right;
+  }
 }
 
 //.header {

@@ -1,10 +1,14 @@
+//////////////////////////////
+// MODULES: Styles that are layout independent 
+//////////////////////////////
+
 .global {
   @include web-font-family($heading-font-name); 
   position: absolute;
   top: 0;
   left: 0;
   width:100%;
-  height: (.875em * 2);
+  height: $globalnav-height;
   background: darken(nth($black,1), 5%);
   > ul {
     @include horizontal-list(.5em);

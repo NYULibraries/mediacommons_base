@@ -3,7 +3,12 @@
 //////////////////////////////
 $breakpoints-to-ems: true;
 
-$breakpoints: 'extra-wide' (1281px 1680px),
+$breakpoints: 'tablet' (525px 980px),
+              'mobile' (240px 524px),
+              'mobile tablet' (240px 801px),
+              'tablet desktop' (801px),
+              'desktop' (981px),
+              'extra-wide' (1281px 1680px),
               'wide' (801px 1280px),
               'full navigation' (801px),
               'narrow navigation' (320px 800px),
