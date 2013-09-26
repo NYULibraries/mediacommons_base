@@ -17,12 +17,14 @@
     }
   }
 }
+//////////////////////////////
+// LAYOUT: Layout dependent css and media queries only 
+//////////////////////////////
+
 @include respond-to-ie('tablet') {
-  aside[role="complimentary"].part-of-hub {
+  aside[role="complimentary"].part-of-hub { 
     clear: left;
     max-width: 36em;
-  }
-  aside[role="complimentary"].part-of-hub {
     ul[role="menu"] {
       li {
        > a:first-child {

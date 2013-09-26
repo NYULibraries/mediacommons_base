@@ -2,8 +2,13 @@
 // MODULES: Styles that are layout independent 
 //////////////////////////////
 
-nav {
-  // yadda, yadda
+nav[role="navigation"].main {
+  ul.main {
+    li {
+      margin: 0;
+      text-indent: 0;
+    }
+  }
 }
 
 

@@ -24,8 +24,7 @@
     &.global {
       @include horizontal-list(.5em);
       float: left;
-      max-width:75%;
-      //overflow: hidden; 
+      max-width: 75%;
       > li {
         &:first-child:before {
           content: "MediaCommons";
@@ -43,6 +42,7 @@
       > li + li {
         width: 60px;
         @include inline-block-list-container;
+        color: nth($black, 5);
       }
       li > ul {
           @include inline-block-list;

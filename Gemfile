@@ -2,10 +2,10 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'sass', "~> 3.2.7"
-gem 'compass', "~> 0.12"
-gem 'toolkit', "~> 1.0.0"
-gem 'compass-pattern-primer', "~> 0.2.2"
+gem 'sass', "~> 3.2.9"
+gem 'compass', "~> 0.12.2"
+gem 'toolkit', "~> 1.3.5"
+gem 'compass-pattern-primer', "~> 0.2.8"
 
 
 

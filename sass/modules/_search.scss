@@ -1,6 +1,11 @@
 //////////////////////////////
 // MODULES: Styles that are layout independent 
 //////////////////////////////
+form[role="search"] {
+  label {
+    display: none;
+  }
+}
 
 //.search-form {
 //  &:hover{

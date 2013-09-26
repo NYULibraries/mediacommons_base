@@ -118,6 +118,12 @@ article {
     width: 100%;
   }
 }
+body {
+  @include respond-to-ie('desktop') {
+    display: table;
+    caption-side: top;
+  }
+}
 
 main {
   margin-top: $main-top-margin;

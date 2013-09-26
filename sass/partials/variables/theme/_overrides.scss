@@ -2,11 +2,14 @@
 // VARIABLES: For Theme — Overides for Compass Pattern-Primer  
 //////////////////////////////
 
-$body-font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
-// $secondary-font: $body-font-family;
-$header-font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+// Fonts see base/_webfonts
+// http://awesome-fontstacks.com/bundles/414-droooooid
+// added Droid Serif and Droid Sans for native font on Android Phones
+
+$body-font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+$header-font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 $blockquote-font-family: $header-font-family;
-//$monospaced-font-family: "Droid Sans Mono", Menlo, Courier New, Courier, Mono, monospace; 
+//$monospaced-font-family: Menlo, Courier New, Courier, Mono, "Droid Sans Mono", monospace; 
 
 $body-font-size: 16px; 
 $body-line-height: 1.5em;
@@ -67,10 +70,11 @@ $time-letter-spacing: 0.05em;
 $time-color: nth($black , 2);
 $time-content: '';
 
-$h1-border-width: false; 
+$h1-border-width: false;
 $h2-border-width: false;
-$h3-border-width: false; 
+$h3-border-width: false;
 
+$button-font-family: $header-font-family;
 $button-padding: 0.33em .66em;
 $button-border-color: #bbb;
 $button-border-radius: .5em;
@@ -96,10 +100,13 @@ $search-border-color: #ccc;
 $search-input-border-width: false; 
 $search-input-border-style: solid;
 $search-input-border-color: #ccc;
-$search-input-border-radius: .5em; 
+$search-input-border-radius: .5em;
 
 //// Search Input Image
 $search-image-width: 0.9375em;
 $search-image-top: 0.2em;
 $search-image-right: 0.6em;
 $search-image-padding: 0.2em 0.2em;
+
+//// Forms
+$forms-input-width: auto;

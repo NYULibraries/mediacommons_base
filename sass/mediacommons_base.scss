@@ -48,10 +48,12 @@
 @import "modules/_user_profile";
 
 @import "layout/_breakpoints";
+@import "layout/_page";
+@import "layout/_header";
 @import "layout/_toolbar";
 @import "layout/_comments";
-@import "layout/_page";
 @import "layout/_hub_list";
+@import "layout/_mainnav";
 
 @import "state/_globalnav";
 

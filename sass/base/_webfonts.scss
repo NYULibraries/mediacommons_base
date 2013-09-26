@@ -24,6 +24,12 @@
   #{headings()} {
     font-family: $heading-font-name, $header-font-family;
   }
+  button,
+  input[type="button"],
+  input[type="submit"], 
+  input.cancel {
+    font-family: $heading-font-name, $header-font-family;
+  }
 }
 
 .wf-droidserif-n7-active {
