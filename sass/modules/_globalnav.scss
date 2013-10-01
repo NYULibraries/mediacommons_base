@@ -1,24 +1,30 @@
 //////////////////////////////
 // MODULES: Styles that are layout independent 
 //////////////////////////////
+nav.global {
+ $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top, darken(nth($black,2), 5%), darken(nth($black,1), 15%)));
 
+}
 .global {
   @include web-font-family($heading-font-name); 
   position: absolute;
   top: 0;
   left: 0;
   width:100%;
-  height: $globalnav-height;
-  background: darken(nth($black,1), 5%);
+  height: $globalnav-height; 
   > ul {
     @include horizontal-list(.5em);
-    line-height: 2em;
+    line-height: 3em;
     font-size: .875em;
+    
     > li {
       text-indent: 0;
       margin: 0;
       a {
         color: nth($black, 5);
+        padding: 10px 0;
+        
       }
     }  
     &.global {
