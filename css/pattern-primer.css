@@ -1664,10 +1664,151 @@ figure.embeded-link iframe {
   content: " — ";
 }
 
+@media (min-width: 981px) and (max-width: 1060px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1281px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 21px;
+  }
+}
+@media (min-width: 1061px) and (max-width: 1280px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 801px) and (max-width: 980px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 681px) and (max-width: 800px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 525px) and (max-width: 680px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 481px) and (max-width: 524px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 13px;
+  }
+}
+@media (min-width: 240px) and (max-width: 480px) {
+  /* line 11, ../sass/layout/_page.scss */
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1060px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+}
+@media (min-width: 1281px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.7em;
+  }
+}
+@media (min-width: 1061px) and (max-width: 1280px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.66666em;
+  }
+}
+@media (min-width: 801px) and (max-width: 980px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 681px) and (max-width: 800px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 525px) and (max-width: 680px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 481px) and (max-width: 524px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 240px) and (max-width: 480px) {
+  /* line 37, ../sass/layout/_page.scss */
+  body {
+    font-size: 1rem;
+    line-height: 1.33334em;
+  }
+}
+
 /* line 71, ../sass/layout/_page.scss */
 #content {
   max-width: 35.72245em;
   padding: 1em;
+}
+@media (min-width: 981px) and (max-width: 1060px) {
+  /* line 71, ../sass/layout/_page.scss */
+  #content {
+    float: left;
+    width: 60%;
+  }
+}
+@media (min-width: 1281px) {
+  /* line 71, ../sass/layout/_page.scss */
+  #content {
+    float: left;
+    width: 60%;
+  }
+}
+@media (min-width: 1061px) and (max-width: 1280px) {
+  /* line 71, ../sass/layout/_page.scss */
+  #content {
+    float: left;
+    width: 60%;
+  }
+}
+@media (min-width: 801px) and (max-width: 980px) {
+  /* line 71, ../sass/layout/_page.scss */
+  #content {
+    float: left;
+    width: 60%;
+  }
+}
+@media (min-width: 681px) and (max-width: 800px) {
+  /* line 71, ../sass/layout/_page.scss */
+  #content {
+    float: left;
+    width: 60%;
+  }
 }
 
 /* line 101, ../sass/layout/_page.scss */
@@ -1675,16 +1816,209 @@ article {
   max-width: 59.53742em;
   margin: 0 auto;
 }
+@media (min-width: 981px) and (max-width: 1060px) {
+  /* line 101, ../sass/layout/_page.scss */
+  article {
+    width: 100%;
+  }
+}
+@media (min-width: 1281px) {
+  /* line 101, ../sass/layout/_page.scss */
+  article {
+    width: 100%;
+  }
+}
+@media (min-width: 1061px) and (max-width: 1280px) {
+  /* line 101, ../sass/layout/_page.scss */
+  article {
+    width: 100%;
+  }
+}
+@media (min-width: 801px) and (max-width: 980px) {
+  /* line 101, ../sass/layout/_page.scss */
+  article {
+    width: 100%;
+  }
+}
+@media (min-width: 681px) and (max-width: 800px) {
+  /* line 101, ../sass/layout/_page.scss */
+  article {
+    width: 100%;
+  }
+}
+
+@media (min-width: 981px) {
+  /* line 121, ../sass/layout/_page.scss */
+  body {
+    display: table;
+    caption-side: top;
+  }
+}
 
 /* line 128, ../sass/layout/_page.scss */
 main {
   margin-top: 7.625em;
 }
 
+@media (min-width: 981px) {
+  /* line 5, ../sass/layout/_header.scss */
+  header[role="banner"] {
+    margin: 1.75em auto 0 auto;
+    width: 100%;
+    max-width: 60em;
+  }
+}
+
 /* line 5, ../sass/layout/_comments.scss */
 #comments {
   background: #e0e0e0;
   padding: 0 1em;
+}
+@media (min-width: 981px) and (max-width: 1060px) {
+  /* line 5, ../sass/layout/_comments.scss */
+  #comments {
+    float: left;
+    width: 40%;
+    max-width: 21.43347em;
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 1281px) {
+  /* line 5, ../sass/layout/_comments.scss */
+  #comments {
+    float: left;
+    width: 40%;
+    max-width: 21.43347em;
+    font-size: 17px;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 1061px) and (max-width: 1280px) {
+  /* line 5, ../sass/layout/_comments.scss */
+  #comments {
+    float: left;
+    width: 40%;
+    max-width: 21.43347em;
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 801px) and (max-width: 980px) {
+  /* line 5, ../sass/layout/_comments.scss */
+  #comments {
+    float: left;
+    width: 40%;
+    max-width: 21.43347em;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 681px) and (max-width: 800px) {
+  /* line 5, ../sass/layout/_comments.scss */
+  #comments {
+    float: left;
+    width: 40%;
+    max-width: 21.43347em;
+    font-size: 13px;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 525px) and (max-width: 680px) {
+  /* line 5, ../sass/layout/_comments.scss */
+  #comments {
+    max-width: 35.72245em;
+    font-size: 13px;
+    line-height: 1.4em;
+  }
+}
+
+@media (min-width: 981px) {
+  /* line 2, ../sass/layout/_hub_list.scss */
+  aside[role="complimentary"].part-of-hub {
+    max-width: 20em;
+    float: right;
+    clear: right;
+  }
+
+  /* line 10, ../sass/layout/_hub_list.scss */
+  aside[role="complimentary"].part-of-hub ul[role="menu"] li > a:first-child {
+    width: 25%;
+  }
+  /* line 13, ../sass/layout/_hub_list.scss */
+  aside[role="complimentary"].part-of-hub ul[role="menu"] li > h3 {
+    width: 75%;
+  }
+}
+@media (min-width: 525px) and (max-width: 980px) {
+  /* line 25, ../sass/layout/_hub_list.scss */
+  aside[role="complimentary"].part-of-hub {
+    clear: left;
+    max-width: 36em;
+  }
+  /* line 30, ../sass/layout/_hub_list.scss */
+  aside[role="complimentary"].part-of-hub ul[role="menu"] li > a:first-child {
+    width: 20%;
+  }
+  /* line 33, ../sass/layout/_hub_list.scss */
+  aside[role="complimentary"].part-of-hub ul[role="menu"] li > h3 {
+    width: 80%;
+  }
+}
+@media (min-width: 981px) {
+  /* line 5, ../sass/layout/_mainnav.scss */
+  nav[role="navigation"].main {
+    display: table-caption;
+    margin-top: 10em;
+  }
+  /* line 9, ../sass/layout/_mainnav.scss */
+  nav[role="navigation"].main ul.main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  /* line 65, ../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.3.8/stylesheets/toolkit/_clearfix.scss */
+  nav[role="navigation"].main ul.main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 60, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  nav[role="navigation"].main ul.main li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  /* line 48, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  nav[role="navigation"].main ul.main li:first-child, nav[role="navigation"].main ul.main li.first {
+    padding-left: 0;
+  }
+  /* line 49, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  nav[role="navigation"].main ul.main li:last-child {
+    padding-right: 0;
+  }
+  /* line 50, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  nav[role="navigation"].main ul.main li.last {
+    padding-right: 0;
+  }
+  /* line 11, ../sass/layout/_mainnav.scss */
+  nav[role="navigation"].main ul.main li {
+    font-size: 1.75em;
+  }
+  /* line 13, ../sass/layout/_mainnav.scss */
+  nav[role="navigation"].main ul.main li:before {
+    content: "\20•\20";
+    color: #999;
+  }
+  /* line 17, ../sass/layout/_mainnav.scss */
+  nav[role="navigation"].main ul.main li:first-child:before {
+    content: "\20";
+  }
 }
 
 /* line 4, ../sass/state/_globalnav.scss */
@@ -1694,4 +2028,548 @@ main {
 /* line 7, ../sass/state/_globalnav.scss */
 .global .logged-out li[aria-haspopup="true"] > ul[aria-hidden="false"] {
   display: inline-block;
+}
+
+/* line 82, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 87, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li {
+  list-style: none;
+  height: 3em;
+  position: relative;
+  width: 16.66667%;
+  clear: right;
+  float: left;
+  margin-left: 0;
+  margin-right: 0%;
+}
+/* line 94, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(6n) {
+  width: 16.66667%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+}
+/* line 101, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:before, .color-guide li:after, .color-guide li:nth-child(6n):before, .color-guide li:nth-child(6n):after {
+  position: absolute;
+  height: 1.25em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  text-align: center;
+}
+/* line 112, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:before {
+  top: .25em;
+}
+/* line 115, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:after {
+  bottom: .25em;
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(1) {
+  background-color: #333333;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(1):before, .color-guide li:nth-child(1):after {
+  color: white;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(1):before {
+  content: "#333333";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(1):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(2) {
+  background-color: #666666;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(2):before, .color-guide li:nth-child(2):after {
+  color: white;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(2):before {
+  content: "#666666";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(2):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(3) {
+  background-color: #999999;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(3):before, .color-guide li:nth-child(3):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(3):before {
+  content: "#999999";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(3):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(4) {
+  background-color: #cccccc;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(4):before, .color-guide li:nth-child(4):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(4):before {
+  content: "#cccccc";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(4):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(5) {
+  background-color: #e0e0e0;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(5):before, .color-guide li:nth-child(5):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(5):before {
+  content: "#e0e0e0";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(5):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(6) {
+  background-color: #eaeaea;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(6):before, .color-guide li:nth-child(6):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(6):before {
+  content: "#eaeaea";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(6):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(7) {
+  background-color: #175988;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(7):before, .color-guide li:nth-child(7):after {
+  color: white;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(7):before {
+  content: "#175988";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(7):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(8) {
+  background-color: #5182a5;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(8):before, .color-guide li:nth-child(8):after {
+  color: white;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(8):before {
+  content: "#5182a5";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(8):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(9) {
+  background-color: #8bacc3;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(9):before, .color-guide li:nth-child(9):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(9):before {
+  content: "#8bacc3";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(9):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(10) {
+  background-color: #c5d5e1;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(10):before, .color-guide li:nth-child(10):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(10):before {
+  content: "#c5d5e1";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(10):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(11) {
+  background-color: #dce6ed;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(11):before, .color-guide li:nth-child(11):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(11):before {
+  content: "#dce6ed";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(11):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(12) {
+  background-color: #e7eef3;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(12):before, .color-guide li:nth-child(12):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(12):before {
+  content: "#e7eef3";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(12):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(13) {
+  background-color: #885617;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(13):before, .color-guide li:nth-child(13):after {
+  color: white;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(13):before {
+  content: "#885617";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(13):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(14) {
+  background-color: #a58051;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(14):before, .color-guide li:nth-child(14):after {
+  color: white;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(14):before {
+  content: "#a58051";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(14):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(15) {
+  background-color: #c3aa8b;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(15):before, .color-guide li:nth-child(15):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(15):before {
+  content: "#c3aa8b";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(15):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(16) {
+  background-color: #e1d4c5;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(16):before, .color-guide li:nth-child(16):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(16):before {
+  content: "#e1d4c5";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(16):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(17) {
+  background-color: #ede5dc;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(17):before, .color-guide li:nth-child(17):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(17):before {
+  content: "#ede5dc";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(17):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(18) {
+  background-color: #f3eee7;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(18):before, .color-guide li:nth-child(18):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(18):before {
+  content: "#f3eee7";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(18):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(19) {
+  background-color: #0095ff;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(19):before, .color-guide li:nth-child(19):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(19):before {
+  content: "#0095ff";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(19):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(20) {
+  background-color: #3fafff;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(20):before, .color-guide li:nth-child(20):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(20):before {
+  content: "#3fafff";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(20):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(21) {
+  background-color: #7fcaff;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(21):before, .color-guide li:nth-child(21):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(21):before {
+  content: "#7fcaff";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(21):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(22) {
+  background-color: #bfe4ff;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(22):before, .color-guide li:nth-child(22):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(22):before {
+  content: "#bfe4ff";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(22):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(23) {
+  background-color: #d8efff;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(23):before, .color-guide li:nth-child(23):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(23):before {
+  content: "#d8efff";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(23):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(24) {
+  background-color: #e5f4ff;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(24):before, .color-guide li:nth-child(24):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(24):before {
+  content: "#e5f4ff";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(24):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(25) {
+  background-color: #ff8e00;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(25):before, .color-guide li:nth-child(25):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(25):before {
+  content: "#ff8e00";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(25):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(26) {
+  background-color: #ffaa3f;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(26):before, .color-guide li:nth-child(26):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(26):before {
+  content: "#ffaa3f";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(26):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(27) {
+  background-color: #ffc67f;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(27):before, .color-guide li:nth-child(27):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(27):before {
+  content: "#ffc67f";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(27):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(28) {
+  background-color: #ffe2bf;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(28):before, .color-guide li:nth-child(28):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(28):before {
+  content: "#ffe2bf";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(28):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(29) {
+  background-color: #ffeed8;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(29):before, .color-guide li:nth-child(29):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(29):before {
+  content: "#ffeed8";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(29):after {
+  content: attr(data-sass);
+}
+/* line 134, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(30) {
+  background-color: #fff3e5;
+}
+/* line 163, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(30):before, .color-guide li:nth-child(30):after {
+  color: black;
+}
+/* line 166, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(30):before {
+  content: "#fff3e5";
+}
+/* line 169, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_mixins.scss */
+.color-guide li:nth-child(30):after {
+  content: attr(data-sass);
+}
+
+/* line 9, ../sass/pattern-primer.scss */
+body {
+  margin: 0 1em;
+}
+
+/* line 12, ../sass/pattern-primer.scss */
+.pattern {
+  clear: both;
+  overflow: hidden;
+  margin: 20px 10px;
+  text-align: left;
+}
+
+/* line 18, ../sass/pattern-primer.scss */
+.pattern .display {
+  width: 100%;
 }

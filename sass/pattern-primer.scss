@@ -1,0 +1,23 @@
+// For viewing the pattern primer file adding css for 
+
+@import "mediacommons_base";                     
+
+// Color Guide
+@import 'toolkit/colours';  // tint-stack, shade-stack etc
+@import "singularitygs"; // require for generate-colour-guide mixin
+
+@include generate-colour-guide($black, $primary, $secondary, $tertiary, $quadrary); 
+
+body {
+  margin: 0 1em;
+}
+.pattern {
+  clear: both;
+  overflow: hidden;
+  margin: 20px 10px;
+  text-align: left;
+}
+.pattern .display {
+  width: 100%;
+}
+
