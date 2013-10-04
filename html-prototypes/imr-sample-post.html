@@ -19,6 +19,7 @@
       })(); </script>
   <link rel="stylesheet" href="../css/mediacommons_base.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> 
 </head>
 <body>
   <a href="#main-nav" class="skip-to-nav">Skip to Navigation</a>
@@ -188,7 +189,7 @@
   </article>
 </main>
 <nav class="nav global" role="navigation">
-  <ul class="global" role="menubar"> 
+  <ul class="global responsive-closed-480" role="menubar"> 
     <li role="menuitem">
       <a href="#">Frontpage</a>
     </li>
@@ -264,5 +265,17 @@
       <span class="powered">Powered by NYU <a href="http://dlib.nyu.edu">DLTS</a></span>
       </p>
   </footer>
+  <script>
+$(function() {
+ console.log("jquery loaded");
+ 
+    $( "ul.responsive-closed-480" ).click(function() {
+      $( this).toggleClass( "open", 1000 );
+      return false;
+    });
+
+});
+
+  </script>
 </body>
 </html>

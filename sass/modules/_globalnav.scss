@@ -2,49 +2,74 @@
 // MODULES: Styles that are layout independent 
 //////////////////////////////
 nav.global {
- $experimental-support-for-svg: true;
+  $experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, darken(nth($black,2), 5%), darken(nth($black,1), 15%)));
-
-}
-.global {
+  width:100%;
+  height: $globalnav-height; 
   @include web-font-family($heading-font-name); 
   position: absolute;
   top: 0;
   left: 0;
-  width:100%;
-  height: $globalnav-height; 
-  > ul {
+  padding: 0 1%;
+
+  ul {
     @include horizontal-list(.5em);
-    line-height: 3em;
-    font-size: .875em;
+    // line-height: 1.5em;
     
-    > li {
+    margin: 0;
+    li {
       text-indent: 0;
       margin: 0;
-      a {
+      background: url("../images/pipe.png") center right no-repeat;
+      padding:0 1px;
+      a{
+        font-size: .775em;
+        font-weight: normal;
+        font-weight: 400;
         color: nth($black, 5);
-        padding: 10px 0;
-        
-      }
-    }  
-    &.global {
-      @include horizontal-list(.5em);
-      float: left;
-      max-width: 75%;
-      > li {
-        &:first-child:before {
-          content: "MediaCommons";
-          color: nth($primary, 2);
-          display: inline;
-          margin: 0 1em 0 1em;
+        text-indent: 0;
+        padding: 10px;
+        float:left;
+        display:block;
+        // @include border-radius(5px);
+        &:hover {
+          @include background-image(linear-gradient(top, darken(nth($black,1), 15%), darken(nth($black,2), 5%)));
+          color: nth($black, 5);
+          text-decoration: none;
         }
       }
+    } 
+     li:last-child {
+        background: none;
+
+     }
+  } 
+  ul.navitems, ul.navitems  {
+      float:left;
+     
+      width:auto;
+      // for FOUC
+      min-width:4em;
+      overflow:hidden;
+      margin:0;
+      padding: 0;
+  }
+  ul.global-sections {
+    // background-color: yellow;
+    @include horizontal-list(0em);
+    float: left;
+    max-width: 75%;
+    a.logolink {
+      padding-left:0;
     }
-    &.logged-out {
+
+  }
+ 
+  ul.logged-out {
       @include horizontal-list(1em);
       float: right;
       max-width: 25%;
-      padding: 0 1em;
+      padding: 0 ;
       > li + li {
         width: 60px;
         @include inline-block-list-container;
@@ -104,4 +129,3 @@ nav.global {
       }
     }
   }
-}
