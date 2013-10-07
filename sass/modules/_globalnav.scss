@@ -1,7 +1,7 @@
 //////////////////////////////
 // MODULES: Styles that are layout independent 
 //////////////////////////////
-nav.global {
+nav[role="navigation"].global {
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, darken(nth($black,2), 5%), darken(nth($black,1), 15%)));
   width:100%;
@@ -44,7 +44,7 @@ nav.global {
 
      }
   } 
-  ul.navitems, ul.navitems  {
+  ul.navitems  {
       float:left;
      
       width:auto;
@@ -58,7 +58,7 @@ nav.global {
     // background-color: yellow;
     @include horizontal-list(0em);
     float: left;
-    max-width: 75%;
+    // max-width: 75%;
     a.logolink {
       padding-left:0;
     }
@@ -68,7 +68,7 @@ nav.global {
   ul.logged-out {
       @include horizontal-list(1em);
       float: right;
-      max-width: 25%;
+      // max-width: 25%;
       padding: 0 ;
       > li + li {
         width: 60px;

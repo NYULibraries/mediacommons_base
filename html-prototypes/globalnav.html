@@ -101,15 +101,15 @@
 <script>
 function respond(){
   $(".drop-down").remove();
-  if (!($('ul.navitems2').is(":visible"))){
+  if (!($('ul.navitems2').is(":visible")) && ($('ul.navitems').is(":visible"))){
     $('ul.navitems2').before('<a class="drop-down" href="#">More</a>');
   }
 }
 $(function() {
   respond();
   $( "a.logolink" ).click(function() {
-      $('ul.global>li').toggleClass( "open", 1000 );
-       //console.log("jquery toggle");
+      $('ul.navitems').toggleClass( "open", 1000 );
+       console.log("jquery toggle");
       return false;
     });
   $(window).resize(_.debounce(function(){respond();}, 100));

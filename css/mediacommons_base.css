@@ -1284,7 +1284,7 @@ label {
 }
 
 /* line 4, ../sass/modules/_globalnav.scss */
-nav.global {
+nav[role="navigation"].global {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU5NTk1OSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-linear-gradient(top, #595959, #0d0d0d);
@@ -1299,20 +1299,20 @@ nav.global {
   padding: 0 1%;
 }
 /* line 15, ../sass/modules/_globalnav.scss */
-nav.global ul {
+nav[role="navigation"].global ul {
   margin: 0;
   padding: 0;
   border: 0;
   margin: 0;
 }
 /* line 65, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.3.8/stylesheets/toolkit/_clearfix.scss */
-nav.global ul:after {
+nav[role="navigation"].global ul:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 60, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul li {
+nav[role="navigation"].global ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1323,26 +1323,26 @@ nav.global ul li {
   padding-right: 0.5em;
 }
 /* line 48, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul li:first-child, nav.global ul li.first {
+nav[role="navigation"].global ul li:first-child, nav[role="navigation"].global ul li.first {
   padding-left: 0;
 }
 /* line 49, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul li:last-child {
+nav[role="navigation"].global ul li:last-child {
   padding-right: 0;
 }
 /* line 50, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul li.last {
+nav[role="navigation"].global ul li.last {
   padding-right: 0;
 }
 /* line 20, ../sass/modules/_globalnav.scss */
-nav.global ul li {
+nav[role="navigation"].global ul li {
   text-indent: 0;
   margin: 0;
   background: url("../images/pipe.png") center right no-repeat;
   padding: 0 1px;
 }
 /* line 25, ../sass/modules/_globalnav.scss */
-nav.global ul li a {
+nav[role="navigation"].global ul li a {
   font-size: .775em;
   font-weight: normal;
   font-weight: 400;
@@ -1353,7 +1353,7 @@ nav.global ul li a {
   display: block;
 }
 /* line 35, ../sass/modules/_globalnav.scss */
-nav.global ul li a:hover {
+nav[role="navigation"].global ul li a:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU5NTk1OSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-linear-gradient(top, #0d0d0d, #595959);
@@ -1363,11 +1363,11 @@ nav.global ul li a:hover {
   text-decoration: none;
 }
 /* line 42, ../sass/modules/_globalnav.scss */
-nav.global ul li:last-child {
+nav[role="navigation"].global ul li:last-child {
   background: none;
 }
 /* line 47, ../sass/modules/_globalnav.scss */
-nav.global ul.navitems, nav.global ul.navitems {
+nav[role="navigation"].global ul.navitems {
   float: left;
   width: auto;
   min-width: 4em;
@@ -1376,21 +1376,20 @@ nav.global ul.navitems, nav.global ul.navitems {
   padding: 0;
 }
 /* line 57, ../sass/modules/_globalnav.scss */
-nav.global ul.global-sections {
+nav[role="navigation"].global ul.global-sections {
   margin: 0;
   padding: 0;
   border: 0;
   float: left;
-  max-width: 75%;
 }
 /* line 65, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.3.8/stylesheets/toolkit/_clearfix.scss */
-nav.global ul.global-sections:after {
+nav[role="navigation"].global ul.global-sections:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 60, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.global-sections li {
+nav[role="navigation"].global ul.global-sections li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1401,38 +1400,37 @@ nav.global ul.global-sections li {
   padding-right: 0em;
 }
 /* line 48, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.global-sections li:first-child, nav.global ul.global-sections li.first {
+nav[role="navigation"].global ul.global-sections li:first-child, nav[role="navigation"].global ul.global-sections li.first {
   padding-left: 0;
 }
 /* line 49, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.global-sections li:last-child {
+nav[role="navigation"].global ul.global-sections li:last-child {
   padding-right: 0;
 }
 /* line 50, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.global-sections li.last {
+nav[role="navigation"].global ul.global-sections li.last {
   padding-right: 0;
 }
 /* line 62, ../sass/modules/_globalnav.scss */
-nav.global ul.global-sections a.logolink {
+nav[role="navigation"].global ul.global-sections a.logolink {
   padding-left: 0;
 }
 /* line 68, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out {
+nav[role="navigation"].global ul.logged-out {
   margin: 0;
   padding: 0;
   border: 0;
   float: right;
-  max-width: 25%;
   padding: 0;
 }
 /* line 65, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.3.8/stylesheets/toolkit/_clearfix.scss */
-nav.global ul.logged-out:after {
+nav[role="navigation"].global ul.logged-out:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 60, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.logged-out li {
+nav[role="navigation"].global ul.logged-out li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1443,19 +1441,19 @@ nav.global ul.logged-out li {
   padding-right: 1em;
 }
 /* line 48, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.logged-out li:first-child, nav.global ul.logged-out li.first {
+nav[role="navigation"].global ul.logged-out li:first-child, nav[role="navigation"].global ul.logged-out li.first {
   padding-left: 0;
 }
 /* line 49, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.logged-out li:last-child {
+nav[role="navigation"].global ul.logged-out li:last-child {
   padding-right: 0;
 }
 /* line 50, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-nav.global ul.logged-out li.last {
+nav[role="navigation"].global ul.logged-out li.last {
   padding-right: 0;
 }
 /* line 73, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out > li + li {
+nav[role="navigation"].global ul.logged-out > li + li {
   width: 60px;
   margin: 0;
   padding: 0;
@@ -1463,13 +1461,13 @@ nav.global ul.logged-out > li + li {
   color: #e0e0e0;
 }
 /* line 65, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.3.8/stylesheets/toolkit/_clearfix.scss */
-nav.global ul.logged-out > li + li:after {
+nav[role="navigation"].global ul.logged-out > li + li:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 78, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul {
+nav[role="navigation"].global ul.logged-out li > ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -1477,13 +1475,13 @@ nav.global ul.logged-out li > ul {
   right: 0;
 }
 /* line 65, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/toolkit-1.3.8/stylesheets/toolkit/_clearfix.scss */
-nav.global ul.logged-out li > ul:after {
+nav[role="navigation"].global ul.logged-out li > ul:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 49, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
-nav.global ul.logged-out li > ul li {
+nav[role="navigation"].global ul.logged-out li > ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1496,7 +1494,7 @@ nav.global ul.logged-out li > ul li {
   white-space: nowrap;
 }
 /* line 82, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li {
+nav[role="navigation"].global ul.logged-out li > ul > li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1514,38 +1512,38 @@ nav.global ul.logged-out li > ul > li {
   background: #333333;
 }
 /* line 87, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form {
+nav[role="navigation"].global ul.logged-out li > ul > li form {
   font-size: .875em;
   width: 300px;
   padding: 0 1em;
 }
 /* line 91, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form input {
+nav[role="navigation"].global ul.logged-out li > ul > li form input {
   max-width: 100%;
   display: block;
   margin: 0 0 1em 0;
 }
 /* line 96, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form .description {
+nav[role="navigation"].global ul.logged-out li > ul > li form .description {
   display: none;
   white-space: normal;
   font-size: .875em;
   line-height: 1.2em;
 }
 /* line 102, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form label {
+nav[role="navigation"].global ul.logged-out li > ul > li form label {
   display: none;
 }
 /* line 105, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form #edit-submit {
+nav[role="navigation"].global ul.logged-out li > ul > li form #edit-submit {
   float: right;
 }
 /* line 108, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form .button-link {
+nav[role="navigation"].global ul.logged-out li > ul > li form .button-link {
   line-height: 1.2em;
 }
 /* line 111, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form .social-login {
+nav[role="navigation"].global ul.logged-out li > ul > li form .social-login {
   margin: .5em 0;
   clear: both;
   display: block;
@@ -1553,12 +1551,12 @@ nav.global ul.logged-out li > ul > li form .social-login {
   line-height: 1.2em;
 }
 /* line 117, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form .social-login .twitter {
+nav[role="navigation"].global ul.logged-out li > ul > li form .social-login .twitter {
   display: inline-block;
   float: left;
 }
 /* line 121, ../sass/modules/_globalnav.scss */
-nav.global ul.logged-out li > ul > li form .social-login .facebook {
+nav[role="navigation"].global ul.logged-out li > ul > li form .social-login .facebook {
   display: inline-block;
   float: right;
 }
@@ -1884,8 +1882,12 @@ main {
   margin-top: 7.625em;
 }
 
-@media (min-width: 681px) and (max-width: 800px) {
-  /* line 10, ../sass/layout/_globalnav.scss */
+@media (min-width: 600px) and (max-width: 840px) {
+  /* line 8, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global ul.navitems2 {
+    display: none;
+  }
+  /* line 11, ../sass/layout/_globalnav.scss */
   nav[role="navigation"].global ul.navitems {
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU5NTk1OSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
     background-size: 100%;
@@ -1898,49 +1900,33 @@ main {
     border: 1px solid #ccc;
     margin-top: 4px;
   }
-  /* line 16, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global ul.navitems > ul:before {
-    content: '\003C b \003E  v \003C /b \003E';
-  }
-  /* line 19, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global ul.navitems2 {
-    display: none;
-  }
-  /* line 20, ../sass/layout/_globalnav.scss */
+  /* line 18, ../sass/layout/_globalnav.scss */
   nav[role="navigation"].global ul.navitems a, nav[role="navigation"].global ul.navitems2 a {
     padding: 4px 10px 2px 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 800px) {
-  /* line 28, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] {
+@media (min-width: 240px) and (max-width: 599px) {
+  /* line 24, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] {
     width: 300px;
   }
-  /* line 33, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li {
+  /* line 30, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] li {
     width: 100%;
     display: block;
     clear: left;
   }
-  /* line 37, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li a > {
+  /* line 34, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] li a > {
     border: 1px solid green;
   }
-  /* line 40, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li a {
+  /* line 37, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] li a {
     float: none;
   }
-  /* line 47, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li.open {
+  /* line 44, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] .open {
     padding-bottom: 20px;
-  }
-  /* line 52, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li > ul {
-    height: 0;
-    overflow: hidden;
-  }
-  /* line 59, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li.open > ul {
     display: block;
     width: 100%;
     height: auto;
@@ -1955,14 +1941,37 @@ main {
     -webkit-border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  /* line 72, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li.open > ul > li {
+  /* line 59, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] > li > ul.navitems {
+    display: none;
+    height: 0px;
+    overflow: hidden;
+  }
+  /* line 66, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] > li ul.navitems.open {
     display: block;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  /* line 79, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] li ul.open > li {
+    display: block;
+    float: none;
     width: 100%;
     clear: left;
   }
-  /* line 77, ../sass/layout/_globalnav.scss */
-  nav[role="navigation"].global > ul.global[role="menubar"] > li.open > ul > li a:hover {
+  /* line 84, ../sass/layout/_globalnav.scss */
+  nav[role="navigation"].global > ul.global-sections[role="menubar"] li ul.open > li a:hover {
     background-color: blue;
   }
 }
