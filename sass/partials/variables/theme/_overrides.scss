@@ -76,19 +76,45 @@ $h3-border-width: false;
 
 $button-font-family: $header-font-family;
 $button-padding: 0.33em .66em;
-$button-border-color: #bbb;
-$button-border-radius: .5em;
-$button-color: #333;
-$button-text-shadow: 0 -1px 0 rgba(#fff, 0.25);
-$button-gradient-stop-1: #fff;
-$button-gradient-stop-2: #e6e6e6;
+$button-border-color: nth($black, 3);
+$button-border-radius: .1875em;
 
+$button-color: nth($black, 1);
+$button-text-shadow: none;
+
+$button-gradient-stop-1: nth($black, 5);
+$button-gradient-stop-2: shade($button-gradient-stop-1, 3%);
 $button-hover-color: $button-color;
-$button-hover-gradient-stop-1: #ccc;
-$button-hover-gradient-stop-2: #e6e6e6;
+$button-hover-gradient-stop-1: $button-gradient-stop-1;
+$button-hover-gradient-stop-2: tint($button-gradient-stop-1, 3%);                                                  
+$button-active-color: $button-color;
+$button-active-gradient-stop-1: shade($button-gradient-stop-1, 3%);
+$button-active-gradient-stop-2: $button-gradient-stop-1;
 
-$button-active-gradient-stop-1: #a6a6a6;
-$button-active-gradient-stop-2: #d9d9d9;
+$button-action-gradient-stop-1: nth($primary, 2);
+$button-action-gradient-stop-2: shade($button-action-gradient-stop-1, 5%);
+$button-action-hover-gradient-stop-1: $button-action-gradient-stop-1;
+$button-action-hover-gradient-stop-2: tint($button-action-gradient-stop-1, 5%);
+$button-action-active-gradient-stop-1: shade($button-action-gradient-stop-1, 5%);
+$button-action-active-gradient-stop-2: $button-action-gradient-stop-1;
+
+$button-cancel-gradient-stop-1: #e92e26;
+$button-cancel-gradient-stop-2: shade($button-cancel-gradient-stop-1, 5%);
+$button-cancel-hover-gradient-stop-1: $button-cancel-gradient-stop-1;
+$button-cancel-hover-gradient-stop-2: tint($button-cancel-gradient-stop-1, 5%);
+$button-cancel-active-gradient-stop-1: shade($button-cancel-gradient-stop-1, 5%);
+$button-cancel-active-gradient-stop-2: $button-cancel-gradient-stop-1;
+
+$button-gradient-pos: 45deg;
+$button-hover-gradient-pos: $button-gradient-pos;
+$button-active-gradient-pos: $button-gradient-pos;
+$button-action-gradient-pos: $button-gradient-pos;
+$button-action-hover-gradient-pos: $button-gradient-pos;
+$button-action-active-gradient-pos: $button-gradient-pos;
+$button-cancel-gradient-pos: $button-gradient-pos;
+$button-cancel-hover-gradient-pos: $button-gradient-pos;
+$button-cancel-active-gradient-pos: $button-gradient-pos;
+$button-disabled-gradient-pos: $button-gradient-pos;
 
 $search-border-radius: 0.25em;
 $search-padding: 0 0.75em;
