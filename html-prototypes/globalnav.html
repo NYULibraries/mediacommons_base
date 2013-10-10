@@ -21,6 +21,8 @@
 <link rel="stylesheet" href="../css/mediacommons_base.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
 <script src="../js/underscore-min.js"></script>
 
 
@@ -41,23 +43,21 @@
 <main role="main">
   lorem main content
 </main>
-<nav class="nav global" role="navigation">
+<nav class="global" role="navigation">
   <ul class="global-sections" role="menubar">
-    <li ><a class="logolink" href="#">Media Commons</a>
+    <li ><a class="logolink" title="Media Commons" href="#"><span>Media Commons</span></a>
       <ul class="navitems">
         <li role="menuitem"> <a href="#">Frontpage</a> </li>
         <li role="menuitem"> <a href="#">In Media Res</a> </li>
          <li role="menuitem"> <a href="#">MediaCommons Press</a> </li>
-         <li > 
-         <ul class="navitems2">
-            <li role="menuitem"> <a href="#">The New Everyday</a> </li>
-            <li role="menuitem"> <a href="#">#Alt-Academy</a> </li>
-          </li>
-        </ul>
+        <li role="menuitem"> <a href="#">The New Everyday</a> </li>
+         <li role="menuitem"> <a href="#">#Alt-Academy</a> </li>
+        <li role="menuitem"> <a href="#">Another one</a> </li>
+         <li role="menuitem"> <a href="#">Yet another</a> </li>
       </ul>
     </li>
   </ul>
-  <ul class="logged-out" role="menubar">
+  <ul class="utils logged-out" role="menubar">
     <li role="menuitem"> <a href="#">Join</a> </li role="menuitem">
     <li role="menuitem" aria-haspopup="true"> <a href="#">Login</a> 
       <ul role="menu" aria-hidden="true">
@@ -82,6 +82,7 @@
     </li>
   </ul>
 </nav>
+
 <nav id="main-nav" class="nav main imr" role="navigation">
   <ul class="main imr" role="menubar">
     <li role="menuitem"> <a href="#">Home</a> </li>
@@ -99,20 +100,35 @@
     <span class="powered">Powered by NYU <a href="http://dlib.nyu.edu">DLTS</a></span> </p>
 </footer>
 <script>
-function respond(){
-  $(".drop-down").remove();
-  if (!($('ul.navitems2').is(":visible")) && ($('ul.navitems').is(":visible"))){
-    $('ul.navitems2').before('<a class="drop-down" href="#">More</a>');
-  }
+function setUpTabletView(){
+  $("a.drop-down").remove();
+   var widthSum = 0;
+    $( "ul.navitems li" ).each(function( index ) {
+      widthSum += $( this ).width();
+      if (widthSum > 430 ) {
+         $(this).nextAll('li').addBack().wrapAll( "<li class='navitems2'><ul></ul><li>");
+         $('.navitems2').prepend('<a class="drop-down" href="#">More</a>');
+         $( "a.drop-down" ).click(function() {
+               $('.navitems2 ul').toggleClass( "open" );
+               $( this ).toggleClass( "open" );
+          });
+          return false;
+      }
+    });
 }
 $(function() {
-  respond();
+  //respond();
+  setUpTabletView();
   $( "a.logolink" ).click(function() {
-      $('ul.navitems').toggleClass( "open", 1000 );
-       console.log("jquery toggle");
+      $('ul.navitems').toggleClass( "open", 100 );
+       // console.log("jquery toggle");
       return false;
     });
-  $(window).resize(_.debounce(function(){respond();}, 100));
+   $( "a.logolink" ).blur(function() {
+      $('ul.navitems').toggleClass( "open", 100 );
+       // console.log("jquery blur");
+    });
+  //$(window).resize(_.debounce(function(){respond();}, 100));
 });
 
   </script>
