@@ -797,7 +797,14 @@ select:focus {
 /* line 24, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 button,
 input[type="button"],
-input[type="submit"], input.cancel {
+input[type="submit"], button.active,
+input[type="button"].active,
+input[type="submit"].active, input.cancel,
+button.cancel,
+input[type="button"][value="Cancel"],
+input[type="submit"][value="Cancel"], button[disabled="disabled"],
+input[type="button"][disabled="disabled"],
+input[type="submit"][disabled="disabled"] {
   width: auto;
   text-align: center;
   font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
@@ -807,9 +814,9 @@ input[type="submit"], input.cancel {
   cursor: pointer;
   padding: 0.33em 0.66em;
   line-height: 1;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  border-radius: 0.1875em;
 }
 
 /* line 38, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
@@ -817,11 +824,11 @@ button,
 input[type="button"],
 input[type="submit"] {
   color: #333333;
-  background-color: background-color-mix(white, #e6e6e6);
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(top, #ffffff, #e6e6e6);
-  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  background-color: background-color-mix(#e0e0e0, #d9d9d9);
+  background-image: -webkit-linear-gradient(45deg, #e0e0e0, #d9d9d9);
+  background-image: -moz-linear-gradient(45deg, #e0e0e0, #d9d9d9);
+  background-image: linear-gradient(45deg, #e0e0e0, #d9d9d9);
+  text-shadow: none;
 }
 /* line 43, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 button:hover,
@@ -831,10 +838,10 @@ input[type="button"]:focus,
 input[type="submit"]:focus {
   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
   color: #333333;
-  background-color: background-color-mix(#cccccc, #e6e6e6);
-  background-image: -webkit-linear-gradient(top, #cccccc, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #cccccc, #e6e6e6);
-  background-image: linear-gradient(top, #cccccc, #e6e6e6);
+  background-color: background-color-mix(#e0e0e0, #e0e0e0);
+  background-image: -webkit-linear-gradient(45deg, #e0e0e0, #e0e0e0);
+  background-image: -moz-linear-gradient(45deg, #e0e0e0, #e0e0e0);
+  background-image: linear-gradient(45deg, #e0e0e0, #e0e0e0);
 }
 /* line 47, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 button:active,
@@ -842,10 +849,10 @@ input[type="button"]:active,
 input[type="submit"]:active {
   text-shadow: -1px 0 0 rgba(255, 255, 255, 0.25);
   color: #333333;
-  background-color: background-color-mix(#a6a6a6, #d9d9d9);
-  background-image: -webkit-linear-gradient(top, #a6a6a6, #d9d9d9);
-  background-image: -moz-linear-gradient(top, #a6a6a6, #d9d9d9);
-  background-image: linear-gradient(top, #a6a6a6, #d9d9d9);
+  background-color: background-color-mix(#d9d9d9, #e0e0e0);
+  background-image: -webkit-linear-gradient(45deg, #d9d9d9, #e0e0e0);
+  background-image: -moz-linear-gradient(45deg, #d9d9d9, #e0e0e0);
+  background-image: linear-gradient(45deg, #d9d9d9, #e0e0e0);
 }
 
 /* line 53, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
@@ -854,10 +861,10 @@ input[type="button"].active,
 input[type="submit"].active {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
   color: white;
-  background-color: background-color-mix(#007ae5, #005fb3);
-  background-image: -webkit-linear-gradient(top, #007ae5, #005fb3);
-  background-image: -moz-linear-gradient(top, #007ae5, #005fb3);
-  background-image: linear-gradient(top, #007ae5, #005fb3);
+  background-color: background-color-mix(#5182a5, #4c7b9c);
+  background-image: -webkit-linear-gradient(45deg, #5182a5, #4c7b9c);
+  background-image: -moz-linear-gradient(45deg, #5182a5, #4c7b9c);
+  background-image: linear-gradient(45deg, #5182a5, #4c7b9c);
 }
 /* line 58, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 button.active:hover,
@@ -867,10 +874,10 @@ input[type="button"].active:focus,
 input[type="submit"].active:focus {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
   color: white;
-  background-color: background-color-mix(#004480, #004b8c);
-  background-image: -webkit-linear-gradient(top, #004480, #004b8c);
-  background-image: -moz-linear-gradient(top, #004480, #004b8c);
-  background-image: linear-gradient(top, #004480, #004b8c);
+  background-color: background-color-mix(#5182a5, #5988a9);
+  background-image: -webkit-linear-gradient(45deg, #5182a5, #5988a9);
+  background-image: -moz-linear-gradient(45deg, #5182a5, #5988a9);
+  background-image: linear-gradient(45deg, #5182a5, #5988a9);
 }
 /* line 62, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 button.active:active,
@@ -878,10 +885,10 @@ input[type="button"].active:active,
 input[type="submit"].active:active {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
   color: white;
-  background-color: background-color-mix(#003059, #004b8c);
-  background-image: -webkit-linear-gradient(top, #003059, #004b8c);
-  background-image: -moz-linear-gradient(top, #003059, #004b8c);
-  background-image: linear-gradient(top, #003059, #004b8c);
+  background-color: background-color-mix(#4c7b9c, #5182a5);
+  background-image: -webkit-linear-gradient(45deg, #4c7b9c, #5182a5);
+  background-image: -moz-linear-gradient(45deg, #4c7b9c, #5182a5);
+  background-image: linear-gradient(45deg, #4c7b9c, #5182a5);
 }
 
 /* line 68, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
@@ -891,10 +898,10 @@ input[type="button"][value="Cancel"],
 input[type="submit"][value="Cancel"] {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   color: white;
-  background-color: background-color-mix(#ee5f5b, #bd362f);
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-  background-image: linear-gradient(top, #ee5f5b, #bd362f);
+  background-color: background-color-mix(#e92e26, #dd2b24);
+  background-image: -webkit-linear-gradient(45deg, #e92e26, #dd2b24);
+  background-image: -moz-linear-gradient(45deg, #e92e26, #dd2b24);
+  background-image: linear-gradient(45deg, #e92e26, #dd2b24);
 }
 /* line 73, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 input.cancel:hover,
@@ -906,10 +913,10 @@ input[type="button"][value="Cancel"]:focus,
 input[type="submit"][value="Cancel"]:focus {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
   color: white;
-  background-color: background-color-mix(#a32f29, #d63e36);
-  background-image: -webkit-linear-gradient(top, #a32f29, #d63e36);
-  background-image: -moz-linear-gradient(top, #a32f29, #d63e36);
-  background-image: linear-gradient(top, #a32f29, #d63e36);
+  background-color: background-color-mix(#e92e26, #ea3830);
+  background-image: -webkit-linear-gradient(45deg, #e92e26, #ea3830);
+  background-image: -moz-linear-gradient(45deg, #e92e26, #ea3830);
+  background-image: linear-gradient(45deg, #e92e26, #ea3830);
 }
 /* line 77, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 input.cancel:active,
@@ -918,10 +925,10 @@ input[type="button"][value="Cancel"]:active,
 input[type="submit"][value="Cancel"]:active {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
   color: white;
-  background-color: background-color-mix(#7a231f, #ad322b);
-  background-image: -webkit-linear-gradient(top, #7a231f, #ad322b);
-  background-image: -moz-linear-gradient(top, #7a231f, #ad322b);
-  background-image: linear-gradient(top, #7a231f, #ad322b);
+  background-color: background-color-mix(#dd2b24, #e92e26);
+  background-image: -webkit-linear-gradient(45deg, #dd2b24, #e92e26);
+  background-image: -moz-linear-gradient(45deg, #dd2b24, #e92e26);
+  background-image: linear-gradient(45deg, #dd2b24, #e92e26);
 }
 
 /* line 83, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
@@ -932,9 +939,9 @@ input[type="submit"][disabled="disabled"] {
   opacity: 0.75;
   color: #333333;
   background-color: background-color-mix(#e6e6e6, #e6e6e6);
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #e6e6e6, #e6e6e6);
-  background-image: linear-gradient(top, #e6e6e6, #e6e6e6);
+  background-image: -webkit-linear-gradient(45deg, #e6e6e6, #e6e6e6);
+  background-image: -moz-linear-gradient(45deg, #e6e6e6, #e6e6e6);
+  background-image: linear-gradient(45deg, #e6e6e6, #e6e6e6);
 }
 
 /* line 1, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/base/_page.scss */
