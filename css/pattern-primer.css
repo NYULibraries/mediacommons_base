@@ -797,7 +797,14 @@ select:focus {
 /* line 24, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-pattern-primer-0.2.8/stylesheets/compass-pattern-primer/partials/_extendables.scss */
 button,
 input[type="button"],
-input[type="submit"], input.cancel {
+input[type="submit"], button.active,
+input[type="button"].active,
+input[type="submit"].active, input.cancel,
+button.cancel,
+input[type="button"][value="Cancel"],
+input[type="submit"][value="Cancel"], button[disabled="disabled"],
+input[type="button"][disabled="disabled"],
+input[type="submit"][disabled="disabled"] {
   width: auto;
   text-align: center;
   font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
