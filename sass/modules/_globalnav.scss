@@ -5,33 +5,28 @@ nav[role="navigation"].global {
     $experimental-support-for-svg: true;
     @include background-image(linear-gradient(top, darken(nth($black, 2), 5%), darken(nth($black, 1), 15%)));
     width: 100%;
-    height: $globalnav-height;
+    //height: $globalnav-height;
     @include web-font-family($heading-font-name);
     position: absolute;
     top: 0;
     left: 0;
     padding: 0 1%;
     a.logolink {
-        height: $globalnav-height;
+        height: $globalnav-height ;
         max-width: 100%;
-        padding: 0;
+        padding: 1.5em 0 ;
         display: block;
-        // outline: 1px solid #ccc;
         overflow: hidden;
-        margin: 10px 0 0 0;
-        // background: url('http://mediacommons.futureofthebook.org/redesign/svg-test/svg/all-MC-logos3a.svg');
-        // background-color: green;
-        background: url("../images/logo4.svg");
+        margin: 0;
+        background: url("../images/logo5.svg");
         background-repeat: no-repeat;
-        background-size: 200%;
-        background-position: left top;
+        background-size: 100%;
+        background-position: left center;
         span {
             display: block;
-            width: 15em;
+            width: 14em;
             text-indent: -1000em;
-        }
-        &:hover {
-            background-position: right top;
+            //height: $globalnav-height;
         }
     }
     a.drop-down {
@@ -59,7 +54,7 @@ nav[role="navigation"].global {
                 font-weight: 400;
                 color: nth($black, 5);
                 text-indent: 0;
-                padding: 10px;
+                padding: .5em;
                 float: left;
                 display: block;
                 // @include border-radius(5px);
@@ -81,17 +76,40 @@ nav[role="navigation"].global {
         padding: 0;
     }
     ul.global-sections {
-        // background-color: yellow;
         @include horizontal-list(0em);
         float: left;
-        // max-width: 75%;
-   
     }
     ul.utils {
         position: absolute;
         right: 0px;
         top: 0px;
     }
+    /*   */
+    li.navitems2 {
+        position: relative;
+        z-index: 5;
+    }
+    li.navitems2 ul {
+        // height:0;
+        display: none;
+        // min-height:0px;
+   
+    }
+    li.navitems2 ul.open {
+        height: auto;
+        min-height: 50px;
+        display: block;
+        background-color: black;
+        position: absolute;
+        clear: both;
+        top: 1.9em;
+        right: 0;
+        z-index: 1;
+    }
+    a.drop-down {
+        display: block;
+    }
+    /*   */
     ul.logged-outx {
         @include horizontal-list(1em);
         float: right;

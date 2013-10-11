@@ -2,112 +2,61 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 
-
 nav[role="navigation"].global {
-  @include respond-to('tablet-lh') {
-      
-      ul.navitems {
-        @include background-image(linear-gradient(top, darken(nth($black,1), 15%), darken(nth($black,2), 5%)));
-        @include border-radius(5px);
-        border: 1px solid #ccc;
-        margin: 4px 0 0 15px;
-      }                   
-     
-      ul.navitems a, ul.navitems2 a { padding: 4px 10px 2px 10px; }
-      li.navitems2 {
-        position:relative;
-        z-index: 5;
-      }
-      li.navitems2 ul{ 
-        // height:0;
-        display:none;
-        // min-height:0px;
-        
-      }
-      li.navitems2 ul.open{ 
-        height:auto;
-        min-height:50px;
-        display: block;
-        background-color: black;
-        position:absolute;
-        clear: both;
-        top:1.9em;
-        right:0;
-        z-index: 1;
-      }
-      a.drop-down {
-          display: block;
-      }
-  }
-  
-  
-	@include respond-to('mobile-lh') {
-   	// add mobile navigation specific style
-   
-      a.logolink {
-      
-        height: 100%;
-        background-position: 0px -5px;
+    @include respond-to("tablet-lh") {
+        ul.navitems {
+            @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
+            @include border-radius(5px);
+            border: 1px solid #ccc;
+            margin: 4px 0 0 15px;
+        }
+        ul.navitems a, ul.navitems2 a {
+            padding: 4px 10px 2px 10px;
+        }
+    }
 
-      }
-
-  		> ul.global-sections[role="menubar"] {
-
-  			li {
-      			width: 25em;
-           
-            height:$globalnav-height;
-      			display:block;
-      			clear:left;
-            position:relative;
-            z-index: 5;
-      			a {
-        			float:none;
-      			}
-  			}
-  		
-  			> li > ul.navitems {
-            // display:none;
-            height: 0px;
-            overflow:hidden;
-          
-            position:relative;
-            z-index: 2;
-            background-color: #111;
-            width:100%;
-            @include border-corner-radius(bottom, left, 5px);
-            @include border-corner-radius(bottom, right, 5px);
-  			}
-
-  			> li ul.navitems.open {
-          height:auto;
-          padding-bottom:20px;
-      	}
-  			li ul.open > li {
-  				display:block;
-  				float:none;
-  				width:100%;
-      		clear:left;
-          a:hover {
-            background-color:#333;
-          }
-  			}
-  			//
-    		
-		}
-	}
-  @include respond-to('phone portrait, sm-port') {
-      a.logolink {
-      // height:$globalnav-height;
-        height: 100%;
-        background-position: 0px 0px;
-        max-width: 18em;
-        
-      }
-      > ul.global-sections[role="menubar"] {
-          li {
-            // width: 10em;
-          }
-      }
-  }
+    @include respond-to("mobile-lh") {
+        // add mobile navigation specific style
+        a.logolink {
+            height: 100%;
+             background-position: left center;
+            background-size: 75%;
+        }
+        > ul.global-sections[role="menubar"] {
+            li {
+                width: 25em;
+                height: $globalnav-height;
+                display: block;
+                clear: left;
+                position: relative;
+                z-index: 5;
+                a {
+                    float: none;
+                }
+            }
+            > li > ul.navitems {
+                height: 0px;
+                overflow: hidden;
+                position: relative;
+                z-index: 2;
+                background-color: #111;
+                width: 100%;
+                @include border-corner-radius(bottom, left, 5px);
+                @include border-corner-radius(bottom, right, 5px);
+            }
+            > li ul.navitems.open {
+                height: auto;
+                padding-bottom: 20px;
+            }
+            li ul.open > li {
+                display: block;
+                float: none;
+                width: 100%;
+                clear: left;
+                a:hover {
+                    background-color: #333;
+                }
+            }
+        }
+    }
 }
