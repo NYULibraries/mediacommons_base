@@ -81,27 +81,6 @@
  
 
 // IE Fixin Mixins
-// Based on: http://jakearchibald.github.io/sass-ie/
-// For IE only CSS hacks
-
-//$fixed-media-query: false !default; 
-
-//@mixin respond-to($mediaquery) {
-//  // If we're outputting for a fixed media query set...
-//  @if $fixed-media-query {
-//    // ...and if we should apply these rules...
-//    @if $fixed-media-query == $mediaquery {
-//      // ...output the content the user gave us.
-//      @content;
-//    }
-//  }
-//  @else {
-//    // Otherwise, output it using a regular media query
-//    @include respond-to(quote($mediaquery)) {
-//      @content;
-//    }
-//  }
-//}
 
 @mixin opacitIE($opacity) {
   // Could be extended for other even older browsers if needed http://css-tricks.com/css-transparency-settings-for-all-broswers/
