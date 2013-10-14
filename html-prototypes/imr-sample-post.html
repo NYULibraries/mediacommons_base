@@ -17,7 +17,12 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
       })(); </script>
-  <link rel="stylesheet" href="../css/mediacommons_base.css">
+  <!--[if (lt IE 9)]>
+    <link rel="stylesheet" href="../css/mediacommons_base_ie.css" media="all" />
+  <![endif]-->
+  <!--[if (gte IE 9)|(IEMobile)|(!IE)]><!-->
+    <link rel="stylesheet" href="../css/mediacommons_base.css" media="all">
+  <!--<![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> 
 </head>
