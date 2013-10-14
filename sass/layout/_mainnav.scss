@@ -3,7 +3,7 @@
 //////////////////////////////
 
 nav[role="navigation"].main {
-  @include respond-to-ie('desktop') {
+  @include respond-to('desktop') {
     display: table-caption;
     margin-top: 10em;
     ul.main {
@@ -20,7 +20,7 @@ nav[role="navigation"].main {
       }
     }
   }
-  @include respond-to-ie('narrow navigation') {
+  @include respond-to('narrow navigation') {
    // add 'mobile' navigation specific style
   }
 }

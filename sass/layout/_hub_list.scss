@@ -1,4 +1,4 @@
-@include respond-to-ie('desktop') {
+@include respond-to('desktop') {
   aside[role="complimentary"].part-of-hub {
     max-width: 20em;
     float: right;
@@ -21,7 +21,7 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 
-@include respond-to-ie('tablet') {
+@include respond-to('tablet') {
   aside[role="complimentary"].part-of-hub { 
     clear: left;
     max-width: 36em;
