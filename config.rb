@@ -1,7 +1,9 @@
 # Require any additional compass plugins here.
 require 'compass-pattern-primer'
 require 'toolkit'
-require 'modular-scale'   
+require 'modular-scale'
+require 'compass-normalize'
+require 'compass_formalize'
 
 # Set this to the root of your project when deployed:
 http_path = "/mediacommons/sites/mediacommons.futureofthebook.org/themes/mediacommons_base"
