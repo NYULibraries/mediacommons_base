@@ -10,18 +10,22 @@ nav[role="navigation"].global {
             border: 1px solid #ccc;
             margin: 4px 0 0 15px;
         }
+        ul.navitems.open {
+            border-right: none;
+           
+        }
         ul.navitems a, ul.navitems2 a {
             padding: 4px 10px 2px 10px;
+            
         }
     }
-
     @include respond-to("mobile-lh") {
-        // add mobile navigation specific style
         a.logolink {
             height: 100%;
-             background-position: left center;
+            background-position: left center;
             background-size: 75%;
         }
+        ul li { background: none; }
         > ul.global-sections[role="menubar"] {
             li {
                 width: 25em;

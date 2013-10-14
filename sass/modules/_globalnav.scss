@@ -14,7 +14,7 @@ nav[role="navigation"].global {
     a.logolink {
         height: $globalnav-height ;
         max-width: 100%;
-        padding: 1.5em 0 ;
+        padding: 1.5em 0;
         display: block;
         overflow: hidden;
         margin: 0;
@@ -31,7 +31,16 @@ nav[role="navigation"].global {
     }
     a.drop-down {
         font-weight: bold;
-        display: none;
+        display: block;
+        
+        // position: absolute;
+    }
+     a.drop-down.open{
+            height:3.7em !important;
+      
+          @include border-corner-radius(top, right, 5px);
+         // border-right: 1px solid #ccc;
+       
     }
     a.drop-down:after {
         content: " v";
@@ -39,14 +48,15 @@ nav[role="navigation"].global {
     a.drop-down.open:after {
         content: " A";
     }
+
     ul {
         @include horizontal-list(0.5em);
-        // line-height: 1.5em;
+     
         margin: 0;
         li {
             text-indent: 0;
             margin: 0;
-            background: url("../images/pipe.png") center right no-repeat;
+            background:  url("../images/pipe.png") center right no-repeat;
             padding: 0 1px;
             a {
                 font-size: .775em;
@@ -57,6 +67,7 @@ nav[role="navigation"].global {
                 padding: .5em;
                 float: left;
                 display: block;
+                
                 // @include border-radius(5px);
                 &:hover {
                     // @include background-image(linear-gradient(top, darken(nth($black,1), 15%), darken(nth($black,2), 5%)));
@@ -68,12 +79,29 @@ nav[role="navigation"].global {
         li:last-child {
             background: none;
         }
+        li.navitems2.open li {
+            background: none;
+        }
     }
+    ul.navitems>li[role="menuitem"].navitems2.open,
+         ul.navitems>li[role="menuitem"].navitems2.open * {
+      
+    
+    }
+    ul.navitems>li[role="menuitem"].navitems2.open {
+        @include border-corner-radius(top, right, 5px);
+        background-color: black !important;
+          border-right: 1px solid #ccc;
+     }
     ul.navitems {
         float: left;
         width: auto;
         margin: 0;
         padding: 0;
+        position: relative;
+        // z-index: 15;
+        height: 1.8em;
+       
     }
     ul.global-sections {
         @include horizontal-list(0em);
@@ -87,7 +115,8 @@ nav[role="navigation"].global {
     /*   */
     li.navitems2 {
         position: relative;
-        z-index: 5;
+        z-index: 19;
+         
     }
     li.navitems2 ul {
         // height:0;
@@ -97,18 +126,26 @@ nav[role="navigation"].global {
     }
     li.navitems2 ul.open {
         height: auto;
-        min-height: 50px;
         display: block;
-        background-color: black;
+         background-color: black;
+        // border-bottom: 1px solid #ccc;
+        // border-right: 1px solid #ccc;
+        // border-left: 1px solid #ccc;
+         @include border-corner-radius(top, left, 5px);
+        @include border-corner-radius(bottom, left, 5px);
+        @include border-corner-radius(bottom, right, 5px);
+         padding-bottom:10px !important;
         position: absolute;
         clear: both;
-        top: 1.9em;
-        right: 0;
-        z-index: 1;
+        top: 2.7em;
+        right: -1px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        a {
+            display:block;
+        }
     }
-    a.drop-down {
-        display: block;
-    }
+  
     /*   */
     ul.logged-outx {
         @include horizontal-list(1em);
