@@ -59,8 +59,8 @@
   </ul>
   <ul class="utils logged-out" role="menubar">
     <li role="menuitem"> <a href="#">Join</a> </li role="menuitem">
-    <li role="menuitem" aria-haspopup="true"> <a href="#">Login</a> 
-      <ul role="menu" aria-hidden="true">
+    <li role="menuitem" aria-haspopup="true"> <a href="#" class="login-link">Login</a> 
+      <ul role="menu" aria-hidden="true" class="login-area">
         <li role="menuitem">
           <form action="/imr/user/login"  accept-charset="UTF-8" method="post" id="user-login" class="user login form inline">
             <label for="edit-name">Username or e-mail address: <span class="form-required" title="This field is required.">*</span></label>
@@ -119,11 +119,11 @@ function setUpMobileView() {
       e.stopPropagation();
   });
   $("a.logolink").blur(function() {
-   $('ul.navitems').toggleClass("open", false, 100);
+    $('ul.navitems').toggleClass("open", false, 100);
   });
 
   $(document).click(function() {
-  $('ul.navitems').toggleClass("open", false, 100);
+    $('ul.navitems').toggleClass("open", false, 100);
   });
 
 
@@ -142,9 +142,9 @@ function setUpTabletView() {
       $(this).nextAll('li').addBack().wrapAll("<li class='navitems2 ' role='menuitem'><ul></ul><li>");
       $('.navitems2').prepend('<a class="drop-down" href="#">More</a>');
       $("a.drop-down").click(function() {
-        $('.navitems2 ul').toggleClass("open");
-        $('.navitems2').toggleClass("open");
-        $('.navitems').toggleClass("open");
+        $('.navitems2 ul').toggleClass("open", 100);
+        $('.navitems2').toggleClass("open", 100);
+        $('.navitems').toggleClass("open", 100);
         $(this).toggleClass("open");
       });
       return false;
@@ -152,8 +152,19 @@ function setUpTabletView() {
   });
 }
 $(function() {
-  respond();
-  $(window).resize(_.debounce(function() {respond();}, 100));
+    respond();
+    $(window).resize(_.debounce(function() {respond();}, 100));
+    $('.utils a.login-link').click(function() {
+     // $('.utils ul[role="menu"]').show(1000).attr('aria-hidden', 'false');
+     // $('.utils ul[role="menu"]').attr('aria-hidden', 'false');
+     if ($(this).hasClass("open")) {
+      $('.utils ul[aria-hidden="false"]').attr('aria-hidden', 'true');
+        $(this).removeClass("open");
+    } else {
+      $('.utils ul[aria-hidden="true"]').attr('aria-hidden', 'false');
+      $(this).addClass("open");
+    }
+   });
 });
   </script>
 </body>
