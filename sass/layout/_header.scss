@@ -3,7 +3,7 @@
 //////////////////////////////
 
 header[role="banner"] {
-  @include respond-to-ie('desktop') {
+  @include respond-to('desktop') {
     margin: 1.75em auto 0 auto;
     width: 100%;
     max-width: 60em;
