@@ -16,7 +16,7 @@ article[role="article"].spoke {
 article[role="article"].spoke {
     @include respond-to("mobile-lh") {
     	.vcard img.photo {
-    		@include border-radius(0px);
+    		//@include border-radius(0px);
     		border:none;
     	}
     	header, section {
@@ -36,9 +36,8 @@ article[role="article"].spoke {
     }
 
 }
-section.video.part-of-hub:after {
-  clear: both; 
-  content: " ";
+section.video.part-of-hub {
+  @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
 }
 figure.embeded-link {
   max-width: ms(14);
