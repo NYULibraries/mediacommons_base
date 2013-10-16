@@ -5,6 +5,9 @@ form[role="search"] {
   label {
     display: none;
   }
+  fieldset {
+    margin: 0;
+  }
 }
 
 //.search-form {

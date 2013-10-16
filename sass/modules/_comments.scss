@@ -153,6 +153,12 @@
 
 .comments-block {
   article {
-    
+    padding: 1em;
+    &:nth-of-type(odd) {
+      background: nth($black, 5);
+    }
+    &:nth-of-type(even) {
+      background: nth($black, 4);
+    }
   }
 }
