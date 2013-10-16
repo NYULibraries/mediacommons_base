@@ -4,7 +4,7 @@
 
 //  See: Icon fonts, HAML and Sass http://gist.io/4731881
 @each $icon in $icons {
-  .icon-#{nth($icon, 1)}:before {
+  #{nth($icon, 1)}:before {
     content: nth($icon, 2);
     @extend %ico-font-base;
   }

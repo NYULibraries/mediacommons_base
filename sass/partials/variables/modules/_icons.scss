@@ -7,5 +7,5 @@ $icon-font-name: 'MediaCommons-Icon-Font';
 $icon-font-file-name: 'MediaCommons-Icon-Font/MediaCommons-Icon-Font';
 
 //  See: Icon fonts, HAML and Sass http://gist.io/4731881 
-$icons: (contract-arrow-m '\e00a') (expand-arrow-m '\e00b') (contract-arrow-s '\e00e') (expand-arrow-s '\e00f') (contract-arrow-l '\e012') (expand-arrow-l '\e013') (email '\e006') (phone '\e008') (user '\e01f') (users '\e020') (add-user '\e01e');
+$icons: (.icon-contract-arrow-m '\e00a') (.icon-expand-arrow-m '\e00b') (.icon-contract-arrow-s '\e00e') (.icon-expand-arrow-s '\e00f') (.icon-contract-arrow-l '\e012') (.icon-expand-arrow-l '\e013') (.icon-email '\e006') (.icon-phone '\e008') (.icon-user '\e01f') (.icon-users '\e020') (.icon-add-user '\e01e') ('form[role="search"] label' '\e016');
    
