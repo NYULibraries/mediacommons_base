@@ -6,4 +6,46 @@ section.curators-note {
   max-width: ms(14);
   float: left;
 }
+section.video.part-of-hub:after {
+  clear: both; 
+  content: "";
+}
+figure.embeded-link {
+  max-width: ms(14);
+  max-height: ((ms(14) / 16) * 9);
+}
 
+@include respond-to('desktop') {
+  aside[role="complimentary"].part-of-hub {
+    width: ms(12);
+    float: right;
+    clear: right;
+    ul[role="menu"] {
+      li {
+       > a:first-child {
+         width: 25%;
+       } 
+       > h3 {
+         width: 75%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('tablet') {
+  aside[role="complimentary"].part-of-hub { 
+    clear: left;
+    max-width: ms(14);
+    ul[role="menu"] {
+      li {
+       > a:first-child {
+         width: 20%;
+       } 
+       > h3 {
+         width: 80%;
+        }
+      }
+    }
+  }
+}
