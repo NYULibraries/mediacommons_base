@@ -3,75 +3,75 @@
 //////////////////////////////
 
 header[role="banner"] {
-  @include respond-to('desktop') {
-    margin: 1.75em auto 0 auto;
-    width: 100%;
-    max-width: 60em;
-  }
-  @include respond-to("mobile-lh") {
-    // overflow:hidden;
-    width:100%;
-    padding: 0 1%;
-    position: absolute;
-    top: $globalnav-height; 
-    left:0;
-    @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 3), 5%))); 
-    h1 { 
-      float: left; 
-      margin-top: 10px; 
-      display:block;
+    @include respond-to("desktop") {
+        margin: 1.75em auto 0 auto;
+        width: 100%;
+        max-width: 60em;
     }
-    form[role="search"] {
-      margin: 0;
-      // position: absolute;
-      // top: 10px; 
-      // right: 5em;
-      display: block;
-      float: none;  
+
+    @include respond-to("mobile-lh") {
+        // overflow:hidden;
+        width: 100%;
+        padding: 0 2%;
+        position: absolute;
+        top: $globalnav-height;
+        left: 0;
+        @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 3), 5%)));
+        h1 {
+            float: left;
+            margin-top: 10px;
+            display: block;
+        }
+        form[role="search"] {
+            margin: 0;
+            display: block;
+            float: none;
+        }
+        form[role="search"] label span {
+            display: none;
+            &:before {
+                content: "\e016";
+            }
+        }
+        form[role="search"] label {
+            padding: .4em 1em .1em;
+            margin: 10px 0 10px 0;
+            &:before {
+                content: "\e016";
+            }
+            display: block;
+            float: right;
+            @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 3), 5%)));
+            @include border-radius(5px);
+            border: 1px solid #ccc;
+        }
+        form[role="search"] fieldset {
+            background-color: #333;
+            border: none;
+            margin: 0;
+            width: auto;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            top: 3.5em;
+            display: none;
+            // display:block;
+       
+        }
     }
-    form[role="search"] label span{
-      display:none;
-      &:before {
-        content: "\e016";
-      }
-    }
-    form[role="search"] label {  
-      padding: .4em 1em .1em;
-      margin: 10px 0 10px 0;
-      &:before {
-       content: "\e016";
-      }
-      display: block;
-      float: right;
-      @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 3), 5%)));
-      @include border-radius(5px);
-      border: 1px solid #ccc; 
-    }
-    form[role="search"] fieldset {  
-      background-color: #333;
-      border:none;
-      margin:0;
-      width: auto;
-      padding:10px;
-      position:absolute;
-      right:0;
-      top: 3.5em;
-      display:none;
-      // display:block; 
-    }
-  }
 }
-body, main { 
-  @include respond-to("mobile-lh") {
-    display: block; 
-    width:100%; 
-    max-width: 100%; 
-    overflow: hidden; 
-  }
+
+body, main {
+    @include respond-to("mobile-lh") {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
- 
-a.skip-to-nav { 
-  height: 0px !important; 
-  overflow:hidden; 
-  display: none !important;
+
+a.skip-to-nav {
+    height: 0px !important;
+    overflow: hidden;
+    display: none !important;
 }

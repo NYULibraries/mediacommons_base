@@ -157,7 +157,7 @@ nav[role="navigation"].global {
             color: nth($black, 5);
             margin-right: .5em;
             a {
-                padding: .4em 1em .1em;
+                padding: 0 .5em;
                 border: 1px solid #ccc;
                 @include border-radius(5px);
                  @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));

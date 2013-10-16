@@ -19,6 +19,7 @@ nav[role="navigation"].global {
         }
     }
     @include respond-to("mobile-lh") {
+        padding: 0 2%;
         a.logolink {
             height: 100%;
             background-position: left center;
