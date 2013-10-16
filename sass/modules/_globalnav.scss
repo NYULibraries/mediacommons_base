@@ -98,6 +98,9 @@ nav[role="navigation"].global {
                 padding: .5em;
             }
         }
+        li:last-child {
+            background: none;
+        }
     }
     ul.global-sections {
         @include horizontal-list(0em);
@@ -149,8 +152,6 @@ nav[role="navigation"].global {
         // max-width: 25%;
         // padding: 0;
         >li {
-            
-           
             @include border-radius(5px);
             padding: 0;
             color: nth($black, 5);
