@@ -14,34 +14,34 @@ article[role="article"].spoke {
 }
 
 article[role="article"].spoke {
-    @include respond-to("mobile-lh") {
-    	.vcard img.photo {
-    		//@include border-radius(0px);
-    		border:none;
-    	}
-    	header, section {
-    		padding: 0 2%;
-    	}
-    	> header {
-            background-color: darken(nth($black, 5), 5%);
-            @include border-top-radius(15px);
-            margin-bottom:0;
-            padding-bottom:20px;
-        }
-        section.part-of-hub {
-            background-color: darken(nth($black, 5), 5%);
-            @include border-bottom-radius(15px);
-        }
-        
+  @include respond-to("mobile-lh") {
+    .vcard img.photo {
+      //@include border-radius(0px);
+      //border:none;
     }
-
+    header, section {
+      padding: 0 2%;
+    }
+    > header {
+      background-color: darken(nth($black, 5), 5%);
+      @include border-top-radius(15px);
+      margin-bottom:0;
+      padding-bottom:20px;
+    }
+    section.part-of-hub {
+      background-color: darken(nth($black, 5), 5%);
+      @include border-bottom-radius(15px); 
+    }
+  }
 }
+
 section.video.part-of-hub {
   @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
 }
+
 figure.embeded-link {
   max-width: ms(14);
-  max-height: ((ms(14) / 16) * 9);
+  max-height: ((ms(14) / 16) * 9); // calculate correct height using 16:9 ratio
 }
 
 @include respond-to('desktop') {
