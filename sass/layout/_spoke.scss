@@ -3,9 +3,14 @@
 //////////////////////////////
 
 section.curators-note {
-    max-width: ms(14);
-    float: left;
+  max-width: ms(14);
+  float: left;
   margin: 0 1em 1em 0;
+}
+article[role="article"].spoke { 
+  .vcard {
+    display: block;
+  }  
 }
 
 article[role="article"].spoke {
@@ -76,7 +81,6 @@ figure.embeded-link {
 
 .comments-block {  
   background: nth($black, 5);
-  padding: 0 1em;
   @include respond-to('desktop') {
     float: left;
     max-width: ms(12);
