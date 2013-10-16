@@ -5,10 +5,11 @@
 section.curators-note {
   max-width: ms(14);
   float: left;
+  margin: 0 1em 1em 0;
 }
 section.video.part-of-hub:after {
   clear: both; 
-  content: "";
+  content: " ";
 }
 figure.embeded-link {
   max-width: ms(14);
@@ -19,7 +20,6 @@ figure.embeded-link {
   aside[role="complimentary"].part-of-hub {
     width: ms(12);
     float: right;
-    clear: right;
     ul[role="menu"] {
       li {
        > a:first-child {
@@ -48,4 +48,50 @@ figure.embeded-link {
       }
     }
   }
+}
+
+.comments-block {  
+  background: nth($black, 5);
+  padding: 0 1em;
+  @include respond-to('desktop') {
+    float: left;
+    max-width: ms(12);
+    article {
+    @include type-size($body-font-size - 1, $body-line-height - .1); // 16px 
+    }
+  }
+  @include respond-to('tablet') {
+    clear: left;
+    max-width: ms(14);
+    article { 
+      @include type-size($body-font-size - 2, $body-line-height - .1); // 16px
+    }
+  }
+//  @include respond-to('wide content') {
+//    float: left;
+//    max-width: ms(12);
+//    article { 
+//      @include type-size($body-font-size, $body-line-height - .1); // 16px
+//    }
+//  }
+//  @include respond-to('medium wide content') {
+//    float: left;
+//    max-width: ms(12);
+//    article { 
+//      @include type-size($body-font-size - 2, $body-line-height - .1); // 16px
+//    }
+//  }
+//  @include respond-to('medium content') {
+//    float: left;
+//    max-width: ms(12);
+//    article {     
+//      @include type-size($body-font-size - 3, $body-line-height - .1); // 16px
+//    }
+//  }
+//  @include respond-to('medium only content') {
+//    max-width: ms(14);
+//    article {
+//      @include type-size($body-font-size - 3, $body-line-height - .1); // 16px
+//    }
+//  }
 }
