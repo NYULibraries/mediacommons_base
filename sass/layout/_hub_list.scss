@@ -2,38 +2,5 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 
-@include respond-to('desktop') {
-  aside[role="complimentary"].part-of-hub {
-    max-width: 20em;
-    float: right;
-    clear: right;
-    ul[role="menu"] {
-      li {
-       > a:first-child {
-         width: 25%;
-       } 
-       > h3 {
-         width: 75%;
-        }
-      }
-    }
-  }
-}
 
-@include respond-to('tablet') {
-  aside[role="complimentary"].part-of-hub { 
-    clear: left;
-    max-width: 36em;
-    ul[role="menu"] {
-      li {
-       > a:first-child {
-         width: 20%;
-       } 
-       > h3 {
-         width: 80%;
-        }
-      }
-    }
-  }
-}
 
