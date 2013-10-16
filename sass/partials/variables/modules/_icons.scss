@@ -3,10 +3,9 @@
 //////////////////////////////
 
 // Icon fonts
-$icon-font-name: 'ICON_FONT_FAMILY_NAME';
-$icon-font-file-name: 'icon-font-file-name';
+$icon-font-name: 'MediaCommons-Icon-Font';
+$icon-font-file-name: 'MediaCommons-Icon-Font/MediaCommons-Icon-Font';
 
 //  See: Icon fonts, HAML and Sass http://gist.io/4731881 
-// example $icons array
-$icons: (help '\e003') (iframe-site '\e005') (schedule '\e028') (announcements '\e006');
+$icons: (contract-arrow-m '\e00a') (expand-arrow-m '\e00b') (contract-arrow-s '\e00e') (expand-arrow-s '\e00f') (contract-arrow-l '\e012') (expand-arrow-l '\e013') (email '\e006') (phone '\e008') (user '\e01f') (users '\e020') (add-user '\e01e');
    
