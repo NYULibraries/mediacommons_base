@@ -79,8 +79,11 @@ figure.embeded-link {
   }
 }
 
-.comments-block {  
-  background: nth($black, 5);
+.comments {  
+  > h2 {
+    padding: .5em;
+    background: nth($secondary, 4);
+  }
   @include respond-to('desktop') {
     float: left;
     max-width: ms(12);

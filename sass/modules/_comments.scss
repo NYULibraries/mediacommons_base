@@ -2,6 +2,18 @@
 // MODULES: Styles that are layout independent 
 //////////////////////////////
 
+.comments {
+  article {
+    padding: 0.01em 1em .5em 1em;
+    &:nth-of-type(odd) {
+      background: nth($secondary, 5);
+    }
+    &:nth-of-type(even) {
+      background: nth($secondary, 4);
+    }
+  }
+}
+
 ///* all */
 //::-webkit-input-placeholder { color:$grey1; font-style: italic;}
 //::-moz-placeholder { color:$grey1; font-style: italic; } /* firefox 19+ */
@@ -151,14 +163,3 @@
 //  }
 //}
 
-.comments-block {
-  article {
-    padding: 1em;
-    &:nth-of-type(odd) {
-      background: nth($black, 5);
-    }
-    &:nth-of-type(even) {
-      background: nth($black, 4);
-    }
-  }
-}
