@@ -120,7 +120,9 @@ article {
     width: 100%;
   }
 }
-
+main {
+  @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+}
 
 //.mediacommons-network {
 //  img {
