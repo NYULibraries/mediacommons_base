@@ -4,8 +4,8 @@
 
 nav[role="navigation"].main {
   @include respond-to('desktop') {
-    display: table-caption;
-    margin-top: 10em;
+    width:100%;
+    max-width:60em;
     ul.main {
       @include horizontal-list();
       li {

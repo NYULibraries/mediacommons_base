@@ -7,7 +7,9 @@
     @include element-invisible;
   }
 }  
-
+footer {
+  @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+}
 html {
   @include respond-to('desktop content') {
     @include type-size($body-font-size); // 16px
@@ -118,16 +120,7 @@ article {
     width: 100%;
   }
 }
-body {
-  @include respond-to('desktop') {
-    display: table;
-    caption-side: top;
-  }
-}
 
-main {
-  margin-top: $main-top-margin;
-}
 
 //.mediacommons-network {
 //  img {
