@@ -47,7 +47,7 @@ figure.embeded-link {
 @include respond-to('desktop') {
   aside[role="complimentary"].part-of-hub {
     width: ms(12);
-    float: right;
+    float: left;
     ul[role="menu"] {
       li {
        > a:first-child {
