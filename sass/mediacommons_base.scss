@@ -4,14 +4,14 @@ $breakpoint-no-query-fallbacks: false;
 @import "compass/typography";
 @import "compass/css3";
 
-@import 'modular-scale';
-@import 'toolkit';
-
 @import "partials/_browsers";
 @import "partials/_colors";
 @import "partials/_mixins";
 @import "partials/_extendables";
 @import "partials/_functions";
+
+@import 'modular-scale';
+@import 'toolkit';
 
 // Reset 
 @import "compass-pattern-primer/reset";
