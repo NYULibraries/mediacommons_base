@@ -16,12 +16,15 @@ $breakpoint-no-query-fallbacks: false;
 // Reset 
 @import "compass-pattern-primer/reset";
 
+
 @import "compass-pattern-primer/partials/_mixins";
 @import "compass-pattern-primer/partials/_variables";
+@import "base/_config";
 @import "compass-pattern-primer/partials/_extendables";
+
 @import "compass-pattern-primer/partials/_functions";
 
-@import "base/_config";
+
 @import "base/page/_page";
 @import "base/forms/_forms";
 @import "base/webfonts/_webfonts";
