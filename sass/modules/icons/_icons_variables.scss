@@ -8,4 +8,7 @@ $icon-font-file-name: 'MediaCommons-Icon-Font/MediaCommons-Icon-Font';
 
 //  See: Icon fonts, HAML and Sass http://gist.io/4731881 
 $icons: ('.icon-contract-arrow-m' '\e00a') ('.icon-expand-arrow-m' '\e00b') ('.icon-contract-arrow-s' '\e00e') ('.icon-expand-arrow-s' '\e00f') ('.icon-contract-arrow-l' '\e012') ('.icon-expand-arrow-l' '\e013') ('.icon-email' '\e006') ('.icon-phone' '\e008') ('.icon-user' '\e01f') ('.icon-users' '\e020') ('.icon-add-user' '\e01e') ('form[role="search"] label' '\e016');
+
+// To add more than one selectors to use the same class you need to add the :before or :after psuedo class (see the @each mixin in $icon_mixins for the pseudo class) 
+// ('.swf:before, a[href$=".swf"]' '\e014')
    
