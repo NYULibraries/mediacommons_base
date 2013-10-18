@@ -17,30 +17,11 @@
 
 %break-word {
   // http://css-tricks.com/almanac/properties/w/word-break/
-  -ms-word-break: break-all;
+  @if $experimental-support-for-microsoft {
+    -ms-word-break: break-all;
+  }
   word-break: break-all;
   word-break: break-word;
   word-break: hyphenate;
   @include hyphens(auto);
-}
-
-%group {
-  // http://css-tricks.com/snippets/css/clear-fix/
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    zoom: 1;  // trigger hasLayout  
-  }
-}
-
-%ico-font-base {
-  font-family: $icon-font-name;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
 }
