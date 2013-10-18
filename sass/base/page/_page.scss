@@ -1,0 +1,22 @@
+//////////////////////////////
+// BASE: Base element styles 
+//////////////////////////////
+
+@import "_page_variables"; 
+
+html{
+  height: 100%;
+}
+
+a {
+  &:focus {
+    background: yellow;
+    outline: none;
+  }
+}
+
+address {
+  font-style: normal;
+  display: inline;
+}
+ 

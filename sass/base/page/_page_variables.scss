@@ -1,0 +1,48 @@
+//////////////////////////////
+// VARIABLES: For Base styles 
+//////////////////////////////
+
+// Fonts see base/_webfonts
+// http://awesome-fontstacks.com/bundles/414-droooooid
+// added in Droid Serif and Droid Sans which are native fonts on Android Phones so they don't need to wait for the webfont version to be loaded 
+$body-font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+$header-font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+$blockquote-font-family: $header-font-family;
+//$monospaced-font-family: Menlo, Courier New, Courier, Mono, "Droid Sans Mono", monospace; 
+
+$body-font-size: 16px; 
+$body-line-height: 1.5em;
+
+///// body
+$body-background-color: nth($black , 6);
+$body-background-rgba: rgba($body-background-color, 1);
+$body-border-width: false;
+$body-border-color-rgba: rgba(0,0,0,0); 
+$body-margin: 0 auto;
+$body-padding: 0;
+
+$html-border-width: false;
+$html-border-color: nth($primary, 1);
+$html-background-color: $body-background-color;
+
+// Links
+$link-color: nth($primary, 1);
+$link-text-decoration: none;
+$link-border-width: false;
+///// Visited
+$link-visited-link-color: nth($primary, 2);
+$link-visited-border-width: false;
+///// Hover
+$link-hover-link-color: lighten($link-color, 10%);
+// $link-hover-text-decoration: none; 
+$link-hover-border-width: false;
+$link-hover-border-color: $link-color;
+///// Active
+$link-active-link-color: $link-color;
+
+//  $blue_mc:#196195;
+//  $orange_imr:#dd5520;
+//  $green_mcp:#456b2d;
+//  $aqua_tne:#148385;
+//  $red_ac:#be1e2d;
+ 
