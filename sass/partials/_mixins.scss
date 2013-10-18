@@ -2,25 +2,8 @@
 // MIXINS: Mixins should have arguments. Otherwise use extendables...
 //////////////////////////////
 
-// add a background to the media query indicator - dev only 
-@mixin breakpoint-back {
-  // Cause you can't extend silently from a media query
-  line-height: 1.25em;
-  padding: .25em 1em;
-  margin: 0 0 .25em 0;
-  background: rgba(#d00, .5);
-  color: #ddd;
-  z-index: 100;
-  position: absolute;
-  top: 1;
-  left: 20px;
-  @include border-radius(.5em);
-  //float:left;
-}
-
 @mixin element-invisible {
-  // Can't extend from a media-query so this is %element-invisible in a mixin
-  // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    // Can't extend from a media-query so this is %element-invisible in a mixin Code from: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -67,18 +50,6 @@
     );
   }
 }
-
-@mixin web-font-family($font-name: false) {
-  @if $font-name { font-family: $font-name; }
-}
-
-//@mixin profile($size) {
-//  max-width:$size;
-//  width: $size;
-//  height: $size;
-//  @include border-radius($size/2);
-//}
- 
 
 // IE Fixin Mixins
 
