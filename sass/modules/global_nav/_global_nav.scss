@@ -1,5 +1,5 @@
 //////////////////////////////
-// MODULES: Component styles that are layout independent 
+// MODULES: Component styles that are layout independent. v1
 //////////////////////////////
 
 @import "_global_nav_variables";
@@ -8,26 +8,37 @@ nav[role="navigation"].global {
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, darken(nth($black, 2), 5%), darken(nth($black, 1), 15%)));
   width: 100%;
+  height:$globalnav-height;
   font-family: $heading-font-name;
+  font-size: $base-size;
   position: absolute;
   top: 0;
   left: 0;
   padding: 0 1%;
   a.logolink {
-    height: $globalnav-height;
+    // height: $globalnav-height;
     max-width: 100%;
-    padding: 1.5em 0;
+    padding: .3em 0 0;
     display: block;
     overflow: hidden;
     margin: 0;
-    background: url("../images/logo5.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: left center;
+  
+    font-size: 2em;
+    font-family: $icon-font-name;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
+    &:before {
+        content: "\e016";
+      }
     span {
-      display: block;
-      width: 14em;
-      text-indent: -1000em;
+
+      display: none;
+      // width: 14em;
+      // text-indent: -1000em;
     }
   }
   a.drop-down {
@@ -57,6 +68,7 @@ nav[role="navigation"].global {
       padding: 0 1px;
       a {
         font-size: .775em;
+        line-height: 1.5; 
         font-weight: normal;
         font-weight: 400;
         color: nth($black, 5);
@@ -91,11 +103,11 @@ nav[role="navigation"].global {
     padding: 0;
     position: relative;
     // z-index: 15;
-    height: 1.8em;
-    li {
+    // height: 1.8em;
+    >li {
       background: url("../images/pipe.png") center right no-repeat;
-      a {
-        padding: .5em;
+      > a {
+        padding: 1em .5em ;
       }
     }
     li:last-child {
