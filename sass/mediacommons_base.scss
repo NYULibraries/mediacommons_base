@@ -1,4 +1,3 @@
-$breakpoints-to-ems: true;
 $breakpoint-no-query-fallbacks: false;
 
 @import "compass/typography";
@@ -14,27 +13,27 @@ $breakpoint-no-query-fallbacks: false;
 @import 'toolkit';
 
 // Reset 
-@import "compass-pattern-primer/reset";
+@import "compass-pattern-primer";
 
-
-@import "compass-pattern-primer/partials/_mixins";
-@import "compass-pattern-primer/partials/_variables";
-@import "base/_config";
-@import "compass-pattern-primer/partials/_extendables";
-
-@import "compass-pattern-primer/partials/_functions";
-
+@import "_config";
 
 @import "base/page/_page";
 @import "base/forms/_forms";
 @import "base/webfonts/_webfonts";
 @import "base/typography/_typography";
 
-@import "compass-pattern-primer/base/_page";
-@import "compass-pattern-primer/base/_typography";
-@import "compass-pattern-primer/base/_links";
-@import "compass-pattern-primer/base/_forms";
-@import "compass-pattern-primer/base/_buttons";
+@import "base/page/_page";
+@import "base/typography/_typography";
+@import "base/links/_links";
+@import "base/forms/_forms";
+@import "base/buttons/_buttons";
+@import "base/search/_search";
+
+// optional module imports. comment out ones you don't use
+@import "modules/pagination/_pagination";
+@import "modules/controls/_controls";
+@import "modules/feedback/_feedback";
+@import "modules/options/_options";
 
 @import "layout/breakpoints/_breakpoints";
 
@@ -48,8 +47,7 @@ $breakpoint-no-query-fallbacks: false;
 @import "modules/footer/_footer";
 @import "modules/tabs/_tabs";
 @import "modules/comments/_comments";
-@import "modules/forms/_forms";
-@import "modules/search/_search";
+// @import "modules/search/_search";
 @import "modules/hub_list/_hub_list";
 @import "modules/spoke_article/_spoke_article";
 @import "modules/embedded_video/_embedded_video";
