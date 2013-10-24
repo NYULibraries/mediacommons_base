@@ -10,27 +10,34 @@ header[role="banner"] {
   h1 {
     display: inline-block;
     float: left;
-    font-size: 2em;
-    font-family: $icon-font-name;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
+    font-size: 1.8em;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
     a {
       color: #333333;
+    }
+    span {
+      display: none;
     }
   }
   @extend %clearfix;
   form[role="search"] {
     display: inline-block;
     float: right;
+    padding: 0;
+  }
+  form[role="search"] input[type="submit"] {
+    font-family: $icon-font-name;
   }
   // moved from layout/_header.scss
   @include respond-to("desktop") {
     margin: $globalnav-height auto 0 auto;
     width: 100%;
     max-width: 60em;
+ 
+    form[role="search"] label {
+      display:none;
+    }
+    fieldset { margin: 0;}
   }
 
   @include respond-to("mobile-lh") {
@@ -39,7 +46,7 @@ header[role="banner"] {
     // position: absolute;
     // top: 0;
     // left: 0;
-    @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 3), 5%)));
+    @include background-image(linear-gradient(top, lighten(nth($black, 6), 5%), darken(nth($black, 4), 5%)));
     h1 {
       float: left;
       margin-top: 10px;
@@ -51,24 +58,23 @@ header[role="banner"] {
       display: block;
       float: none;
       position: relative;
+      //@include background-image(linear-gradient(top, lighten(nth($black, 6), 5%), darken(nth($black, 4), 5%)));
+      background-color: transparent;
     }
     form[role="search"] label span {
       display: none;
-      &:before {
-        content: "\e016";
-      }
     }
     form[role="search"] label {
-      padding: .4em 1em .1em;
-      margin: 10px 0 10px 0;
-      &:before {
-        content: "\e016";
-      }
+      padding: 0.6em 0.8em;
+      margin: 6px 2%;
       display: block;
       float: right;
-      @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 3), 5%)));
+      @include background-image(linear-gradient(top, nth($black, 6), darken(nth($black, 3), 5%)));
       @include border-radius(5px);
       border: 1px solid #ccc;
+    }
+    form[role="search"].open label {
+      @include background-image(linear-gradient(top, darken(nth($black, 3), 5%), nth($black, 6)));
     }
     form[role="search"] fieldset {
       clear: both;

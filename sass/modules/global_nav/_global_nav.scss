@@ -18,11 +18,11 @@ nav[role="navigation"].global {
   a.logolink {
     // height: $globalnav-height;
     max-width: 100%;
-    padding: .3em 0 0;
+    padding: .7em 1em 0 0;
     display: block;
     overflow: hidden;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.05em;
     line-height: 1;
     span {
       display: none;
@@ -241,22 +241,15 @@ nav[role="navigation"].global {
       @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
       @include border-radius(5px);
       border: 1px solid #ccc;
-      margin: 4px 0 0 15px;
+      // margin: 4px 0 0 15px;
     }
-    ul.navitems.open {
-      border-right: none;
-    }
-    ul.navitems a, ul.navitems2 a {
-      padding: 4px 10px 2px 10px;
-    }
+   
   }
 
   @include respond-to("mobile-lh") {
     padding: 0 2%;
     a.logolink {
       height: 100%;
-      background-position: left center;
-      background-size: 75%;
     }
     ul li {
       background: none;
