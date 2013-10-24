@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Pattern Primer</title>
-<link rel="stylesheet" href="css/pattern-primer.css">
+<link rel="stylesheet" href="../css/pattern-primer.css">
 </head>
 <body>
 

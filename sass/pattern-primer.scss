@@ -2,22 +2,26 @@
 
 @import "mediacommons_base";                     
 
-// Color Guide
+// Add the Color Guide (adds a lot of css not needed for production)
 @import 'toolkit/colours';  // tint-stack, shade-stack etc
 @import "singularitygs"; // require for generate-colour-guide mixin
 
-@include generate-colour-guide($black, $primary, $secondary, $tertiary, $quadrary); 
+@include generate-colour-guide($black, $primary, $secondary, $tertiary, $quadrary);
 
-body {
-  margin: 0 1em;
-}
+// Styling for the index.php page
 .pattern {
-  clear: both;
-  overflow: hidden;
-  margin: 20px 10px;
-  text-align: left;
+    clear: both;
+    overflow: hidden;
+    padding: 0 1em;
 }
 .pattern .display {
-  width: 100%;
+    width: 65%;
+    float: left;
 }
-
+.pattern .source {
+    width: 30%;
+    float: right;
+}
+.pattern .source textarea {
+    width: 90%;
+}
