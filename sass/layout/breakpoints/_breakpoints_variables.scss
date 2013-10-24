@@ -2,6 +2,8 @@
 // VARIABLES: For Layout breakpoints 
 //////////////////////////////
 
+$breakpoint-to-ems: true;
+
 $breakpoints: 'tablet' (525px 980px),
               'mobile' (240px 524px),
               'tablet-lh' (600px 840px),
