@@ -8,7 +8,7 @@ nav[role="navigation"].global {
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, darken(nth($black, 2), 5%), darken(nth($black, 1), 15%)));
   width: 100%;
-  height:$globalnav-height;
+  height: $globalnav-height;
   font-family: $heading-font-name;
   font-size: $base-size;
   position: absolute;
@@ -22,23 +22,10 @@ nav[role="navigation"].global {
     display: block;
     overflow: hidden;
     margin: 0;
-  
     font-size: 2em;
-    font-family: $icon-font-name;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
-
-    &:before {
-        content: "\e016";
-      }
     span {
-
       display: none;
-      // width: 14em;
-      // text-indent: -1000em;
     }
   }
   a.drop-down {
@@ -50,15 +37,9 @@ nav[role="navigation"].global {
   a.drop-down.open {
     height: 3.7em !important;
     @include border-corner-radius(top, right, 5px);
-    // border-right: 1px solid #ccc;
- 
+    // border-right: 1px solid #ccc; 
   }
-  a.drop-down:after {
-    content: " v";
-  }
-  a.drop-down.open:after {
-    content: " A";
-  }
+  
   ul {
     @include horizontal-list(0.5em);
     margin: 0;
@@ -68,7 +49,7 @@ nav[role="navigation"].global {
       padding: 0 1px;
       a {
         font-size: .775em;
-        line-height: 1.5; 
+        line-height: 1.5;
         font-weight: normal;
         font-weight: 400;
         color: nth($black, 5);
@@ -107,7 +88,7 @@ nav[role="navigation"].global {
     >li {
       background: url("../images/pipe.png") center right no-repeat;
       > a {
-        padding: 1em .5em ;
+        padding: 1em 0.5em;
       }
     }
     li:last-child {
@@ -176,9 +157,7 @@ nav[role="navigation"].global {
       }
     }
     li[aria-haspopup="true"] > a {
-      &:after {
-        content: " V";
-      }
+     
       &.open {
         @include border-bottom-radius(0px);
         padding-bottom: 2em;
@@ -257,64 +236,66 @@ nav[role="navigation"].global {
 //  Moved from layout/_globalnav.scss
 
 nav[role="navigation"].global {
-    @include respond-to("tablet-lh") {
-        ul.navitems {
-            @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
-            @include border-radius(5px);
-            border: 1px solid #ccc;
-            margin: 4px 0 0 15px;
-        }
-        ul.navitems.open {
-            border-right: none;
-           
-        }
-        ul.navitems a, ul.navitems2 a {
-            padding: 4px 10px 2px 10px;
-        }
+  @include respond-to("tablet-lh") {
+    ul.navitems {
+      @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
+      @include border-radius(5px);
+      border: 1px solid #ccc;
+      margin: 4px 0 0 15px;
     }
-    @include respond-to("mobile-lh") {
-        padding: 0 2%;
-        a.logolink {
-            height: 100%;
-            background-position: left center;
-            background-size: 75%;
-        }
-        ul li { background: none; }
-        > ul.global-sections[role="menubar"] {
-            li {
-                width: 25em;
-                height: $globalnav-height;
-                display: block;
-                clear: left;
-                position: relative;
-                z-index: 5;
-                a {
-                    float: none;
-                }
-            }
-            > li > ul.navitems {
-                height: 0px;
-                overflow: hidden;
-                position: relative;
-                z-index: 2;
-                background-color: #111;
-                width: 100%;
-                @include border-corner-radius(bottom, left, 5px);
-                @include border-corner-radius(bottom, right, 5px);
-            }
-            > li ul.navitems.open {
-                height: auto;
-                padding-bottom: 20px;
-            }
-            li ul.open > li {
-                display: block;
-                float: none;
-                width: 100%;
-                clear: left;
-                a:hover {
-                    background-color: #333;
-                }
-            }
-        }
+    ul.navitems.open {
+      border-right: none;
     }
+    ul.navitems a, ul.navitems2 a {
+      padding: 4px 10px 2px 10px;
+    }
+  }
+
+  @include respond-to("mobile-lh") {
+    padding: 0 2%;
+    a.logolink {
+      height: 100%;
+      background-position: left center;
+      background-size: 75%;
+    }
+    ul li {
+      background: none;
+    }
+    > ul.global-sections[role="menubar"] {
+      li {
+        width: 25em;
+        height: $globalnav-height;
+        display: block;
+        clear: left;
+        position: relative;
+        z-index: 5;
+        a {
+          float: none;
+        }
+      }
+      > li > ul.navitems {
+        height: 0px;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        background-color: #111;
+        width: 100%;
+        @include border-corner-radius(bottom, left, 5px);
+        @include border-corner-radius(bottom, right, 5px);
+      }
+      > li ul.navitems.open {
+        height: auto;
+        padding-bottom: 20px;
+      }
+      li ul.open > li {
+        display: block;
+        float: none;
+        width: 100%;
+        clear: left;
+        a:hover {
+          background-color: #333;
+        }
+      }
+    }
+  }
 }
