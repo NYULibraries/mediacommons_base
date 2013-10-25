@@ -2,41 +2,8 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 
-nav[role="navigation"].main {
-  clear:both;
-  margin:0 auto;
-  ul.main {
-    li {
-      margin: 0;
-      text-indent: 0;
-    }
-  }
-}
 
 //  Moved from layout/_mainnav.scss
-
-nav[role="navigation"].main {
-  @include respond-to('desktop') {
-    width:100%;
-    max-width:60em;
-    ul.main {
-      @include horizontal-list();
-      li {
-        font-size: 1.75em;
-        &:before {
-          content: "\20•\20";
-          color: #999;
-        }
-        &:first-child:before {
-          content: "\20";
-        }
-      }
-    }
-  }
-  @include respond-to('narrow navigation') {
-   // add 'mobile' navigation specific style
-  }
-}
 
 
 
@@ -62,17 +29,17 @@ nav[role="navigation"].main {
 //      display:block;
 //    }
 //  }
-//}           
+//}
 
 //@mixin thegradient($bgcolor) {
-//  background: $bgcolor; /* Old browsers */
-//  background: -moz-linear-gradient(left,  $bgcolor 0%, darken($bgcolor,4%) 100%); /* FF3.6+ */
-//  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$bgcolor), color-stop(100%,darken($bgcolor,4%))); /* Chrome,Safari4+ */
-//  background: -webkit-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* Chrome10+,Safari5.1+ */
-//  background: -o-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* Opera 11.10+ */
-//  background: -ms-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* IE10+ */
-//  background: linear-gradient(to right,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* W3C */
-//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='darken($bgcolor,4%)',GradientType=1 ); /* IE6-9 */
+//  background: $bgcolor; /* Old browsers
+//  background: -moz-linear-gradient(left,  $bgcolor 0%, darken($bgcolor,4%) 100%); /* FF3.6+
+//  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$bgcolor), color-stop(100%,darken($bgcolor,4%))); /* Chrome,Safari4+
+//  background: -webkit-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* Chrome10+,Safari5.1+
+//  background: -o-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* Opera 11.10+
+//  background: -ms-linear-gradient(left,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* IE10+
+//  background: linear-gradient(to right,  $bgcolor 0%,darken($bgcolor,4%) 100%); /* W3C
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='darken($bgcolor,4%)',GradientType=1 ); /* IE6-9
 //}
 
 // Nav mixin
