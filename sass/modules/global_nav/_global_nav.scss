@@ -14,11 +14,12 @@ nav[role="navigation"].global {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0 1%;
+  z-index: 2000;
+  padding: $globalnav-top-pad 1% 0 1%;
   a.logolink {
     // height: $globalnav-height;
     max-width: 100%;
-    padding: .7em 1em 0 0;
+    padding: .4em 1em 0 0;
     display: block;
     overflow: hidden;
     margin: 0;
@@ -37,9 +38,7 @@ nav[role="navigation"].global {
   a.drop-down.open {
     height: 3.7em !important;
     @include border-corner-radius(top, right, 5px);
-    // border-right: 1px solid #ccc; 
   }
-  
   ul {
     @include horizontal-list(0.5em);
     margin: 0;
@@ -56,6 +55,7 @@ nav[role="navigation"].global {
         text-indent: 0;
         float: left;
         display: block;
+        padding: .5em;
         &:hover {
           // @include background-image(linear-gradient(top, darken(nth($black,1), 15%), darken(nth($black,2), 5%)));
           color: nth($black, 5);
@@ -70,12 +70,12 @@ nav[role="navigation"].global {
       background: none;
     }
   }
-  ul.navitems > li[role="menuitem"].navitems2.open,
-  ul.navitems > li[role="menuitem"].navitems2.open * {}
   ul.navitems > li[role="menuitem"].navitems2.open {
     @include border-corner-radius(top, right, 5px);
-    background-color: black !important;
-    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    >a {
+      @include background-image(linear-gradient(top, darken(nth($black, 1), 5%), darken(nth($black, 1), 15%)));
+    }
   }
   ul.navitems {
     float: left;
@@ -88,7 +88,7 @@ nav[role="navigation"].global {
     >li {
       background: url("../images/pipe.png") center right no-repeat;
       > a {
-        padding: 1em 0.5em;
+        padding: .3em 0.5em;
       }
     }
     li:last-child {
@@ -115,7 +115,7 @@ nav[role="navigation"].global {
   li.navitems2 ul.open {
     height: auto;
     display: block;
-    background-color: black;
+    background-color: darken(nth($black, 1), 15%);
     // border-bottom: 1px solid #ccc;
     // border-right: 1px solid #ccc;
     // border-left: 1px solid #ccc;
@@ -126,8 +126,8 @@ nav[role="navigation"].global {
     position: absolute;
     clear: both;
     top: 2.7em;
-    right: -1px;
-    border-right: 1px solid #ccc;
+    right: 0px;
+    border-right: 1px solid #cccccc;
     border-bottom: 1px solid #ccc;
     a {
       display: block;
@@ -136,10 +136,7 @@ nav[role="navigation"].global {
   ul.utils {
     position: absolute;
     right: 0px;
-    top: 4px;
-  }
-  /*   */
-  ul.logged-out {
+    top: $globalnav-top-pad;
     @include horizontal-list(1em);
     // float: right;
     // max-width: 25%;
@@ -149,15 +146,14 @@ nav[role="navigation"].global {
       padding: 0;
       color: nth($black, 5);
       margin-right: .5em;
-      a {
-        padding: 0 .5em;
+      >a {
+        padding: 0.3em 0.5em;
         border: 1px solid #ccc;
         @include border-radius(5px);
         @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
       }
     }
     li[aria-haspopup="true"] > a {
-     
       &.open {
         @include border-bottom-radius(0px);
         padding-bottom: 2em;
@@ -231,19 +227,42 @@ nav[role="navigation"].global {
       }
     }
   }
-}
-
-//  Moved from layout/_globalnav.scss
-
-nav[role="navigation"].global {
+  //
+  //
+  // State
+  //
+  //
+  li[aria-haspopup="true"] > ul {
+    &[aria-hidden="true"] {
+      display: none;
+    }
+    &[aria-hidden="false"] {
+      display: inline-block;
+    }
+  }
+  //
+  //
+  //  Moved from layout/_globalnav.scss
+  //
+  //
   @include respond-to("tablet-lh") {
     ul.navitems {
-      @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
-      @include border-radius(5px);
-      border: 1px solid #ccc;
-      // margin: 4px 0 0 15px;
+      // @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
+      >li>a {
+        // @include border-radius(5px);
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
+      }
+      >li:first-child>a {
+        @include border-left-radius(5px);
+        border-left: 1px solid #ccc;
+      }
+      >li:last-child>a {
+        @include border-right-radius(5px);
+        border-right: 1px solid #ccc;
+      }
     }
-   
   }
 
   @include respond-to("mobile-lh") {

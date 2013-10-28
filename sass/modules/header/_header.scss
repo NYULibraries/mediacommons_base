@@ -53,7 +53,7 @@ header[role="banner"] {
     fieldset {
       margin: 0;
     }
-     button {
+    button {
       display: none;
     }
   }
@@ -81,7 +81,10 @@ header[role="banner"] {
       display: none;
     }
     form[role="search"] label {
-      padding: 0.6em 0.8em;
+      height: 2.5em;
+      width: 2.5em;
+      text-align: center;
+      padding-top:.6em;
       margin: 0 2%;
       display: block;
       float: right;
@@ -127,15 +130,16 @@ header[role="banner"] {
    
     }
     button {
-      padding: .6em .8em;
+      padding-top: .5em;
+      margin: 0 2% 4px ;
       @include background-image(linear-gradient(top, nth($black, 6), darken(nth($black, 3), 5%)));
       @include border-radius(5px);
       border: 1px solid #ccc;
-    }
-    button {
-      // position: absolute;
       float: left;
       display: block;
+      height: 2.5em;
+      width: 2.5em;
+      text-align: center;
     }
   }
 }
@@ -154,38 +158,33 @@ nav[role="navigation"].main {
   @include respond-to("narrow navigation") {
     position: relative;
     float: none;
-    clear:both;
+    clear: both;
     // top: 3em;
     left: 0px;
     ul.main {
       display: none;
-    }
-    &.open ul.main {
-      display: block;
-      // position: relative;
+      list-style-type: none;
       background-color: white;
-      // left: 0;
-      // top: 3em;
+      line-height: 2.5em;
       float: none;
       li {
-        display: block;
+        float: none;
         a {
-          display: block;
           width: 100%;
+          display: block;
           padding: .5em;
           background-color: white;
         }
       }
     }
-    
   }
 
   @include respond-to("full navigation") {
     float: left;
     clear: left;
     margin: .5em 0;
-   
     ul.main {
+      display: block;
       float: left;
       @include horizontal-list;
       li {
