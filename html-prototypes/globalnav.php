@@ -23,7 +23,6 @@
 
 </head>
 <body>
-<a href="#main-nav" class="skip-to-nav">Skip to Navigation</a>
 <?php include "includes/header-imr.inc"; ?>
 <?php include "includes/main-article.inc"; ?>
 <?php include "includes/globalnavbar.inc"; ?>
