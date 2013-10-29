@@ -16,8 +16,11 @@ nav[role="navigation"].global {
   left: 0;
   z-index: 2000;
   padding: $globalnav-top-pad 1% 0 1%;
+  ul.global-sections {
+    @include horizontal-list(0em);
+    float: left;
+  }
   a.logolink {
-    // height: $globalnav-height;
     max-width: 100%;
     padding: .4em 1em 0 0;
     display: block;
@@ -32,8 +35,6 @@ nav[role="navigation"].global {
   a.drop-down {
     font-weight: bold;
     display: block;
-    // position: absolute;
- 
   }
   a.drop-down.open {
     height: 3.7em !important;
@@ -45,7 +46,7 @@ nav[role="navigation"].global {
     li {
       text-indent: 0;
       margin: 0;
-      padding: 0 1px;
+      padding: 0;
       a {
         font-size: .775em;
         line-height: 1.5;
@@ -57,24 +58,10 @@ nav[role="navigation"].global {
         display: block;
         padding: .5em;
         &:hover {
-          // @include background-image(linear-gradient(top, darken(nth($black,1), 15%), darken(nth($black,2), 5%)));
           color: nth($black, 5);
           text-decoration: underline;
         }
       }
-    }
-    li:last-child {
-      background: none;
-    }
-    li.navitems2.open li {
-      background: none;
-    }
-  }
-  ul.navitems > li[role="menuitem"].navitems2.open {
-    @include border-corner-radius(top, right, 5px);
-    border-left: 1px solid #ccc;
-    >a {
-      @include background-image(linear-gradient(top, darken(nth($black, 1), 5%), darken(nth($black, 1), 15%)));
     }
   }
   ul.navitems {
@@ -83,8 +70,13 @@ nav[role="navigation"].global {
     margin: 0;
     padding: 0;
     position: relative;
-    // z-index: 15;
-    // height: 1.8em;
+    > li.navitems2.open {
+      @include border-corner-radius(top, right, 5px);
+      border-left: 1px solid #ccc;
+      >a {
+        @include background-image(linear-gradient(top, darken(nth($black, 1), 5%), darken(nth($black, 1), 15%)));
+      }
+    }
     >li {
       background: url("../images/pipe.png") center right no-repeat;
       > a {
@@ -95,30 +87,17 @@ nav[role="navigation"].global {
       background: none;
     }
   }
-  ul.global-sections {
-    @include horizontal-list(0em);
-    float: left;
-  }
   /*   */
   li.navitems2 {
     position: relative;
-    // z-index: 19;
- 
   }
   li.navitems2 ul {
-    // height:0;
-    // overflow:hidden;
     display: none;
-    // min-height:0px;
- 
   }
-  li.navitems2 ul.open {
+  li.navitems2.open ul {
     height: auto;
     display: block;
     background-color: darken(nth($black, 1), 15%);
-    // border-bottom: 1px solid #ccc;
-    // border-right: 1px solid #ccc;
-    // border-left: 1px solid #ccc;
     @include border-corner-radius(top, left, 5px);
     @include border-corner-radius(bottom, left, 5px);
     @include border-corner-radius(bottom, right, 5px);
@@ -133,14 +112,101 @@ nav[role="navigation"].global {
       display: block;
     }
   }
+  //
+  //
+  //
+  // State
+  //
+  //
+  li[aria-haspopup="true"] > ul {
+    &[aria-hidden="true"] {
+      display: none;
+    }
+    &[aria-hidden="false"] {
+      display: inline-block;
+    }
+  }
+  //
+  //
+  //  Moved from layout/_globalnav.scss
+  //
+  //
+  @include respond-to("desktop") {}
+
+  @include respond-to("tablet-lh") {
+    ul.navitems {
+      // @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
+      >li>a {
+        // @include border-radius(5px);
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
+      }
+      >li:first-child>a {
+        @include border-left-radius(5px);
+        border-left: 1px solid #ccc;
+      }
+      >li:last-child>a {
+        @include border-right-radius(5px);
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+
+  @include respond-to("mobile-lh") {
+    padding: 0 2%;
+    a.logolink {
+      height: 100%;
+    }
+    ul li {
+      background: none;
+    }
+    > ul.global-sections {
+      li {
+        width: 25em;
+        height: $globalnav-height;
+        display: block;
+        clear: left;
+        position: relative;
+        z-index: 5;
+        a {
+          float: none;
+        }
+      }
+      > li > ul.navitems {
+        height: 0px;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        background-color: #111;
+        width: 100%;
+        @include border-corner-radius(bottom, left, 5px);
+        @include border-corner-radius(bottom, right, 5px);
+      }
+      > li ul.navitems.open {
+        height: auto;
+        padding-bottom: 20px;
+      }
+      > li ul.open > li {
+        display: block;
+        float: none;
+        width: 100%;
+        clear: left;
+        a:hover {
+          background-color: #333;
+        }
+      }
+    }
+  }
+
+  // Utilities -- login, user preferences
+  //
+  //
   ul.utils {
     position: absolute;
     right: 0px;
     top: $globalnav-top-pad;
     @include horizontal-list(1em);
-    // float: right;
-    // max-width: 25%;
-    // padding: 0;
     >li {
       @include border-radius(5px);
       padding: 0;
@@ -164,10 +230,6 @@ nav[role="navigation"].global {
         border-bottom: none;
         height: 3.6em;
       }
-    }
-    > li + li {
-      // @include inline-block-list-container;
-   
     }
     li > ul {
       @include inline-block-list;
@@ -228,86 +290,4 @@ nav[role="navigation"].global {
     }
   }
   //
-  //
-  // State
-  //
-  //
-  li[aria-haspopup="true"] > ul {
-    &[aria-hidden="true"] {
-      display: none;
-    }
-    &[aria-hidden="false"] {
-      display: inline-block;
-    }
-  }
-  //
-  //
-  //  Moved from layout/_globalnav.scss
-  //
-  //
-  @include respond-to("tablet-lh") {
-    ul.navitems {
-      // @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
-      >li>a {
-        // @include border-radius(5px);
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        @include background-image(linear-gradient(top, darken(nth($black, 1), 15%), darken(nth($black, 2), 5%)));
-      }
-      >li:first-child>a {
-        @include border-left-radius(5px);
-        border-left: 1px solid #ccc;
-      }
-      >li:last-child>a {
-        @include border-right-radius(5px);
-        border-right: 1px solid #ccc;
-      }
-    }
-  }
-
-  @include respond-to("mobile-lh") {
-    padding: 0 2%;
-    a.logolink {
-      height: 100%;
-    }
-    ul li {
-      background: none;
-    }
-    > ul.global-sections[role="menubar"] {
-      li {
-        width: 25em;
-        height: $globalnav-height;
-        display: block;
-        clear: left;
-        position: relative;
-        z-index: 5;
-        a {
-          float: none;
-        }
-      }
-      > li > ul.navitems {
-        height: 0px;
-        overflow: hidden;
-        position: relative;
-        z-index: 2;
-        background-color: #111;
-        width: 100%;
-        @include border-corner-radius(bottom, left, 5px);
-        @include border-corner-radius(bottom, right, 5px);
-      }
-      > li ul.navitems.open {
-        height: auto;
-        padding-bottom: 20px;
-      }
-      li ul.open > li {
-        display: block;
-        float: none;
-        width: 100%;
-        clear: left;
-        a:hover {
-          background-color: #333;
-        }
-      }
-    }
-  }
 }

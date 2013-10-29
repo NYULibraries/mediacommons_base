@@ -24,7 +24,7 @@
 </head>
 <body>
 <?php include "includes/header-imr.inc"; ?>
-<?php include "includes/main-article.inc"; ?>
+<?php //include "includes/main-article.inc"; ?>
 <?php include "includes/globalnavbar.inc"; ?>
 <footer role="contentinfo">
   <ul role="menu">

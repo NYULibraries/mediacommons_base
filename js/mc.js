@@ -2,16 +2,14 @@ function respond() {
   var w = $(window).width();
   console.log("w " + w);
   // remove inline display styles set by jquery.
-  //.removeAttr("style")
-  // $("header[role=banner] *").css('display', '');
   $("header[role=banner] *").removeAttr("style");
+  closeLoginLink();
   if (w < 600) {
     setUpMobileView();
   } else {
     setUpTabletView();
   }
 }
-
 function setUpMobileView() {
   $("a.logolink").unbind("click");
   $("a.drop-down").remove();
@@ -21,28 +19,21 @@ function setUpMobileView() {
     e.preventDefault();
     e.stopPropagation();
   });
-
-
   $("a.logolink").blur(function() {
     $('ul.navitems').toggleClass("open", false, 100);
-  });
 
-  $(document).click(function(e) {
+  });
+$(document).click(function(e) {
     e.preventDefault();
     $('ul.navitems').toggleClass("open", false, 100);
+    // Everything with an "open" class should be closed here 
   });
 }
-
-function shutNavPlanks() {
-  $('header[role=banner] form[role=search] fieldset').hide();
-}
-
 function setUpTabletView() {
   $("a.logolink").unbind();
   $(document).unbind("click");
   $("a.drop-down").remove();
   $(".navitems2 ul").children().unwrap().unwrap();
-
   var widthSum = 0;
   var spaceWidth = ($("nav.global").width() - $("a.logolink").width() - $("ul.utils").width()) - 125;
   $("ul.navitems li").each(function(index) {
@@ -51,7 +42,6 @@ function setUpTabletView() {
       $(this).nextAll('li').addBack().wrapAll("<li class='navitems2 ' role='menuitem'><ul></ul><li>");
       $('.navitems2').prepend('<a class="drop-down" href="#">More</a>');
       $("a.drop-down").click(function() {
-        $('.navitems2 ul').toggleClass("open", 100);
         $('.navitems2').toggleClass("open", 100);
         $('.navitems').toggleClass("open", 100);
         $(this).toggleClass("open");
@@ -59,6 +49,12 @@ function setUpTabletView() {
       return false;
     }
   });
+}
+
+function closeUpShop() {
+  // for everything that has the open class, remove it
+  $('.open').removeClass("open");
+  $('[aria-hidden="false"]').attr('aria-hidden', 'true');
 }
 
 function siteHeaderBehavior() {
@@ -71,9 +67,9 @@ function siteHeaderBehavior() {
       $(this).parent('form').removeClass("open");
       $($theSearchButton).parent('form').find('fieldset').slideUp(300,
         function() {
+          closeUpShop();
           $(this).parent('form').removeClass("open");
         });
-      //$(this).parent('form').find('fieldset').toggleClass("open", 100);
     } else {
       // $(this).parent('form').find('fieldset').attr('aria-hidden', 'false');
       //$(this).parent('form').toggleClass("open", 400);
@@ -84,18 +80,13 @@ function siteHeaderBehavior() {
             $(this).parent('form').addClass("open");
           });
       });
-
-
     }
   });
-
   $("header[role=banner] button").click(function() {
-    //shutNavPlanks();
     var $theMenuButton = this;
     if ($("nav.main ul").is(":visible")) {
       console.log(" is visible");
       $('nav.main ul').slideUp(300, function() {
-       
         $($theMenuButton).removeClass("open");
       });
     } else {
@@ -108,28 +99,38 @@ function siteHeaderBehavior() {
           });
         });
     }
-    ///
   });
+}
+function setUpLoginLink() {
+  // Global nav - Login - global behavior
+  $('.utils a.login-link').click(function() {
+    // $('.utils ul[role="menu"]').show(1000).attr('aria-hidden', 'false');
+    //if ($(this).hasClass("open")) {
+    if ($(this).next('ul').is(":visible")) {
+      closeLoginLink();
+    } else {
+      openLoginLink();
+    }
+  });
+}
+function closeLoginLink() {
+  $('.utils ul[aria-hidden="false"]').attr('aria-hidden', 'true');
+  $('.utils a.login-link').removeClass("open");
+}
+function openLoginLink() {
+  $('.utils ul[aria-hidden="true"]').attr('aria-hidden', 'false');
+  $('.utils a.login-link').addClass("open");
 }
 $(function() {
   respond();
   siteHeaderBehavior();
+  setUpLoginLink();
   $(window).resize(_.debounce(function() {
-    respond();
-    //siteHeaderBehavior();
-  }, 100));
-
-  // Global nav - Login - global behavior
-  $('.utils a.login-link').click(function() {
-    // $('.utils ul[role="menu"]').show(1000).attr('aria-hidden', 'false');
-    // $('.utils ul[role="menu"]').attr('aria-hidden', 'false');
-    if ($(this).hasClass("open")) {
-      $('.utils ul[aria-hidden="false"]').attr('aria-hidden', 'true');
-      $(this).removeClass("open");
-    } else {
-      $('.utils ul[aria-hidden="true"]').attr('aria-hidden', 'false');
-      $(this).addClass("open");
-    }
-  });
-
+    respond();}, 100));
 });
+
+
+
+
+
+
