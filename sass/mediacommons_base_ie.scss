@@ -5,6 +5,7 @@ $breakpoint-to-ems: false;
 // Will not print media queries
 $breakpoint-no-queries: true;
 // Will print No Query Fallbacks
+// https://github.com/Team-Sass/breakpoint/wiki/No-Query-Fallbacks
 $breakpoint-no-query-fallbacks: true;
 
 @import "mediacommons_base"; 
