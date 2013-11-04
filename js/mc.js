@@ -10,6 +10,7 @@ function respond() {
     setUpTabletView();
   }
 }
+
 function setUpMobileView() {
   $("a.logolink").unbind("click");
   $("a.drop-down").remove();
@@ -23,12 +24,13 @@ function setUpMobileView() {
     $('ul.navitems').toggleClass("open", false, 100);
 
   });
-$(document).click(function(e) {
+  $(document).click(function(e) {
     e.preventDefault();
     $('ul.navitems').toggleClass("open", false, 100);
     // Everything with an "open" class should be closed here 
   });
 }
+
 function setUpTabletView() {
   $("a.logolink").unbind();
   $(document).unbind("click");
@@ -101,6 +103,7 @@ function siteHeaderBehavior() {
     }
   });
 }
+
 function setUpLoginLink() {
   // Global nav - Login - global behavior
   $('.utils a.login-link').click(function() {
@@ -113,24 +116,56 @@ function setUpLoginLink() {
     }
   });
 }
-function closeLoginLink() {
-  $('.utils ul[aria-hidden="false"]').attr('aria-hidden', 'true');
-  $('.utils a.login-link').removeClass("open");
+
+function setUpAsideReveal() {
+  // visibility of arrow determined by CSS media queries
+  if ($('aside[role="complimentary"].part-of-hub .responsive-disclosure').is(":visible")) {
+    $('aside[role="complimentary"].part-of-hub header').click(function() {
+      if ($(this).next('nav').is(":hidden")) {
+        $(this).next('nav').slideDown(300,
+          function() {
+            // open class is for the arrow display
+            $(this).parent('aside').addClass("open");
+          });
+      } else {
+        $(this).next('nav').slideUp(300,
+          function() {
+            $(this).parent('aside').removeClass('open');
+          });
+      }
+    });
+  } else {
+    $("aside[role='complimentary'].part-of-hub nav").removeAttr("style");
+    $('aside[role="complimentary"].part-of-hub header').unbind("click");
+    $('aside[role="complimentary"].part-of-hub').removeClass('open');
+
+  }
+
 }
+
+function closeLoginLink() {
+  $('.utils ul').slideUp(100,
+    function() {
+      $('.utils a.login-link').removeClass("open");
+      $('.utils ul[aria-hidden="false"]').attr('aria-hidden', 'true');
+    });
+}
+
 function openLoginLink() {
-  $('.utils ul[aria-hidden="true"]').attr('aria-hidden', 'false');
   $('.utils a.login-link').addClass("open");
+  $('.utils ul').slideDown(100,
+    function() {
+      $('.utils ul[aria-hidden="true"]').attr('aria-hidden', 'false');
+
+    });
 }
 $(function() {
   respond();
   siteHeaderBehavior();
   setUpLoginLink();
+  setUpAsideReveal();
   $(window).resize(_.debounce(function() {
-    respond();}, 100));
+    setUpAsideReveal();
+    respond();
+  }, 100));
 });
-
-
-
-
-
-

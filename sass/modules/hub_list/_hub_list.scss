@@ -7,16 +7,19 @@ aside[role="complimentary"].part-of-hub {
   header {
     padding: .5em .5em .5em 1em;
     background: nth($black, 3);
-    > span {
+    > div {
       font-style: italic;
       color: nth($black, 2);
     }
-  } 
+  }
   h2 {
     font-size: 1.4em;
-    padding: 0;
-    margin: 0 0 .5em 0;
+    padding: 0 0 .4em 0;
+    margin: 0 0 .4em 0;
     color: nth($black, 5);
+    // float:left;
+    // clear:left;
+ 
   }
   ul[role="menu"] {
     list-style: none;
@@ -41,7 +44,28 @@ aside[role="complimentary"].part-of-hub {
       }
     }
   }
+  .responsive-disclosure {
+    display: none;
+  }
+  @include respond-to("full navigation") {
+    span.responsive-disclosure {
+      display: none;
+    }
+    nav {
+      display: block;
+    }
+  }
+
+  @include respond-to("narrow navigation") {
+    span.responsive-disclosure {
+      display: inline-block;
+    }
+    nav {
+      display: none;
+    }
+  }
 }
+
 aside + h2 {
   clear: both;
 }
