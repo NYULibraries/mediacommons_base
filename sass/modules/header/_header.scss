@@ -58,7 +58,7 @@ header[role="banner"] {
     }
   }
 
-  @include respond-to("narrow navigation") {
+  @include respond-to("mobile-lh") {
     width: 100%;
     position: relative;
     @include background-image(linear-gradient(top, lighten(nth($black, 6), 5%), darken(nth($black, 4), 5%)));
@@ -108,11 +108,14 @@ header[role="banner"] {
     form[role="search"].open fieldset {
       height: auto;
       padding: 10px;
+      display: table;
     }
     input[type="search"] {
-      width: 80%;
+      width: 85%;
+      
     }
     form[role="search"] fieldset[aria-hidden="true"] {
+      width: 15%;
       // display: none;
    
     }
@@ -148,7 +151,7 @@ nav[role="navigation"].main {
       text-indent: 0;
     }
   }
-  @include respond-to("narrow navigation") {
+  @include respond-to("mobile-lh") {
     position: relative;
     float: none;
     clear: both;
