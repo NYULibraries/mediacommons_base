@@ -2,36 +2,35 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 
-section.curators-note {
-  max-width: ms(14);
-  float: left;
-  margin: 0 1em 1em 0;
-}
 article[role="article"].spoke { 
   .vcard {
     display: block;
+  }
+  section.video > figure.video {
+    clear: both;
+    float: left;
   }  
 }
 
 article[role="article"].spoke {
   @include respond-to("mobile-lh") {
-    .vcard img.photo {
-      //@include border-radius(0px);
-      //border:none;
-    }
-    header, section {
-      padding: 0 2%;
-    }
-    > header {
-      background-color: darken(nth($black, 5), 5%);
-      @include border-top-radius(15px);
-      margin-bottom:0;
-      padding-bottom:20px;
-    }
-    section.part-of-hub {
-      background-color: darken(nth($black, 5), 5%);
-      @include border-bottom-radius(15px); 
-    }
+//    .vcard img.photo {
+//      //@include border-radius(0px);
+//      //border:none;
+//    }
+//    header, section {
+//      padding: 0 2%;
+//    }
+//    > header {
+//      //background-color: darken(nth($black, 5), 5%);
+//      //@include border-top-radius(15px);
+//      margin-bottom:0;
+//      padding-bottom:20px;
+//    }
+//    section.part-of-hub {
+//      //background-color: darken(nth($black, 5), 5%);
+//      //@include border-bottom-radius(15px); 
+//    }
   }
 }
 
@@ -39,15 +38,18 @@ section.video.part-of-hub {
   @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
 }
 
-figure.embeded-link {
-  max-width: ms(14);
-  max-height: ((ms(14) / 16) * 9); // calculate correct height using 16:9 ratio
-}
+
+
 
 @include respond-to('desktop') {
+  section.curators-note{
+    max-width: ms(14);
+    float: left;
+    margin: 0 1em 1em 0;
+  }
   aside[role="complimentary"].part-of-hub {
     width: ms(12);
-    float: left;
+    float: right;
     ul[role="menu"] {
       li {
        > a:first-child {
@@ -62,9 +64,16 @@ figure.embeded-link {
 }
 
 @include respond-to('tablet') {
+  section.curators-note {
+    //max-width: ms(14);
+    p {
+     @include column-count(2); 
+    }
+    margin: 0 1em 1em 0;
+  }
   aside[role="complimentary"].part-of-hub { 
     clear: left;
-    max-width: ms(14);
+    
     ul[role="menu"] {
       li {
        > a:first-child {
@@ -84,7 +93,7 @@ figure.embeded-link {
     background: nth($secondary, 4);
   }
   @include respond-to('desktop') {
-    float: left;
+    float: right;
     max-width: ms(12);
     article {
     @include type-size($body-font-size - 1, $body-line-height - .1); // 16px 
@@ -95,6 +104,16 @@ figure.embeded-link {
     max-width: ms(14);
     article { 
       @include type-size($body-font-size - 2, $body-line-height - .1); // 16px
+    }
+  }
+}
+
+
+@include respond-to('narrow content') {
+  section.curators-note {
+    p {
+     @include column-count(1);
+     max-width: ms(14); 
     }
   }
 }  
