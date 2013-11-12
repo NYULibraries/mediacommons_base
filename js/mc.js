@@ -138,7 +138,6 @@ function setUpAsideReveal() {
     $("aside[role='complimentary'].part-of-hub nav").removeAttr("style");
     $('aside[role="complimentary"].part-of-hub header').unbind("click");
     $('aside[role="complimentary"].part-of-hub').removeClass('open');
-
   }
 
 }
