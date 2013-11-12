@@ -4,16 +4,21 @@
 
 // Move to Taxonomy module?
 
-ul.tags {
+ul.Tags {
     padding: 0;
     li {
         display: inline-block;
         list-style-type: none;
+        &:first-child {
+          display: block;
+          //line-height: 2em;
+          padding: 0 0 1.25em 0;
+        }
         a {
             @include border-radius(5px);
             margin-right: 10px;
             padding: 4px 8px;
-            @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 3), 5%)));
+            @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 5), 5%)));
             &:last-child:after {
                 margin-right: 0px;
             }

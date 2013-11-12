@@ -13,10 +13,10 @@
     </fieldset>
   </form>
   <nav id="main-nav" class="nav main imr" role="navigation">
-    
     <ul class="main imr" role="menubar">
       <li role="menuitem"> <a href="#">Home</a> </li>
       <li role="menuitem"> <a href="#">Recent Posts</a></li>
-      <li role="menuitem"> <a href="#">Current Calls</a></li></ul>
-    </nav>
-  </header>
+      <li role="menuitem"> <a href="#">Current Calls</a></li>
+    </ul>
+  </nav>
+</header>

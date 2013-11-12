@@ -1,18 +1,18 @@
 <nav class="global" role="navigation">
   <ul class="global-sections" role="menubar">
-    <li ><a class="logolink mc-logo" title="Media Commons" href="#"><span>Media Commons</span></a>
+    <li><a class="logolink mc-logo" title="Media Commons" href="#"><span>Media Commons</span></a>
       <ul class="navitems">
-        <li role="menuitem"> <a href="#">Frontpage</a> </li>
-        <li role="menuitem"> <a href="#">In Media Res</a> </li>
-        <li role="menuitem"> <a href="#">MediaCommons Press</a> </li>
-        <li role="menuitem"> <a href="#">The New Everyday</a> </li>
-        <li role="menuitem"> <a href="#">#Alt-Academy</a> </li>
+        <li role="menuitem"><a href="#">Frontpage</a></li>
+        <li role="menuitem"><a href="#">In Media Res</a></li>
+        <li role="menuitem"><a href="#">MediaCommons Press</a></li>
+        <li role="menuitem"><a href="#">The New Everyday</a></li>
+        <li role="menuitem"><a href="#">#Alt-Academy</a></li>
       </ul>
     </li>
   </ul>
   <ul class="utils logged-out" role="menubar">
-    <li role="menuitem"> <a href="#">Join</a> </li>
-    <li role="menuitem" aria-haspopup="true"> <a href="#" class="login-link">Login</a>
+    <li role="menuitem"><a href="#">Join</a></li>
+    <li role="menuitem" aria-haspopup="true"><a href="#" class="login-link">Login</a>
       <ul class="login-area" aria-hidden="true">
         <li role="menuitem">
           <form action="/imr/user/login"  accept-charset="UTF-8" method="post" id="user-login" class="user login form inline">

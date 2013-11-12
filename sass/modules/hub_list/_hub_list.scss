@@ -56,9 +56,10 @@ aside[role="complimentary"].part-of-hub {
     }
   }
 
-  @include respond-to("narrow navigation") {
+  @include respond-to("not desktop") {
     span.responsive-disclosure {
       display: inline-block;
+      float: right;
     }
     nav {
       display: none;
