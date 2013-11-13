@@ -1,34 +1,15 @@
 @font-face {
 	font-family: 'MediaCommons-Icon-Font';
 	src:url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot');
-	src:url('fMediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?#iefix') format('embedded-opentype'),
-		url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff') format('woff'),
+	src:url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?#iefix') format('embedded-opentype'),
 		url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf') format('truetype'),
+		url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff') format('woff'),
 		url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg#MediaCommons-Icon-Font') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'MediaCommons-Icon-Font';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-triangles-collapse, .icon-triangle-small-4, .icon-triangle-small-3, .icon-triangle-small-2, .icon-triangle-small-1, .icon-triangle-mini-4, .icon-triangle-mini-3, .icon-triangle-mini-2, .icon-triangle-mini-1, .icon-triangle-big-4, .icon-triangle-big-3, .icon-triangle-big-2, .icon-triangle-big-1, .icon-share-podcast, .icon-rss, .icon-options-search, .icon-infos-question-circle, .icon-infos-question-circle-2, .icon-infos-circle-2, .icon-infos-alert-triangle, .icon-infos-alert-losange, .icon-infos-alert-circle-2, .icon-the-new-everyday-logo, .icon-media-commons-press-logo, .icon-media-commons-logo, .icon-in-media-res-logo, .icon-alt-academy-logo, .icon-contact-phone, .icon-triangles-expand, .icon-contact-mail, .icon-contacts-user-add, .icon-contacts-user, .icon-contacts-users {
+[class^="icon-"], [class*=" icon-"] {
 	font-family: 'MediaCommons-Icon-Font';
 	speak: none;
 	font-style: normal;
@@ -36,7 +17,20 @@ you can use the generic selector below, but it's slower:
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+
+	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e600";
+}
+.icon-menu2:before {
+	content: "\e601";
+}
+.icon-uniF000:before {
+	content: "\f000";
 }
 .icon-triangles-collapse:before {
 	content: "\e005";
