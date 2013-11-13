@@ -6,7 +6,7 @@
 
 header[role="banner"] {
   font-size: $base-size;
-  margin: $globalnav-height auto 0 auto;
+  margin: ($globalnav-height + 1) auto 0 auto;
   padding: 6px 0 0 0;
   h1 {
     display: inline-block;
@@ -39,6 +39,9 @@ header[role="banner"] {
   form[role="search"] label, form[role="search"] label span {
     display: none;
   }
+  button {
+    display: none;
+  }
   // moved from layout/_header.scss
   @include respond-to("full navigation") {
     margin: $globalnav-height auto 0 auto;
@@ -53,15 +56,12 @@ header[role="banner"] {
     fieldset {
       margin: 0;
     }
-    button {
-      display: none;
-    }
   }
 
   @include respond-to("mobile-lh") {
     width: 100%;
     position: relative;
-    @include background-image(linear-gradient(top, lighten(nth($black, 6), 5%), darken(nth($black, 4), 5%)));
+    //@include background-image(linear-gradient(top, lighten(nth($black, 6), 5%), darken(nth($black, 4), 5%)));
     h1 {
       float: left;
       padding: 0 2%;
@@ -86,16 +86,17 @@ header[role="banner"] {
       margin: 0 2%;
       display: block;
       float: right;
-      @include background-image(linear-gradient(top, nth($black, 6), darken(nth($black, 3), 5%)));
+      @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
       @include border-radius(5px);
       border: 1px solid #ccc;
     }
     form[role="search"].open label {
-      @include background-image(linear-gradient(top, darken(nth($black, 3), 5%), nth($black, 6)));
+      //@include background-image(linear-gradient(top, darken(nth($black, 3), 5%), nth($black, 6)));
+      margin-bottom: .25em;
     }
     form[role="search"] fieldset {
       clear: both;
-      background-color: #333;
+      background-color: nth($black, 3);
       border: none;
       margin: 0;
       width: 100%;
@@ -108,7 +109,6 @@ header[role="banner"] {
     form[role="search"].open fieldset {
       height: auto;
       padding: 10px;
-      display: table;
     }
     input[type="search"] {
       width: 85%;
@@ -126,7 +126,7 @@ header[role="banner"] {
     button {
       padding-top: .5em;
       margin: 0 2% 4px;
-      @include background-image(linear-gradient(top, nth($black, 6), darken(nth($black, 3), 5%)));
+      @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
       @include border-radius(5px);
       border: 1px solid #ccc;
       float: left;
@@ -136,6 +136,28 @@ header[role="banner"] {
       text-align: center;
       position: absolute;
       z-index: 999;
+    }
+  }
+}
+
+nav[role="navigation"].main {
+  float: left;
+  clear: left;
+  margin: .5em 0; 
+  ul.main {
+    display: block;
+    float: left;
+    @include horizontal-list;
+    li {
+      font-size: 1.15em;
+      display: inline-block;
+      &:before {
+        content: "\20•\20";
+        color: #999;
+      }
+      &:first-child:before {
+        content: "\20";
+      }
     }
   }
 }
@@ -155,43 +177,35 @@ nav[role="navigation"].main {
     position: relative;
     float: none;
     clear: both;
-    // top: 3em;
-    left: 0px;
+    left: 0;
     ul.main {
       display: none;
       list-style-type: none;
       background-color: white;
-      line-height: 2.5em;
+      line-height: 1.5em;
       float: none;
+      font-size:1.5em;
+      padding: .25em 0 0 0;
       li {
         float: none;
+        display: block;
+        border-bottom: 1px #ccc solid;
+        padding: 0;
+        &:before {
+          content: "";
+        }
+        &:first-child {
+          border-top: 1px #ccc solid;
+        }
         a {
           width: 100%;
           display: block;
           padding: .5em;
-          background-color: white;
-        }
-      }
-    }
-  }
-
-  @include respond-to("full navigation") {
-    float: left;
-    clear: left;
-    margin: .5em 0;
-    ul.main {
-      display: block;
-      float: left;
-      @include horizontal-list;
-      li {
-        font-size: 1.15em;
-        display: inline-block;
-        &:before {
-          content: "\20•\20";
-          color: #999;
-        }
-        &:first-child:before {
-          content: "\20";
+          //background-color: white;
+          &:hover {
+            background-color: nth($black, 6);
+          }
+          
         }
       }
     }
