@@ -10,6 +10,9 @@ $intrinsic-ratio-elements: 'iframe';
 
 figure.embedded.video {
   @include intrinsic-ratio;
+  iframe {
+    border: none;
+  }
 }
 
 @include respond-to('desktop') {
