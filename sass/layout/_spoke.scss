@@ -13,6 +13,11 @@ article[role="article"].spoke {
 }
 
 article[role="article"].spoke {
+  @include respond-to("not desktop") {
+    section.video.part-of-hub {
+      padding-top: 1em;
+    }
+  }
   @include respond-to("mobile-lh") {
 //    .vcard img.photo {
 //      //@include border-radius(0px);
@@ -21,12 +26,9 @@ article[role="article"].spoke {
 //    header, section {
 //      padding: 0 2%;
 //    }
-//    > header {
-//      //background-color: darken(nth($black, 5), 5%);
-//      //@include border-top-radius(15px);
-//      margin-bottom:0;
-//      padding-bottom:20px;
-//    }
+//      > header, section.curators-note {
+//        padding: 0 2%;
+//      }
 //    section.part-of-hub {
 //      //background-color: darken(nth($black, 5), 5%);
 //      //@include border-bottom-radius(15px); 
@@ -37,9 +39,6 @@ article[role="article"].spoke {
 section.video.part-of-hub {
   @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
 }
-
-
-
 
 @include respond-to('desktop') {
   section.curators-note{
@@ -64,16 +63,36 @@ section.video.part-of-hub {
 }
 
 @include respond-to('tablet') {
+  article[role="article"].spoke > header, section.curators-note {
+    padding: 0 2.5%;
+  }
   section.curators-note {
-    //max-width: ms(14);
     p {
      @include column-count(2); 
     }
     margin: 0 1em 1em 0;
   }
   aside[role="complimentary"].part-of-hub { 
-    clear: left;
-    
+    clear: left;   
+    ul[role="menu"] {
+      li {
+       > a:first-child {
+         width: 12%;
+       } 
+       > h3 {
+         width: 88%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('mobile') {
+  article[role="article"].spoke > header, section.curators-note {
+    padding: 0 3.5%;
+  }
+  aside[role="complimentary"].part-of-hub { 
+    clear: left;   
     ul[role="menu"] {
       li {
        > a:first-child {
