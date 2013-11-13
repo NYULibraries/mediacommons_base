@@ -152,7 +152,7 @@ nav[role="navigation"].main {
       font-size: 1.15em;
       display: inline-block;
       &:before {
-        content: "\20\00b7\20";
+        content: "\20\00b7\20";   // middot encoded http://css-tricks.com/snippets/html/glyphs/
         color: #999;
       }
       &:first-child:before {
