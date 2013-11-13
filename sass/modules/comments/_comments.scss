@@ -4,7 +4,8 @@
 
 .comments {
   article {
-    padding: 0.01em 1em .5em 1em;
+    //padding: 0.01em 1em .5em 1em;
+    border: transparent 1px solid;
     &:nth-of-type(odd) {
       background: nth($secondary, 5);
     }
