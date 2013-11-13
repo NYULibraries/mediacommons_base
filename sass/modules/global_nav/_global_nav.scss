@@ -49,7 +49,7 @@ nav[role="navigation"].global {
     margin: 0;
     li {
       text-indent: 0;
-      margin: .125em 0 0 0;
+      margin: 0;
       padding: 0;
       a {
         font-size: .775em;
@@ -75,14 +75,8 @@ nav[role="navigation"].global {
     > li.navitems2.open {
       @include border-corner-radius(top, right, 5px);
       @include border-corner-radius(bottom, left, 0);
-      //border-left: 1px solid #ccc;
-      //@include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
-      > a {
-        //@include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
-      }
     }
     > li {
-      //background: url("../images/pipe.png") center right no-repeat;
       &:before {
         content: "|";
         color: nth($black, 4);
@@ -96,8 +90,7 @@ nav[role="navigation"].global {
       &:before {
         content: " ";
       }
-      //background: none;
-    }
+     }
   }
   /*   */
   li.navitems2 {
@@ -110,26 +103,18 @@ nav[role="navigation"].global {
     height: auto;
     display: block;
     @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-start));
-    //@include border-corner-radius(top, left, 5px);
     @include border-corner-radius(bottom, left, 5px);
     @include border-corner-radius(bottom, right, 5px);
     padding-bottom: 10px;
     position: absolute;
     clear: both;
-    top: 20px;
-    right: 0px;
-    //border-right: 1px solid #cccccc;
-    //border-bottom: 1px solid #ccc;
+    top: 1.66em;
+    right: 0;
     a {
       display: block;
     }
   }
-  //
-  //
-  //
   // State
-  //
-  //
   li[aria-haspopup="true"] > ul {
     &[aria-hidden="true"] {
       display: none;
@@ -138,12 +123,10 @@ nav[role="navigation"].global {
       display: inline-block;
     }
   }
-  //
-  //
   //  Moved from layout/_globalnav.scss
-  //
-  //
-  @include respond-to("desktop") {}
+  @include respond-to("desktop") {
+    
+  }
 
   @include respond-to("tablet-lh") {
     ul.navitems {
@@ -165,43 +148,42 @@ nav[role="navigation"].global {
 
   @include respond-to("mobile-lh") {
     padding: 0 2%;
+    font-size: 1.5em;
     a.logolink {
-      //height: 100%;
-      padding: .25em 1em .25em 0;
-      font-size: 1.2em;
+      padding: .25em 0em .25em 0;
+      &:before {
+        content: "\e002 \e00b";
+      }
     }
     ul li {
       background: none;
     }
     > ul.global-sections {
       li {
-        width: 25em;
+        width: 16em;
         height: $globalnav-height;
         display: block;
         clear: left;
         position: relative;
         z-index: 5;
         float: none;
-        //a {
-//          float: none;
-//        }
       }
       > li > ul.navitems {
         height: 0px;
         overflow: hidden;
-        //position: relative;
         z-index: 2;
         @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
         width: 100%;
         @include border-corner-radius(bottom, left, 5px);
         @include border-corner-radius(bottom, right, 5px);
+        top: -1px;
         li:before {
           content: "";
         }
       }
       > li ul.navitems.open {
         height: auto;
-        padding-bottom: 20px;
+        padding-bottom: .25em;
       }
       > li ul.open > li {
         display: block;
@@ -220,8 +202,6 @@ nav[role="navigation"].global {
   }
 
   // Utilities -- login, user preferences
-  //
-  //
   ul.utils {
     position: absolute;
     right: 0px;
@@ -234,7 +214,6 @@ nav[role="navigation"].global {
       margin-right: .5em;
       > a {
         padding: 0.3em 0.5em;
-        //border: 1px solid #ccc;
         @include border-radius(5px);
         @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
       }
@@ -245,7 +224,6 @@ nav[role="navigation"].global {
         padding-bottom: 2em;
         @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
         background-image: none;
-        //position: absolute;
         z-index: 200;
         border-bottom: none;
         height: 3.6em;
@@ -256,12 +234,10 @@ nav[role="navigation"].global {
       position: absolute;
       z-index: 100;
       @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
-      @include border-top-left-radius(5px);
       @include border-bottom-left-radius(5px);
       @include border-bottom-right-radius(5px);
-      //border: 1px solid #ccc;
       right: .5em;
-      top: 2em;
+      top: 1.66em;
       > li {
         @include inline-block-list-item(1em);
         width: 300px;
