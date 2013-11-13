@@ -63,7 +63,9 @@ section.video.part-of-hub {
 }
 
 @include respond-to('tablet') {
-  article[role="article"].spoke > header, section.curators-note {
+  article[role="article"].spoke > header, 
+  section.curators-note, 
+  .comments article {
     padding: 0 2.5%;
   }
   section.curators-note {
@@ -88,7 +90,9 @@ section.video.part-of-hub {
 }
 
 @include respond-to('mobile') {
-  article[role="article"].spoke > header, section.curators-note {
+  article[role="article"].spoke > header, 
+  section.curators-note, 
+  .comments article {
     padding: 0 3.5%;
   }
   aside[role="complimentary"].part-of-hub { 
