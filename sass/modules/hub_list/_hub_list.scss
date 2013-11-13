@@ -32,11 +32,11 @@ aside[role="complimentary"].part-of-hub {
         display: table-cell;
         padding:.5em;
       }
-      &.current {
-        background: nth($black,5);
-      }
       &:hover {
         background: nth($primary,5);
+      }
+      &.current, &.current:hover  {
+        background: nth($black,5);
       }
       > h3 {
         vertical-align: top;
