@@ -14,7 +14,7 @@
         <span>by <a href="http://mediacommons.futureofthebook.org/imr/users/paul-benzon" title="View Paul Benzon's profile" class="fn url" rel="contact">Paul Benzon</a></span>
         </h3>
       </li>
-      <li role="menuitem">
+      <li role="menuitem" class="current">
         <a href="http://mediacommons.futureofthebook.org/imr/2013/08/06/data-collection-television-and-twitter" title="Data Collection, Television, and Twitter">
         <img src="http://mediacommons.futureofthebook.org/imr/files/teaser-images/in_media_res_thing.jpg" alt="Data Collection, Television, and Twitter">
         </a>
