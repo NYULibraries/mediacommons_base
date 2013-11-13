@@ -7,17 +7,22 @@
   > .url .photo {
     float: left;
     margin: 0 .5em 0 0;
+    width: 4.524em; // 85px at largest font size
   }
   img.photo {
-    @include border-radius(50px);
-    border: 5px solid rgba(nth($black,4), 1);
+    @include border-radius(3em);
+    border: .33em solid rgba(nth($black,4), 1);
   } 
   address, .fn.url {
     font-weight: bold;
   }
   .org {
     &:before {
-      content: " — ";
+      content: "\20\2014\20"; // mdash encoded http://css-tricks.com/snippets/html/glyphs/
     }
+  }
+  + time + * { // clear comment text below the photo 
+    clear: both;
+    padding-top: 1em;
   }
 }
