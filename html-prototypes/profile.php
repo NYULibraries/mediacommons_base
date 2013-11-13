@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>In Media Res Sample Post | Navigation Demo</title>
+<title>In Media Res Sample Post | User Profile</title>
   <!-- Using Google Web Font Loader to load fonts instead of Stylesheet -->
   <!--link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'--> 
   <script type="text/javascript">

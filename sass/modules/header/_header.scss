@@ -58,7 +58,7 @@ header[role="banner"] {
     }
   }
 
-  @include respond-to("mobile-lh") {
+  @include respond-to("narrow navigation") {
     width: 100%;
     position: relative;
     //@include background-image(linear-gradient(top, lighten(nth($black, 6), 5%), darken(nth($black, 4), 5%)));
@@ -123,7 +123,7 @@ header[role="banner"] {
       // display: block;
    
     }
-    button {
+    button.skip-arrow {
       padding-top: .5em;
       margin: 0 2% 4px;
       @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
@@ -152,7 +152,7 @@ nav[role="navigation"].main {
       font-size: 1.15em;
       display: inline-block;
       &:before {
-        content: "\20•\20";
+        content: "\20\00b7\20";
         color: #999;
       }
       &:first-child:before {
@@ -173,7 +173,7 @@ nav[role="navigation"].main {
       text-indent: 0;
     }
   }
-  @include respond-to("mobile-lh") {
+  @include respond-to("narrow navigation") {
     position: relative;
     float: none;
     clear: both;
@@ -184,7 +184,7 @@ nav[role="navigation"].main {
       background-color: white;
       line-height: 1.5em;
       float: none;
-      font-size:1.5em;
+      font-size: 1.5em;
       padding: .25em 0 0 0;
       li {
         float: none;
@@ -201,7 +201,6 @@ nav[role="navigation"].main {
           width: 100%;
           display: block;
           padding: .5em;
-          //background-color: white;
           &:hover {
             background-color: nth($black, 6);
           }

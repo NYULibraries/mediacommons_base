@@ -1,38 +1,44 @@
-<main role="main">
+<main role="main" class="profile">
   <header>
-    <div><img src = "kathleenFitzPatrick.jpg" ></div>
+    <div class="photo"><img src = "kathleenFitzPatrick.jpg" ></div>
     <h1>Kathleen FitzPatrick</h1>
     <div>Director of Scholarly Communication @ Modern Language Association</div>
     <div>New York, NY, USA</div>
   </header>
+  <section id="contact-info">
+    <button type="button" class="icon-email">&nbsp;</button>
+    <button type="button" class="icon-www">www</button>
+    <button type="button" class="icon-phone">&nbsp;</button>
+    <button type="button" class="icon-skype">skype</button>
+  </section>
   <section id="recent-posts" class="block">
-    <h2 class="title">MediaCommons Activity</h2>
+    <h2 >MediaCommons Activity</h2>
     <div class="content"> 
       <!--THIS IS THE VIEW 'user_recent_posts'-->
       <div class="view view-user-recent-posts view-id-user_recent_posts view-display-id-block view-dom-id-2 view-content">
         <ul class="item-list">
-          <li class="views-row views-row-1 views-row-odd views-row-first">
-            <div class="views-field-title"> <span class="field-content"><a href="/content/what-happened">What Happened?</a></span> </div>
-            <div class="views-field-changed"> <span class="field-content">27 weeks 6 days</span> </div>
+          <li >
+            <div class="views-field-title title"><a href="/content/what-happened">What Happened?</a> </div>
+            <div class="views-field-changed"> 27 weeks 6 days </div>
           </li>
-          <li class="views-row views-row-2 views-row-even">
-            <div class="views-field-title"> <span class="field-content"><a href="/content/born-digital">Born Digital</a></span> </div>
-            <div class="views-field-changed"> <span class="field-content">44 weeks 4 days</span> </div>
+          <li >
+            <div class="views-field-title title"><a href="/content/born-digital">Born Digital</a> </div>
+            <div class="views-field-changed">44 weeks 4 days </div>
           </li>
-          <li class="views-row views-row-3 views-row-odd">
-            <div class="views-field-title"> <span class="field-content"><a href="/content/fit-purpose-developing-business-cases-new-services-research-libraries">Fit for Purpose: Developing Business Cases for New Services in Research Libraries</a></span> </div>
-            <div class="views-field-changed"> <span class="field-content">1 year 3 weeks</span> </div>
+          <li >
+            <div class="views-field-title title"><a href="/content/fit-purpose-developing-business-cases-new-services-research-libraries">Fit for Purpose: Developing Business Cases for New Services in Research Libraries</a> </div>
+            <div class="views-field-changed"> 1 year 3 weeks</div>
           </li>
-          <li class="views-row views-row-4 views-row-even">
-            <div class="views-field-title"> <span class="field-content"><a href="/blog/2012/08/07/rough-cuts-media-and-design-process">Rough Cuts: Media and Design in Process</a></span> </div>
-            <div class="views-field-changed"> <span class="field-content">1 year 13 weeks</span> </div>
+          <li >
+            <div class="views-field-title title"><a href="/blog/2012/08/07/rough-cuts-media-and-design-process">Rough Cuts: Media and Design in Process</a></div>
+            <div class="views-field-changed"> 1 year 13 weeks</div>
           </li>
-          <li class="views-row views-row-5 views-row-odd">
-            <div class="views-field-title"> <span class="field-content"><a href="/blog/2012/06/18/open-review-study-contexts-and-practices">Open Review: A Study of Contexts and Practices</a></span> </div>
-            <div class="views-field-changed"> <span class="field-content">1 year 20 weeks</span> </div>
+          <li >
+            <div class="views-field-title title"> <a href="/blog/2012/06/18/open-review-study-contexts-and-practices">Open Review: A Study of Contexts and Practices</a></div>
+            <div class="views-field-changed"> 1 year 20 weeks</div>
           </li>
-          <li class="views-row views-row-6 views-row-even views-row-last">
-            <div class="views-field-title"> <span class="field-content"><a href="/blog/2012/03/28/complex-television">Complex Television</a></span> </div>
+          <li >
+            <div class="views-field-title title"> <span class="field-content"><a href="/blog/2012/03/28/complex-television">Complex Television</a></span> </div>
             <div class="views-field-changed"> <span class="field-content">1 year 32 weeks</span> </div>
           </li>
         </ul>
@@ -40,22 +46,19 @@
     </div>
   </section>
   <section id="mediares-recent-posts">
-    <h2 class="title">In MediaRes Activity</h2>
+    <h2 >In MediaRes Activity</h2>
     <h3>Posts</h3>
     <ul class="mediares-posts">
       <li>
         <div class="title"> <a href="/imr/2009/12/02/possible-or-probable-imagined-future-book">"Possible or Probable?": An Imagined Future of the Book</a> </div>
-        <div class="author"><a href="http://mediacommons.futureofthebook.org/imr/users/kathleen-fitzpatrick" title="View user profile.">Kathleen Fitzpatrick</a></div>
         <div class="date">3 years 48 weeks ago</div>
       </li>
       <li>
         <div class="title"> <a href="/imr/2007/07/30/its-our-job-to-know-stuff-the-epistemology-of-csi">“It’s Our Job to Know Stuff”: The Epistemology of CSI</a> </div>
-        <div class="author"><a href="http://mediacommons.futureofthebook.org/imr/users/kathleen-fitzpatrick" title="View user profile.">Kathleen Fitzpatrick</a></div>
         <div class="date">3 years 51 weeks ago</div>
       </li>
       <li>
         <div class="title"> <a href="/imr/2009/01/29/education-20">Education 2.0?</a> </div>
-        <div class="author"><a href="http://mediacommons.futureofthebook.org/imr/users/kathleen-fitzpatrick" title="View user profile.">Kathleen Fitzpatrick</a></div>
         <div class="date">3 years 51 weeks ago</div>
       </li>
     </ul>
@@ -136,7 +139,7 @@
   <section>
     <h2>Research Interests</h2>
     <div class="content">
-      <ul>
+      <ul class="Tags">
         <li><a href="/category/tags/copyright">copyright</a></li>
         <li><a href="/category/tags/digital-humanities">digital humanities</a></li>
         <li><a href="/category/tags/digital-publishing">digital publishing</a></li>
@@ -149,7 +152,7 @@
       </ul>
     </div>
   </section>
-  <section>
+  <section  id="user-publications">
     <h2>Publications</h2>
     <?php include "includes/kfitz-publications.php"; ?>
 
