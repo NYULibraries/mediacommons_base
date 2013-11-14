@@ -69,8 +69,18 @@ section.video.part-of-hub {
     padding: 0 2.5%;
   }
   section.curators-note {
-    p {
-     @include column-count(2); 
+    .text-body {
+      margin-top: 1.5em;
+      //text-align: justify;
+      @include column-count(2);
+      @include column-gap(1.5em);
+      p {
+        text-indent: 1em;
+        margin: 0  0 1em 0;
+        &:first-child {
+          text-indent: 0;
+        }
+      }
     }
     margin: 0 1em 1em 0;
   }
@@ -134,10 +144,9 @@ section.video.part-of-hub {
 
 @include respond-to('narrow content') {
   section.curators-note {
-    p {
-     @include column-count(1);
-     max-width: ms(14); 
-    }
+  @include column-count(1);
+  max-width: ms(14); 
+  
   }
 }  
 //  @include respond-to('wide content') {
