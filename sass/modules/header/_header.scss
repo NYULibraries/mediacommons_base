@@ -61,7 +61,6 @@ header[role="banner"] {
   @include respond-to("narrow navigation") {
     width: 100%;
     position: relative;
-    //@include background-image(linear-gradient(top, lighten(nth($black, 6), 5%), darken(nth($black, 4), 5%)));
     h1 {
       float: left;
       padding: 0 2%;
@@ -91,7 +90,6 @@ header[role="banner"] {
       border: 1px solid #ccc;
     }
     form[role="search"].open label {
-      //@include background-image(linear-gradient(top, darken(nth($black, 3), 5%), nth($black, 6)));
       margin-bottom: .25em;
     }
     form[role="search"] fieldset {
@@ -128,7 +126,7 @@ header[role="banner"] {
       margin: 0 2% 4px;
       @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
       @include border-radius(5px);
-      border: 1px solid #ccc;
+      //border: none;
       float: left;
       display: block;
       height: 2.5em;
@@ -152,7 +150,7 @@ nav[role="navigation"].main {
       font-size: 1.15em;
       display: inline-block;
       &:before {
-        content: "\20\00b7\20";   // middot encoded http://css-tricks.com/snippets/html/glyphs/
+        content: "\20\00b7\20"; // middot encoded http://css-tricks.com/snippets/html/glyphs/
         color: #999;
       }
       &:first-child:before {
@@ -204,7 +202,6 @@ nav[role="navigation"].main {
           &:hover {
             background-color: nth($black, 6);
           }
-          
         }
       }
     }
@@ -215,4 +212,39 @@ a.skip-to-nav {
   height: 0px !important;
   overflow: hidden;
   display: none !important;
+}
+
+@mixin placeholder($selector) {
+
+$form_placeholder_prefixes: ('::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-placeholder', ':-ms-input-placeholder', '::input-placeholder', '::placeholder' );
+
+  @each $prefix in $form_placeholder_prefixes {
+    #{$selector}[placeholder]#{$prefix} {
+      color: nth($primary, 2);
+      font-family: $header-font-family;
+    }
+  }
+}
+@include placeholder('input[type="search"]');
+input[type="search"] {
+  padding-left: .5em;
+  //@include placeholder(#{&});
+  
+//  // http://css-tricks.com/snippets/css/style-placeholder-text/ Note: An %extendable won't work here
+//  &::-webkit-input-placeholder {
+//    color: nth($primary, 2);
+//    font-family: $header-font-family;
+//  } 
+//  &:-moz-placeholder { /* Firefox 18- */
+//    color: nth($primary, 2);
+//    font-family: $header-font-family; 
+//  }
+//  &::-moz-placeholder {  /* Firefox 19+ */
+//    color: nth($primary, 2);
+//    font-family: $header-font-family;
+//  }
+//  &:-ms-input-placeholder {
+//    color: nth($primary, 2);
+//    font-family: $header-font-family;
+//  }
 }
