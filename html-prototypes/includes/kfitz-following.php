@@ -1,5 +1,5 @@
 
-  <div class="profile-friends">
+  <div class="profile-friends content">
     <div class="profile-friend">
       <div class="profile-friend-picture"><a href="/users/jason-mittell"><img src="http://www.gravatar.com/avatar/a3a5068acc5afa035f256d03307eb1a1?d=http%3A%2F%2Fmediacommons.futureofthebook.org%2Fsites%2Fmediacommons.futureofthebook.org%2Fmodules%2Fgravatar%2Favatar.png&amp;s=85&amp;r=G"></a></div>
       <a href="/users/jason-mittell">Jason Mittell</a></div>
