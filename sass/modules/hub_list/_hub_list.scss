@@ -3,27 +3,28 @@
 //////////////////////////////
 
 aside[role="complimentary"].part-of-hub {
-  background: nth($black, 4);
+  background: nth($primary, 5);
   header {
     padding: .5em .5em .5em 1em;
-    background: nth($black, 3);
+    background: nth($primary, 2);
     > div {
       font-style: italic;
-      color: nth($black, 2);
+      color: nth($black, 1);
     }
   }
   h2 {
     font-size: 1.4em;
     padding: 0 0 .4em 0;
     margin: 0 0 .4em 0;
-    color: nth($black, 5);
+    color: nth($black, 6);
   }
   ul[role="menu"] {
     list-style: none;
     margin: 0;
-    padding: 1em 0;
+    padding: 0;
     display: table;
     width: 100%;
+    
     li {
       display: table-row;
       text-indent: 0;
@@ -33,10 +34,16 @@ aside[role="complimentary"].part-of-hub {
         padding:.5em;
       }
       &:hover {
-        background: nth($primary,5);
+        background: nth($primary, 2);
+        a {
+          color: nth($black, 6);
+        }
       }
       &.current, &.current:hover  {
-        background: nth($black,5);
+        background: nth($primary,3);
+        a {
+          color: nth($black, 1);
+        }
       }
       > h3 {
         vertical-align: top;
