@@ -3,7 +3,7 @@
 //////////////////////////////
 
 aside[role="complimentary"].part-of-hub {
-  background: nth($primary, 5);
+  background: nth($black, 5);
   header {
     padding: .5em .5em .5em 1em;
     background: nth($primary, 2);
@@ -34,14 +34,14 @@ aside[role="complimentary"].part-of-hub {
         padding:.5em;
       }
       &:hover {
-        background: nth($primary, 2);
+        background: nth($primary, 5);
         a {
-          color: nth($black, 6);
+          //color: nth($black, 6);
         }
       }
       &.current, &.current:hover  {
-        background: nth($primary,3);
-        a {
+        background: nth($quadrary, 2);
+        a, span {
           color: nth($black, 1);
         }
       }
