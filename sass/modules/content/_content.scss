@@ -5,26 +5,25 @@
 // Move to Taxonomy module?
 
 ul.Tags {
-    padding: 0;
-    li {
-        display: inline-block;
-        list-style-type: none;
-        line-height: 2.25em;
-        margin-right: 10px;
-        &:first-child {
-          display: block;
-          padding: 0 0 1em 0;
-        }
-        &:last-child {
-          margin-right: 0px;
-        }
-        a {
-            @include border-radius(5px);
-            padding: 4px 8px;
-            @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 5), 5%)));
-            
-        }
+  padding: 0;
+  li {
+    display: inline-block;
+    list-style-type: none;
+    line-height: 2.25em;
+    margin-right: 10px;
+    &:first-child {
+      display: block;
+      padding: 0 0 1em 0;
     }
+    &:last-child {
+      margin-right: 0px;
+    }
+    a {
+      @include border-radius(5px);
+      padding: 4px 8px;
+      @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 5), 5%)));
+    }
+  }
 }
 
 //@mixin blockquotes {
