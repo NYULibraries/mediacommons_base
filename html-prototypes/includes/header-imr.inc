@@ -1,7 +1,7 @@
 <header role="banner">
   <a href="#main-nav" class="skip-to-nav">Skip to Navigation</a>
   <button type="button" class="skip-arrow"></button>
-  <h1><a href="http://mediacommons.futureofthebook.org/imr/" title="Home" rel="home" class="imr-logo"><span>Media Res</span></a></h1>
+  <h1><a href="http://mediacommons.futureofthebook.org/imr/" title="Home" rel="home" class="imr logo"><span>In Media Res</span></a></h1>
   <form role="search" action="/imr/2013/08/06/data-collection-television-and-twitter"  accept-charset="UTF-8" method="post" id="search-block-form" class="form search header">
     <label for="edit-search-block-form-1"><span>Search this site:</span></label>
     <fieldset>
