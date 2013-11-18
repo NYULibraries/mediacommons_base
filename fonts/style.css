@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'MediaCommons-Icon-Font';
-	src:url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot');
-	src:url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?#iefix') format('embedded-opentype'),
-		url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf') format('truetype'),
-		url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff') format('woff'),
-		url('MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg#MediaCommons-Icon-Font') format('svg');
+	src:url('fonts/MediaCommons-Icon-Font.eot');
+	src:url('fonts/MediaCommons-Icon-Font.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MediaCommons-Icon-Font.ttf') format('truetype'),
+		url('fonts/MediaCommons-Icon-Font.woff') format('woff'),
+		url('fonts/MediaCommons-Icon-Font.svg#MediaCommons-Icon-Font') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,17 +17,22 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-menu:before {
-	content: "\e600";
-}
-.icon-menu2:before {
-	content: "\e601";
+.icon-contacts-users:before {
+	content: "\e020";
 }
 .icon-uniF000:before {
 	content: "\f000";
@@ -46,6 +51,39 @@
 }
 .icon-triangle-small-1:before {
 	content: "\e00b";
+}
+.icon-infos-alert-circle-2:before {
+	content: "\e01c";
+}
+.icon-the-new-everyday-logo:before {
+	content: "\e000";
+}
+.icon-media-commons-press-logo:before {
+	content: "\e001";
+}
+.icon-contacts-user:before {
+	content: "\e01f";
+}
+.icon-infos-alert-triangle:before {
+	content: "\e01a";
+}
+.icon-infos-alert-losange:before {
+	content: "\e01b";
+}
+.icon-media-commons-logo:before {
+	content: "\e002";
+}
+.icon-in-media-res-logo:before {
+	content: "\e003";
+}
+.icon-alt-academy-logo:before {
+	content: "\e004";
+}
+.icon-contact-phone:before {
+	content: "\e008";
+}
+.icon-triangles-expand:before {
+	content: "\e01d";
 }
 .icon-triangle-mini-4:before {
 	content: "\e00c";
@@ -89,45 +127,21 @@
 .icon-infos-circle-2:before {
 	content: "\e019";
 }
-.icon-infos-alert-triangle:before {
-	content: "\e01a";
-}
-.icon-infos-alert-losange:before {
-	content: "\e01b";
-}
-.icon-infos-alert-circle-2:before {
-	content: "\e01c";
-}
-.icon-the-new-everyday-logo:before {
-	content: "\e000";
-}
-.icon-media-commons-press-logo:before {
-	content: "\e001";
-}
-.icon-media-commons-logo:before {
-	content: "\e002";
-}
-.icon-in-media-res-logo:before {
-	content: "\e003";
-}
-.icon-alt-academy-logo:before {
-	content: "\e004";
-}
-.icon-contact-phone:before {
-	content: "\e008";
-}
-.icon-triangles-expand:before {
-	content: "\e01d";
-}
 .icon-contact-mail:before {
 	content: "\e006";
 }
 .icon-contacts-user-add:before {
 	content: "\e01e";
 }
-.icon-contacts-user:before {
-	content: "\e01f";
+.icon-menu:before {
+	content: "\e600";
 }
-.icon-contacts-users:before {
-	content: "\e020";
+.icon-menu2:before {
+	content: "\e601";
+}
+.icon-globe:before {
+	content: "\e602";
+}
+.icon-skype:before {
+	content: "\e603";
 }

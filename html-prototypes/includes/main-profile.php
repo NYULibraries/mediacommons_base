@@ -2,15 +2,16 @@
   <main role="main" >
   <header>
     <div class="photo"><img src = "kathleenFitzPatrick.jpg" ></div>
+    <div id="profile-info">
     <h1>Kathleen FitzPatrick</h1>
     <div>Director of Scholarly Communication @ Modern Language Association</div>
-    <div>New York, NY, USA</div>
+    <div>New York, NY, USA</div></div>
   </header>
   <section id="contact-info">
-    <button type="button" class="icon-email">zoo@home.net</button>
-    <button type="button" class="icon-www">www</button>
-    <button type="button" class="icon-phone">&nbsp;</button>
-    <button type="button" class="icon-skype">skype</button>
+    <div class="button icon-email"><span><a mailto:"adfsdf">oo@example.net</a></span></div>
+    <div class="button icon-www"><span><a href="#">http://www.example.net</a></span></div>
+    <div class="button icon-phone"><span>917.555.1234</span></div>
+    <div class="button icon-skype"><span>kfitz</span></div>     
   </section>
   <section >
     <h2 >MediaCommons Activity</h2>
