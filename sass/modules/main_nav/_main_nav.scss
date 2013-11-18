@@ -3,6 +3,71 @@
 //////////////////////////////
 
 
+[role="navigation"].main {
+  float: left;
+  clear: left;
+  margin: 0;
+  padding: 0; 
+  ul.main {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    @include horizontal-list;
+    li {
+      margin: 0;
+      text-indent: 0;
+      font-size: 1.15em;
+      display: inline-block;
+      &:before {
+        content: "\20\00b7\20"; // middot encoded http://css-tricks.com/snippets/html/glyphs/
+        color: #999;
+      }
+      &:first-child:before {
+        content: "\20";
+      }
+    }
+  }
+}
+
+[role="navigation"].main { 
+  @include respond-to("narrow navigation") {
+    position: relative;
+    float: none;
+    clear: both;
+    left: 0;
+    ul.main {
+      display: none;
+      list-style-type: none;
+      background-color: white;
+      line-height: 1.5em;
+      float: none;
+      font-size: 1.5em;
+      padding: .25em 0 0 0;
+      li {
+        float: none;
+        display: block;
+        border-bottom: 1px #ccc solid;
+        padding: 0;
+        &:before {
+          content: "";
+        }
+        &:first-child {
+          border-top: 1px #ccc solid;
+        }
+        a {
+          width: 100%;
+          display: block;
+          padding: .5em;
+          &:hover {
+            background-color: nth($black, 6);
+          }
+        }
+      }
+    }
+  }
+}
+
 //  Moved from layout/_mainnav.scss
 
 
