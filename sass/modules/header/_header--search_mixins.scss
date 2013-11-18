@@ -1,0 +1,16 @@
+//////////////////////////////
+// MIXINS: For Modules 
+//////////////////////////////
+
+// http://css-tricks.com/snippets/css/style-placeholder-text/ Note: An %extendable won't work here because it'll group the selectors together. If a browser doesn't understand one selector it'll ignore the entire rule!
+// see http://codepen.io/alienresident/pen/ciChI
+@mixin placeholder() {
+
+$form_placeholder_prefixes: ('::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-placeholder', ':-ms-input-placeholder', '::input-placeholder', '::placeholder' );
+
+  @each $prefix in $form_placeholder_prefixes {
+    &[placeholder]#{$prefix} {
+      color: nth($primary, 2);
+    }
+  }
+}
