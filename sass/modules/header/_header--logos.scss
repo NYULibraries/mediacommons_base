@@ -24,7 +24,6 @@
   max-width: 100%; 
   padding: 16% 0 9% 0;
   display: block; 
-  //outline: 1px solid #ccc; 
   margin: 0 0 .25em 0; 
   background: image-url('mc-logos/mediacommons-logos.svg');
   background-repeat: no-repeat;
@@ -63,7 +62,7 @@
       }
       &.imr { 
         background-position: 0 30%;
-        width: 8em;
+        width: 8em; // looks a little large in mobile view
       }
       &.tne {
         background-position: 0 60%;
