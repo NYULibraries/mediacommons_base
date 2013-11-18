@@ -129,6 +129,7 @@ nav[role="navigation"].global {
   }
 
   @include respond-to("tablet-lh") {
+    font-size: 1.33em;
     ul.navitems {
       > li {
         @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
