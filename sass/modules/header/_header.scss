@@ -3,11 +3,13 @@
 //////////////////////////////
 
 @import "_header_variables";
+@import "_header--search";
 
-header[role="banner"] {
+[role="banner"] {
   font-size: $base-size;
   margin: ($globalnav-height + 1) auto 0 auto;
   padding: 6px 0 0 0;
+  @extend %clearfix;
   h1 {
     display: inline-block;
     float: left;
@@ -21,43 +23,27 @@ header[role="banner"] {
       display: none;
     }
   }
-  @extend %clearfix;
-  form[role="search"] {
-    display: inline-block;
-    float: right;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    fieldset {
-      margin: 0;
-      border: none;
-    }
-  }
-  form[role="search"] input[type="submit"] {
-    font-family: $icon-font-name;
-  }
-  form[role="search"] label, form[role="search"] label span {
-    display: none;
-  }
   button {
     display: none;
   }
-  // moved from layout/_header.scss
+  a.skip-to-nav {
+    height: 0px !important;
+    overflow: hidden;
+    display: none !important;
+  }
+}
+
+[role="banner"] {
+  
   @include respond-to("full navigation") {
     margin: $globalnav-height auto 0 auto;
     width: 100%;
     max-width: 60em;
-    form[role="search"] label {
-      display: none;
-    }
-    form[role="search"] label span {
-      display: none;
-    }
     fieldset {
       margin: 0;
     }
   }
-
+  
   @include respond-to("narrow navigation") {
     width: 100%;
     position: relative;
@@ -67,63 +53,9 @@ header[role="banner"] {
       position: absolute;
       left: 2.3em;
     }
-    form[role="search"] {
-      margin: 0;
-      display: block;
-      float: none;
-      position: relative;
-      background-color: transparent;
-    }
-    form[role="search"] label span {
-      display: none;
-    }
-    form[role="search"] label {
-      height: 2.5em;
-      width: 2.5em;
-      text-align: center;
-      padding-top: .6em;
-      margin: 0 2%;
-      display: block;
-      float: right;
-      @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
-      @include border-radius(5px);
-      border: 1px solid #ccc;
-    }
-    form[role="search"].open label {
-      margin-bottom: .25em;
-    }
-    form[role="search"] fieldset {
-      clear: both;
-      background-color: nth($black, 3);
-      border: none;
-      margin: 0;
-      width: 100%;
-      padding: 10px;
-      position: relative;
-      left: 0;
-      top: 0em;
-      display: none;
-    }
-    form[role="search"].open fieldset {
-      height: auto;
-      padding: 10px;
-    }
-    input[type="search"] {
-      width: 85%;
-      
-    }
-    form[role="search"] fieldset[aria-hidden="true"] {
-      width: 15%;
-      // display: none;
-   
-    }
-    form[role="search"] fieldset[aria-hidden="false"] {
-      // display: block;
-   
-    }
     button.skip-arrow {
       padding-top: .5em;
-      margin: 0 2% 4px;
+      margin: 0 4px;
       @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
       @include border-radius(5px);
       //border: none;
@@ -138,113 +70,4 @@ header[role="banner"] {
   }
 }
 
-nav[role="navigation"].main {
-  float: left;
-  clear: left;
-  margin: .5em 0; 
-  ul.main {
-    display: block;
-    float: left;
-    @include horizontal-list;
-    li {
-      font-size: 1.15em;
-      display: inline-block;
-      &:before {
-        content: "\20\00b7\20"; // middot encoded http://css-tricks.com/snippets/html/glyphs/
-        color: #999;
-      }
-      &:first-child:before {
-        content: "\20";
-      }
-    }
-  }
-}
 
-nav[role="navigation"].main {
-  margin: 0;
-  padding: 0;
-  ul.main {
-    margin: 0;
-    padding: 0;
-    li {
-      margin: 0;
-      text-indent: 0;
-    }
-  }
-  @include respond-to("narrow navigation") {
-    position: relative;
-    float: none;
-    clear: both;
-    left: 0;
-    ul.main {
-      display: none;
-      list-style-type: none;
-      background-color: white;
-      line-height: 1.5em;
-      float: none;
-      font-size: 1.5em;
-      padding: .25em 0 0 0;
-      li {
-        float: none;
-        display: block;
-        border-bottom: 1px #ccc solid;
-        padding: 0;
-        &:before {
-          content: "";
-        }
-        &:first-child {
-          border-top: 1px #ccc solid;
-        }
-        a {
-          width: 100%;
-          display: block;
-          padding: .5em;
-          &:hover {
-            background-color: nth($black, 6);
-          }
-        }
-      }
-    }
-  }
-}
-
-a.skip-to-nav {
-  height: 0px !important;
-  overflow: hidden;
-  display: none !important;
-}
-
-@mixin placeholder($selector) {
-
-$form_placeholder_prefixes: ('::-webkit-input-placeholder', ':-moz-placeholder', '::-moz-placeholder', ':-ms-input-placeholder', '::input-placeholder', '::placeholder' );
-
-  @each $prefix in $form_placeholder_prefixes {
-    #{$selector}[placeholder]#{$prefix} {
-      color: nth($primary, 2);
-      font-family: $header-font-family;
-    }
-  }
-}
-@include placeholder('input[type="search"]');
-input[type="search"] {
-  padding-left: .5em;
-  //@include placeholder(#{&});
-  
-//  // http://css-tricks.com/snippets/css/style-placeholder-text/ Note: An %extendable won't work here
-//  &::-webkit-input-placeholder {
-//    color: nth($primary, 2);
-//    font-family: $header-font-family;
-//  } 
-//  &:-moz-placeholder { /* Firefox 18- */
-//    color: nth($primary, 2);
-//    font-family: $header-font-family; 
-//  }
-//  &::-moz-placeholder {  /* Firefox 19+ */
-//    color: nth($primary, 2);
-//    font-family: $header-font-family;
-//  }
-//  &:-ms-input-placeholder {
-//    color: nth($primary, 2);
-//    font-family: $header-font-family;
-//  }
-}
