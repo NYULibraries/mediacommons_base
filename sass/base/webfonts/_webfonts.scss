@@ -3,73 +3,61 @@
 //////////////////////////////
 
 @import "_webfonts_variables";
+@import "_webfonts_extendables";
 
 // Google fonts using webfont loader JS to load font and add the class to the html tag once it's loaded
 
-.wf-droidserif-n4-active {
-  body {
-    font-family: $body-font-name, $body-font-family; 
-  }
+body {
+  @extend %serif; 
 }
 .wf-droidsans-n4-active {
-  #{headings()} {
-    font-family: $heading-font-name, $header-font-family;
-  }
+  #{headings()},
   button,
   input[type="button"],
   input[type="submit"], 
   input.cancel {
-    font-family: $heading-font-name, $header-font-family;
+    @extend %sans;
   }
 }
 
-.wf-droidserif-n7-active {
-  strong, b {
-    font-family: $body-bold-font-name;
-    font-weight: 700;
-    font-style: normal;
-  }
+strong, b {
+  @extend %serif-bold; 
 }
-.wf-droidserif-i4-active {
-  em, i {
-    font-family: $body-italic-font-name;
-    font-style: italic;
-  }
+
+
+em, i {
+  @extend %serif-italic; 
 }
+
 // never sure what order the tags will be in and if there mixed
-.wf-droidserif-i7-active {
-  strong em, 
-  b i, 
-  em strong, 
-  i b, 
-  strong i, 
-  b em, 
-  i strong, 
-  em b {
-    font-family: $body-bold-italic-font-name;
-    font-weight: 700;
-    font-style: italic;
+strong em, 
+b i, 
+em strong, 
+i b, 
+strong i, 
+b em, 
+i strong, 
+em b {
+  @extend %serif-bold-italic;
+}
+
+#{headings()},
+blockquote {
+  strong {
+     @extend %sans-bold;
   }
 }
-.wf-droidsans-n7-active {
-  #{headings()} {
-    strong {
-      font-family: $heading-bold-font-name;
-      font-weight: 700;
-      font-style: normal;
-    }
-  }
-  blockquote strong {
-    font-family: $heading-bold-font-name;
-    font-weight: 700;
-    font-style: normal;
-  }
-  h4 {
-    font-family: $heading-bold-font-name;
-    font-weight: 700;
-    font-style: normal;
-  }
+
+h4 {
+  @extend %sans-bold; 
 }
+
+
+
+//#{headings()} {
+//  @extend %sans;
+//}
+
 
 // For offline/local fonts
 //@include web-font-face($body-font-name, $body-font-file-name, $font-weight, $font-style, $inline-fonts);
