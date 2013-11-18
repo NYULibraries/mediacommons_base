@@ -63,24 +63,21 @@ section.video.part-of-hub {
 }
 
 @include respond-to('tablet') {
-  header[role="banner"],
   article[role="article"].spoke > header, 
   section.curators-note {
     padding: 0 2.5%;
   }
   section.curators-note {
-    padding: 0 2.5%;
-    .text-body {
-      
+    .text-body {   
       margin-top: 1.5em;
       //text-align: justify;
       @include column-count(2);
       @include column-gap(1.5em);
       p {
         text-indent: 1em;
-        margin: 0  0 1em 0;
         &:first-child {
           text-indent: 0;
+          margin: 0 0 1em 0;
         }
       }
     }
