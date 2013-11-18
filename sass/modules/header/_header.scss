@@ -4,25 +4,13 @@
 
 @import "_header_variables";
 @import "_header--search";
+@import "_header--logos";
 
 [role="banner"] {
   font-size: $base-size;
   margin: ($globalnav-height + 1) auto 0 auto;
   padding: 6px 0 0 0;
   @extend %clearfix;
-  h1 {
-    display: inline-block;
-    float: left;
-    font-size: 1.8em;
-    line-height: 1;
-    margin: 0;
-    a {
-      color: #333333;
-    }
-    span {
-      display: none;
-    }
-  }
   button {
     display: none;
   }
@@ -47,12 +35,6 @@
   @include respond-to("narrow navigation") {
     width: 100%;
     position: relative;
-    h1 {
-      float: left;
-      padding: 0 2%;
-      position: absolute;
-      left: 2.3em;
-    }
     button.skip-arrow {
       padding-top: .5em;
       margin: 0 4px;

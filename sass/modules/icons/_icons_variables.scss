@@ -7,21 +7,24 @@ $icon-font-name: 'MediaCommons-Icon-Font';
 $icon-font-file-name: 'MediaCommons-Icon-Font/MediaCommons-Icon-Font';
 
 //  See: Icon fonts, HAML and Sass http://gist.io/4731881 
-$icons: ('.mc-logo' '\e002') ('.imr-logo' '\e003')
+$icons:
+  ('.mc-logo' '\e002') 
   ('.icon-contract-arrow-m' '\e00a')
- ('.icon-expand-arrow-m' '\e00b') ('.icon-contract-arrow-s' '\e00e') 
- ('.icon-expand-arrow-s' '\e00f') 
- ('aside[role="complimentary"].part-of-hub.open .responsive-disclosure:after, a.drop-down.open:after, nav.global ul.utils li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' '\e012') 
- ('aside[role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, nav.global ul.utils li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l' '\e013') 
- ('.icon-email' '\e006') 
- ('.icon-skype' '\e603') 
+  ('.icon-expand-arrow-m' '\e00b') ('.icon-contract-arrow-s' '\e00e') 
+  ('.icon-expand-arrow-s' '\e00f') 
+  ('aside[role="complimentary"].part-of-hub.open .responsive-disclosure:after, a.drop-down.open:after, nav.global ul.utils li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' '\e012') 
+  ('aside[role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, nav.global ul.utils li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l' '\e013') 
+  ('.icon-email' '\e006') 
+  ('.icon-skype' '\e603') 
   ('.icon-www' '\e602') 
- ('.icon-phone' '\e008') ('.icon-user' '\e01f') ('.icon-users' '\e020') 
- ('.icon-add-user' '\e01e') 
- ('form[role="search"] label' '\e016')
- ('form[role="search"].open label' '\e012')
- ('header[role=banner] button.skip-arrow:before, header[role=banner] button.skip-arrow.open' '\e600')
- ;
+  ('.icon-phone' '\e008')
+  ('.icon-user' '\e01f')
+  ('.icon-users' '\e020') 
+  ('.icon-add-user' '\e01e') 
+  ('[role="search"] label' '\e016')
+  ('[role="search"].open label' '\e012')
+  ('[role=banner] button.skip-arrow:before, [role=banner] button.skip-arrow.open' '\e600')
+  ;
 
 // To add more than one selectors to use the same class you need to add the :before or :after psuedo class (see the @each mixin in $icon_mixins for the pseudo class) 
 // ('.swf:before, a[href$=".swf"]' '\e014')
