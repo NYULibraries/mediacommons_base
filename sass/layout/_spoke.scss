@@ -19,20 +19,6 @@ article[role="article"].spoke {
     }
   }
   @include respond-to("mobile-lh") {
-//    .vcard img.photo {
-//      //@include border-radius(0px);
-//      //border:none;
-//    }
-//    header, section {
-//      padding: 0 2%;
-//    }
-//      > header, section.curators-note {
-//        padding: 0 2%;
-//      }
-//    section.part-of-hub {
-//      //background-color: darken(nth($black, 5), 5%);
-//      //@include border-bottom-radius(15px); 
-//    }
   }
 }
 
@@ -119,7 +105,7 @@ section.video.part-of-hub {
   }
 }
 
-.comments {  
+.spoke .comments {  
   > h2 {
     padding: .5em;
     background: nth($secondary, 4);
@@ -147,31 +133,4 @@ section.video.part-of-hub {
   max-width: ms(14); 
   
   }
-}  
-//  @include respond-to('wide content') {
-//    float: left;
-//    max-width: ms(12);
-//    article { 
-//      @include type-size($body-font-size, $body-line-height - .1); // 16px
-//    }
-//  }
-//  @include respond-to('medium wide content') {
-//    float: left;
-//    max-width: ms(12);
-//    article { 
-//      @include type-size($body-font-size - 2, $body-line-height - .1); // 16px
-//    }
-//  }
-//  @include respond-to('medium content') {
-//    float: left;
-//    max-width: ms(12);
-//    article {     
-//      @include type-size($body-font-size - 3, $body-line-height - .1); // 16px
-//    }
-//  }
-//  @include respond-to('medium only content') {
-//    max-width: ms(14);
-//    article {
-//      @include type-size($body-font-size - 3, $body-line-height - .1); // 16px
-//    }
-//  }
+}
