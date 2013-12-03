@@ -2,22 +2,25 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 
-.vcard {
+.h-card {
   margin: 1em 0;
-  > .url .photo {
-    float: left;
+  > .u-url .u-photo {
+    
     margin: 0 .5em 0 0;
     width: 4.524em;
     // 85px at largest font size
+    .comments &, .spoke & {
+      float: left;
+    }
   }
-  img.photo {
+  img.u-photo {
     @include border-radius(3em);
     border: 0.33em solid rgba(nth($black, 4), 1);
   }
-  address, .fn.url {
+  .p-name.u-url {
     font-weight: bold;
   }
-  .org {
+  .p-org {
     &:before {
       content: "\20\2014\20";   // mdash encoded http://css-tricks.com/snippets/html/glyphs/
    
@@ -34,10 +37,11 @@
 }
 
 .profile {
-  padding: 0 3%;
+  @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
   header {
     margin-bottom: 1em;
-    @extend %clearfix;
+    @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+    padding: 0 1em;
     .photo {
       float: left;
       margin: 0 .5em 0 0;
@@ -57,7 +61,7 @@
   }
   .profile-friend-picture {
     img {
-      width: 100%;
+      max-width: 100%;
     }
   }
   ul {
@@ -91,16 +95,12 @@
     }
   }
   .contact-info li {
-    //@extend %button;
     display: inline-block;
     margin-right: 1%;
-    //font-size: 1.7em;
-    // height: 2em;
     a {
-      //@extend %button;
     }
     span {
-      //display: none;
+
     }
   }
   ul.Tags li:first-child {
@@ -108,20 +108,18 @@
     padding: 0;
   }
   @include respond-to("full navigation") {
-    padding: 0 3%;
     section {
       max-width: ms(14);
       float: left;
       margin: 0 1em 1em 0;
-      clear: left;
+      padding: 0 1em;
+      
     }
     aside {
       background-color: nth($quadrary, 5);
-      margin-top: 42px;
-      margin-top: 2rem;
+      margin-top: 1em;
       float: right;
       max-width: ms(12);
-      clear: both;
       > h2 {
         color: nth($black, 6);
         background: nth($tertiary, 2);
@@ -143,11 +141,6 @@
         text-indent: 0;
       
         a {
-            //background-color: none;
-            //background-image: none;
-            //background: none;
-            //border: none;
-
             width: auto;
             text-indent:.25em;
             color: nth($mc-blue, 2);
@@ -164,13 +157,12 @@
   }
 }
 .profile {
-  @include respond-to("narrow navigation") {  
+  @include respond-to("narrow navigation") {
+     padding: 0 3%;
     .contact-info li {
       display: inline-block;
       margin-right: 1%;
       font-size: 1.4em;
-      // height: 2em;
-      //@extend %button;
       a {
         @include button;
       }
