@@ -30,10 +30,7 @@
   &:hover,
   &:focus {
     @include text-shadow($button-hover-text-shadow);
-   // $button-hover-gradient-stop-1: darken($button-hover-gradient-stop-1, 5%);
     @include simple-background-gradient($button-hover-color, $button-hover-gradient-pos, lighten($button-hover-gradient-stop-1,5%), lighten($button-hover-gradient-stop-2, 5%));
-   // @include simple-background-gradient($button-hover-color, $button-hover-gradient-pos, blue, green);
-   
   }  
   &:active {
     @include text-shadow($button-active-text-shadow);
