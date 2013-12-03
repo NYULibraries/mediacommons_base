@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../css/mediacommons_base.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body class="meco">
 <?php include "includes/header-mc.inc"; ?>
 <?php include "includes/main-profile.php"; ?>
 <?php include "includes/globalnavbar.inc"; ?>
