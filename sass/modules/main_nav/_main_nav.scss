@@ -37,6 +37,7 @@
     float: none;
     clear: both;
     left: 0;
+    margin: 0;
     ul.main {
       display: none;
       list-style-type: none;
@@ -64,6 +65,49 @@
             background-color: nth($black, 6);
           }
         }
+      }
+    }
+  }
+}
+
+[role="navigation"].main { 
+  @include respond-to("tablet") {
+//    position: relative;
+//    float: none;
+//    clear: both;
+//    left: 0;
+    margin: 0;
+    ul.main {
+//      display: none;
+//      list-style-type: none;
+//      background-color: white;
+//      line-height: 1.5em;
+      //float: left;
+      font-size: 1.5em;
+      margin-top: 2em;
+      padding: 0;
+      border-top: 1px #ccc solid;
+      li {
+        float: left;
+        display: inline-block;
+        border-bottom: 1px #ccc solid;
+        border-right: 1px #ccc solid;
+        padding: 0;
+        width: 50%;
+        &:before {
+          content: "";
+        }
+        &:first-child {
+          border-top: 0px #ccc solid;
+        }
+//        a {
+//          width: 100%;
+//          display: block;
+//          padding: .5em;
+//          &:hover {
+//            background-color: nth($black, 6);
+//          }
+//        }
       }
     }
   }
