@@ -1,3 +1,7 @@
+//////////////////////////////
+// LAYOUT: Layout dependent css and media queries only 
+//////////////////////////////
+
 .meco {
     header, article, footer {
     a {
@@ -5,3 +9,20 @@
     }
   }
 }
+
+@include respond-to("full navigation") {
+  section[role="complementary"] {
+    float: right;
+    max-width: ms(12);
+  }
+  .profile aside {
+    background-color: nth($mc-blue, 3); // FOR DEMO ONLY
+    > h2 {
+      background: nth($mc-blue, 1); // FOR DEMO ONLY
+    }
+  }
+  input[type="search"] {
+    @include placeholder(nth($mc-blue, 2));
+  }
+}
+
