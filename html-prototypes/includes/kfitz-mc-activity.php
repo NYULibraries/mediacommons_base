@@ -1,5 +1,5 @@
-<!--THIS IS THE VIEW 'user_recent_posts'-->
-<section class="view mc-activity view-user-recent-posts view-id-user_recent_posts view-display-id-block view-dom-id-2 view-content">
+
+
   <h1>MediaCommons Activity</h1>
   <ul class="posts mc-posts">
     <li >
@@ -27,4 +27,3 @@
       <time datetime="2012-03-28T14:09+08:00">March 28, 2012 – 14:09</span> </time>
     </li>
   </ul>
-</section>

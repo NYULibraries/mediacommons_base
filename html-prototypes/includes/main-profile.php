@@ -1,5 +1,5 @@
-<article class="profile">
-  <main role="main" >
+<main role="main">
+<article role="article" class="profile">
   <header class="h-card vcard">
     <img src="kathleenFitzPatrick.jpg" alt="Kathleen FitzPatrick" class="u-photo photo">
     <h1 class="p-name fn">Kathleen FitzPatrick</h1>
@@ -13,32 +13,30 @@
       <li><a class="u-url skype" a href="skype:kfitz" rel="me"><span>kfitz</span></a></li>
     </ul>
   </header>
-    
+  <section class="view mc-activity view-user-recent-posts view-id-user_recent_posts view-display-id-block view-dom-id-2 view-content">  
     <?php include "includes/kfitz-mc-activity.php"; ?>
- 
-   
-    
     <?php include "includes/kfitz-imr-activity.php"; ?>
-
-    
-    <!--?php include "includes/kfitz-publications.php"; ?-->
-  <aside class="profile-aside research-interests">
-    <h2>Research Interests</h2>
-      <ul class="Tags">
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/copyright" rel="tag">copyright</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/digital-humanities" rel="tag">digital humanities</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/digital-publishing" rel="tag">digital publishing</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/narrative" rel="tag">Narrative</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/obsolescence" rel="tag">obsolescence</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/open-access" rel="tag">open access</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/peer-peer-review" rel="tag">peer to peer review</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/scholarly-publishing" rel="tag">scholarly publishing</a></li>
-        <li><a href="http://mediacommons.futureofthebook.org/category/tags/social-networks" rel="tag">Social Networks</a></li>
-      </ul>
-  </aside>
+  </section>
+   <section role="complementary">
+   <aside class="profile-aside research-interests">
+     <h2>Research Interests</h2>
+       <ul class="Tags">
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/copyright" rel="tag">copyright</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/digital-humanities" rel="tag">digital humanities</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/digital-publishing" rel="tag">digital publishing</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/narrative" rel="tag">Narrative</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/obsolescence" rel="tag">obsolescence</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/open-access" rel="tag">open access</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/peer-peer-review" rel="tag">peer to peer review</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/scholarly-publishing" rel="tag">scholarly publishing</a></li>
+         <li><a href="http://mediacommons.futureofthebook.org/category/tags/social-networks" rel="tag">Social Networks</a></li>
+       </ul>
+   </aside>
  
-  <aside id="following"  class="profile-aside following">
-    <?php include "includes/kfitz-following.php"; ?>
-  </aside>
-</main>
+   <aside id="following"  class="profile-aside following">
+     <?php include "includes/kfitz-following.php"; ?>
+   </aside>
+ </section>
+ 
 </article>
+</main>
