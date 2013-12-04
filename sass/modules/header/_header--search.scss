@@ -26,7 +26,7 @@
 input[type="search"] {
   padding-left: .75em;
   font-family: $header-font-family;
-  @include placeholder();
+  @include placeholder(nth($primary, 2));
 }
 
 .wf-droidsans-n4-active input[type="search"] {
