@@ -2,13 +2,18 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 
-.meco {
+body.meco {
     header, article, footer {
     a {
       color: nth($mc-blue,1) !important; // FOR PROFILE PAGE DEMO ONLY
     }
   }
-
+  input[type="search"] {
+    @include input-placeholder {
+      color: nth($mc-blue, 2); // FOR PROFILE PAGE DEMO ONLY
+    }
+  }
+  
   @include respond-to("full navigation") {
     section[role="complementary"] {
       float: right;
@@ -20,8 +25,6 @@
         background: nth($mc-blue, 1); // FOR PROFILE PAGE DEMO ONLY
       }
     }
-    input[type="search"] {
-      @include placeholder(nth($mc-blue, 2));
-    }
+
   }
 }

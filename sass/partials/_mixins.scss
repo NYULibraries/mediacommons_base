@@ -115,6 +115,19 @@
   }
 }
 
+// Placeholder http://css-tricks.com/snippets/css/style-placeholder-text/ 
+// https://github.com/michaelsacca/Compass-Placeholder-Text-Mixin
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }  /* Firefox 18- */
+  &::-moz-placeholder { @content; }  /* Firefox 19+ */
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; } 
+  &::input-placeholder { @content; }
+  &::placeholder { @content; }
+}
+
+
 // IE Fixin Mixins
 
 @mixin opacitIE($opacity) {

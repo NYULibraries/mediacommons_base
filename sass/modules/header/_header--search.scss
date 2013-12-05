@@ -2,8 +2,6 @@
 // SUB-MODULES: Component styles that are layout independent 
 //////////////////////////////
 
-@import "_header--search_mixins";
-
 [role="search"] {
   display: inline-block;
   float: right;
@@ -26,7 +24,9 @@
 input[type="search"] {
   padding-left: .75em;
   font-family: $header-font-family;
-  @include placeholder(nth($primary, 2));
+  @include input-placeholder {
+    color: nth($primary, 2);
+  }
 }
 
 .wf-droidsans-n4-active input[type="search"] {
