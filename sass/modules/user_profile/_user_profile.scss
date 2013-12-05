@@ -1,6 +1,37 @@
 //////////////////////////////
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
+.author.date {
+//  display: table;
+  display: block;
+  + p {
+    clear: both;
+  }
+  .h-card {
+  //  display: table-row;
+    > .u-url{
+    display: inline-block;
+    float: left;
+    }
+    address {
+      //float: left;
+      //display: inline;
+      //vertical-align: top;
+      padding-left: 5em;
+      line-height: 1.5em;
+      display: block;
+      padding-top: 2em;
+      //@extend %break-word;
+    //  display: table-cell;
+    }
+    time {
+    //  display: table-cell;
+    ///display: inline-block;
+    //float: right;
+    }    
+  }
+}
+
 
 .h-card {
   margin: 1em 0;
@@ -10,8 +41,10 @@
     @include border-radius(3em);
     border: 0.33em solid rgba(nth($black, 4), 1); 
     overflow: hidden;
-     
+    text-align: center;
     background: nth($black, 4);
+    margin: 1em 0;
+    //display: inline-block;
     .u-photo {    
       //margin: 0 .5em 0 0;
       margin: 0;
@@ -25,22 +58,21 @@
    // @include border-radius(3em);
 //    border: 0.33em solid rgba(nth($black, 4), 1);
   }
+  address {  // http://html5doctor.com/the-address-element/
+    &:before {
+      content: "by\20";  
+    }
+  }
   .p-name.u-url {
     font-weight: bold;
   }
   .p-org {
     &:before {
       content: "\20\2014\20";   // mdash encoded http://css-tricks.com/snippets/html/glyphs/
-   
     }
   }
   .h-adr {
     display: block;
-  }
-  + time + * {
-    // clear comment text below the photo
-    clear: both;
-    padding-top: 1em;
   }
 }
 
@@ -66,8 +98,8 @@
     margin-left: 0;
   }
   h1 {
-    font-size: 1.5em;
-    line-height: 1.1;
+    //font-size: 1.5em;
+    //line-height: 1.1;
     margin-bottom: .2em;
     color: nth($black, 1);
   }
@@ -75,6 +107,9 @@
     //margin-top: 42px;
     margin-top: 2rem;
     margin-bottom: .7em;
+  }
+  .following {
+    @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
   }
   .author {
     font-style: italic;
@@ -116,7 +151,6 @@
     aside {
       background-color: nth($quadrary, 5);
       margin-top: 1em;
-      
       > h2 {
         color: nth($black, 6);
         background: nth($tertiary, 2);
@@ -128,16 +162,13 @@
       > ul {
         padding: .5em;
         margin: 0;
-        
       }
     }
     .following li.h-card {
       float: left;
       width: 50%;
     }
-    .following {
-      @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
-    }
+
     .contact-info {
       li {
         margin-bottom: 0;
