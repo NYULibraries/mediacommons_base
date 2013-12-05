@@ -2,7 +2,7 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 
-article[role="article"].spoke {
+[role="article"].spoke {
   > header {
     margin: 0 0 1em 0;
     h1 {
