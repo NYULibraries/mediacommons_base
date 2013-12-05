@@ -1,4 +1,4 @@
-<aside role="complimentary" class="spoke part-of-hub">
+<aside role="complementary" class="spoke part-of-hub">
   <header>
     <div>Part of: </div>
     <h2>Politics of Media Archaeology  <span class="responsive-disclosure"></span></h2>
