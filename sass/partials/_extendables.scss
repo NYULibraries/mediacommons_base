@@ -38,3 +38,13 @@
   white-space: -hp-pre-wrap;
   word-wrap: break-word; 
 }
+
+%user-photo-treatment {
+  width: 4.524em;
+  height: 4.524em;
+  @include border-radius(3em);
+  border: 0.33em solid rgba(nth($black, 4), 1); 
+  overflow: hidden;
+  text-align: center;
+  background: nth($black, 4);
+}

@@ -1,63 +1,44 @@
 //////////////////////////////
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
+
 .author.date {
-//  display: table;
   display: block;
+  
   + p {
     clear: both;
   }
   .h-card {
-  //  display: table-row;
     > .u-url{
     display: inline-block;
     float: left;
     }
     address {
-      //float: left;
-      //display: inline;
-      //vertical-align: top;
       padding-left: 5em;
       line-height: 1.5em;
       display: block;
       padding-top: 2em;
-      //@extend %break-word;
-    //  display: table-cell;
-    }
-    time {
-    //  display: table-cell;
-    ///display: inline-block;
-    //float: right;
-    }    
+    }  
   }
 }
 
 
 .h-card {
   margin: 1em 0;
+  
   > .u-url:first-child {
-    width: 4.524em;
-    height: 4.524em;
-    @include border-radius(3em);
-    border: 0.33em solid rgba(nth($black, 4), 1); 
-    overflow: hidden;
-    text-align: center;
-    background: nth($black, 4);
+   @extend %user-photo-treatment;
     margin: 1em 0;
-    //display: inline-block;
+    
     .u-photo {    
-      //margin: 0 .5em 0 0;
       margin: 0;
-      // 85px at largest font size
+      
       .comments &, .spoke & {
         float: left;
       }
     }
   }
-  img.u-photo {
-   // @include border-radius(3em);
-//    border: 0.33em solid rgba(nth($black, 4), 1);
-  }
+  
   address {  // http://html5doctor.com/the-address-element/
     &:before {
       content: "by\20";  
@@ -77,14 +58,17 @@
 }
 
 .profile {
-  //@extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+  
   header {
     margin-bottom: 1em;
-    //@extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
     padding: 0 1em;
-    .photo {
+    .u-photo {
       float: left;
-      margin: 0 .5em 0 0;
+      margin: 0 .5em 1em 0;
+      @extend %user-photo-treatment;
+    }
+    .p-name {
+      font-size:2em;
     }
   }
   
