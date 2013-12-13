@@ -2,6 +2,8 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 
+// Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
+
 .author.date {
   display: block;
   
@@ -21,7 +23,6 @@
     }  
   }
 }
-
 
 .h-card {
   margin: 1em 0;
@@ -82,13 +83,10 @@
     margin-left: 0;
   }
   h1 {
-    //font-size: 1.5em;
-    //line-height: 1.1;
     margin-bottom: .2em;
     color: nth($black, 1);
   }
   h2 {
-    //margin-top: 42px;
     margin-top: 2rem;
     margin-bottom: .7em;
   }
@@ -98,7 +96,7 @@
   .author {
     font-style: italic;
     &:before {
-      content: "\2014\20";   // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+      content: "\2014\20"; // mdash encoded http://css-tricks.com/snippets/html/glyphs/
     }
   }
   .contact-info li {
