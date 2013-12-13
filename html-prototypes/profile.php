@@ -43,6 +43,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="../js/underscore-min.js"></script>
+  <script src="../js/modernizr.custom.23042.js"></script>
 
   <script src="../js/mc.js"></script>
   </body>
