@@ -28,12 +28,12 @@ section.video.part-of-hub {
 
 @include respond-to('desktop') {
   section.curators-note{
-    max-width: ms(14);
+    max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
     float: left;
     margin: 0 1em 1em 0;
   }
   [role="complementary"].part-of-hub {
-    width: ms(12);
+    width: ms(12);  // width of the side content — see modular scale notes in base/typography/_typography_variables
     float: right;
     ul[role="menu"] {
       li {
@@ -112,14 +112,14 @@ section.video.part-of-hub {
   }
   @include respond-to('desktop') {
     float: right;
-    max-width: ms(12);
+    max-width: ms(12);  // see modular scale notes in base/typography/_typography_variables
     article {
       @include type-size($body-font-size - 1, $body-line-height - .1); // 16px
     }
   }
   @include respond-to('tablet') {
     clear: left;
-    max-width: ms(14);
+    max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
     article { 
       @include type-size($body-font-size - 2, $body-line-height - .1); // 16px
     }
@@ -130,6 +130,6 @@ section.video.part-of-hub {
 @include respond-to('narrow content') {
   section.curators-note {
     @include column-count(1);
-    max-width: ms(14);
+    max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
   }
 }

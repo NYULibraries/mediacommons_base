@@ -65,7 +65,7 @@ body {
   }
 }
 #content {
-  max-width: ms(14);
+  max-width: ms(14); // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
   padding: 1em;   
   @include respond-to('desktop content') {
     float: left;
@@ -95,7 +95,7 @@ body {
   }
 }
 //article {
-//  max-width: ms(16);
+//  max-width: ms(16);  //  see modular scale notes in base/typography/_typography_variables
 //  margin: 0 auto;
 //  @include respond-to('desktop content') {
 //    width: 100%;
@@ -115,7 +115,7 @@ body {
 //}
 main {
   @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
-  max-width: ms(16);
+  max-width: ms(16);  // ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
   margin: 0 auto;
   @include respond-to('desktop content') {
     width: 100%;
