@@ -20,32 +20,16 @@
     </script>  
 </head>
 <body class="pane body tne" <?php print $attributes;?>>
-  <div id="skip-link"><a href="#main-content" id="skip-to-main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a></div>
-  <section class="mediacommons-network">
-    <ul class="desktop">
-      <li><a href="#"><img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/files/mediacommons_new.png' ?>"></a></li>
-      <li><a href="#">In Media Res</a></li>
-      <li><a href="#">MediaCommons Press</a></li>
-      <li><a href="http://dev-dl-pa.home.nyu.edu/mediacommons/" class="active">The New Everyday</a></li>
-      <li><a href="#">#Alt-Academy</a></li>
-
-      <?php
-      if ($user->uid > 0) {
-          print '<li class="login">' . l(t('logout'), 'user/logout') . '</li>';
-      }
-      else {
-          print '<li class="login">' . l(t('login'), 'user'). '</li>';
-      }
-      ?>
-
-    </ul>
-    <ul class="mobile">
-      <li><a href=""><img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/files/mediacommons_new.png' ?>"></a></li>
-      <li class="login"><a href="#">Login</a></li>
-    </ul>
-  </section>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
+   <?php include "includes/header-imr.inc"; ?>
+   <?php print $page; ?>
+   <?php //include "includes/main-article.php"; ?>
+   <?php include "includes/globalnavbar.inc"; ?>
+    
+    
+  
+  
+  <?php //print $page_top; ?>
+  <?php //print $page; ?>
+  <?php //print $page_bottom; ?>
 </body>
 </html>
