@@ -1,3 +1,13 @@
+<?php 
+global $base_url;
+global $user;
+$mc_login_link = $base_url . '/user/';
+$mc_join_link = $base_url . '/user/register';
+$mc_edit_link = $base_url . '/user/edit';
+$mc_logout_link = $base_url . '/user/logout';
+
+?>
+
 <nav class="global" role="navigation">
   <ul class="global-sections" role="menubar">
     <li><a class="logolink mc-logo" title="Media Commons" href="#"><span>Media Commons</span></a>
@@ -11,22 +21,25 @@
     </li>
   </ul>
    <?php
-      if ($user->uid > 0) { ?>
-         <ul class="utils logged-in" role="menubar">
-    <li role="menuitem" aria-haspopup="true"> <a href="#" class="login-link">Kathleen Fitzpatrick</a>
+      if ($user->uid > 0) { 
+      $mc_user_name = $user->name;
+      $mc_user_name = $user->name;
+?>
+      <ul class="utils logged-in" role="menubar">
+      <li role="menuitem" aria-haspopup="true"> <a href="#" class="login-link"><?php echo $mc_user_name ?></a>
       <ul role="menu" aria-hidden="true" class="user-pref-area">
-        <li role="menuitem"> <a href="#">Edit my account</a> </li>
-        <li role="menuitem"> <a href="#">View my contributions</a> </li>
-        <li role="menuitem"> <a href="#">View my bookmarks</a> </li>
-        <li role="menuitem"> <a href="#">Logout</a> </li>
+        <li role="menuitem"> <a href="<?php echo $mc_edit_link ?>">Edit my account</a> </li>
+        <li role="menuitem"> <a href="<?php echo $mc_edit_link ?>">View my contributions</a> </li>
+        <li role="menuitem"> <a href="<?php echo $mc_edit_link ?>">View my bookmarks</a> </li>
+        <li role="menuitem"> <a href="<?php echo $mc_logout_link ?>">Logout</a> </li>
       </ul>
     </li>
   </ul>
 
         <?php } else { ?>
   <ul class="utils logged-out" role="menubar">
-    <li role="menuitem"><a href="#">Join</a></li>
-    <li role="menuitem" aria-haspopup="true"><a href="#" class="login-link">Login</a>
+    <li role="menuitem"><a href="<?php echo $mc_join_link; ?>" class="login-link-trash-this-classname">Join</a></li>
+    <li role="menuitem" aria-haspopup="true"><a href="<?php echo $mc_login_link; ?>" class="login-link">Login</a>
       <ul class="login-area" aria-hidden="true">
         <li role="menuitem">
           <form action="/imr/user/login"  accept-charset="UTF-8" method="post" id="user-login" class="user login form inline">
@@ -47,5 +60,6 @@
         </li>
       </ul>
     </li>
-  </ul> <?php  } ?>
+  </ul> 
+  <?php  } ?>
 </nav>

@@ -6,16 +6,12 @@
   <?php print $styles; ?>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:700,400,900' rel='stylesheet' type='text/css'>  
   <?php print $scripts; ?>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        
         $(".associated").hide();
-
         $(".trigger").click(function(){
           $(this).toggleClass("active").next().slideToggle("medium");
         });
-
       });
     </script>  
 </head>

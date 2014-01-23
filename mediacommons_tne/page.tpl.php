@@ -1,3 +1,8 @@
+<?php
+global $base_url;
+$mc_theme_path = $base_url . '/' . drupal_get_path('theme',$GLOBALS['theme'])
+?>
+
 <main role="main">
   <div id="page-inner" class="page-inner"> 
     <div id="top" class="pane top">
@@ -57,9 +62,12 @@
       <p> <span class="extras">In Media Res: A <a href="http://mediacommons.futureofthebook.org/">MediaCommons</a> Project</span><br>
       <span class="powered">Powered by NYU <a href="http://dlib.nyu.edu">DLTS</a></span> </p>
     </footer>
+
+
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="../js/underscore-min.js"></script>
-    <script src="../js/modernizr.custom.23042.js"></script>
-    <script src="../js/mc.js"></script>
+    <script src="<?php  echo $mc_theme_path; ?>/js/underscore-min.js"></script>
+    <script src="<?php  echo $mc_theme_path; ?>/js/modernizr.custom.23042.js"></script>
+    <script src="<?php  echo $mc_theme_path; ?>/js/mc.js"></script>
 
