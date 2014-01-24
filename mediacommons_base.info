@@ -11,12 +11,15 @@ regions[header] = Header
 regions[navigation] = Navigation
 regions[search] = Search
 regions[content] = Content
-regions[left] = Left Sidebar
-regions[right] = Right Sidebar
+regions[sidebar_first] = Left Sidebar
+regions[sidebar_second] = Right Sidebar
 regions[network] = Network
 regions[spokes] = Spokes
 regions[hubs] = Hubs
 regions[footer] = Footer
+regions[highlighted] = Highlighted
+regions[projectsnav] = Projects Navigation
+
 
 features[] = logo
 features[] = name

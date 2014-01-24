@@ -4,7 +4,7 @@
     
     <div id="top" class="pane top">
       
-      <section class="header">    
+      <section class="header">
         <div class="wrapper">
           <img src="<?php echo $GLOBALS['base_url'].'/sites/mediacommons.futureofthebook.org/themes/mediacommons_base/images/logos/mc.png' ?>">
           <?php if ($logo): ?>
@@ -60,6 +60,7 @@
       </div>
     </div>
     <div class="wrapper the-content">
+     
       <?php if ($tabs) : ?>
           <div class="tabs"><?php print render($tabs); ?></div>
         <?php endif; ?>
@@ -70,7 +71,13 @@
     <?php endif; ?>
     
   </div>
+  <nav class="global" role="navigation">
+<?php print render($page['projectsnav']); ?>
 
+
+
+
+ </nav>
 </div>
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
       <div class="footer yui3-g wrapper">

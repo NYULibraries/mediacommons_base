@@ -27,5 +27,6 @@
  */
 ?>
 <?php if ($content): ?>
+	<!-- im a region -->
   <?php print $content; ?>
 <?php endif; ?>

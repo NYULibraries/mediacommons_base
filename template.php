@@ -269,3 +269,20 @@ function mediacommons_base_form_alter(&$form, &$form_state, $form_id) {
     $form['comment_body']['#attributes']['placeholder'] = t('Make your comment');
   }
 }
+function mediacommons_base_menu_tree__features($variables) {
+  return '<ul class="global-sections" role="menubar"> ' . $variables['tree'] . '</ul>';
+}
+function mediacommons_base_menu_link__features(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+function mediacommons_base_menu_tree__user_menu(&$variables) {
+  return ' <ul class="utils logged-in" role="menubar">' . $variables['tree'] . '</ul>';
+}
+
