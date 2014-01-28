@@ -270,15 +270,38 @@ function mediacommons_base_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 function mediacommons_base_menu_tree__features($variables) {
+  $variables['class'] ="newby";
+  //return print_r($variables);
+ 
+ // if ($element['#original_link']['depth'] == '1') {
+  //  $element['#attributes']['class'][] = 'rara';
+  //}
   return '<ul class="global-sections" role="menubar"> ' . $variables['tree'] . '</ul>';
 }
 function mediacommons_base_menu_link__features(array $variables) {
   $element = $variables['element'];
-  $sub_menu = '';
+  //return print_r($variables['element']);
+ 
+  if ($element['#original_link']['depth'] == '1') {
+    // This sets the classes for the lists item
+    //$element['#attributes']['class'][] = 'logolink';
+    //$element['#attributes']['class'][] = 'mc-logo';
 
+    $element['#title'] = '<span>' . $element['#title'] . '</span>';
+    $element['#localized_options']['html'] = true;
+    // This sets the classes for the link itself
+    $element['#localized_options']['attributes']['class'][] = "logolink";
+    $element['#localized_options']['attributes']['class'][] = "mc-logo";
+      }
+ 
+   //  l(t('Link text'), 'about-us', array('attributes' => array('class' => array('about-link', 'another-class'))));
+
+  $sub_menu = '';
   if ($element['#below']) {
     $sub_menu = drupal_render($element['#below']);
   }
+  
+
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
